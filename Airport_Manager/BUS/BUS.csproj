@@ -54,6 +54,7 @@
     <Compile Include="BUS_Customer.cs" />
     <Compile Include="BUS_Flight.cs" />
     <Compile Include="BUS_Plane.cs" />
+    <Compile Include="BUS_Ticket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
