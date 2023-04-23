@@ -1,6 +1,6 @@
 using GUI;
 
-namespace Airport_Manager
+namespace QuảnLíChuyếnBay
 {
     internal static class Program
     {

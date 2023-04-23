@@ -15,12 +15,9 @@ namespace GUI
 {
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
-        public Login()
-        {
-            InitializeComponent();
-        }
+        public Login() => InitializeComponent();
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        void btnLogin_Click(object sender, EventArgs e)
         {
             Employee emp = new Employee();
             Account acc = new Account();
