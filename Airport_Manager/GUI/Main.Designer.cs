@@ -31,7 +31,7 @@
             tabControls = new DevExpress.XtraBars.Navigation.TabPane();
             tpTicket = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            btnUpdateTicket = new DevExpress.XtraEditors.SimpleButton();
             simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             gcTicket = new DevExpress.XtraGrid.GridControl();
             gvTicket = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -95,7 +95,7 @@
             label31 = new Label();
             txtCustomerAddress = new DevExpress.XtraEditors.TextEdit();
             txtCustomerName = new DevExpress.XtraEditors.TextEdit();
-            textEdit21 = new DevExpress.XtraEditors.TextEdit();
+            txtIdCustomer = new DevExpress.XtraEditors.TextEdit();
             label32 = new Label();
             tp = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             groupBox2 = new GroupBox();
@@ -188,7 +188,7 @@
             ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit21.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtIdCustomer.Properties).BeginInit();
             tp.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txt2.Properties).BeginInit();
@@ -238,7 +238,7 @@
             // 
             tpTicket.Caption = "Tickets";
             tpTicket.Controls.Add(simpleButton4);
-            tpTicket.Controls.Add(simpleButton5);
+            tpTicket.Controls.Add(btnUpdateTicket);
             tpTicket.Controls.Add(simpleButton6);
             tpTicket.Controls.Add(gcTicket);
             tpTicket.Controls.Add(groupBox1);
@@ -256,14 +256,15 @@
             simpleButton4.TabIndex = 24;
             simpleButton4.Text = "Delete";
             // 
-            // simpleButton5
+            // btnUpdateTicket
             // 
-            simpleButton5.Location = new Point(487, 317);
-            simpleButton5.Margin = new Padding(3, 2, 3, 2);
-            simpleButton5.Name = "simpleButton5";
-            simpleButton5.Size = new Size(101, 29);
-            simpleButton5.TabIndex = 23;
-            simpleButton5.Text = "Update";
+            btnUpdateTicket.Location = new Point(487, 317);
+            btnUpdateTicket.Margin = new Padding(3, 2, 3, 2);
+            btnUpdateTicket.Name = "btnUpdateTicket";
+            btnUpdateTicket.Size = new Size(101, 29);
+            btnUpdateTicket.TabIndex = 23;
+            btnUpdateTicket.Text = "Update";
+            btnUpdateTicket.Click += btnUpdateTicket_Click;
             // 
             // simpleButton6
             // 
@@ -292,6 +293,7 @@
             gvTicket.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             gvTicket.GridControl = gcTicket;
             gvTicket.Name = "gvTicket";
+            gvTicket.OptionsBehavior.Editable = false;
             gvTicket.RowClick += gvTicket_RowClick;
             // 
             // groupBox1
@@ -647,6 +649,7 @@
             // txtTicketID
             // 
             txtTicketID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtTicketID.Enabled = false;
             txtTicketID.Location = new Point(121, 28);
             txtTicketID.Margin = new Padding(3, 2, 3, 2);
             txtTicketID.Name = "txtTicketID";
@@ -721,7 +724,7 @@
             groupBox5.Controls.Add(label31);
             groupBox5.Controls.Add(txtCustomerAddress);
             groupBox5.Controls.Add(txtCustomerName);
-            groupBox5.Controls.Add(textEdit21);
+            groupBox5.Controls.Add(txtIdCustomer);
             groupBox5.Controls.Add(label32);
             groupBox5.Location = new Point(10, 13);
             groupBox5.Margin = new Padding(3, 2, 3, 2);
@@ -966,14 +969,15 @@
             txtCustomerName.Size = new Size(208, 20);
             txtCustomerName.TabIndex = 2;
             // 
-            // textEdit21
+            // txtIdCustomer
             // 
-            textEdit21.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit21.Location = new Point(90, 18);
-            textEdit21.Margin = new Padding(3, 2, 3, 2);
-            textEdit21.Name = "textEdit21";
-            textEdit21.Size = new Size(208, 20);
-            textEdit21.TabIndex = 1;
+            txtIdCustomer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtIdCustomer.Enabled = false;
+            txtIdCustomer.Location = new Point(90, 18);
+            txtIdCustomer.Margin = new Padding(3, 2, 3, 2);
+            txtIdCustomer.Name = "txtIdCustomer";
+            txtIdCustomer.Size = new Size(208, 20);
+            txtIdCustomer.TabIndex = 1;
             // 
             // label32
             // 
@@ -1759,7 +1763,7 @@
             ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit21.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtIdCustomer.Properties).EndInit();
             tp.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
@@ -1837,7 +1841,7 @@
         private Label label11;
         private Label label12;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton btnUpdateTicket;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private Label label21;
         private DateTimePicker dateTimePicker3;
@@ -1875,7 +1879,7 @@
         private Label label31;
         private DevExpress.XtraEditors.TextEdit txtCustomerAddress;
         private DevExpress.XtraEditors.TextEdit txtCustomerName;
-        private DevExpress.XtraEditors.TextEdit textEdit21;
+        private DevExpress.XtraEditors.TextEdit txtIdCustomer;
         private Label label32;
         private DevExpress.XtraGrid.GridControl gcCustomer;
         private DevExpress.XtraGrid.Views.Grid.GridView gvCustomer;

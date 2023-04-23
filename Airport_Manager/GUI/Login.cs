@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Mvvm.Native;
+using DevExpress.XtraEditors;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,14 @@ namespace GUI
             Employee emp = new Employee();
             Account acc = new Account();
 
+            if(txtUsername.Text != null &&  txtPassword.Text != null 
+                && !txtUsername.Text.IsEmptyOrSingle() && !txtPassword.Text.IsEmptyOrSingle()) {
+
+                String username = txtUsername.Text.Trim();
+                String password = txtPassword.Text.Trim();
+            
+            }
+            
 
             if (true)
             {

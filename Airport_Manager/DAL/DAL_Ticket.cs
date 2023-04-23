@@ -31,6 +31,18 @@ namespace DAL
 
         public bool updateTicket(Bill_Detail updated_ticket)
         {
+            using(var db = new AirportManager())
+            {
+                Bill_Detail current_ticket = db.Bill_Detail.Find(updated_ticket.BillID);
+                if (current_ticket != null)
+                {
+                    db.Entry(current_ticket).CurrentValues.SetValues(updated_ticket);
+                    db.SaveChanges();
+
+                    return true;
+                }
+
+            }
             return true;
         }
 
