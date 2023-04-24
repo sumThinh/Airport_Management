@@ -38,6 +38,7 @@
             textEdit14 = new DevExpress.XtraEditors.TextEdit();
             lbUsername = new Label();
             tpStatistics = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            cartesianTicket = new LiveCharts.WinForms.CartesianChart();
             pieTicket = new LiveCharts.WinForms.PieChart();
             tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             gridControlPlane = new DevExpress.XtraGrid.GridControl();
@@ -184,7 +185,6 @@
             label16 = new Label();
             label20 = new Label();
             tabControls = new DevExpress.XtraBars.Navigation.TabPane();
-            cartesianTicket = new LiveCharts.WinForms.CartesianChart();
             ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
             tpStatistics.SuspendLayout();
@@ -314,6 +314,14 @@
             tpStatistics.Name = "tpStatistics";
             tpStatistics.Size = new Size(891, 655);
             tpStatistics.Paint += tpStatistics_Paint;
+            // 
+            // cartesianTicket
+            // 
+            cartesianTicket.Location = new Point(12, 242);
+            cartesianTicket.Name = "cartesianTicket";
+            cartesianTicket.Size = new Size(844, 243);
+            cartesianTicket.TabIndex = 1;
+            cartesianTicket.Text = "cartesianTicket";
             // 
             // pieTicket
             // 
@@ -1863,14 +1871,6 @@
             tabControls.Size = new Size(891, 688);
             tabControls.TabIndex = 0;
             tabControls.Text = "Tickets";
-            // 
-            // cartesianTicket
-            // 
-            cartesianTicket.Location = new Point(12, 242);
-            cartesianTicket.Name = "cartesianTicket";
-            cartesianTicket.Size = new Size(844, 243);
-            cartesianTicket.TabIndex = 1;
-            cartesianTicket.Text = "cartesianTicke";
             // 
             // Main
             // 

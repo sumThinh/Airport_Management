@@ -18,6 +18,7 @@ using DevExpress.Charts.Native;
 using DevExpress.CodeParser;
 using LiveCharts;
 using LiveCharts.Wpf;
+using Separator = LiveCharts.Wpf.Separator;
 
 namespace GUI
 {
@@ -528,17 +529,38 @@ namespace GUI
 
         private void tpStatistics_Paint(object sender, PaintEventArgs e)
         {
+            //Pie chart - ticket
             Func<ChartPoint, String> lablePoint = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
             DateTime date = new DateTime(2023, 04, 23);
             List<Bill_Detail> list = bTicket.getTicketListByDate(date);
-
             SeriesCollection series = new SeriesCollection();
             series.Add(new PieSeries() { Title = "Normal Tickets", Values = new ChartValues<int> { list.Count(t => t.SeatClass == false) }, DataLabels = true, LabelPoint = lablePoint });
             series.Add(new PieSeries() { Title = "VIP Tickets", Values = new ChartValues<int> { list.Count(t => t.SeatClass == true) }, DataLabels = true, LabelPoint = lablePoint });
-
             pieTicket.Series = series;
-
             pieTicket.LegendLocation = LegendLocation.Bottom;
+
+            //Total Price - Chart
+            var total = list.GroupBy(t => t.BookingDate).Select(t => new
+            {
+                BookingDate = t.Key,
+                Total = t.Sum(ta => ta.TotalPrice),
+            }).ToList();
+
+            ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<decimal>(), LabelPoint = point => point.Y.ToString() };
+            Axis ax = new Axis() { Separator = new Separator() { Step = 1, IsEnabled = true } };
+            ax.Labels = new List<string>();
+            foreach (var x in total) {
+                col.Values.Add(x.Total);
+                ax.Labels.Add(x.BookingDate.Value.Day.ToString());
+            }
+
+            cartesianTicket.Series.Add(col);
+            cartesianTicket.AxisX.Add(ax);
+            cartesianTicket.AxisY.Add(new Axis
+            {
+                LabelFormatter = value => value.ToString(),
+                Separator = new Separator() { }
+            });
 
 
         }
