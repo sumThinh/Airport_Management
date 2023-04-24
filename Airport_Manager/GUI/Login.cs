@@ -1,15 +1,4 @@
-﻿using DevExpress.Mvvm.Native;
-using DevExpress.XtraEditors;
-using DTO;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using DTO;
 
 namespace GUI
 {
@@ -19,23 +8,15 @@ namespace GUI
 
         void btnLogin_Click(object sender, EventArgs e)
         {
-            Employee emp = new Employee();
-            Account acc = new Account();
-
-            if(txtUsername.Text != null &&  txtPassword.Text != null 
-                && !txtUsername.Text.IsEmptyOrSingle() && !txtPassword.Text.IsEmptyOrSingle()) {
-
-                String username = txtUsername.Text.Trim();
-                String password = txtPassword.Text.Trim();
-            
-            }
+            var emp = new Employee();
+            var acc = new Account();
 
             if (true)
             {
-                Main frmMain = new Main(acc, emp);
-                this.Hide();
+                var frmMain = new Main(acc, emp);
+                Hide();
                 frmMain.ShowDialog();
-                Application.Exit();
+                Show();
             }
         }
     }

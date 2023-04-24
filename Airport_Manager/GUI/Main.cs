@@ -12,12 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DevExpress.Mvvm.Native;
-using System.Windows.Controls;
-using System.Runtime.Serialization;
 using System.Globalization;
-using DevExpress.Charts.Native;
-using DevExpress.CodeParser;
-using LiveCharts;
 
 namespace GUI
 {
@@ -26,7 +21,6 @@ namespace GUI
         BUS_Customer bCustomer = new BUS_Customer();
         BUS_Plane planebus = new BUS_Plane();
         BUS_Flight flightbus = new BUS_Flight();
-        BUS_Ticket bTicket = new BUS_Ticket();
         Account current_account;
         Employee current_employee;
 
@@ -35,12 +29,12 @@ namespace GUI
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
-            tabControls.SelectedPageIndex = 1;
         }
 
         void Main_Load(object sender, EventArgs e)
         {
         }
+
         // Customer Controller
         void tpCustomer_Paint(object sender, PaintEventArgs e)
         {
@@ -57,14 +51,15 @@ namespace GUI
                && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
                && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
             {
-                string customerID = txtCustomerID.Text.Trim();
-                string customerName = txtCustomerName.Text.Trim();
-                string customerEmail = txtCustomerEmail.Text.Trim();
-                string customerAddress = txtCustomerAddress.Text.Trim();
-                string customerPhone = txtCustomerPhone.Text.Trim();
-                String customerDate = dtpCustomerDate.Value.ToString("dd/MM/yyyy");
-                string customerNationality = txtCustomerNationality.Text.Trim();
+                var customerID = txtCustomerID.Text.Trim();
+                var customerName = txtCustomerName.Text.Trim();
+                var customerEmail = txtCustomerEmail.Text.Trim();
+                var customerAddress = txtCustomerAddress.Text.Trim();
+                var customerPhone = txtCustomerPhone.Text.Trim();
+                var customerDate = dtpCustomerDate.Value.ToString("dd/MM/yyyy");
+                var customerNationality = txtCustomerNationality.Text.Trim();
                 bool? customerSex;
+
                 if (rbCustomerFemale.Checked)
                 {
                     customerSex = true;
@@ -74,7 +69,7 @@ namespace GUI
                     customerSex = false;
                 }
 
-                Customer customer = new Customer();
+                var customer = new Customer();
                 customer.NationalID = customerID;
                 customer.Name = customerName;
                 customer.Email = customerEmail;
@@ -100,7 +95,6 @@ namespace GUI
                 {
                     MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
             }
             else
             {
@@ -108,55 +102,31 @@ namespace GUI
             }
         }
 
-        private void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-
-            if (e.Clicks == 2) //Send customer to ticket tab
+            if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
             {
-                tabControls.SelectedPageIndex = 0;
-                Customer order_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                lbTicketsCustomerID.Text = order_customer.CustomerID.ToString();
-                lbTicketCustomerName.Text = order_customer.Name;
-                lbTicketCustomerAddress.Text = order_customer.Address;
-                lbTicketCustomerPhone.Text = order_customer.TeleNumber;
-                lbTicketCustomerNid.Text = order_customer.NationalID;
-                if (order_customer.Sex == true)
+                var cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                txtCustomerID.Text = cur_customer.NationalID;
+                txtCustomerName.Text = cur_customer.Name;
+                txtCustomerAddress.Text = cur_customer.Address;
+                txtCustomerPhone.Text = cur_customer.TeleNumber;
+                txtCustomerEmail.Text = cur_customer.Email;
+                txtCustomerNationality.Text = cur_customer.Nationality;
+                dtpCustomerDate.Value = cur_customer.DateOfBirth.Value;
+
+                if (cur_customer.Sex == true)
                 {
-                    lbTicketCustomerSex.Text = "Nữ";
+                    rbCustomerFemale.Checked = true;
                 }
                 else
                 {
-                    lbTicketCustomerSex.Text = "Nam";
+                    rbCustomerMale.Checked = true;
                 }
-                lbTicketCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
-            }
-            else if (e.Clicks == 1) //fetch data to textfield
-            {
-
-                if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
-                {
-                    Customer cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                    txtCustomerID.Text = cur_customer.NationalID;
-                    txtCustomerName.Text = cur_customer.Name;
-                    txtCustomerAddress.Text = cur_customer.Address;
-                    txtCustomerPhone.Text = cur_customer.TeleNumber;
-                    txtCustomerEmail.Text = cur_customer.Email;
-                    txtCustomerNationality.Text = cur_customer.Nationality;
-                    dtpCustomerDate.Value = cur_customer.DateOfBirth.Value;
-                    if (cur_customer.Sex == true)
-                    {
-                        rbCustomerFemale.Checked = true;
-                    }
-                    else
-                    {
-                        rbCustomerMale.Checked = true;
-                    }
-                }
-
             }
         }
 
-        private void btnCustomerUpdate_Click(object sender, EventArgs e)
+        void btnCustomerUpdate_Click(object sender, EventArgs e)
         {
             if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
             {
@@ -168,8 +138,8 @@ namespace GUI
                && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
                && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
                 {
-                    Customer current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                    Customer updated_customer = new Customer();
+                    var current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    var updated_customer = new Customer();
                     updated_customer.CustomerID = current_customer.CustomerID;
                     updated_customer.Name = txtCustomerName.Text.Trim();
                     updated_customer.NationalID = txtCustomerID.Text.Trim();
@@ -204,20 +174,18 @@ namespace GUI
                     {
                         MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-
                 }
-
             }
         }
 
-        private void btnCustomerDelete_Click(object sender, EventArgs e)
+        void btnCustomerDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
                 {
-                    Customer current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                    int id = current_customer.CustomerID;
+                    var current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    var id = current_customer.CustomerID;
 
                     if (bCustomer.deleteCustomer(id))
                     {
@@ -789,22 +757,4 @@ namespace GUI
 
         }
     }
-
-    //private void btnUpdateTicket_Click(object sender, EventArgs e)
-    //{
-    //    if (gvTicket.GetRow(gvTicket.FocusedRowHandle) != null)
-    //    {
-    //        Bill_Detail updated_ticket = (Bill_Detail) gvTicket.GetRow(gvTicket.FocusedRowHandle);
-    //        //Get flightID to update flight
-    //        //Get Seat and SeatClass to update seat, seatclass and total price
-    //        //Get Date to update booking date
-    //        String current_date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-    //        updated_ticket.BookingDate = DateTime.Parse(current_date);
-    //        MessageBox.Show(updated_ticket.BookingDate.ToString());
-    //        //Get Employee to update Employee in ticket
-
-    //        bTicket.updateTicket(updated_ticket);
-    //        gcTicket.DataSource = bTicket.getTicketsList();
-    //    }
-    //}
 }
