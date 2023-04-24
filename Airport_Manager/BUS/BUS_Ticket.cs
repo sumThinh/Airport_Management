@@ -1,24 +1,26 @@
-﻿using DAL;
-using DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
+using DAL;
 
 namespace BUS
 {
-    public class BUS_Ticket
+    internal class BUS_Ticket
     {
-        DAL_Ticket dalTicket = new DAL_Ticket();
+        private static DAL_Ticket ticketbill = new DAL_Ticket();
 
-        public List<Bill_Detail> getTicketList()
+        public List<Bill_Detail> GetListBills() => ticketbill.LoadBills();
+        public static bool AddBillService(Bill_Detail tick)
         {
-            return dalTicket.getTicketsList();
+            return ticketbill.AddTicket(tick);
         }
-        public List<Bill_Detail> getTicketListByDate(DateTime date)
+
+        public static bool DeleteBillService(Bill_Detail tick)
         {
-            return dalTicket.getTicketListByDate(date);
+            return ticketbill.RemoveTicket(tick.BillID);
         }
     }
 }

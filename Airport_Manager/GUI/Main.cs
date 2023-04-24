@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using DTO;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,10 +12,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DevExpress.Mvvm.Native;
-using DTO;
+using System.Globalization;
 using System.Windows.Controls;
 using System.Runtime.Serialization;
-using System.Globalization;
 using DevExpress.Charts.Native;
 using DevExpress.CodeParser;
 using LiveCharts;
@@ -42,6 +43,7 @@ namespace GUI
         void Main_Load(object sender, EventArgs e)
         {
         }
+
         // Customer Controller
         void tpCustomer_Paint(object sender, PaintEventArgs e)
         {
@@ -63,9 +65,10 @@ namespace GUI
                 string customerEmail = txtCustomerEmail.Text.Trim();
                 string customerAddress = txtCustomerAddress.Text.Trim();
                 string customerPhone = txtCustomerPhone.Text.Trim();
-                String customerDate = dtpCustomerDate.Value.ToString("dd/MM/yyyy");
+                string customerDate = dtpCustomerDate.Value.ToString("dd/MM/yyyy");
                 string customerNationality = txtCustomerNationality.Text.Trim();
                 bool? customerSex;
+
                 if (rbCustomerFemale.Checked)
                 {
                     customerSex = true;
@@ -101,7 +104,6 @@ namespace GUI
                 {
                     MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
             }
             else
             {
@@ -109,7 +111,7 @@ namespace GUI
             }
         }
 
-        private void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
 
             if (e.Clicks == 2) //Send customer to ticket tab
@@ -157,7 +159,7 @@ namespace GUI
             }
         }
 
-        private void btnCustomerUpdate_Click(object sender, EventArgs e)
+        void btnCustomerUpdate_Click(object sender, EventArgs e)
         {
             if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
             {
@@ -169,8 +171,8 @@ namespace GUI
                && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
                && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
                 {
-                    Customer current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                    Customer updated_customer = new Customer();
+                    var current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    var updated_customer = new Customer();
                     updated_customer.CustomerID = current_customer.CustomerID;
                     updated_customer.Name = txtCustomerName.Text.Trim();
                     updated_customer.NationalID = txtCustomerID.Text.Trim();
@@ -205,20 +207,18 @@ namespace GUI
                     {
                         MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-
                 }
-
             }
         }
 
-        private void btnCustomerDelete_Click(object sender, EventArgs e)
+        void btnCustomerDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
                 {
-                    Customer current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                    int id = current_customer.CustomerID;
+                    var current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    var id = current_customer.CustomerID;
 
                     if (bCustomer.deleteCustomer(id))
                     {
@@ -526,61 +526,268 @@ namespace GUI
         {
             gridControlFlight.DataSource = flightbus.GetListFlights();
         }
+        // <=========
 
-        private void tpStatistics_Paint(object sender, PaintEventArgs e)
+        // EmployeeAccountJobController  =========>
+
+        void LoadDataGridViewEmployee()
         {
-            //Pie chart - ticket
-            Func<ChartPoint, String> lablePoint = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
-            DateTime date = new DateTime(2023, 04, 23);
-            List<Bill_Detail> list = bTicket.getTicketListByDate(date);
-            SeriesCollection series = new SeriesCollection();
-            series.Add(new PieSeries() { Title = "Normal Tickets", Values = new ChartValues<int> { list.Count(t => t.SeatClass == false) }, DataLabels = true, LabelPoint = lablePoint });
-            series.Add(new PieSeries() { Title = "VIP Tickets", Values = new ChartValues<int> { list.Count(t => t.SeatClass == true) }, DataLabels = true, LabelPoint = lablePoint });
-            pieTicket.Series = series;
-            pieTicket.LegendLocation = LegendLocation.Bottom;
-
-            //Total Price - Chart
-            var total = list.GroupBy(t => t.BookingDate).Select(t => new
+            using (AirportManager db = new AirportManager())
             {
-                BookingDate = t.Key,
-                Total = t.Sum(ta => ta.TotalPrice),
-            }).ToList();
-
-            ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<decimal>(), LabelPoint = point => point.Y.ToString() };
-            Axis ax = new Axis() { Separator = new Separator() { Step = 1, IsEnabled = true } };
-            ax.Labels = new List<string>();
-            foreach (var x in total) {
-                col.Values.Add(x.Total);
-                ax.Labels.Add(x.BookingDate.Value.Day.ToString());
+                dgvEmployee.DataSource = db.Employees.ToList<Employee>();
             }
-
-            cartesianTicket.Series.Add(col);
-            cartesianTicket.AxisX.Add(ax);
-            cartesianTicket.AxisY.Add(new Axis
+        }
+        void LoadDataGridViewJob()
+        {
+            using (AirportManager db = new AirportManager())
             {
-                LabelFormatter = value => value.ToString(),
-                Separator = new Separator() { }
-            });
+                dgvJob.DataSource = db.Jobs.ToList<Job>();
+            }
+        }
+        private void btnAddEmployee_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            Account account = new Account();
+            BUS_Employee busEmp = new BUS_Employee();
+            BUS_Account busAcc = new BUS_Account();
+            DAL_Account dalAccount = new DAL_Account();
+            DAL_Employee dalEmployee = new DAL_Employee();
 
+            if (String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text))
+            {
+                MessageBox.Show("Please enter all the information!");
+            }
+            else
+            {
+                employee.Name = txtNameEmployee.Text.Trim();
+                employee.Address = txtAddressEmployee.Text.Trim();
+                employee.Nationality = txtNationalityEmployee.Text.Trim();
+                if (rbMale.Checked)
+                    employee.Sex = true;
+                else
+                    employee.Sex = false;
+                employee.DateOfBirth = dtpBirthdayEmployee.Value.Date;
+                employee.Email = txtEmailEmployee.Text.Trim();
+                employee.NationID = txtNationalIDEmployee.Text.Trim();
+                employee.TeleNumber = txtPhoneEmployee.Text.Trim();
+                employee.Position = txtPositionEmployee.Text.Trim();
+
+
+
+
+                if (busEmp.AddEmployee(employee) == 1)
+                {
+                    account.EmployeeID = dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
+                    account.Username = txtUsernameEmployee.Text.Trim();
+                    account.Password = txtPasswordEmployee.Text.Trim();
+                    account.AccessLevel = false;
+
+                    if (busAcc.AddAccount(account) == 2)
+                    {
+                        MessageBox.Show("Username was exited");
+                        LoadDataGridViewEmployee();
+                    }
+                    else
+                    {
+                        if (busAcc.AddAccount(account) == 1)
+                        {
+                            MessageBox.Show("Add Employee Successfully");
+                            LoadDataGridViewEmployee();
+                        }
+                        else
+                            MessageBox.Show("Add  Employee Successfully!");
+                    }
+                }
+                else
+                {
+                    if (busEmp.AddEmployee(employee) == 0)
+                        MessageBox.Show("Add Employee Fail");
+                    else
+                        if (busEmp.AddEmployee(employee) == 2)
+                        MessageBox.Show("Exited Phone");
+                    else
+                            if (busEmp.AddEmployee(employee) == 3)
+                        MessageBox.Show("Exited NationalID");
+                    else
+                                if (busEmp.AddEmployee(employee) == 4)
+                        MessageBox.Show("Exited NationalID and Phone");
+                    else
+                        MessageBox.Show("Something wrong");
+                }
+
+            }
+        }
+
+        private void gbEmployee_Paint(object sender, PaintEventArgs e)
+        {
+            txtEmployeeID.ReadOnly = true;
+            LoadDataGridViewEmployee();
+        }
+        private void gbJob_Paint(object sender, PaintEventArgs e)
+        {
+            LoadDataGridViewJob();
+        }
+
+        private void gvEmployee_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (gvEmploy.GetRow(gvEmploy.FocusedRowHandle) != null)
+            {
+                Employee cur_emp = (Employee)gvEmploy.GetRow(gvEmploy.FocusedRowHandle);
+                txtEmployeeID.Text = cur_emp.EmployeeID.ToString();
+                txtNameEmployee.Text = cur_emp.Name.ToString();
+                txtAddressEmployee.Text = cur_emp.Address.ToString();
+                txtNationalityEmployee.Text = cur_emp.Nationality.ToString();
+                //    dtpBirthday.Value.Date = cur_emp.DateOfBirth.;
+                txtNationalIDEmployee.Text = cur_emp.NationID.ToString();
+                txtEmailEmployee.Text = cur_emp.Email.ToString();
+                txtNationalIDEmployee.Text = cur_emp.NationID.ToString();
+                txtPhoneEmployee.Text = cur_emp.TeleNumber.ToString();
+                txtPositionEmployee.Text = cur_emp.Position.ToString();
+                if (cur_emp.Sex == true)
+                    rbMale.Checked = true;
+                else
+                    rbFelmale.Checked = true;
+            }
+        }
+
+        private void btnDeleteEmployee_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            Account account = new Account();
+            BUS_Employee busEmp = new BUS_Employee();
+            BUS_Account busAcc = new BUS_Account();
+            DAL_Account dalAccount = new DAL_Account();
+            DAL_Employee dalEmployee = new DAL_Employee();
+
+            if (String.IsNullOrEmpty(txtEmployeeID.Text))
+            {
+                MessageBox.Show("Please select Employee you want to delete");
+            }
+            else
+            {
+                if (MessageBox.Show("Do you want to delete this employee?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    if (dalEmployee.CheckExitEmployee(Int32.Parse(txtEmployeeID.Text)) == false)
+                    {
+                        MessageBox.Show("This employee not exit!");
+                    }
+                    else
+                    {
+                        if (busAcc.DeleteAccount(Int32.Parse(txtEmployeeID.Text)) == 1)
+                        {
+                            if (busEmp.DeleteEmployee(Int32.Parse(txtEmployeeID.Text)) == 1)
+                                MessageBox.Show("Delete Employee Successfully");
+                            else
+                                MessageBox.Show("Delete Employee Fail");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Fail, Something wrong");
+                        }
+
+                    }
+                }
+            }
+        }
+
+        private void btnUpdateEmployee_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            Account account = new Account();
+            BUS_Employee busEmp = new BUS_Employee();
+            BUS_Account busAcc = new BUS_Account();
+            DAL_Account dalAccount = new DAL_Account();
+            DAL_Employee dalEmployee = new DAL_Employee();
+
+            if (String.IsNullOrEmpty(txtEmployeeID.Text) || String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtUsernameEmployee.Text) || String.IsNullOrEmpty(txtPasswordEmployee.Text))
+            {
+                MessageBox.Show("Please enter all the information!");
+            }
+            else
+            {
+                employee.EmployeeID = Int32.Parse(txtEmployeeID.Text.Trim());
+                employee.Name = txtNameEmployee.Text.Trim();
+                employee.Address = txtAddressEmployee.Text.Trim();
+                employee.Nationality = txtNationalityEmployee.Text.Trim();
+                if (rbMale.Checked)
+                    employee.Sex = true;
+                else
+                    employee.Sex = false;
+                employee.DateOfBirth = dtpBirthdayEmployee.Value.Date;
+                employee.Email = txtEmailEmployee.Text.Trim();
+                employee.NationID = txtNationalIDEmployee.Text.Trim();
+                employee.TeleNumber = txtPhoneEmployee.Text.Trim();
+                employee.Position = txtPositionEmployee.Text.Trim();
+
+
+                if (busEmp.UpdateEmployee(employee) == 2)
+                {
+                    MessageBox.Show("EmployeeID not exit");
+                }
+                else
+                {
+                    if (busEmp.UpdateEmployee(employee) == 1)
+                    {
+                        account.EmployeeID = dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
+                        account.Username = txtUsernameEmployee.Text.Trim();
+                        account.Password = txtPasswordEmployee.Text.Trim();
+                        account.AccessLevel = false;
+                        dalAccount.UpdateAccount(account);
+
+                        MessageBox.Show("Update Employee successfully");
+                    }
+                    else
+                        MessageBox.Show("Something Wrong");
+                }
+
+            }
+        }
+        private void txtPasswordEmployee_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddJob_Click(object sender, EventArgs e)
+        {
+            BUS_Job busJob = new BUS_Job();
+            Job job = new Job();
+            if (String.IsNullOrEmpty(txtEmpIDJob.Text) || String.IsNullOrEmpty(txtFightIDJob.Text) || String.IsNullOrEmpty(txtJobDescription.Text) || cbStateJob.SelectedItem == null)
+            {
+                MessageBox.Show("Please enter all the information!");
+            }
+            else
+            {
+                job.AssignedDate = dtpAssignedDateJob.Value.Date;
+                job.EmployeeID = Int32.Parse(txtEmpIDJob.Text.Trim());
+                job.FlightID = Int32.Parse(txtFightIDJob.Text.Trim());
+                job.JobDescription = txtJobDescription.Text.Trim();
+                job.JobState = cbStateJob.Text;
+                if (busJob.AddJob(job) == 1)
+                {
+                    MessageBox.Show(" Add job successfull");
+                }
+                else
+                {
+                    if (busJob.AddJob(job) == 2)
+                    {
+                        MessageBox.Show("NOT EXIT FLIGHTID");
+                    }
+                    else
+                    {
+                        if (busJob.AddJob(job) == 3)
+                        {
+
+                        }
+                    }
+
+                }
+            }
 
         }
     }
-
-    //private void btnUpdateTicket_Click(object sender, EventArgs e)
-    //{
-    //    if (gvTicket.GetRow(gvTicket.FocusedRowHandle) != null)
-    //    {
-    //        Bill_Detail updated_ticket = (Bill_Detail) gvTicket.GetRow(gvTicket.FocusedRowHandle);
-    //        //Get flightID to update flight
-    //        //Get Seat and SeatClass to update seat, seatclass and total price
-    //        //Get Date to update booking date
-    //        String current_date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-    //        updated_ticket.BookingDate = DateTime.Parse(current_date);
-    //        MessageBox.Show(updated_ticket.BookingDate.ToString());
-    //        //Get Employee to update Employee in ticket
-
-    //        bTicket.updateTicket(updated_ticket);
-    //        gcTicket.DataSource = bTicket.getTicketsList();
-    //    }
-    //}
 }
