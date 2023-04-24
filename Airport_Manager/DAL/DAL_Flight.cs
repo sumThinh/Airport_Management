@@ -13,7 +13,7 @@ namespace DAL
             var list = new List<Flight>();
 
             using (var db = new AirportManager())
-                list = db.Flights.ToList();
+                list = db.Flights.Include("Bill_Detail").ToList();
 
 
             return list;

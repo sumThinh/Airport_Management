@@ -8,7 +8,7 @@ using DAL;
 
 namespace BUS
 {
-    internal class BUS_Ticket
+    public class BUS_Ticket
     {
         private static DAL_Ticket ticketbill = new DAL_Ticket();
 

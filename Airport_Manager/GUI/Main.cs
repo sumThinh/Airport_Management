@@ -20,6 +20,8 @@ using DevExpress.CodeParser;
 using LiveCharts;
 using LiveCharts.Wpf;
 using Separator = LiveCharts.Wpf.Separator;
+using DevExpress.Pdf;
+using DevExpress.XtraPrinting.Native.LayoutAdjustment;
 
 namespace GUI
 {
@@ -29,15 +31,17 @@ namespace GUI
         BUS_Plane planebus = new BUS_Plane();
         BUS_Flight flightbus = new BUS_Flight();
         BUS_Ticket bTicket = new BUS_Ticket();
-        Account current_account;
-        Employee current_employee;
+        private Account current_account;
+        private Employee current_employee;
+        private List<System.Windows.Forms.Label> listSeat = new List<System.Windows.Forms.Label>();
+        private System.Windows.Forms.Label current_seat;
 
         public Main(Account current_account, Employee current_employee)
         {
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
-            tabControls.SelectedPageIndex = 1;
+            listSeat = initSeatUI();
         }
 
         void Main_Load(object sender, EventArgs e)
@@ -52,7 +56,7 @@ namespace GUI
 
         void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            if (txtCustomerID.Text != null && !txtCustomerID.Text.IsEmptyOrSingle()
+            if (txtCustomerNationalID.Text != null && !txtCustomerNationalID.Text.IsEmptyOrSingle()
                && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
                && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
                && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
@@ -60,7 +64,7 @@ namespace GUI
                && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
                && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
             {
-                string customerID = txtCustomerID.Text.Trim();
+                string customerID = txtCustomerNationalID.Text.Trim();
                 string customerName = txtCustomerName.Text.Trim();
                 string customerEmail = txtCustomerEmail.Text.Trim();
                 string customerAddress = txtCustomerAddress.Text.Trim();
@@ -113,16 +117,15 @@ namespace GUI
 
         void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-
             if (e.Clicks == 2) //Send customer to ticket tab
             {
                 tabControls.SelectedPageIndex = 0;
                 Customer order_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                lbTicketsCustomerID.Text = order_customer.CustomerID.ToString();
+                lbTicketCustomerID.Text = order_customer.CustomerID.ToString();
                 lbTicketCustomerName.Text = order_customer.Name;
                 lbTicketCustomerAddress.Text = order_customer.Address;
                 lbTicketCustomerPhone.Text = order_customer.TeleNumber;
-                lbTicketCustomerNid.Text = order_customer.NationalID;
+                lbTicketCustomerNationalID.Text = order_customer.NationalID;
                 if (order_customer.Sex == true)
                 {
                     lbTicketCustomerSex.Text = "Nữ";
@@ -139,7 +142,8 @@ namespace GUI
                 if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
                 {
                     Customer cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                    txtCustomerID.Text = cur_customer.NationalID;
+                    txtCustomerID.Text = cur_customer.CustomerID.ToString();
+                    txtCustomerNationalID.Text = cur_customer.NationalID;
                     txtCustomerName.Text = cur_customer.Name;
                     txtCustomerAddress.Text = cur_customer.Address;
                     txtCustomerPhone.Text = cur_customer.TeleNumber;
@@ -163,7 +167,7 @@ namespace GUI
         {
             if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
             {
-                if (txtCustomerID.Text != null && !txtCustomerID.Text.IsEmptyOrSingle()
+                if (txtCustomerNationalID.Text != null && !txtCustomerNationalID.Text.IsEmptyOrSingle()
                && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
                && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
                && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
@@ -175,7 +179,7 @@ namespace GUI
                     var updated_customer = new Customer();
                     updated_customer.CustomerID = current_customer.CustomerID;
                     updated_customer.Name = txtCustomerName.Text.Trim();
-                    updated_customer.NationalID = txtCustomerID.Text.Trim();
+                    updated_customer.NationalID = txtCustomerNationalID.Text.Trim();
                     updated_customer.Email = txtCustomerEmail.Text.Trim();
                     updated_customer.Address = txtCustomerAddress.Text.Trim();
                     updated_customer.TeleNumber = txtCustomerPhone.Text.Trim();
@@ -788,6 +792,61 @@ namespace GUI
                 }
             }
 
+        }
+
+        // Ticket Controller
+        private List<System.Windows.Forms.Label> initSeatUI()
+        {
+            var labels = groupBoxSeat.Controls.OfType<System.Windows.Forms.Label>();
+            List<System.Windows.Forms.Label> seats = new List<System.Windows.Forms.Label>();
+            foreach (var label in labels)
+                if (label.Name.Substring(1, 2).All(char.IsDigit))
+                    seats.Add(label);
+            foreach (var seat in seats)
+            {
+                seat.ForeColor = Color.White;
+                seat.BackColor = Color.Gray;
+                seat.Click += new EventHandler(changeStageSeat);
+            }
+            current_seat = null;
+            return seats;
+        }
+
+        private void loadSeatFlight(Flight fl, int ticket_id)
+        {
+            current_seat = null;
+            List<Bill_Detail> listTicket = fl.Bill_Detail.ToList();
+            foreach (var seat in listSeat)
+            {
+                foreach (var t in listTicket)
+                {
+                    if (seat.Name.Equals(t.SeatNumber))
+                    {
+                        if (t.BillID == ticket_id)
+                        {
+                            seat.BackColor = Color.LightGreen;
+                            current_seat = seat;
+                            break;
+                        }
+                        seat.BackColor = Color.Red;
+                        break;
+                    }
+                    seat.BackColor = Color.Gray;
+                }
+            }
+
+        }
+
+        private void changeStageSeat(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Label chosen_seat = (System.Windows.Forms.Label)sender;
+            if (chosen_seat.BackColor != Color.Red)
+            {
+                if (current_seat != null)
+                    current_seat.BackColor = Color.Gray;
+                chosen_seat.BackColor = Color.LightGreen;
+                current_seat = chosen_seat;
+            }
         }
     }
 }

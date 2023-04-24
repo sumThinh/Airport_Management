@@ -24,7 +24,7 @@ namespace DTO
         public Nullable<int> BookingState { get; set; }
         public Nullable<decimal> TotalPrice { get; set; }
         public Nullable<System.DateTime> BookingDate { get; set; }
-    
+
         [Browsable(false)]
         public virtual Customer Customer { get; set; }
         [Browsable(false)]

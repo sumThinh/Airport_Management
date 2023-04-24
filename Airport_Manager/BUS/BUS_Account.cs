@@ -11,6 +11,8 @@ namespace BUS
 {
     public class BUS_Account
     {
+        DAL_Account dalAccount = new DAL_Account();
+
         public int AddAccount(Account acc)
         {
             DAL_Account dalAcc = new DAL_Account();
@@ -36,6 +38,10 @@ namespace BUS
                 return 1;
             else
                 return 0;
+        }
+
+        public Account isAutheticated(string username, string password) { 
+            return dalAccount.LoginTo(username, password);
         }
     }
 }

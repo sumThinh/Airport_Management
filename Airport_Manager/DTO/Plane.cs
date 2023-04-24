@@ -27,9 +27,10 @@ namespace DTO
         public int TotalSeat { get; set; }
         public string Manufacturer { get; set; }
         public int State { get; set; }
+
+        [Browsable(false)]
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [Browsable(false)]
         public virtual ICollection<Flight> Flights { get; set; }
     }
 }

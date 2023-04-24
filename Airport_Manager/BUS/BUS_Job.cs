@@ -13,7 +13,7 @@ namespace BUS
         public int AddJob(Job job)
         {
             DAL_Job dalJob = new DAL_Job();
-            if (dalJob.CheckExitEmployee(job.EmployeeID.Value) == true && dalJob.CheckExitFlight(job.FlightID.Value) == true)
+            if (dalJob.CheckExitEmployee(job.EmployeeID) == true && dalJob.CheckExitFlight(job.FlightID) == true)
             {
                 if(dalJob.AddJob(job)== true) 
                     return 1;   // EXITED Employee AND Fight
@@ -22,9 +22,9 @@ namespace BUS
             }
             else
             {
-                if (dalJob.CheckExitEmployee(job.EmployeeID.Value) == true)
+                if (dalJob.CheckExitEmployee(job.EmployeeID) == true)
                     return 2;   // NOT EXIT FLIGHTID
-                if (dalJob.CheckExitFlight(job.FlightID.Value) == true)
+                if (dalJob.CheckExitFlight(job.FlightID) == true)
                     return 3;   // NOT EXIT EMPLOYEEID
 
             }

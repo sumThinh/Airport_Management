@@ -97,5 +97,14 @@ namespace DAL
                 }
             }
         }
+
+        public Account LoginTo(string username, string password)
+        {
+            Account acc = new Account();
+            using(var db = new AirportManager()) { 
+                acc = db.Accounts.Where(a => a.Username.Equals(username) && a.Password.Equals(password)).Include("Employee").FirstOrDefault();
+            }
+            return acc;
+        }
     }
 }
