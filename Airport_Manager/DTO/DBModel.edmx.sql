@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/23/2023 14:54:37
--- Generated from EDMX file: D:\Code\AirportManagers\QLChuyenBay\DTO\DBModel.edmx
+-- Date Created: 04/24/2023 16:11:14
+-- Generated from EDMX file: D:\Code\Airport_Management\Airport_Manager\DTO\DBModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -146,11 +146,12 @@ GO
 
 -- Creating table 'Jobs'
 CREATE TABLE [dbo].[Jobs] (
+    [JobID] int IDENTITY(1,1) NOT NULL,
     [AssignedDate] datetime  NOT NULL,
-    [EmployeeID] int  NULL,
-    [FlightID] int  NULL,
+    [EmployeeID] int  NOT NULL,
+    [FlightID] int  NOT NULL,
     [JobDescription] nvarchar(20)  NULL,
-    [JobState] nvarchar(20)  NULL
+    [JobState] nvarchar(15)  NULL
 );
 GO
 
@@ -216,10 +217,10 @@ ADD CONSTRAINT [PK_Flights]
     PRIMARY KEY CLUSTERED ([FlightID] ASC);
 GO
 
--- Creating primary key on [AssignedDate] in table 'Jobs'
+-- Creating primary key on [JobID] in table 'Jobs'
 ALTER TABLE [dbo].[Jobs]
 ADD CONSTRAINT [PK_Jobs]
-    PRIMARY KEY CLUSTERED ([AssignedDate] ASC);
+    PRIMARY KEY CLUSTERED ([JobID] ASC);
 GO
 
 -- Creating primary key on [LocationID] in table 'Locations'

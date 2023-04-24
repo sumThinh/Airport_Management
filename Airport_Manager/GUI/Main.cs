@@ -733,7 +733,7 @@ namespace GUI
                 job.EmployeeID = Int32.Parse(txtEmpIDJob.Text.Trim());
                 job.FlightID = Int32.Parse(txtFightIDJob.Text.Trim());
                 job.JobDescription = txtJobDescription.Text.Trim();
-                job.JobState = cbStateJob.SelectedIndex.ToString();
+                job.JobState = cbStateJob.Text;
                 if (busJob.AddJob(job) == 1)
                 {
                     MessageBox.Show(" Add job successfull");
