@@ -55,6 +55,9 @@
     <Compile Include="DAL_Flight.cs" />
     <Compile Include="DAL_Plane.cs" />
     <Compile Include="DAL_Ticket.cs" />
+    <Compile Include="DAL_Account.cs" />
+    <Compile Include="DAL_Employee.cs" />
+    <Compile Include="DAL_Job.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
