@@ -29,7 +29,6 @@ namespace GUI
                 String password = txtPassword.Text.Trim();
             
             }
-            
 
             if (true)
             {

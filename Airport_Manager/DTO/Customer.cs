@@ -12,6 +12,7 @@ namespace DTO
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
 
     public partial class Customer
     {
@@ -26,6 +27,7 @@ namespace DTO
         public string Address { get; set; }
         public string Nationality { get; set; }
         public Nullable<bool> Sex { get; set; }
+        [DisplayFormat(DataFormatString = "dd-MM-yyyy HH:mm:ss")]
         public Nullable<System.DateTime> DateOfBirth { get; set; }
         public string NationalID { get; set; }
         public string Email { get; set; }

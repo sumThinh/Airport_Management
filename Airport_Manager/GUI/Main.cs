@@ -32,6 +32,7 @@ namespace GUI
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
+            tabControls.SelectedPageIndex = 1;
         }
 
         void Main_Load(object sender, EventArgs e)
@@ -520,42 +521,24 @@ namespace GUI
         void TabNavigationFlightPaint(object sender, PaintEventArgs e)
         {
             gridControlFlight.DataSource = flightbus.GetListFlights();
-                Bill_Detail ticket = (Bill_Detail)gvTicket.GetRow(gvTicket.FocusedRowHandle);
-                Customer order_customer = ticket.Customer;
-                lbTicketsCustomerID.Text = order_customer.CustomerID.ToString();
-                lbTicketCustomerName.Text = order_customer.Name;
-                lbTicketCustomerAddress.Text = order_customer.Address;
-                lbTicketCustomerPhone.Text = order_customer.TeleNumber;
-                lbTicketCustomerNid.Text = order_customer.NationalID;
-                if (order_customer.Sex == true)
-                {
-                    lbTicketCustomerSex.Text = "Nữ";
-                }
-                else
-                {
-                    lbTicketCustomerSex.Text = "Nam";
-                }
-                lbTicketCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
-
-            }
-        }
-
-        private void btnUpdateTicket_Click(object sender, EventArgs e)
-        {
-            if (gvTicket.GetRow(gvTicket.FocusedRowHandle) != null)
-            {
-                Bill_Detail updated_ticket = (Bill_Detail) gvTicket.GetRow(gvTicket.FocusedRowHandle);
-                //Get flightID to update flight
-                //Get Seat and SeatClass to update seat, seatclass and total price
-                //Get Date to update booking date
-                String current_date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                updated_ticket.BookingDate = DateTime.Parse(current_date);
-                MessageBox.Show(updated_ticket.BookingDate.ToString());
-                //Get Employee to update Employee in ticket
-
-                bTicket.updateTicket(updated_ticket);
-                gcTicket.DataSource = bTicket.getTicketsList();
-            }
         }
     }
+
+    //private void btnUpdateTicket_Click(object sender, EventArgs e)
+    //{
+    //    if (gvTicket.GetRow(gvTicket.FocusedRowHandle) != null)
+    //    {
+    //        Bill_Detail updated_ticket = (Bill_Detail) gvTicket.GetRow(gvTicket.FocusedRowHandle);
+    //        //Get flightID to update flight
+    //        //Get Seat and SeatClass to update seat, seatclass and total price
+    //        //Get Date to update booking date
+    //        String current_date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+    //        updated_ticket.BookingDate = DateTime.Parse(current_date);
+    //        MessageBox.Show(updated_ticket.BookingDate.ToString());
+    //        //Get Employee to update Employee in ticket
+
+    //        bTicket.updateTicket(updated_ticket);
+    //        gcTicket.DataSource = bTicket.getTicketsList();
+    //    }
+    //}
 }
