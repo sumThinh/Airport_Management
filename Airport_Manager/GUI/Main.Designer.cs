@@ -298,9 +298,9 @@
             ((System.ComponentModel.ISupportInitialize)(txtEmployeeID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(dgvEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(gvEmploy)).BeginInit();
-            tabNavigationPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(gridView4)).BeginInit();
+tabNavigationFlight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridControlFlight).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewFlight).BeginInit();
             groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textAirline.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textFlightID.Properties).BeginInit();
@@ -337,14 +337,7 @@
             tabControls.Location = new Point(0, 0);
             tabControls.Margin = new Padding(4, 2, 4, 2);
             tabControls.Name = "tabControls";
-            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
-            tabNavigationPage1,
-            tpCustomer,
-            tp,
-            tabNavigationFlight,
-            tabNavigationPage5,
-            tabNavigationPage6,
-            tabNavigationPage2});
+            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tabNavigationPage1, tpCustomer, tp, tabNavigationFlight, tabNavigationPage5, tabNavigationPage6 });
             tabControls.RegularSize = new System.Drawing.Size(1940, 526);
             tabControls.SelectedPage = tabNavigationPage1;
             tabControls.Size = new System.Drawing.Size(1940, 526);
@@ -1306,36 +1299,36 @@
             btnAddEmployee.TabIndex = 19;
             btnAddEmployee.Text = "Add";
             btnAddEmployee.Click += new System.EventHandler(btnAddEmployee_Click);
-            // 
-            // simpleButton3
-            // 
-            simpleButton3.Anchor = AnchorStyles.Right;
-            simpleButton3.Location = new Point(668, 188);
-            simpleButton3.Margin = new Padding(4, 2, 4, 2);
-            simpleButton3.Name = "simpleButton3";
-            simpleButton3.Size = new Size(118, 36);
-            simpleButton3.TabIndex = 21;
-            simpleButton3.Text = "Delete";
-            // 
-            // simpleButton2
-            // 
-            simpleButton2.Anchor = AnchorStyles.Right;
-            simpleButton2.Location = new Point(457, 188);
-            simpleButton2.Margin = new Padding(4, 2, 4, 2);
-            simpleButton2.Name = "simpleButton2";
-            simpleButton2.Size = new Size(118, 36);
-            simpleButton2.TabIndex = 20;
-            simpleButton2.Text = "Update";
-            // 
-            // simpleButton1
-            // 
-            simpleButton1.Anchor = AnchorStyles.Right;
-            simpleButton1.Location = new Point(244, 188);
-            simpleButton1.Margin = new Padding(4, 2, 4, 2);
-            simpleButton1.Name = "simpleButton1";
-            simpleButton1.Size = new Size(118, 36);
-            simpleButton1.TabIndex = 19;
-            simpleButton1.Text = "Add";
+            //// 
+            //// simpleButton3
+            //// 
+            //simpleButton3.Anchor = AnchorStyles.Right;
+            //simpleButton3.Location = new Point(668, 188);
+            //simpleButton3.Margin = new Padding(4, 2, 4, 2);
+            //simpleButton3.Name = "simpleButton3";
+            //simpleButton3.Size = new Size(118, 36);
+            //simpleButton3.TabIndex = 21;
+            //simpleButton3.Text = "Delete";
+            //// 
+            //// simpleButton2
+            //// 
+            //simpleButton2.Anchor = AnchorStyles.Right;
+            //simpleButton2.Location = new Point(457, 188);
+            //simpleButton2.Margin = new Padding(4, 2, 4, 2);
+            //simpleButton2.Name = "simpleButton2";
+            //simpleButton2.Size = new Size(118, 36);
+            //simpleButton2.TabIndex = 20;
+            //simpleButton2.Text = "Update";
+            //// 
+            //// simpleButton1
+            //// 
+            //simpleButton1.Anchor = AnchorStyles.Right;
+            //simpleButton1.Location = new Point(244, 188);
+            //simpleButton1.Margin = new Padding(4, 2, 4, 2);
+            //simpleButton1.Name = "simpleButton1";
+            //simpleButton1.Size = new Size(118, 36);
+            //simpleButton1.TabIndex = 19;
+            //simpleButton1.Text = "Add";
             // 
             // label9
             // 
@@ -2950,7 +2943,7 @@
             ((System.ComponentModel.ISupportInitialize)(txtEmployeeID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(dgvEmployee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(gvEmploy)).EndInit();
-            tabNavigationPage4.ResumeLayout(false);
+            tabNavigationFlight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gridControlFlight).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridViewFlight).EndInit();
             groupBox6.ResumeLayout(false);
@@ -2991,7 +2984,7 @@
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
         private DevExpress.XtraGrid.GridControl dgvEmployee;
         private DevExpress.XtraGrid.Views.Grid.GridView gvEmploy;
-        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage4;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationFlight;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage5;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage6;
         private GroupBox groupBox2;
@@ -3123,11 +3116,6 @@
         private DateTimePicker timeDepartPicker;
         private DevExpress.XtraEditors.TextEdit textEdit22;
         private Label label46;
-        private DevExpress.XtraEditors.TextEdit textEdit25;
-        private DevExpress.XtraEditors.TextEdit textEdit24;
-        private DevExpress.XtraEditors.TextEdit textEdit23;
-        private DevExpress.XtraGrid.GridControl gridControl3;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
         private DevExpress.XtraEditors.TextEdit txtPositionEmployee;
         private Label labelPosision;
         private DevExpress.XtraEditors.TextEdit txtUsernameEmployee;
