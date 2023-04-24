@@ -1,7 +1,11 @@
 ﻿using DTO;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,6 +53,16 @@ namespace DAL
         public bool deleteTicket(Bill_Detail deleted_ticket) 
         {
             return true;
+        }
+
+        public List<Bill_Detail> getTicketListByDate(DateTime date) {
+            List<Bill_Detail> tickets = new List<Bill_Detail>();
+            using(var db = new AirportManager())
+            {
+                tickets = db.Bill_Detail.Where(c => DbFunctions.TruncateTime(c.BookingDate) == date).ToList();
+            }
+            return tickets; 
+
         }
     }
 }

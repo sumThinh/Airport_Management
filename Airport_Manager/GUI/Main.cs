@@ -16,6 +16,7 @@ using System.Runtime.Serialization;
 using System.Globalization;
 using DevExpress.Charts.Native;
 using DevExpress.CodeParser;
+using LiveCharts;
 
 namespace GUI
 {
@@ -24,6 +25,7 @@ namespace GUI
         BUS_Customer bCustomer = new BUS_Customer();
         BUS_Plane planebus = new BUS_Plane();
         BUS_Flight flightbus = new BUS_Flight();
+        BUS_Ticket bTicket = new BUS_Ticket();
         Account current_account;
         Employee current_employee;
 
@@ -521,6 +523,18 @@ namespace GUI
         void TabNavigationFlightPaint(object sender, PaintEventArgs e)
         {
             gridControlFlight.DataSource = flightbus.GetListFlights();
+        }
+
+        private void tpStatistics_Paint(object sender, PaintEventArgs e)
+        {
+            Func<ChartPoint, String> lablePoint = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
+            DateTime date = new DateTime(2023, 04, 23);
+            List<Bill_Detail> list = bTicket.getTicketListByDate(date);
+
+            SeriesCollection series = new SeriesCollection();
+            MessageBox.Show($"{list.Count(t => t.SeatClass == true )}");
+            
+            
         }
     }
 
