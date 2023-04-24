@@ -30,5 +30,20 @@ namespace BUS
             }
             return 0;
         }
+
+        public int UpdateJob(Job job)
+        {
+            DAL_Job dalJob = new DAL_Job();
+            if (dalJob.CheckExitJob(job) == true)
+            {
+                if (dalJob.UpdateJob(job) == true)
+                    return 1;
+                else
+                    return 0;
+            }
+            else
+                return 2;
+
+        }
     }
 }

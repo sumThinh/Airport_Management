@@ -146,6 +146,19 @@ namespace GUI
                     rbFelmale.Checked= true;
             }    
         }
+        private void gvJob_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (gvJob.GetRow(gvJob.FocusedRowHandle) != null)
+            {
+                Job cur_job = (Job)gvJob.GetRow(gvJob.FocusedRowHandle);
+                dtpAssignedDateJob.Text = cur_job.AssignedDate.ToString();
+                txtEmpIDJob.Text = cur_job.EmployeeID.ToString();
+                txtFightIDJob.Text = cur_job.FlightID.ToString();
+                txtJobDescription.Text = cur_job.JobDescription.ToString();
+                cbStateJob.Text= cur_job.JobState.ToString();
+                
+            }
+        }
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
@@ -264,10 +277,11 @@ namespace GUI
                 job.EmployeeID = Int32.Parse(txtEmpIDJob.Text.Trim());
                 job.FlightID = Int32.Parse(txtFightIDJob.Text.Trim());
                 job.JobDescription = txtJobDescription.Text.Trim();
-                job.JobState = cbStateJob.SelectedIndex.ToString();
+                job.JobState = cbStateJob.Text.Trim();
                 if (busJob.AddJob(job) == 1)
                 {
                     MessageBox.Show(" Add job successfull");
+                    LoadDataGridViewJob();
                 }
                 else
                 {
@@ -279,13 +293,45 @@ namespace GUI
                     {
                         if (busJob.AddJob(job) == 3)
                         {
-
+                            MessageBox.Show("NOT EXIT EMPLOYEEID");
                         }
+                        else
+                            MessageBox.Show("Something wrong");
                     }
 
                 }
             }
                 
         }
+
+        private void btnUpdateJob_Click(object sender, EventArgs e)
+        {
+            Job job = new Job();
+            BUS_Job busJob = new BUS_Job();
+            job.AssignedDate = dtpAssignedDateJob.Value.Date;
+            job.EmployeeID = Int32.Parse(txtEmpIDJob.Text.Trim());
+            job.FlightID = Int32.Parse(txtFightIDJob.Text.Trim());
+            job.JobDescription = txtJobDescription.Text.Trim();
+            job.JobState = cbStateJob.Text.Trim();
+            if(busJob.UpdateJob(job) == 1)
+            {
+                MessageBox.Show("Update Job Successfully");
+                LoadDataGridViewJob();  
+            }
+            else
+            {
+                if(busJob.UpdateJob(job) == 2)
+                {
+                    MessageBox.Show("Job Not Exited");
+                }
+                else
+                {
+                    MessageBox.Show("Update Job Fail");
+                }
+
+            }
+        }
+
+       
     }
 }

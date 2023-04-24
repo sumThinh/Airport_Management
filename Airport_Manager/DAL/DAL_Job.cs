@@ -46,14 +46,14 @@ namespace DAL
                             select fly;
                 foreach (var id in query)
                 {
-                    if (id.PlaneID == flightID)
+                    if (id.FlightID == flightID)
                         return true;
                 }
                 return false;
             }
         }
 
-        public bool UpdateEmployee(Job job)
+        public bool UpdateJob(Job job)
         {
             using (AirportManager db = new AirportManager())
             {
@@ -66,6 +66,22 @@ namespace DAL
                         return false;
                 }
             }
+        }
+
+        public bool CheckExitJob(Job job)
+        {
+            using (AirportManager db = new AirportManager())
+            {
+                var query = from j in db.Jobs
+                            where j.EmployeeID == job.EmployeeID && j.FlightID == job.FlightID && j.AssignedDate == job.AssignedDate
+                            select j;
+                foreach (var e in query)
+                {
+                    if (e.EmployeeID == job.EmployeeID && e.FlightID == job.FlightID && e.AssignedDate == job.AssignedDate)
+                        return true;
+                }
+            }
+            return false;
         }
     }
 }
