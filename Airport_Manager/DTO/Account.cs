@@ -11,7 +11,8 @@ namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Account
     {
         public int EmployeeID { get; set; }
@@ -19,6 +20,7 @@ namespace DTO
         public string Password { get; set; }
         public Nullable<bool> AccessLevel { get; set; }
     
+        [Browsable(false)]
         public virtual Employee Employee { get; set; }
     }
 }

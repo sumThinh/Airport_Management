@@ -13,6 +13,12 @@ using System.Windows.Forms;
 using BUS;
 using DevExpress.Mvvm.Native;
 using System.Globalization;
+using System.Windows.Controls;
+using System.Runtime.Serialization;
+using DevExpress.Charts.Native;
+using DevExpress.CodeParser;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace GUI
 {
@@ -21,6 +27,7 @@ namespace GUI
         BUS_Customer bCustomer = new BUS_Customer();
         BUS_Plane planebus = new BUS_Plane();
         BUS_Flight flightbus = new BUS_Flight();
+        BUS_Ticket bTicket = new BUS_Ticket();
         Account current_account;
         Employee current_employee;
 
@@ -29,6 +36,7 @@ namespace GUI
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
+            tabControls.SelectedPageIndex = 1;
         }
 
         void Main_Load(object sender, EventArgs e)
@@ -51,13 +59,13 @@ namespace GUI
                && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
                && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
             {
-                var customerID = txtCustomerID.Text.Trim();
-                var customerName = txtCustomerName.Text.Trim();
-                var customerEmail = txtCustomerEmail.Text.Trim();
-                var customerAddress = txtCustomerAddress.Text.Trim();
-                var customerPhone = txtCustomerPhone.Text.Trim();
-                var customerDate = dtpCustomerDate.Value.ToString("dd/MM/yyyy");
-                var customerNationality = txtCustomerNationality.Text.Trim();
+                string customerID = txtCustomerID.Text.Trim();
+                string customerName = txtCustomerName.Text.Trim();
+                string customerEmail = txtCustomerEmail.Text.Trim();
+                string customerAddress = txtCustomerAddress.Text.Trim();
+                string customerPhone = txtCustomerPhone.Text.Trim();
+                string customerDate = dtpCustomerDate.Value.ToString("dd/MM/yyyy");
+                string customerNationality = txtCustomerNationality.Text.Trim();
                 bool? customerSex;
 
                 if (rbCustomerFemale.Checked)
@@ -69,7 +77,7 @@ namespace GUI
                     customerSex = false;
                 }
 
-                var customer = new Customer();
+                Customer customer = new Customer();
                 customer.NationalID = customerID;
                 customer.Name = customerName;
                 customer.Email = customerEmail;
@@ -733,7 +741,7 @@ namespace GUI
                 job.EmployeeID = Int32.Parse(txtEmpIDJob.Text.Trim());
                 job.FlightID = Int32.Parse(txtFightIDJob.Text.Trim());
                 job.JobDescription = txtJobDescription.Text.Trim();
-                job.JobState = cbStateJob.SelectedIndex.ToString();
+                job.JobState = cbStateJob.Text;
                 if (busJob.AddJob(job) == 1)
                 {
                     MessageBox.Show(" Add job successfull");

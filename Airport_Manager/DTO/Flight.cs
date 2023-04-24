@@ -11,6 +11,7 @@ namespace DTO
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class Flight
     {
@@ -23,17 +24,22 @@ namespace DTO
     
         public int FlightID { get; set; }
         public int PlaneID { get; set; }
-        public int Departure { get; set; }
-        public System.DateTime DateOfDeparture { get; set; }
+        public int Departure { get; set; }  
+        public DateTime DateOfDeparture { get; set; }
         public int Destination { get; set; }
         public string Airline { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [Browsable(false)]
         public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
+        [Browsable(false)]
         public virtual Plane Plane { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [Browsable(false)]
         public virtual ICollection<Job> Jobs { get; set; }
+        [Browsable(false)]
         public virtual Location Location { get; set; }
+        [Browsable(false)]
         public virtual Location Location1 { get; set; }
     }
 }
