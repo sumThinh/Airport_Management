@@ -15,7 +15,6 @@ namespace DAL
             using (var db = new AirportManager())
                 list = db.Flights.Include("Bill_Detail").ToList();
 
-
             return list;
         }
 
@@ -26,6 +25,15 @@ namespace DAL
             using (var db = new AirportManager())
                 list = db.Locations.ToList();
 
+            return list;
+        }
+
+        public List<Flight> LoadFlightwLoca(int id1, int id2)
+        {
+            var list = new List<Flight>();
+
+            using (var db = new AirportManager())
+                list = (from d in db.Flights where d.Destination == id1 & d.Departure == id2 select d).ToList();
 
             return list;
         }
