@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,5 +24,12 @@ namespace BUS
         {
             return ticketbill.RemoveTicket(tick.BillID);
         }
+
+        public List<Bill_Detail> getTicketListByDate(DateTime date)
+        {
+            return dalTicket.getTicketListByDate(date);
+        }
     }
 }
+
+
