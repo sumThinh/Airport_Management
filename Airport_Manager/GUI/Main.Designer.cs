@@ -430,7 +430,7 @@
             this.G10.Name = ("G10");
             this.G10.Size = (new global::System.Drawing.Size(29, 16));
             this.G10.TabIndex = (61);
-            this.G10.Text = ("G00");
+            this.G10.Text = ("G10");
             // 
             // F10
             // 
@@ -439,7 +439,7 @@
             this.F10.Name = ("F10");
             this.F10.Size = (new global::System.Drawing.Size(28, 16));
             this.F10.TabIndex = (60);
-            this.F10.Text = ("F00");
+            this.F10.Text = ("F10");
             // 
             // E10
             // 
@@ -448,7 +448,7 @@
             this.E10.Name = ("E10");
             this.E10.Size = (new global::System.Drawing.Size(28, 16));
             this.E10.TabIndex = (59);
-            this.E10.Text = ("E00");
+            this.E10.Text = ("E10");
             // 
             // D10
             // 
@@ -457,7 +457,7 @@
             this.D10.Name = ("D10");
             this.D10.Size = (new global::System.Drawing.Size(29, 16));
             this.D10.TabIndex = (58);
-            this.D10.Text = ("D00");
+            this.D10.Text = ("D10");
             // 
             // C10
             // 
@@ -466,7 +466,7 @@
             this.C10.Name = ("C10");
             this.C10.Size = (new global::System.Drawing.Size(29, 16));
             this.C10.TabIndex = (57);
-            this.C10.Text = ("C00");
+            this.C10.Text = ("C10");
             // 
             // G09
             // 
@@ -475,7 +475,7 @@
             this.G09.Name = ("G09");
             this.G09.Size = (new global::System.Drawing.Size(29, 16));
             this.G09.TabIndex = (56);
-            this.G09.Text = ("G00");
+            this.G09.Text = ("G09");
             // 
             // F09
             // 
@@ -484,7 +484,7 @@
             this.F09.Name = ("F09");
             this.F09.Size = (new global::System.Drawing.Size(28, 16));
             this.F09.TabIndex = (55);
-            this.F09.Text = ("F00");
+            this.F09.Text = ("F09");
             // 
             // E09
             // 
@@ -493,7 +493,7 @@
             this.E09.Name = ("E09");
             this.E09.Size = (new global::System.Drawing.Size(28, 16));
             this.E09.TabIndex = (54);
-            this.E09.Text = ("E00");
+            this.E09.Text = ("E09");
             // 
             // D09
             // 
@@ -502,7 +502,7 @@
             this.D09.Name = ("D09");
             this.D09.Size = (new global::System.Drawing.Size(29, 16));
             this.D09.TabIndex = (53);
-            this.D09.Text = ("D00");
+            this.D09.Text = ("D09");
             // 
             // C09
             // 
@@ -511,7 +511,7 @@
             this.C09.Name = ("C09");
             this.C09.Size = (new global::System.Drawing.Size(29, 16));
             this.C09.TabIndex = (52);
-            this.C09.Text = ("C00");
+            this.C09.Text = ("C09");
             // 
             // G08
             // 
@@ -520,7 +520,7 @@
             this.G08.Name = ("G08");
             this.G08.Size = (new global::System.Drawing.Size(29, 16));
             this.G08.TabIndex = (51);
-            this.G08.Text = ("G00");
+            this.G08.Text = ("G08");
             // 
             // F08
             // 
@@ -529,7 +529,7 @@
             this.F08.Name = ("F08");
             this.F08.Size = (new global::System.Drawing.Size(28, 16));
             this.F08.TabIndex = (50);
-            this.F08.Text = ("F00");
+            this.F08.Text = ("F08");
             // 
             // E08
             // 
@@ -538,7 +538,7 @@
             this.E08.Name = ("E08");
             this.E08.Size = (new global::System.Drawing.Size(28, 16));
             this.E08.TabIndex = (49);
-            this.E08.Text = ("E00");
+            this.E08.Text = ("E08");
             // 
             // D08
             // 
@@ -547,7 +547,7 @@
             this.D08.Name = ("D08");
             this.D08.Size = (new global::System.Drawing.Size(29, 16));
             this.D08.TabIndex = (48);
-            this.D08.Text = ("D00");
+            this.D08.Text = ("D08");
             // 
             // C08
             // 
@@ -556,7 +556,7 @@
             this.C08.Name = ("C08");
             this.C08.Size = (new global::System.Drawing.Size(29, 16));
             this.C08.TabIndex = (47);
-            this.C08.Text = ("C00");
+            this.C08.Text = ("C08");
             // 
             // G07
             // 
@@ -565,7 +565,7 @@
             this.G07.Name = ("G07");
             this.G07.Size = (new global::System.Drawing.Size(29, 16));
             this.G07.TabIndex = (46);
-            this.G07.Text = ("G00");
+            this.G07.Text = ("G07");
             // 
             // F07
             // 
@@ -574,7 +574,7 @@
             this.F07.Name = ("F07");
             this.F07.Size = (new global::System.Drawing.Size(28, 16));
             this.F07.TabIndex = (45);
-            this.F07.Text = ("F00");
+            this.F07.Text = ("F07");
             // 
             // E07
             // 
@@ -583,7 +583,7 @@
             this.E07.Name = ("E07");
             this.E07.Size = (new global::System.Drawing.Size(28, 16));
             this.E07.TabIndex = (44);
-            this.E07.Text = ("E00");
+            this.E07.Text = ("E07");
             // 
             // D07
             // 
@@ -592,7 +592,7 @@
             this.D07.Name = ("D07");
             this.D07.Size = (new global::System.Drawing.Size(29, 16));
             this.D07.TabIndex = (43);
-            this.D07.Text = ("D00");
+            this.D07.Text = ("D07");
             // 
             // C07
             // 
@@ -601,7 +601,7 @@
             this.C07.Name = ("C07");
             this.C07.Size = (new global::System.Drawing.Size(29, 16));
             this.C07.TabIndex = (42);
-            this.C07.Text = ("C00");
+            this.C07.Text = ("C07");
             // 
             // G06
             // 
@@ -610,7 +610,7 @@
             this.G06.Name = ("G06");
             this.G06.Size = (new global::System.Drawing.Size(29, 16));
             this.G06.TabIndex = (41);
-            this.G06.Text = ("G00");
+            this.G06.Text = ("G06");
             // 
             // F06
             // 
@@ -619,7 +619,7 @@
             this.F06.Name = ("F06");
             this.F06.Size = (new global::System.Drawing.Size(28, 16));
             this.F06.TabIndex = (40);
-            this.F06.Text = ("F00");
+            this.F06.Text = ("F06");
             // 
             // E06
             // 
@@ -628,7 +628,7 @@
             this.E06.Name = ("E06");
             this.E06.Size = (new global::System.Drawing.Size(28, 16));
             this.E06.TabIndex = (39);
-            this.E06.Text = ("E00");
+            this.E06.Text = ("E06");
             // 
             // D06
             // 
@@ -637,7 +637,7 @@
             this.D06.Name = ("D06");
             this.D06.Size = (new global::System.Drawing.Size(29, 16));
             this.D06.TabIndex = (38);
-            this.D06.Text = ("D00");
+            this.D06.Text = ("D06");
             // 
             // C06
             // 
@@ -646,7 +646,7 @@
             this.C06.Name = ("C06");
             this.C06.Size = (new global::System.Drawing.Size(29, 16));
             this.C06.TabIndex = (37);
-            this.C06.Text = ("C00");
+            this.C06.Text = ("C06");
             // 
             // G05
             // 
@@ -655,7 +655,7 @@
             this.G05.Name = ("G05");
             this.G05.Size = (new global::System.Drawing.Size(29, 16));
             this.G05.TabIndex = (36);
-            this.G05.Text = ("G00");
+            this.G05.Text = ("G05");
             // 
             // F05
             // 
@@ -664,7 +664,7 @@
             this.F05.Name = ("F05");
             this.F05.Size = (new global::System.Drawing.Size(28, 16));
             this.F05.TabIndex = (35);
-            this.F05.Text = ("F00");
+            this.F05.Text = ("F05");
             // 
             // E05
             // 
@@ -673,7 +673,7 @@
             this.E05.Name = ("E05");
             this.E05.Size = (new global::System.Drawing.Size(28, 16));
             this.E05.TabIndex = (34);
-            this.E05.Text = ("E00");
+            this.E05.Text = ("E05");
             // 
             // D05
             // 
@@ -682,7 +682,7 @@
             this.D05.Name = ("D05");
             this.D05.Size = (new global::System.Drawing.Size(29, 16));
             this.D05.TabIndex = (33);
-            this.D05.Text = ("D00");
+            this.D05.Text = ("D05");
             // 
             // C05
             // 
@@ -691,7 +691,7 @@
             this.C05.Name = ("C05");
             this.C05.Size = (new global::System.Drawing.Size(29, 16));
             this.C05.TabIndex = (32);
-            this.C05.Text = ("C00");
+            this.C05.Text = ("C05");
             // 
             // G04
             // 
@@ -700,7 +700,7 @@
             this.G04.Name = ("G04");
             this.G04.Size = (new global::System.Drawing.Size(29, 16));
             this.G04.TabIndex = (31);
-            this.G04.Text = ("G00");
+            this.G04.Text = ("G04");
             // 
             // F04
             // 
@@ -709,7 +709,7 @@
             this.F04.Name = ("F04");
             this.F04.Size = (new global::System.Drawing.Size(28, 16));
             this.F04.TabIndex = (30);
-            this.F04.Text = ("F00");
+            this.F04.Text = ("F04");
             // 
             // E04
             // 
@@ -718,7 +718,7 @@
             this.E04.Name = ("E04");
             this.E04.Size = (new global::System.Drawing.Size(28, 16));
             this.E04.TabIndex = (29);
-            this.E04.Text = ("E00");
+            this.E04.Text = ("E04");
             // 
             // D04
             // 
@@ -727,7 +727,7 @@
             this.D04.Name = ("D04");
             this.D04.Size = (new global::System.Drawing.Size(29, 16));
             this.D04.TabIndex = (28);
-            this.D04.Text = ("D00");
+            this.D04.Text = ("D04");
             // 
             // C04
             // 
@@ -736,7 +736,7 @@
             this.C04.Name = ("C04");
             this.C04.Size = (new global::System.Drawing.Size(29, 16));
             this.C04.TabIndex = (27);
-            this.C04.Text = ("C00");
+            this.C04.Text = ("C04");
             // 
             // G03
             // 
@@ -745,7 +745,7 @@
             this.G03.Name = ("G03");
             this.G03.Size = (new global::System.Drawing.Size(29, 16));
             this.G03.TabIndex = (26);
-            this.G03.Text = ("G00");
+            this.G03.Text = ("G03");
             // 
             // F03
             // 
@@ -754,7 +754,7 @@
             this.F03.Name = ("F03");
             this.F03.Size = (new global::System.Drawing.Size(28, 16));
             this.F03.TabIndex = (25);
-            this.F03.Text = ("F00");
+            this.F03.Text = ("F03");
             // 
             // E03
             // 
@@ -763,7 +763,7 @@
             this.E03.Name = ("E03");
             this.E03.Size = (new global::System.Drawing.Size(28, 16));
             this.E03.TabIndex = (24);
-            this.E03.Text = ("E00");
+            this.E03.Text = ("E03");
             // 
             // D03
             // 
@@ -772,7 +772,7 @@
             this.D03.Name = ("D03");
             this.D03.Size = (new global::System.Drawing.Size(29, 16));
             this.D03.TabIndex = (23);
-            this.D03.Text = ("D00");
+            this.D03.Text = ("D03");
             // 
             // C03
             // 
@@ -781,7 +781,7 @@
             this.C03.Name = ("C03");
             this.C03.Size = (new global::System.Drawing.Size(29, 16));
             this.C03.TabIndex = (22);
-            this.C03.Text = ("C00");
+            this.C03.Text = ("C03");
             // 
             // G02
             // 
@@ -790,7 +790,7 @@
             this.G02.Name = ("G02");
             this.G02.Size = (new global::System.Drawing.Size(29, 16));
             this.G02.TabIndex = (21);
-            this.G02.Text = ("G00");
+            this.G02.Text = ("G02");
             // 
             // F02
             // 
@@ -799,7 +799,7 @@
             this.F02.Name = ("F02");
             this.F02.Size = (new global::System.Drawing.Size(28, 16));
             this.F02.TabIndex = (20);
-            this.F02.Text = ("F00");
+            this.F02.Text = ("F02");
             // 
             // E02
             // 
@@ -808,7 +808,7 @@
             this.E02.Name = ("E02");
             this.E02.Size = (new global::System.Drawing.Size(28, 16));
             this.E02.TabIndex = (19);
-            this.E02.Text = ("E00");
+            this.E02.Text = ("E02");
             // 
             // D02
             // 
@@ -817,7 +817,7 @@
             this.D02.Name = ("D02");
             this.D02.Size = (new global::System.Drawing.Size(29, 16));
             this.D02.TabIndex = (18);
-            this.D02.Text = ("D00");
+            this.D02.Text = ("D02");
             // 
             // C02
             // 
@@ -826,7 +826,7 @@
             this.C02.Name = ("C02");
             this.C02.Size = (new global::System.Drawing.Size(29, 16));
             this.C02.TabIndex = (17);
-            this.C02.Text = ("C00");
+            this.C02.Text = ("C02");
             // 
             // G01
             // 
@@ -835,7 +835,7 @@
             this.G01.Name = ("G01");
             this.G01.Size = (new global::System.Drawing.Size(29, 16));
             this.G01.TabIndex = (16);
-            this.G01.Text = ("G00");
+            this.G01.Text = ("G01");
             // 
             // F01
             // 
@@ -844,7 +844,7 @@
             this.F01.Name = ("F01");
             this.F01.Size = (new global::System.Drawing.Size(28, 16));
             this.F01.TabIndex = (15);
-            this.F01.Text = ("F00");
+            this.F01.Text = ("F01");
             // 
             // E01
             // 
@@ -853,7 +853,7 @@
             this.E01.Name = ("E01");
             this.E01.Size = (new global::System.Drawing.Size(28, 16));
             this.E01.TabIndex = (14);
-            this.E01.Text = ("E00");
+            this.E01.Text = ("E01");
             // 
             // D01
             // 
@@ -862,7 +862,7 @@
             this.D01.Name = ("D01");
             this.D01.Size = (new global::System.Drawing.Size(29, 16));
             this.D01.TabIndex = (13);
-            this.D01.Text = ("D00");
+            this.D01.Text = ("D01");
             // 
             // C01
             // 
@@ -871,7 +871,7 @@
             this.C01.Name = ("C01");
             this.C01.Size = (new global::System.Drawing.Size(29, 16));
             this.C01.TabIndex = (12);
-            this.C01.Text = ("C00");
+            this.C01.Text = ("C01");
             // 
             // B05
             // 
@@ -880,7 +880,7 @@
             this.B05.Name = ("B05");
             this.B05.Size = (new global::System.Drawing.Size(28, 16));
             this.B05.TabIndex = (11);
-            this.B05.Text = ("B00");
+            this.B05.Text = ("B05");
             // 
             // B04
             // 
@@ -889,7 +889,7 @@
             this.B04.Name = ("B04");
             this.B04.Size = (new global::System.Drawing.Size(28, 16));
             this.B04.TabIndex = (10);
-            this.B04.Text = ("B00");
+            this.B04.Text = ("B04");
             // 
             // B03
             // 
@@ -898,7 +898,7 @@
             this.B03.Name = ("B03");
             this.B03.Size = (new global::System.Drawing.Size(28, 16));
             this.B03.TabIndex = (9);
-            this.B03.Text = ("B00");
+            this.B03.Text = ("B03");
             // 
             // B02
             // 
@@ -925,7 +925,7 @@
             this.A05.Name = ("A05");
             this.A05.Size = (new global::System.Drawing.Size(29, 16));
             this.A05.TabIndex = (6);
-            this.A05.Text = ("A00");
+            this.A05.Text = ("A05");
             // 
             // A04
             // 
@@ -934,7 +934,7 @@
             this.A04.Name = ("A04");
             this.A04.Size = (new global::System.Drawing.Size(29, 16));
             this.A04.TabIndex = (5);
-            this.A04.Text = ("A00");
+            this.A04.Text = ("A04");
             // 
             // A03
             // 
@@ -943,7 +943,7 @@
             this.A03.Name = ("A03");
             this.A03.Size = (new global::System.Drawing.Size(29, 16));
             this.A03.TabIndex = (4);
-            this.A03.Text = ("A00");
+            this.A03.Text = ("A03");
             // 
             // A02
             // 
