@@ -12,6 +12,11 @@ namespace BUS
 
         public List<Location> GetLocations() => flights.LoadLocationsToBox();
 
+        public List<Flight> GetDatebyLocations(int i1, int i2)
+        {
+            return flights.LoadFlightwLoca(i1, i2);
+        }
+
         public bool AddFlights(Flight flight)
         {
             return flights.AddFlight(flight.PlaneID, flight.Departure, flight.Destination, flight.DateOfDeparture, flight.Airline);

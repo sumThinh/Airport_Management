@@ -18,7 +18,7 @@ namespace DAL
             return list;
         }
 
-        public bool AddPlane(string model, string registration, int totalSeat, string manufacturer, int state)
+        public bool AddPlane(string model, string registration, int? totalSeat, string manufacturer, int? state)
         {
             using (var db = new AirportManager())
             {
@@ -28,7 +28,7 @@ namespace DAL
             }
         }
 
-        public bool UpdatePlane(int id, string model, string registration, int totalSeat, string manufacturer, int state)
+        public bool UpdatePlane(int id, string model, string registration, int? totalSeat, string manufacturer, int? state)
         {
             using (var db = new AirportManager())
             {

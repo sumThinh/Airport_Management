@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/23/2023 14:54:37
--- Generated from EDMX file: D:\Code\AirportManagers\QLChuyenBay\DTO\DBModel.edmx
+-- Date Created: 04/24/2023 21:35:00
+-- Generated from EDMX file: D:\Code\Airport_Management\Airport_Manager\DTO\DBModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -26,17 +26,17 @@ GO
 IF OBJECT_ID(N'[dbo].[FK__Bill_Deta__Fligh__440B1D61]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Bill_Detail] DROP CONSTRAINT [FK__Bill_Deta__Fligh__440B1D61];
 GO
-IF OBJECT_ID(N'[dbo].[FK__Flight__Airline__403A8C7D]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Flights] DROP CONSTRAINT [FK__Flight__Airline__403A8C7D];
+IF OBJECT_ID(N'[dbo].[FK_Bill_Detail_Employees]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Bill_Detail] DROP CONSTRAINT [FK_Bill_Detail_Employees];
 GO
 IF OBJECT_ID(N'[dbo].[FK__Job__EmployeeID__46E78A0C]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Jobs] DROP CONSTRAINT [FK__Job__EmployeeID__46E78A0C];
 GO
+IF OBJECT_ID(N'[dbo].[FK__Flight__Airline__403A8C7D]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Flights] DROP CONSTRAINT [FK__Flight__Airline__403A8C7D];
+GO
 IF OBJECT_ID(N'[dbo].[FK__Job__FlightID__47DBAE45]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Jobs] DROP CONSTRAINT [FK__Job__FlightID__47DBAE45];
-GO
-IF OBJECT_ID(N'[dbo].[FK_Bill_Detail_Employees]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Bill_Detail] DROP CONSTRAINT [FK_Bill_Detail_Employees];
 GO
 IF OBJECT_ID(N'[dbo].[FK_Flights_Locations]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Flights] DROP CONSTRAINT [FK_Flights_Locations];
@@ -137,20 +137,21 @@ GO
 CREATE TABLE [dbo].[Flights] (
     [FlightID] int IDENTITY(1,1) NOT NULL,
     [PlaneID] int  NOT NULL,
-    [Departure] int  NULL,
-    [DateOfDeparture] datetime  NULL,
-    [Destination] int  NULL,
+    [Departure] int  NOT NULL,
+    [DateOfDeparture] datetime  NOT NULL,
+    [Destination] int  NOT NULL,
     [Airline] nvarchar(20)  NULL
 );
 GO
 
 -- Creating table 'Jobs'
 CREATE TABLE [dbo].[Jobs] (
+    [JobID] int IDENTITY(1,1) NOT NULL,
     [AssignedDate] datetime  NOT NULL,
-    [EmployeeID] int  NULL,
-    [FlightID] int  NULL,
+    [EmployeeID] int  NOT NULL,
+    [FlightID] int  NOT NULL,
     [JobDescription] nvarchar(20)  NULL,
-    [JobState] nvarchar(20)  NULL
+    [JobState] nvarchar(10)  NULL
 );
 GO
 
@@ -216,10 +217,10 @@ ADD CONSTRAINT [PK_Flights]
     PRIMARY KEY CLUSTERED ([FlightID] ASC);
 GO
 
--- Creating primary key on [AssignedDate] in table 'Jobs'
+-- Creating primary key on [JobID] in table 'Jobs'
 ALTER TABLE [dbo].[Jobs]
 ADD CONSTRAINT [PK_Jobs]
-    PRIMARY KEY CLUSTERED ([AssignedDate] ASC);
+    PRIMARY KEY CLUSTERED ([JobID] ASC);
 GO
 
 -- Creating primary key on [LocationID] in table 'Locations'
@@ -250,7 +251,7 @@ ADD CONSTRAINT [FK__Account__Employe__398D8EEE]
     FOREIGN KEY ([EmployeeID])
     REFERENCES [dbo].[Employees]
         ([EmployeeID])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 GO
 
 -- Creating foreign key on [CustomerID] in table 'Bill_Detail'
@@ -259,7 +260,7 @@ ADD CONSTRAINT [FK__Bill_Deta__Custo__4316F928]
     FOREIGN KEY ([CustomerID])
     REFERENCES [dbo].[Customers]
         ([CustomerID])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK__Bill_Deta__Custo__4316F928'
@@ -274,7 +275,7 @@ ADD CONSTRAINT [FK__Bill_Deta__Fligh__440B1D61]
     FOREIGN KEY ([FlightID])
     REFERENCES [dbo].[Flights]
         ([FlightID])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK__Bill_Deta__Fligh__440B1D61'
@@ -289,7 +290,7 @@ ADD CONSTRAINT [FK_Bill_Detail_Employees]
     FOREIGN KEY ([EmployeeID])
     REFERENCES [dbo].[Employees]
         ([EmployeeID])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK_Bill_Detail_Employees'
@@ -304,7 +305,7 @@ ADD CONSTRAINT [FK__Job__EmployeeID__46E78A0C]
     FOREIGN KEY ([EmployeeID])
     REFERENCES [dbo].[Employees]
         ([EmployeeID])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK__Job__EmployeeID__46E78A0C'
@@ -319,7 +320,7 @@ ADD CONSTRAINT [FK__Flight__Airline__403A8C7D]
     FOREIGN KEY ([PlaneID])
     REFERENCES [dbo].[Planes]
         ([PlaneID])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK__Flight__Airline__403A8C7D'
@@ -334,7 +335,7 @@ ADD CONSTRAINT [FK__Job__FlightID__47DBAE45]
     FOREIGN KEY ([FlightID])
     REFERENCES [dbo].[Flights]
         ([FlightID])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK__Job__FlightID__47DBAE45'

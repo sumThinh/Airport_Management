@@ -31,71 +31,71 @@
             this.tabControls = (new global::DevExpress.XtraBars.Navigation.TabPane());
             this.tabNavigationPage1 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
             this.groupBox8 = (new global::System.Windows.Forms.GroupBox());
-            this.label100 = (new global::System.Windows.Forms.Label());
-            this.label101 = (new global::System.Windows.Forms.Label());
-            this.label102 = (new global::System.Windows.Forms.Label());
-            this.label103 = (new global::System.Windows.Forms.Label());
-            this.label104 = (new global::System.Windows.Forms.Label());
-            this.label105 = (new global::System.Windows.Forms.Label());
-            this.label106 = (new global::System.Windows.Forms.Label());
-            this.label107 = (new global::System.Windows.Forms.Label());
-            this.label108 = (new global::System.Windows.Forms.Label());
-            this.label109 = (new global::System.Windows.Forms.Label());
-            this.label90 = (new global::System.Windows.Forms.Label());
-            this.label91 = (new global::System.Windows.Forms.Label());
-            this.label92 = (new global::System.Windows.Forms.Label());
-            this.label93 = (new global::System.Windows.Forms.Label());
-            this.label94 = (new global::System.Windows.Forms.Label());
-            this.label95 = (new global::System.Windows.Forms.Label());
-            this.label96 = (new global::System.Windows.Forms.Label());
-            this.label97 = (new global::System.Windows.Forms.Label());
-            this.label98 = (new global::System.Windows.Forms.Label());
-            this.label99 = (new global::System.Windows.Forms.Label());
-            this.label80 = (new global::System.Windows.Forms.Label());
-            this.label81 = (new global::System.Windows.Forms.Label());
-            this.label82 = (new global::System.Windows.Forms.Label());
-            this.label83 = (new global::System.Windows.Forms.Label());
-            this.label84 = (new global::System.Windows.Forms.Label());
-            this.label85 = (new global::System.Windows.Forms.Label());
-            this.label86 = (new global::System.Windows.Forms.Label());
-            this.label87 = (new global::System.Windows.Forms.Label());
-            this.label88 = (new global::System.Windows.Forms.Label());
-            this.label89 = (new global::System.Windows.Forms.Label());
-            this.label70 = (new global::System.Windows.Forms.Label());
-            this.label71 = (new global::System.Windows.Forms.Label());
-            this.label72 = (new global::System.Windows.Forms.Label());
-            this.label73 = (new global::System.Windows.Forms.Label());
-            this.label74 = (new global::System.Windows.Forms.Label());
-            this.label75 = (new global::System.Windows.Forms.Label());
-            this.label76 = (new global::System.Windows.Forms.Label());
-            this.label77 = (new global::System.Windows.Forms.Label());
-            this.label78 = (new global::System.Windows.Forms.Label());
-            this.label79 = (new global::System.Windows.Forms.Label());
-            this.label65 = (new global::System.Windows.Forms.Label());
-            this.label66 = (new global::System.Windows.Forms.Label());
-            this.label67 = (new global::System.Windows.Forms.Label());
-            this.label68 = (new global::System.Windows.Forms.Label());
-            this.label69 = (new global::System.Windows.Forms.Label());
-            this.label64 = (new global::System.Windows.Forms.Label());
-            this.label62 = (new global::System.Windows.Forms.Label());
-            this.label63 = (new global::System.Windows.Forms.Label());
-            this.label60 = (new global::System.Windows.Forms.Label());
-            this.label61 = (new global::System.Windows.Forms.Label());
-            this.label55 = (new global::System.Windows.Forms.Label());
-            this.label56 = (new global::System.Windows.Forms.Label());
-            this.label57 = (new global::System.Windows.Forms.Label());
-            this.label58 = (new global::System.Windows.Forms.Label());
-            this.label59 = (new global::System.Windows.Forms.Label());
-            this.label54 = (new global::System.Windows.Forms.Label());
-            this.label53 = (new global::System.Windows.Forms.Label());
-            this.label52 = (new global::System.Windows.Forms.Label());
-            this.label51 = (new global::System.Windows.Forms.Label());
-            this.label50 = (new global::System.Windows.Forms.Label());
+            this.G10 = (new global::System.Windows.Forms.Label());
+            this.F10 = (new global::System.Windows.Forms.Label());
+            this.E10 = (new global::System.Windows.Forms.Label());
+            this.D10 = (new global::System.Windows.Forms.Label());
+            this.C10 = (new global::System.Windows.Forms.Label());
+            this.G09 = (new global::System.Windows.Forms.Label());
+            this.F09 = (new global::System.Windows.Forms.Label());
+            this.E09 = (new global::System.Windows.Forms.Label());
+            this.D09 = (new global::System.Windows.Forms.Label());
+            this.C09 = (new global::System.Windows.Forms.Label());
+            this.G08 = (new global::System.Windows.Forms.Label());
+            this.F08 = (new global::System.Windows.Forms.Label());
+            this.E08 = (new global::System.Windows.Forms.Label());
+            this.D08 = (new global::System.Windows.Forms.Label());
+            this.C08 = (new global::System.Windows.Forms.Label());
+            this.G07 = (new global::System.Windows.Forms.Label());
+            this.F07 = (new global::System.Windows.Forms.Label());
+            this.E07 = (new global::System.Windows.Forms.Label());
+            this.D07 = (new global::System.Windows.Forms.Label());
+            this.C07 = (new global::System.Windows.Forms.Label());
+            this.G06 = (new global::System.Windows.Forms.Label());
+            this.F06 = (new global::System.Windows.Forms.Label());
+            this.E06 = (new global::System.Windows.Forms.Label());
+            this.D06 = (new global::System.Windows.Forms.Label());
+            this.C06 = (new global::System.Windows.Forms.Label());
+            this.G05 = (new global::System.Windows.Forms.Label());
+            this.F05 = (new global::System.Windows.Forms.Label());
+            this.E05 = (new global::System.Windows.Forms.Label());
+            this.D05 = (new global::System.Windows.Forms.Label());
+            this.C05 = (new global::System.Windows.Forms.Label());
+            this.G04 = (new global::System.Windows.Forms.Label());
+            this.F04 = (new global::System.Windows.Forms.Label());
+            this.E04 = (new global::System.Windows.Forms.Label());
+            this.D04 = (new global::System.Windows.Forms.Label());
+            this.C04 = (new global::System.Windows.Forms.Label());
+            this.G03 = (new global::System.Windows.Forms.Label());
+            this.F03 = (new global::System.Windows.Forms.Label());
+            this.E03 = (new global::System.Windows.Forms.Label());
+            this.D03 = (new global::System.Windows.Forms.Label());
+            this.C03 = (new global::System.Windows.Forms.Label());
+            this.G02 = (new global::System.Windows.Forms.Label());
+            this.F02 = (new global::System.Windows.Forms.Label());
+            this.E02 = (new global::System.Windows.Forms.Label());
+            this.D02 = (new global::System.Windows.Forms.Label());
+            this.C02 = (new global::System.Windows.Forms.Label());
+            this.G01 = (new global::System.Windows.Forms.Label());
+            this.F01 = (new global::System.Windows.Forms.Label());
+            this.E01 = (new global::System.Windows.Forms.Label());
+            this.D01 = (new global::System.Windows.Forms.Label());
+            this.C01 = (new global::System.Windows.Forms.Label());
+            this.B05 = (new global::System.Windows.Forms.Label());
+            this.B04 = (new global::System.Windows.Forms.Label());
+            this.B03 = (new global::System.Windows.Forms.Label());
+            this.B02 = (new global::System.Windows.Forms.Label());
+            this.B01 = (new global::System.Windows.Forms.Label());
+            this.A05 = (new global::System.Windows.Forms.Label());
+            this.A04 = (new global::System.Windows.Forms.Label());
+            this.A03 = (new global::System.Windows.Forms.Label());
+            this.A02 = (new global::System.Windows.Forms.Label());
+            this.A01 = (new global::System.Windows.Forms.Label());
             this.label49 = (new global::System.Windows.Forms.Label());
             this.label48 = (new global::System.Windows.Forms.Label());
-            this.simpleButton4 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton5 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton6 = (new global::DevExpress.XtraEditors.SimpleButton());
+            this.buttonDeleteTicket = (new global::DevExpress.XtraEditors.SimpleButton());
+            this.buttonUpdateTicket = (new global::DevExpress.XtraEditors.SimpleButton());
+            this.buttonAddTicket = (new global::DevExpress.XtraEditors.SimpleButton());
             this.gridTicket = (new global::DevExpress.XtraGrid.GridControl());
             this.gridView1 = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
             this.groupBox1 = (new global::System.Windows.Forms.GroupBox());
@@ -116,18 +116,14 @@
             this.label12 = (new global::System.Windows.Forms.Label());
             this.radioButton4 = (new global::System.Windows.Forms.RadioButton());
             this.groupBox3 = (new global::System.Windows.Forms.GroupBox());
-            this.dateTimePicker3 = (new global::System.Windows.Forms.DateTimePicker());
             this.label23 = (new global::System.Windows.Forms.Label());
             this.textEdit12 = (new global::DevExpress.XtraEditors.TextEdit());
             this.label22 = (new global::System.Windows.Forms.Label());
-            this.comboBox4 = (new global::System.Windows.Forms.ComboBox());
-            this.comboBox3 = (new global::System.Windows.Forms.ComboBox());
-            this.label19 = (new global::System.Windows.Forms.Label());
-            this.label18 = (new global::System.Windows.Forms.Label());
-            this.comboBox2 = (new global::System.Windows.Forms.ComboBox());
+            this.comboBoxTickDateDepart = (new global::System.Windows.Forms.ComboBox());
+            this.comboBoxTickDesti = (new global::System.Windows.Forms.ComboBox());
             this.label17 = (new global::System.Windows.Forms.Label());
             this.label16 = (new global::System.Windows.Forms.Label());
-            this.comboBox1 = (new global::System.Windows.Forms.ComboBox());
+            this.comboBoxTickDepart = (new global::System.Windows.Forms.ComboBox());
             this.textEdit14 = (new global::DevExpress.XtraEditors.TextEdit());
             this.label20 = (new global::System.Windows.Forms.Label());
             this.tpCustomer = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
@@ -337,9 +333,9 @@
             this.tabControls.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabControls.Name = ("tabControls");
             this.tabControls.Pages.AddRange(new global::DevExpress.XtraBars.Navigation.NavigationPageBase[] { this.tabNavigationPage1, this.tpCustomer, this.tp, this.tabNavigationFlight, this.tabNavigationPage5, this.tabNavigationPage6 });
-            this.tabControls.RegularSize = (new global::System.Drawing.Size(1940, 526));
+            this.tabControls.RegularSize = (new global::System.Drawing.Size(1940, 716));
             this.tabControls.SelectedPage = (this.tabNavigationPage1);
-            this.tabControls.Size = (new global::System.Drawing.Size(1940, 526));
+            this.tabControls.Size = (new global::System.Drawing.Size(1940, 716));
             this.tabControls.TabIndex = (0);
             this.tabControls.Text = ("Tickets");
             // 
@@ -347,670 +343,670 @@
             // 
             this.tabNavigationPage1.Caption = ("Tickets");
             this.tabNavigationPage1.Controls.Add(this.groupBox8);
-            this.tabNavigationPage1.Controls.Add(this.simpleButton4);
-            this.tabNavigationPage1.Controls.Add(this.simpleButton5);
-            this.tabNavigationPage1.Controls.Add(this.simpleButton6);
+            this.tabNavigationPage1.Controls.Add(this.buttonDeleteTicket);
+            this.tabNavigationPage1.Controls.Add(this.buttonUpdateTicket);
+            this.tabNavigationPage1.Controls.Add(this.buttonAddTicket);
             this.tabNavigationPage1.Controls.Add(this.gridTicket);
             this.tabNavigationPage1.Controls.Add(this.groupBox1);
             this.tabNavigationPage1.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationPage1.Name = ("tabNavigationPage1");
-            this.tabNavigationPage1.Size = (new global::System.Drawing.Size(1940, 485));
+            this.tabNavigationPage1.Size = (new global::System.Drawing.Size(1940, 675));
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.label100);
-            this.groupBox8.Controls.Add(this.label101);
-            this.groupBox8.Controls.Add(this.label102);
-            this.groupBox8.Controls.Add(this.label103);
-            this.groupBox8.Controls.Add(this.label104);
-            this.groupBox8.Controls.Add(this.label105);
-            this.groupBox8.Controls.Add(this.label106);
-            this.groupBox8.Controls.Add(this.label107);
-            this.groupBox8.Controls.Add(this.label108);
-            this.groupBox8.Controls.Add(this.label109);
-            this.groupBox8.Controls.Add(this.label90);
-            this.groupBox8.Controls.Add(this.label91);
-            this.groupBox8.Controls.Add(this.label92);
-            this.groupBox8.Controls.Add(this.label93);
-            this.groupBox8.Controls.Add(this.label94);
-            this.groupBox8.Controls.Add(this.label95);
-            this.groupBox8.Controls.Add(this.label96);
-            this.groupBox8.Controls.Add(this.label97);
-            this.groupBox8.Controls.Add(this.label98);
-            this.groupBox8.Controls.Add(this.label99);
-            this.groupBox8.Controls.Add(this.label80);
-            this.groupBox8.Controls.Add(this.label81);
-            this.groupBox8.Controls.Add(this.label82);
-            this.groupBox8.Controls.Add(this.label83);
-            this.groupBox8.Controls.Add(this.label84);
-            this.groupBox8.Controls.Add(this.label85);
-            this.groupBox8.Controls.Add(this.label86);
-            this.groupBox8.Controls.Add(this.label87);
-            this.groupBox8.Controls.Add(this.label88);
-            this.groupBox8.Controls.Add(this.label89);
-            this.groupBox8.Controls.Add(this.label70);
-            this.groupBox8.Controls.Add(this.label71);
-            this.groupBox8.Controls.Add(this.label72);
-            this.groupBox8.Controls.Add(this.label73);
-            this.groupBox8.Controls.Add(this.label74);
-            this.groupBox8.Controls.Add(this.label75);
-            this.groupBox8.Controls.Add(this.label76);
-            this.groupBox8.Controls.Add(this.label77);
-            this.groupBox8.Controls.Add(this.label78);
-            this.groupBox8.Controls.Add(this.label79);
-            this.groupBox8.Controls.Add(this.label65);
-            this.groupBox8.Controls.Add(this.label66);
-            this.groupBox8.Controls.Add(this.label67);
-            this.groupBox8.Controls.Add(this.label68);
-            this.groupBox8.Controls.Add(this.label69);
-            this.groupBox8.Controls.Add(this.label64);
-            this.groupBox8.Controls.Add(this.label62);
-            this.groupBox8.Controls.Add(this.label63);
-            this.groupBox8.Controls.Add(this.label60);
-            this.groupBox8.Controls.Add(this.label61);
-            this.groupBox8.Controls.Add(this.label55);
-            this.groupBox8.Controls.Add(this.label56);
-            this.groupBox8.Controls.Add(this.label57);
-            this.groupBox8.Controls.Add(this.label58);
-            this.groupBox8.Controls.Add(this.label59);
-            this.groupBox8.Controls.Add(this.label54);
-            this.groupBox8.Controls.Add(this.label53);
-            this.groupBox8.Controls.Add(this.label52);
-            this.groupBox8.Controls.Add(this.label51);
-            this.groupBox8.Controls.Add(this.label50);
+            this.groupBox8.Controls.Add(this.G10);
+            this.groupBox8.Controls.Add(this.F10);
+            this.groupBox8.Controls.Add(this.E10);
+            this.groupBox8.Controls.Add(this.D10);
+            this.groupBox8.Controls.Add(this.C10);
+            this.groupBox8.Controls.Add(this.G09);
+            this.groupBox8.Controls.Add(this.F09);
+            this.groupBox8.Controls.Add(this.E09);
+            this.groupBox8.Controls.Add(this.D09);
+            this.groupBox8.Controls.Add(this.C09);
+            this.groupBox8.Controls.Add(this.G08);
+            this.groupBox8.Controls.Add(this.F08);
+            this.groupBox8.Controls.Add(this.E08);
+            this.groupBox8.Controls.Add(this.D08);
+            this.groupBox8.Controls.Add(this.C08);
+            this.groupBox8.Controls.Add(this.G07);
+            this.groupBox8.Controls.Add(this.F07);
+            this.groupBox8.Controls.Add(this.E07);
+            this.groupBox8.Controls.Add(this.D07);
+            this.groupBox8.Controls.Add(this.C07);
+            this.groupBox8.Controls.Add(this.G06);
+            this.groupBox8.Controls.Add(this.F06);
+            this.groupBox8.Controls.Add(this.E06);
+            this.groupBox8.Controls.Add(this.D06);
+            this.groupBox8.Controls.Add(this.C06);
+            this.groupBox8.Controls.Add(this.G05);
+            this.groupBox8.Controls.Add(this.F05);
+            this.groupBox8.Controls.Add(this.E05);
+            this.groupBox8.Controls.Add(this.D05);
+            this.groupBox8.Controls.Add(this.C05);
+            this.groupBox8.Controls.Add(this.G04);
+            this.groupBox8.Controls.Add(this.F04);
+            this.groupBox8.Controls.Add(this.E04);
+            this.groupBox8.Controls.Add(this.D04);
+            this.groupBox8.Controls.Add(this.C04);
+            this.groupBox8.Controls.Add(this.G03);
+            this.groupBox8.Controls.Add(this.F03);
+            this.groupBox8.Controls.Add(this.E03);
+            this.groupBox8.Controls.Add(this.D03);
+            this.groupBox8.Controls.Add(this.C03);
+            this.groupBox8.Controls.Add(this.G02);
+            this.groupBox8.Controls.Add(this.F02);
+            this.groupBox8.Controls.Add(this.E02);
+            this.groupBox8.Controls.Add(this.D02);
+            this.groupBox8.Controls.Add(this.C02);
+            this.groupBox8.Controls.Add(this.G01);
+            this.groupBox8.Controls.Add(this.F01);
+            this.groupBox8.Controls.Add(this.E01);
+            this.groupBox8.Controls.Add(this.D01);
+            this.groupBox8.Controls.Add(this.C01);
+            this.groupBox8.Controls.Add(this.B05);
+            this.groupBox8.Controls.Add(this.B04);
+            this.groupBox8.Controls.Add(this.B03);
+            this.groupBox8.Controls.Add(this.B02);
+            this.groupBox8.Controls.Add(this.B01);
+            this.groupBox8.Controls.Add(this.A05);
+            this.groupBox8.Controls.Add(this.A04);
+            this.groupBox8.Controls.Add(this.A03);
+            this.groupBox8.Controls.Add(this.A02);
+            this.groupBox8.Controls.Add(this.A01);
             this.groupBox8.Controls.Add(this.label49);
             this.groupBox8.Controls.Add(this.label48);
             this.groupBox8.Location = (new global::System.Drawing.Point(1093, 16));
             this.groupBox8.Name = ("groupBox8");
-            this.groupBox8.Size = (new global::System.Drawing.Size(824, 339));
+            this.groupBox8.Size = (new global::System.Drawing.Size(766, 339));
             this.groupBox8.TabIndex = (29);
             this.groupBox8.TabStop = (false);
             this.groupBox8.Text = ("Seat");
             // 
-            // label100
-            // 
-            this.label100.AutoSize = (true);
-            this.label100.Location = (new global::System.Drawing.Point(691, 251));
-            this.label100.Name = ("label100");
-            this.label100.Size = (new global::System.Drawing.Size(29, 16));
-            this.label100.TabIndex = (61);
-            this.label100.Text = ("G00");
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = (true);
-            this.label101.Location = (new global::System.Drawing.Point(691, 222));
-            this.label101.Name = ("label101");
-            this.label101.Size = (new global::System.Drawing.Size(28, 16));
-            this.label101.TabIndex = (60);
-            this.label101.Text = ("F00");
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = (true);
-            this.label102.Location = (new global::System.Drawing.Point(691, 191));
-            this.label102.Name = ("label102");
-            this.label102.Size = (new global::System.Drawing.Size(28, 16));
-            this.label102.TabIndex = (59);
-            this.label102.Text = ("E00");
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = (true);
-            this.label103.Location = (new global::System.Drawing.Point(691, 158));
-            this.label103.Name = ("label103");
-            this.label103.Size = (new global::System.Drawing.Size(29, 16));
-            this.label103.TabIndex = (58);
-            this.label103.Text = ("D00");
-            // 
-            // label104
-            // 
-            this.label104.AutoSize = (true);
-            this.label104.Location = (new global::System.Drawing.Point(691, 127));
-            this.label104.Name = ("label104");
-            this.label104.Size = (new global::System.Drawing.Size(29, 16));
-            this.label104.TabIndex = (57);
-            this.label104.Text = ("C00");
-            // 
-            // label105
-            // 
-            this.label105.AutoSize = (true);
-            this.label105.Location = (new global::System.Drawing.Point(648, 251));
-            this.label105.Name = ("label105");
-            this.label105.Size = (new global::System.Drawing.Size(29, 16));
-            this.label105.TabIndex = (56);
-            this.label105.Text = ("G00");
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = (true);
-            this.label106.Location = (new global::System.Drawing.Point(648, 222));
-            this.label106.Name = ("label106");
-            this.label106.Size = (new global::System.Drawing.Size(28, 16));
-            this.label106.TabIndex = (55);
-            this.label106.Text = ("F00");
-            // 
-            // label107
-            // 
-            this.label107.AutoSize = (true);
-            this.label107.Location = (new global::System.Drawing.Point(648, 191));
-            this.label107.Name = ("label107");
-            this.label107.Size = (new global::System.Drawing.Size(28, 16));
-            this.label107.TabIndex = (54);
-            this.label107.Text = ("E00");
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = (true);
-            this.label108.Location = (new global::System.Drawing.Point(648, 158));
-            this.label108.Name = ("label108");
-            this.label108.Size = (new global::System.Drawing.Size(29, 16));
-            this.label108.TabIndex = (53);
-            this.label108.Text = ("D00");
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = (true);
-            this.label109.Location = (new global::System.Drawing.Point(648, 127));
-            this.label109.Name = ("label109");
-            this.label109.Size = (new global::System.Drawing.Size(29, 16));
-            this.label109.TabIndex = (52);
-            this.label109.Text = ("C00");
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = (true);
-            this.label90.Location = (new global::System.Drawing.Point(555, 251));
-            this.label90.Name = ("label90");
-            this.label90.Size = (new global::System.Drawing.Size(29, 16));
-            this.label90.TabIndex = (51);
-            this.label90.Text = ("G00");
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = (true);
-            this.label91.Location = (new global::System.Drawing.Point(555, 222));
-            this.label91.Name = ("label91");
-            this.label91.Size = (new global::System.Drawing.Size(28, 16));
-            this.label91.TabIndex = (50);
-            this.label91.Text = ("F00");
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = (true);
-            this.label92.Location = (new global::System.Drawing.Point(555, 191));
-            this.label92.Name = ("label92");
-            this.label92.Size = (new global::System.Drawing.Size(28, 16));
-            this.label92.TabIndex = (49);
-            this.label92.Text = ("E00");
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = (true);
-            this.label93.Location = (new global::System.Drawing.Point(555, 158));
-            this.label93.Name = ("label93");
-            this.label93.Size = (new global::System.Drawing.Size(29, 16));
-            this.label93.TabIndex = (48);
-            this.label93.Text = ("D00");
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = (true);
-            this.label94.Location = (new global::System.Drawing.Point(555, 127));
-            this.label94.Name = ("label94");
-            this.label94.Size = (new global::System.Drawing.Size(29, 16));
-            this.label94.TabIndex = (47);
-            this.label94.Text = ("C00");
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = (true);
-            this.label95.Location = (new global::System.Drawing.Point(512, 251));
-            this.label95.Name = ("label95");
-            this.label95.Size = (new global::System.Drawing.Size(29, 16));
-            this.label95.TabIndex = (46);
-            this.label95.Text = ("G00");
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = (true);
-            this.label96.Location = (new global::System.Drawing.Point(512, 222));
-            this.label96.Name = ("label96");
-            this.label96.Size = (new global::System.Drawing.Size(28, 16));
-            this.label96.TabIndex = (45);
-            this.label96.Text = ("F00");
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = (true);
-            this.label97.Location = (new global::System.Drawing.Point(512, 191));
-            this.label97.Name = ("label97");
-            this.label97.Size = (new global::System.Drawing.Size(28, 16));
-            this.label97.TabIndex = (44);
-            this.label97.Text = ("E00");
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = (true);
-            this.label98.Location = (new global::System.Drawing.Point(512, 158));
-            this.label98.Name = ("label98");
-            this.label98.Size = (new global::System.Drawing.Size(29, 16));
-            this.label98.TabIndex = (43);
-            this.label98.Text = ("D00");
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = (true);
-            this.label99.Location = (new global::System.Drawing.Point(512, 127));
-            this.label99.Name = ("label99");
-            this.label99.Size = (new global::System.Drawing.Size(29, 16));
-            this.label99.TabIndex = (42);
-            this.label99.Text = ("C00");
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = (true);
-            this.label80.Location = (new global::System.Drawing.Point(417, 251));
-            this.label80.Name = ("label80");
-            this.label80.Size = (new global::System.Drawing.Size(29, 16));
-            this.label80.TabIndex = (41);
-            this.label80.Text = ("G00");
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = (true);
-            this.label81.Location = (new global::System.Drawing.Point(417, 222));
-            this.label81.Name = ("label81");
-            this.label81.Size = (new global::System.Drawing.Size(28, 16));
-            this.label81.TabIndex = (40);
-            this.label81.Text = ("F00");
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = (true);
-            this.label82.Location = (new global::System.Drawing.Point(417, 191));
-            this.label82.Name = ("label82");
-            this.label82.Size = (new global::System.Drawing.Size(28, 16));
-            this.label82.TabIndex = (39);
-            this.label82.Text = ("E00");
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = (true);
-            this.label83.Location = (new global::System.Drawing.Point(417, 158));
-            this.label83.Name = ("label83");
-            this.label83.Size = (new global::System.Drawing.Size(29, 16));
-            this.label83.TabIndex = (38);
-            this.label83.Text = ("D00");
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = (true);
-            this.label84.Location = (new global::System.Drawing.Point(417, 127));
-            this.label84.Name = ("label84");
-            this.label84.Size = (new global::System.Drawing.Size(29, 16));
-            this.label84.TabIndex = (37);
-            this.label84.Text = ("C00");
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = (true);
-            this.label85.Location = (new global::System.Drawing.Point(374, 251));
-            this.label85.Name = ("label85");
-            this.label85.Size = (new global::System.Drawing.Size(29, 16));
-            this.label85.TabIndex = (36);
-            this.label85.Text = ("G00");
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = (true);
-            this.label86.Location = (new global::System.Drawing.Point(374, 222));
-            this.label86.Name = ("label86");
-            this.label86.Size = (new global::System.Drawing.Size(28, 16));
-            this.label86.TabIndex = (35);
-            this.label86.Text = ("F00");
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = (true);
-            this.label87.Location = (new global::System.Drawing.Point(374, 191));
-            this.label87.Name = ("label87");
-            this.label87.Size = (new global::System.Drawing.Size(28, 16));
-            this.label87.TabIndex = (34);
-            this.label87.Text = ("E00");
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = (true);
-            this.label88.Location = (new global::System.Drawing.Point(374, 158));
-            this.label88.Name = ("label88");
-            this.label88.Size = (new global::System.Drawing.Size(29, 16));
-            this.label88.TabIndex = (33);
-            this.label88.Text = ("D00");
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = (true);
-            this.label89.Location = (new global::System.Drawing.Point(374, 127));
-            this.label89.Name = ("label89");
-            this.label89.Size = (new global::System.Drawing.Size(29, 16));
-            this.label89.TabIndex = (32);
-            this.label89.Text = ("C00");
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = (true);
-            this.label70.Location = (new global::System.Drawing.Point(276, 251));
-            this.label70.Name = ("label70");
-            this.label70.Size = (new global::System.Drawing.Size(29, 16));
-            this.label70.TabIndex = (31);
-            this.label70.Text = ("G00");
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = (true);
-            this.label71.Location = (new global::System.Drawing.Point(276, 222));
-            this.label71.Name = ("label71");
-            this.label71.Size = (new global::System.Drawing.Size(28, 16));
-            this.label71.TabIndex = (30);
-            this.label71.Text = ("F00");
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = (true);
-            this.label72.Location = (new global::System.Drawing.Point(276, 191));
-            this.label72.Name = ("label72");
-            this.label72.Size = (new global::System.Drawing.Size(28, 16));
-            this.label72.TabIndex = (29);
-            this.label72.Text = ("E00");
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = (true);
-            this.label73.Location = (new global::System.Drawing.Point(276, 158));
-            this.label73.Name = ("label73");
-            this.label73.Size = (new global::System.Drawing.Size(29, 16));
-            this.label73.TabIndex = (28);
-            this.label73.Text = ("D00");
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = (true);
-            this.label74.Location = (new global::System.Drawing.Point(276, 127));
-            this.label74.Name = ("label74");
-            this.label74.Size = (new global::System.Drawing.Size(29, 16));
-            this.label74.TabIndex = (27);
-            this.label74.Text = ("C00");
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = (true);
-            this.label75.Location = (new global::System.Drawing.Point(233, 251));
-            this.label75.Name = ("label75");
-            this.label75.Size = (new global::System.Drawing.Size(29, 16));
-            this.label75.TabIndex = (26);
-            this.label75.Text = ("G00");
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = (true);
-            this.label76.Location = (new global::System.Drawing.Point(233, 222));
-            this.label76.Name = ("label76");
-            this.label76.Size = (new global::System.Drawing.Size(28, 16));
-            this.label76.TabIndex = (25);
-            this.label76.Text = ("F00");
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = (true);
-            this.label77.Location = (new global::System.Drawing.Point(233, 191));
-            this.label77.Name = ("label77");
-            this.label77.Size = (new global::System.Drawing.Size(28, 16));
-            this.label77.TabIndex = (24);
-            this.label77.Text = ("E00");
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = (true);
-            this.label78.Location = (new global::System.Drawing.Point(233, 158));
-            this.label78.Name = ("label78");
-            this.label78.Size = (new global::System.Drawing.Size(29, 16));
-            this.label78.TabIndex = (23);
-            this.label78.Text = ("D00");
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = (true);
-            this.label79.Location = (new global::System.Drawing.Point(233, 127));
-            this.label79.Name = ("label79");
-            this.label79.Size = (new global::System.Drawing.Size(29, 16));
-            this.label79.TabIndex = (22);
-            this.label79.Text = ("C00");
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = (true);
-            this.label65.Location = (new global::System.Drawing.Point(136, 251));
-            this.label65.Name = ("label65");
-            this.label65.Size = (new global::System.Drawing.Size(29, 16));
-            this.label65.TabIndex = (21);
-            this.label65.Text = ("G00");
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = (true);
-            this.label66.Location = (new global::System.Drawing.Point(136, 222));
-            this.label66.Name = ("label66");
-            this.label66.Size = (new global::System.Drawing.Size(28, 16));
-            this.label66.TabIndex = (20);
-            this.label66.Text = ("F00");
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = (true);
-            this.label67.Location = (new global::System.Drawing.Point(136, 191));
-            this.label67.Name = ("label67");
-            this.label67.Size = (new global::System.Drawing.Size(28, 16));
-            this.label67.TabIndex = (19);
-            this.label67.Text = ("E00");
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = (true);
-            this.label68.Location = (new global::System.Drawing.Point(136, 158));
-            this.label68.Name = ("label68");
-            this.label68.Size = (new global::System.Drawing.Size(29, 16));
-            this.label68.TabIndex = (18);
-            this.label68.Text = ("D00");
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = (true);
-            this.label69.Location = (new global::System.Drawing.Point(136, 127));
-            this.label69.Name = ("label69");
-            this.label69.Size = (new global::System.Drawing.Size(29, 16));
-            this.label69.TabIndex = (17);
-            this.label69.Text = ("C00");
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = (true);
-            this.label64.Location = (new global::System.Drawing.Point(93, 251));
-            this.label64.Name = ("label64");
-            this.label64.Size = (new global::System.Drawing.Size(29, 16));
-            this.label64.TabIndex = (16);
-            this.label64.Text = ("G00");
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = (true);
-            this.label62.Location = (new global::System.Drawing.Point(93, 222));
-            this.label62.Name = ("label62");
-            this.label62.Size = (new global::System.Drawing.Size(28, 16));
-            this.label62.TabIndex = (15);
-            this.label62.Text = ("F00");
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = (true);
-            this.label63.Location = (new global::System.Drawing.Point(93, 191));
-            this.label63.Name = ("label63");
-            this.label63.Size = (new global::System.Drawing.Size(28, 16));
-            this.label63.TabIndex = (14);
-            this.label63.Text = ("E00");
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = (true);
-            this.label60.Location = (new global::System.Drawing.Point(93, 158));
-            this.label60.Name = ("label60");
-            this.label60.Size = (new global::System.Drawing.Size(29, 16));
-            this.label60.TabIndex = (13);
-            this.label60.Text = ("D00");
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = (true);
-            this.label61.Location = (new global::System.Drawing.Point(93, 127));
-            this.label61.Name = ("label61");
-            this.label61.Size = (new global::System.Drawing.Size(29, 16));
-            this.label61.TabIndex = (12);
-            this.label61.Text = ("C00");
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = (true);
-            this.label55.Location = (new global::System.Drawing.Point(669, 72));
-            this.label55.Name = ("label55");
-            this.label55.Size = (new global::System.Drawing.Size(28, 16));
-            this.label55.TabIndex = (11);
-            this.label55.Text = ("B00");
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = (true);
-            this.label56.Location = (new global::System.Drawing.Point(533, 72));
-            this.label56.Name = ("label56");
-            this.label56.Size = (new global::System.Drawing.Size(28, 16));
-            this.label56.TabIndex = (10);
-            this.label56.Text = ("B00");
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = (true);
-            this.label57.Location = (new global::System.Drawing.Point(397, 72));
-            this.label57.Name = ("label57");
-            this.label57.Size = (new global::System.Drawing.Size(28, 16));
-            this.label57.TabIndex = (9);
-            this.label57.Text = ("B00");
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = (true);
-            this.label58.Location = (new global::System.Drawing.Point(253, 72));
-            this.label58.Name = ("label58");
-            this.label58.Size = (new global::System.Drawing.Size(28, 16));
-            this.label58.TabIndex = (8);
-            this.label58.Text = ("B02");
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = (true);
-            this.label59.Location = (new global::System.Drawing.Point(114, 72));
-            this.label59.Name = ("label59");
-            this.label59.Size = (new global::System.Drawing.Size(28, 16));
-            this.label59.TabIndex = (7);
-            this.label59.Text = ("B01");
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = (true);
-            this.label54.Location = (new global::System.Drawing.Point(669, 41));
-            this.label54.Name = ("label54");
-            this.label54.Size = (new global::System.Drawing.Size(29, 16));
-            this.label54.TabIndex = (6);
-            this.label54.Text = ("A00");
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = (true);
-            this.label53.Location = (new global::System.Drawing.Point(533, 41));
-            this.label53.Name = ("label53");
-            this.label53.Size = (new global::System.Drawing.Size(29, 16));
-            this.label53.TabIndex = (5);
-            this.label53.Text = ("A00");
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = (true);
-            this.label52.Location = (new global::System.Drawing.Point(397, 41));
-            this.label52.Name = ("label52");
-            this.label52.Size = (new global::System.Drawing.Size(29, 16));
-            this.label52.TabIndex = (4);
-            this.label52.Text = ("A00");
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = (true);
-            this.label51.Location = (new global::System.Drawing.Point(253, 41));
-            this.label51.Name = ("label51");
-            this.label51.Size = (new global::System.Drawing.Size(29, 16));
-            this.label51.TabIndex = (3);
-            this.label51.Text = ("A02");
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = (true);
-            this.label50.Location = (new global::System.Drawing.Point(114, 41));
-            this.label50.Name = ("label50");
-            this.label50.Size = (new global::System.Drawing.Size(29, 16));
-            this.label50.TabIndex = (2);
-            this.label50.Text = ("A01");
+            // G10
+            // 
+            this.G10.AutoSize = (true);
+            this.G10.Location = (new global::System.Drawing.Point(691, 251));
+            this.G10.Name = ("G10");
+            this.G10.Size = (new global::System.Drawing.Size(29, 16));
+            this.G10.TabIndex = (61);
+            this.G10.Text = ("G00");
+            // 
+            // F10
+            // 
+            this.F10.AutoSize = (true);
+            this.F10.Location = (new global::System.Drawing.Point(691, 222));
+            this.F10.Name = ("F10");
+            this.F10.Size = (new global::System.Drawing.Size(28, 16));
+            this.F10.TabIndex = (60);
+            this.F10.Text = ("F00");
+            // 
+            // E10
+            // 
+            this.E10.AutoSize = (true);
+            this.E10.Location = (new global::System.Drawing.Point(691, 191));
+            this.E10.Name = ("E10");
+            this.E10.Size = (new global::System.Drawing.Size(28, 16));
+            this.E10.TabIndex = (59);
+            this.E10.Text = ("E00");
+            // 
+            // D10
+            // 
+            this.D10.AutoSize = (true);
+            this.D10.Location = (new global::System.Drawing.Point(691, 158));
+            this.D10.Name = ("D10");
+            this.D10.Size = (new global::System.Drawing.Size(29, 16));
+            this.D10.TabIndex = (58);
+            this.D10.Text = ("D00");
+            // 
+            // C10
+            // 
+            this.C10.AutoSize = (true);
+            this.C10.Location = (new global::System.Drawing.Point(691, 127));
+            this.C10.Name = ("C10");
+            this.C10.Size = (new global::System.Drawing.Size(29, 16));
+            this.C10.TabIndex = (57);
+            this.C10.Text = ("C00");
+            // 
+            // G09
+            // 
+            this.G09.AutoSize = (true);
+            this.G09.Location = (new global::System.Drawing.Point(648, 251));
+            this.G09.Name = ("G09");
+            this.G09.Size = (new global::System.Drawing.Size(29, 16));
+            this.G09.TabIndex = (56);
+            this.G09.Text = ("G00");
+            // 
+            // F09
+            // 
+            this.F09.AutoSize = (true);
+            this.F09.Location = (new global::System.Drawing.Point(648, 222));
+            this.F09.Name = ("F09");
+            this.F09.Size = (new global::System.Drawing.Size(28, 16));
+            this.F09.TabIndex = (55);
+            this.F09.Text = ("F00");
+            // 
+            // E09
+            // 
+            this.E09.AutoSize = (true);
+            this.E09.Location = (new global::System.Drawing.Point(648, 191));
+            this.E09.Name = ("E09");
+            this.E09.Size = (new global::System.Drawing.Size(28, 16));
+            this.E09.TabIndex = (54);
+            this.E09.Text = ("E00");
+            // 
+            // D09
+            // 
+            this.D09.AutoSize = (true);
+            this.D09.Location = (new global::System.Drawing.Point(648, 158));
+            this.D09.Name = ("D09");
+            this.D09.Size = (new global::System.Drawing.Size(29, 16));
+            this.D09.TabIndex = (53);
+            this.D09.Text = ("D00");
+            // 
+            // C09
+            // 
+            this.C09.AutoSize = (true);
+            this.C09.Location = (new global::System.Drawing.Point(648, 127));
+            this.C09.Name = ("C09");
+            this.C09.Size = (new global::System.Drawing.Size(29, 16));
+            this.C09.TabIndex = (52);
+            this.C09.Text = ("C00");
+            // 
+            // G08
+            // 
+            this.G08.AutoSize = (true);
+            this.G08.Location = (new global::System.Drawing.Point(555, 251));
+            this.G08.Name = ("G08");
+            this.G08.Size = (new global::System.Drawing.Size(29, 16));
+            this.G08.TabIndex = (51);
+            this.G08.Text = ("G00");
+            // 
+            // F08
+            // 
+            this.F08.AutoSize = (true);
+            this.F08.Location = (new global::System.Drawing.Point(555, 222));
+            this.F08.Name = ("F08");
+            this.F08.Size = (new global::System.Drawing.Size(28, 16));
+            this.F08.TabIndex = (50);
+            this.F08.Text = ("F00");
+            // 
+            // E08
+            // 
+            this.E08.AutoSize = (true);
+            this.E08.Location = (new global::System.Drawing.Point(555, 191));
+            this.E08.Name = ("E08");
+            this.E08.Size = (new global::System.Drawing.Size(28, 16));
+            this.E08.TabIndex = (49);
+            this.E08.Text = ("E00");
+            // 
+            // D08
+            // 
+            this.D08.AutoSize = (true);
+            this.D08.Location = (new global::System.Drawing.Point(555, 158));
+            this.D08.Name = ("D08");
+            this.D08.Size = (new global::System.Drawing.Size(29, 16));
+            this.D08.TabIndex = (48);
+            this.D08.Text = ("D00");
+            // 
+            // C08
+            // 
+            this.C08.AutoSize = (true);
+            this.C08.Location = (new global::System.Drawing.Point(555, 127));
+            this.C08.Name = ("C08");
+            this.C08.Size = (new global::System.Drawing.Size(29, 16));
+            this.C08.TabIndex = (47);
+            this.C08.Text = ("C00");
+            // 
+            // G07
+            // 
+            this.G07.AutoSize = (true);
+            this.G07.Location = (new global::System.Drawing.Point(512, 251));
+            this.G07.Name = ("G07");
+            this.G07.Size = (new global::System.Drawing.Size(29, 16));
+            this.G07.TabIndex = (46);
+            this.G07.Text = ("G00");
+            // 
+            // F07
+            // 
+            this.F07.AutoSize = (true);
+            this.F07.Location = (new global::System.Drawing.Point(512, 222));
+            this.F07.Name = ("F07");
+            this.F07.Size = (new global::System.Drawing.Size(28, 16));
+            this.F07.TabIndex = (45);
+            this.F07.Text = ("F00");
+            // 
+            // E07
+            // 
+            this.E07.AutoSize = (true);
+            this.E07.Location = (new global::System.Drawing.Point(512, 191));
+            this.E07.Name = ("E07");
+            this.E07.Size = (new global::System.Drawing.Size(28, 16));
+            this.E07.TabIndex = (44);
+            this.E07.Text = ("E00");
+            // 
+            // D07
+            // 
+            this.D07.AutoSize = (true);
+            this.D07.Location = (new global::System.Drawing.Point(512, 158));
+            this.D07.Name = ("D07");
+            this.D07.Size = (new global::System.Drawing.Size(29, 16));
+            this.D07.TabIndex = (43);
+            this.D07.Text = ("D00");
+            // 
+            // C07
+            // 
+            this.C07.AutoSize = (true);
+            this.C07.Location = (new global::System.Drawing.Point(512, 127));
+            this.C07.Name = ("C07");
+            this.C07.Size = (new global::System.Drawing.Size(29, 16));
+            this.C07.TabIndex = (42);
+            this.C07.Text = ("C00");
+            // 
+            // G06
+            // 
+            this.G06.AutoSize = (true);
+            this.G06.Location = (new global::System.Drawing.Point(417, 251));
+            this.G06.Name = ("G06");
+            this.G06.Size = (new global::System.Drawing.Size(29, 16));
+            this.G06.TabIndex = (41);
+            this.G06.Text = ("G00");
+            // 
+            // F06
+            // 
+            this.F06.AutoSize = (true);
+            this.F06.Location = (new global::System.Drawing.Point(417, 222));
+            this.F06.Name = ("F06");
+            this.F06.Size = (new global::System.Drawing.Size(28, 16));
+            this.F06.TabIndex = (40);
+            this.F06.Text = ("F00");
+            // 
+            // E06
+            // 
+            this.E06.AutoSize = (true);
+            this.E06.Location = (new global::System.Drawing.Point(417, 191));
+            this.E06.Name = ("E06");
+            this.E06.Size = (new global::System.Drawing.Size(28, 16));
+            this.E06.TabIndex = (39);
+            this.E06.Text = ("E00");
+            // 
+            // D06
+            // 
+            this.D06.AutoSize = (true);
+            this.D06.Location = (new global::System.Drawing.Point(417, 158));
+            this.D06.Name = ("D06");
+            this.D06.Size = (new global::System.Drawing.Size(29, 16));
+            this.D06.TabIndex = (38);
+            this.D06.Text = ("D00");
+            // 
+            // C06
+            // 
+            this.C06.AutoSize = (true);
+            this.C06.Location = (new global::System.Drawing.Point(417, 127));
+            this.C06.Name = ("C06");
+            this.C06.Size = (new global::System.Drawing.Size(29, 16));
+            this.C06.TabIndex = (37);
+            this.C06.Text = ("C00");
+            // 
+            // G05
+            // 
+            this.G05.AutoSize = (true);
+            this.G05.Location = (new global::System.Drawing.Point(374, 251));
+            this.G05.Name = ("G05");
+            this.G05.Size = (new global::System.Drawing.Size(29, 16));
+            this.G05.TabIndex = (36);
+            this.G05.Text = ("G00");
+            // 
+            // F05
+            // 
+            this.F05.AutoSize = (true);
+            this.F05.Location = (new global::System.Drawing.Point(374, 222));
+            this.F05.Name = ("F05");
+            this.F05.Size = (new global::System.Drawing.Size(28, 16));
+            this.F05.TabIndex = (35);
+            this.F05.Text = ("F00");
+            // 
+            // E05
+            // 
+            this.E05.AutoSize = (true);
+            this.E05.Location = (new global::System.Drawing.Point(374, 191));
+            this.E05.Name = ("E05");
+            this.E05.Size = (new global::System.Drawing.Size(28, 16));
+            this.E05.TabIndex = (34);
+            this.E05.Text = ("E00");
+            // 
+            // D05
+            // 
+            this.D05.AutoSize = (true);
+            this.D05.Location = (new global::System.Drawing.Point(374, 158));
+            this.D05.Name = ("D05");
+            this.D05.Size = (new global::System.Drawing.Size(29, 16));
+            this.D05.TabIndex = (33);
+            this.D05.Text = ("D00");
+            // 
+            // C05
+            // 
+            this.C05.AutoSize = (true);
+            this.C05.Location = (new global::System.Drawing.Point(374, 127));
+            this.C05.Name = ("C05");
+            this.C05.Size = (new global::System.Drawing.Size(29, 16));
+            this.C05.TabIndex = (32);
+            this.C05.Text = ("C00");
+            // 
+            // G04
+            // 
+            this.G04.AutoSize = (true);
+            this.G04.Location = (new global::System.Drawing.Point(276, 251));
+            this.G04.Name = ("G04");
+            this.G04.Size = (new global::System.Drawing.Size(29, 16));
+            this.G04.TabIndex = (31);
+            this.G04.Text = ("G00");
+            // 
+            // F04
+            // 
+            this.F04.AutoSize = (true);
+            this.F04.Location = (new global::System.Drawing.Point(276, 222));
+            this.F04.Name = ("F04");
+            this.F04.Size = (new global::System.Drawing.Size(28, 16));
+            this.F04.TabIndex = (30);
+            this.F04.Text = ("F00");
+            // 
+            // E04
+            // 
+            this.E04.AutoSize = (true);
+            this.E04.Location = (new global::System.Drawing.Point(276, 191));
+            this.E04.Name = ("E04");
+            this.E04.Size = (new global::System.Drawing.Size(28, 16));
+            this.E04.TabIndex = (29);
+            this.E04.Text = ("E00");
+            // 
+            // D04
+            // 
+            this.D04.AutoSize = (true);
+            this.D04.Location = (new global::System.Drawing.Point(276, 158));
+            this.D04.Name = ("D04");
+            this.D04.Size = (new global::System.Drawing.Size(29, 16));
+            this.D04.TabIndex = (28);
+            this.D04.Text = ("D00");
+            // 
+            // C04
+            // 
+            this.C04.AutoSize = (true);
+            this.C04.Location = (new global::System.Drawing.Point(276, 127));
+            this.C04.Name = ("C04");
+            this.C04.Size = (new global::System.Drawing.Size(29, 16));
+            this.C04.TabIndex = (27);
+            this.C04.Text = ("C00");
+            // 
+            // G03
+            // 
+            this.G03.AutoSize = (true);
+            this.G03.Location = (new global::System.Drawing.Point(233, 251));
+            this.G03.Name = ("G03");
+            this.G03.Size = (new global::System.Drawing.Size(29, 16));
+            this.G03.TabIndex = (26);
+            this.G03.Text = ("G00");
+            // 
+            // F03
+            // 
+            this.F03.AutoSize = (true);
+            this.F03.Location = (new global::System.Drawing.Point(233, 222));
+            this.F03.Name = ("F03");
+            this.F03.Size = (new global::System.Drawing.Size(28, 16));
+            this.F03.TabIndex = (25);
+            this.F03.Text = ("F00");
+            // 
+            // E03
+            // 
+            this.E03.AutoSize = (true);
+            this.E03.Location = (new global::System.Drawing.Point(233, 191));
+            this.E03.Name = ("E03");
+            this.E03.Size = (new global::System.Drawing.Size(28, 16));
+            this.E03.TabIndex = (24);
+            this.E03.Text = ("E00");
+            // 
+            // D03
+            // 
+            this.D03.AutoSize = (true);
+            this.D03.Location = (new global::System.Drawing.Point(233, 158));
+            this.D03.Name = ("D03");
+            this.D03.Size = (new global::System.Drawing.Size(29, 16));
+            this.D03.TabIndex = (23);
+            this.D03.Text = ("D00");
+            // 
+            // C03
+            // 
+            this.C03.AutoSize = (true);
+            this.C03.Location = (new global::System.Drawing.Point(233, 127));
+            this.C03.Name = ("C03");
+            this.C03.Size = (new global::System.Drawing.Size(29, 16));
+            this.C03.TabIndex = (22);
+            this.C03.Text = ("C00");
+            // 
+            // G02
+            // 
+            this.G02.AutoSize = (true);
+            this.G02.Location = (new global::System.Drawing.Point(136, 251));
+            this.G02.Name = ("G02");
+            this.G02.Size = (new global::System.Drawing.Size(29, 16));
+            this.G02.TabIndex = (21);
+            this.G02.Text = ("G00");
+            // 
+            // F02
+            // 
+            this.F02.AutoSize = (true);
+            this.F02.Location = (new global::System.Drawing.Point(136, 222));
+            this.F02.Name = ("F02");
+            this.F02.Size = (new global::System.Drawing.Size(28, 16));
+            this.F02.TabIndex = (20);
+            this.F02.Text = ("F00");
+            // 
+            // E02
+            // 
+            this.E02.AutoSize = (true);
+            this.E02.Location = (new global::System.Drawing.Point(136, 191));
+            this.E02.Name = ("E02");
+            this.E02.Size = (new global::System.Drawing.Size(28, 16));
+            this.E02.TabIndex = (19);
+            this.E02.Text = ("E00");
+            // 
+            // D02
+            // 
+            this.D02.AutoSize = (true);
+            this.D02.Location = (new global::System.Drawing.Point(136, 158));
+            this.D02.Name = ("D02");
+            this.D02.Size = (new global::System.Drawing.Size(29, 16));
+            this.D02.TabIndex = (18);
+            this.D02.Text = ("D00");
+            // 
+            // C02
+            // 
+            this.C02.AutoSize = (true);
+            this.C02.Location = (new global::System.Drawing.Point(136, 127));
+            this.C02.Name = ("C02");
+            this.C02.Size = (new global::System.Drawing.Size(29, 16));
+            this.C02.TabIndex = (17);
+            this.C02.Text = ("C00");
+            // 
+            // G01
+            // 
+            this.G01.AutoSize = (true);
+            this.G01.Location = (new global::System.Drawing.Point(93, 251));
+            this.G01.Name = ("G01");
+            this.G01.Size = (new global::System.Drawing.Size(29, 16));
+            this.G01.TabIndex = (16);
+            this.G01.Text = ("G00");
+            // 
+            // F01
+            // 
+            this.F01.AutoSize = (true);
+            this.F01.Location = (new global::System.Drawing.Point(93, 222));
+            this.F01.Name = ("F01");
+            this.F01.Size = (new global::System.Drawing.Size(28, 16));
+            this.F01.TabIndex = (15);
+            this.F01.Text = ("F00");
+            // 
+            // E01
+            // 
+            this.E01.AutoSize = (true);
+            this.E01.Location = (new global::System.Drawing.Point(93, 191));
+            this.E01.Name = ("E01");
+            this.E01.Size = (new global::System.Drawing.Size(28, 16));
+            this.E01.TabIndex = (14);
+            this.E01.Text = ("E00");
+            // 
+            // D01
+            // 
+            this.D01.AutoSize = (true);
+            this.D01.Location = (new global::System.Drawing.Point(93, 158));
+            this.D01.Name = ("D01");
+            this.D01.Size = (new global::System.Drawing.Size(29, 16));
+            this.D01.TabIndex = (13);
+            this.D01.Text = ("D00");
+            // 
+            // C01
+            // 
+            this.C01.AutoSize = (true);
+            this.C01.Location = (new global::System.Drawing.Point(93, 127));
+            this.C01.Name = ("C01");
+            this.C01.Size = (new global::System.Drawing.Size(29, 16));
+            this.C01.TabIndex = (12);
+            this.C01.Text = ("C00");
+            // 
+            // B05
+            // 
+            this.B05.AutoSize = (true);
+            this.B05.Location = (new global::System.Drawing.Point(669, 72));
+            this.B05.Name = ("B05");
+            this.B05.Size = (new global::System.Drawing.Size(28, 16));
+            this.B05.TabIndex = (11);
+            this.B05.Text = ("B00");
+            // 
+            // B04
+            // 
+            this.B04.AutoSize = (true);
+            this.B04.Location = (new global::System.Drawing.Point(533, 72));
+            this.B04.Name = ("B04");
+            this.B04.Size = (new global::System.Drawing.Size(28, 16));
+            this.B04.TabIndex = (10);
+            this.B04.Text = ("B00");
+            // 
+            // B03
+            // 
+            this.B03.AutoSize = (true);
+            this.B03.Location = (new global::System.Drawing.Point(397, 72));
+            this.B03.Name = ("B03");
+            this.B03.Size = (new global::System.Drawing.Size(28, 16));
+            this.B03.TabIndex = (9);
+            this.B03.Text = ("B00");
+            // 
+            // B02
+            // 
+            this.B02.AutoSize = (true);
+            this.B02.Location = (new global::System.Drawing.Point(253, 72));
+            this.B02.Name = ("B02");
+            this.B02.Size = (new global::System.Drawing.Size(28, 16));
+            this.B02.TabIndex = (8);
+            this.B02.Text = ("B02");
+            // 
+            // B01
+            // 
+            this.B01.AutoSize = (true);
+            this.B01.Location = (new global::System.Drawing.Point(114, 72));
+            this.B01.Name = ("B01");
+            this.B01.Size = (new global::System.Drawing.Size(28, 16));
+            this.B01.TabIndex = (7);
+            this.B01.Text = ("B01");
+            // 
+            // A05
+            // 
+            this.A05.AutoSize = (true);
+            this.A05.Location = (new global::System.Drawing.Point(669, 41));
+            this.A05.Name = ("A05");
+            this.A05.Size = (new global::System.Drawing.Size(29, 16));
+            this.A05.TabIndex = (6);
+            this.A05.Text = ("A00");
+            // 
+            // A04
+            // 
+            this.A04.AutoSize = (true);
+            this.A04.Location = (new global::System.Drawing.Point(533, 41));
+            this.A04.Name = ("A04");
+            this.A04.Size = (new global::System.Drawing.Size(29, 16));
+            this.A04.TabIndex = (5);
+            this.A04.Text = ("A00");
+            // 
+            // A03
+            // 
+            this.A03.AutoSize = (true);
+            this.A03.Location = (new global::System.Drawing.Point(397, 41));
+            this.A03.Name = ("A03");
+            this.A03.Size = (new global::System.Drawing.Size(29, 16));
+            this.A03.TabIndex = (4);
+            this.A03.Text = ("A00");
+            // 
+            // A02
+            // 
+            this.A02.AutoSize = (true);
+            this.A02.Location = (new global::System.Drawing.Point(253, 41));
+            this.A02.Name = ("A02");
+            this.A02.Size = (new global::System.Drawing.Size(29, 16));
+            this.A02.TabIndex = (3);
+            this.A02.Text = ("A02");
+            // 
+            // A01
+            // 
+            this.A01.AutoSize = (true);
+            this.A01.Location = (new global::System.Drawing.Point(114, 41));
+            this.A01.Name = ("A01");
+            this.A01.Size = (new global::System.Drawing.Size(29, 16));
+            this.A01.TabIndex = (2);
+            this.A01.Text = ("A01");
             // 
             // label49
             // 
             this.label49.AutoSize = (true);
             this.label49.Location = (new global::System.Drawing.Point(6, 129));
             this.label49.Name = ("label49");
-            this.label49.Size = (new global::System.Drawing.Size(48, 16));
+            this.label49.Size = (new global::System.Drawing.Size(58, 16));
             this.label49.TabIndex = (1);
-            this.label49.Text = ("Normal");
+            this.label49.Text = ("Economy");
             // 
             // label48
             // 
             this.label48.AutoSize = (true);
             this.label48.Location = (new global::System.Drawing.Point(6, 31));
             this.label48.Name = ("label48");
-            this.label48.Size = (new global::System.Drawing.Size(26, 16));
+            this.label48.Size = (new global::System.Drawing.Size(56, 16));
             this.label48.TabIndex = (0);
-            this.label48.Text = ("VIP");
+            this.label48.Text = ("Business");
             // 
-            // simpleButton4
+            // buttonDeleteTicket
             // 
-            this.simpleButton4.Location = (new global::System.Drawing.Point(294, 382));
-            this.simpleButton4.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton4.Name = ("simpleButton4");
-            this.simpleButton4.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton4.TabIndex = (24);
-            this.simpleButton4.Text = ("Delete");
+            this.buttonDeleteTicket.Location = (new global::System.Drawing.Point(294, 382));
+            this.buttonDeleteTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.buttonDeleteTicket.Name = ("buttonDeleteTicket");
+            this.buttonDeleteTicket.Size = (new global::System.Drawing.Size(118, 36));
+            this.buttonDeleteTicket.TabIndex = (24);
+            this.buttonDeleteTicket.Text = ("Delete");
             // 
-            // simpleButton5
+            // buttonUpdateTicket
             // 
-            this.simpleButton5.Location = (new global::System.Drawing.Point(158, 382));
-            this.simpleButton5.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton5.Name = ("simpleButton5");
-            this.simpleButton5.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton5.TabIndex = (23);
-            this.simpleButton5.Text = ("Update");
+            this.buttonUpdateTicket.Location = (new global::System.Drawing.Point(158, 382));
+            this.buttonUpdateTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.buttonUpdateTicket.Name = ("buttonUpdateTicket");
+            this.buttonUpdateTicket.Size = (new global::System.Drawing.Size(118, 36));
+            this.buttonUpdateTicket.TabIndex = (23);
+            this.buttonUpdateTicket.Text = ("Update");
             // 
-            // simpleButton6
+            // buttonAddTicket
             // 
-            this.simpleButton6.Location = (new global::System.Drawing.Point(22, 382));
-            this.simpleButton6.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton6.Name = ("simpleButton6");
-            this.simpleButton6.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton6.TabIndex = (22);
-            this.simpleButton6.Text = ("Add");
+            this.buttonAddTicket.Location = (new global::System.Drawing.Point(22, 382));
+            this.buttonAddTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.buttonAddTicket.Name = ("buttonAddTicket");
+            this.buttonAddTicket.Size = (new global::System.Drawing.Size(118, 36));
+            this.buttonAddTicket.TabIndex = (22);
+            this.buttonAddTicket.Text = ("Add");
             // 
             // gridTicket
             // 
@@ -1020,9 +1016,10 @@
             this.gridTicket.MainView = (this.gridView1);
             this.gridTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.gridTicket.Name = ("gridTicket");
-            this.gridTicket.Size = (new global::System.Drawing.Size(1912, 110));
+            this.gridTicket.Size = (new global::System.Drawing.Size(1912, 300));
             this.gridTicket.TabIndex = (1);
             this.gridTicket.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridView1 });
+            this.gridTicket.Load += (this.gridTicket_Load);
             // 
             // gridView1
             // 
@@ -1230,18 +1227,14 @@
             // groupBox3
             // 
             this.groupBox3.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox3.Controls.Add(this.dateTimePicker3);
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.textEdit12);
             this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.comboBox4);
-            this.groupBox3.Controls.Add(this.comboBox3);
-            this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.comboBox2);
+            this.groupBox3.Controls.Add(this.comboBoxTickDateDepart);
+            this.groupBox3.Controls.Add(this.comboBoxTickDesti);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.comboBoxTickDepart);
             this.groupBox3.Controls.Add(this.textEdit14);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Location = (new global::System.Drawing.Point(16, 33));
@@ -1253,30 +1246,21 @@
             this.groupBox3.TabStop = (false);
             this.groupBox3.Text = ("Tickets information");
             // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.dateTimePicker3.Location = (new global::System.Drawing.Point(141, 262));
-            this.dateTimePicker3.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dateTimePicker3.Name = ("dateTimePicker3");
-            this.dateTimePicker3.Size = (new global::System.Drawing.Size(250, 23));
-            this.dateTimePicker3.TabIndex = (40);
-            // 
             // label23
             // 
             this.label23.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label23.AutoSize = (true);
-            this.label23.Location = (new global::System.Drawing.Point(28, 262));
+            this.label23.Location = (new global::System.Drawing.Point(28, 153));
             this.label23.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
             this.label23.Name = ("label23");
-            this.label23.Size = (new global::System.Drawing.Size(99, 16));
+            this.label23.Size = (new global::System.Drawing.Size(114, 16));
             this.label23.TabIndex = (39);
-            this.label23.Text = ("Date Departure:");
+            this.label23.Text = ("Date of Departure:");
             // 
             // textEdit12
             // 
             this.textEdit12.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit12.Location = (new global::System.Drawing.Point(141, 220));
+            this.textEdit12.Location = (new global::System.Drawing.Point(158, 189));
             this.textEdit12.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.textEdit12.Name = ("textEdit12");
             this.textEdit12.Size = (new global::System.Drawing.Size(250, 22));
@@ -1286,64 +1270,33 @@
             // 
             this.label22.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label22.AutoSize = (true);
-            this.label22.Location = (new global::System.Drawing.Point(28, 223));
+            this.label22.Location = (new global::System.Drawing.Point(28, 192));
             this.label22.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
             this.label22.Name = ("label22");
             this.label22.Size = (new global::System.Drawing.Size(40, 16));
             this.label22.TabIndex = (37);
             this.label22.Text = ("Price:");
             // 
-            // comboBox4
+            // comboBoxTickDateDepart
             // 
-            this.comboBox4.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBox4.FormattingEnabled = (true);
-            this.comboBox4.Location = (new global::System.Drawing.Point(141, 182));
-            this.comboBox4.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBox4.Name = ("comboBox4");
-            this.comboBox4.Size = (new global::System.Drawing.Size(250, 24));
-            this.comboBox4.TabIndex = (36);
+            this.comboBoxTickDateDepart.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBoxTickDateDepart.FormattingEnabled = (true);
+            this.comboBoxTickDateDepart.Location = (new global::System.Drawing.Point(158, 150));
+            this.comboBoxTickDateDepart.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.comboBoxTickDateDepart.Name = ("comboBoxTickDateDepart");
+            this.comboBoxTickDateDepart.Size = (new global::System.Drawing.Size(250, 24));
+            this.comboBoxTickDateDepart.TabIndex = (35);
+            this.comboBoxTickDateDepart.Click += (this.comboBoxTickDateDepart_Click);
             // 
-            // comboBox3
+            // comboBoxTickDesti
             // 
-            this.comboBox3.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBox3.FormattingEnabled = (true);
-            this.comboBox3.Location = (new global::System.Drawing.Point(141, 148));
-            this.comboBox3.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBox3.Name = ("comboBox3");
-            this.comboBox3.Size = (new global::System.Drawing.Size(250, 24));
-            this.comboBox3.TabIndex = (35);
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label19.AutoSize = (true);
-            this.label19.Location = (new global::System.Drawing.Point(27, 185));
-            this.label19.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label19.Name = ("label19");
-            this.label19.Size = (new global::System.Drawing.Size(108, 16));
-            this.label19.TabIndex = (34);
-            this.label19.Text = ("Time Destination:");
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label18.AutoSize = (true);
-            this.label18.Location = (new global::System.Drawing.Point(28, 148));
-            this.label18.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label18.Name = ("label18");
-            this.label18.Size = (new global::System.Drawing.Size(102, 16));
-            this.label18.TabIndex = (33);
-            this.label18.Text = ("Time Departure:");
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBox2.FormattingEnabled = (true);
-            this.comboBox2.Location = (new global::System.Drawing.Point(141, 110));
-            this.comboBox2.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBox2.Name = ("comboBox2");
-            this.comboBox2.Size = (new global::System.Drawing.Size(250, 24));
-            this.comboBox2.TabIndex = (32);
+            this.comboBoxTickDesti.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBoxTickDesti.FormattingEnabled = (true);
+            this.comboBoxTickDesti.Location = (new global::System.Drawing.Point(158, 108));
+            this.comboBoxTickDesti.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.comboBoxTickDesti.Name = ("comboBoxTickDesti");
+            this.comboBoxTickDesti.Size = (new global::System.Drawing.Size(250, 24));
+            this.comboBoxTickDesti.TabIndex = (32);
             // 
             // label17
             // 
@@ -1367,20 +1320,20 @@
             this.label16.TabIndex = (30);
             this.label16.Text = ("Departure:");
             // 
-            // comboBox1
+            // comboBoxTickDepart
             // 
-            this.comboBox1.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBox1.FormattingEnabled = (true);
-            this.comboBox1.Location = (new global::System.Drawing.Point(141, 69));
-            this.comboBox1.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBox1.Name = ("comboBox1");
-            this.comboBox1.Size = (new global::System.Drawing.Size(250, 24));
-            this.comboBox1.TabIndex = (29);
+            this.comboBoxTickDepart.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBoxTickDepart.FormattingEnabled = (true);
+            this.comboBoxTickDepart.Location = (new global::System.Drawing.Point(158, 71));
+            this.comboBoxTickDepart.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.comboBoxTickDepart.Name = ("comboBoxTickDepart");
+            this.comboBoxTickDepart.Size = (new global::System.Drawing.Size(250, 24));
+            this.comboBoxTickDepart.TabIndex = (29);
             // 
             // textEdit14
             // 
             this.textEdit14.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit14.Location = (new global::System.Drawing.Point(141, 34));
+            this.textEdit14.Location = (new global::System.Drawing.Point(158, 34));
             this.textEdit14.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.textEdit14.Name = ("textEdit14");
             this.textEdit14.Size = (new global::System.Drawing.Size(250, 22));
@@ -1404,7 +1357,7 @@
             this.tpCustomer.Controls.Add(this.groupBox5);
             this.tpCustomer.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tpCustomer.Name = ("tpCustomer");
-            this.tpCustomer.Size = (new global::System.Drawing.Size(1940, 485));
+            this.tpCustomer.Size = (new global::System.Drawing.Size(1940, 675));
             // 
             // gcCustomer
             // 
@@ -1414,7 +1367,7 @@
             this.gcCustomer.MainView = (this.gvCustomer);
             this.gcCustomer.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.gcCustomer.Name = ("gcCustomer");
-            this.gcCustomer.Size = (new global::System.Drawing.Size(1916, 225));
+            this.gcCustomer.Size = (new global::System.Drawing.Size(1916, 415));
             this.gcCustomer.TabIndex = (3);
             this.gcCustomer.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gvCustomer });
             // 
@@ -2352,7 +2305,7 @@
             this.tabNavigationPage5.Controls.Add(this.groupBox7);
             this.tabNavigationPage5.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationPage5.Name = ("tabNavigationPage5");
-            this.tabNavigationPage5.Size = (new global::System.Drawing.Size(1040, 806));
+            this.tabNavigationPage5.Size = (new global::System.Drawing.Size(1940, 485));
             // 
             // gridControlPlane
             // 
@@ -2362,7 +2315,7 @@
             this.gridControlPlane.MainView = (this.gridPlane);
             this.gridControlPlane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.gridControlPlane.Name = ("gridControlPlane");
-            this.gridControlPlane.Size = (new global::System.Drawing.Size(1016, 512));
+            this.gridControlPlane.Size = (new global::System.Drawing.Size(1916, 191));
             this.gridControlPlane.TabIndex = (4);
             this.gridControlPlane.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridPlane });
             this.gridControlPlane.Load += (this.gridControlPlane_Load);
@@ -2397,7 +2350,7 @@
             this.groupBox7.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.groupBox7.Name = ("groupBox7");
             this.groupBox7.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox7.Size = (new global::System.Drawing.Size(1016, 242));
+            this.groupBox7.Size = (new global::System.Drawing.Size(1916, 242));
             this.groupBox7.TabIndex = (3);
             this.groupBox7.TabStop = (false);
             this.groupBox7.Text = ("Information plane");
@@ -2486,7 +2439,7 @@
             // label42
             // 
             this.label42.AutoSize = (true);
-            this.label42.Location = (new global::System.Drawing.Point(442, 28));
+            this.label42.Location = (new global::System.Drawing.Point(449, 173));
             this.label42.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
             this.label42.Name = ("label42");
             this.label42.Size = (new global::System.Drawing.Size(42, 16));
@@ -2516,7 +2469,7 @@
             // simpleButton22
             // 
             this.simpleButton22.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton22.Location = (new global::System.Drawing.Point(1583, 327));
+            this.simpleButton22.Location = (new global::System.Drawing.Point(2483, 327));
             this.simpleButton22.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton22.Name = ("simpleButton22");
             this.simpleButton22.Size = (new global::System.Drawing.Size(118, 36));
@@ -2526,7 +2479,7 @@
             // simpleButton23
             // 
             this.simpleButton23.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton23.Location = (new global::System.Drawing.Point(1447, 327));
+            this.simpleButton23.Location = (new global::System.Drawing.Point(2347, 327));
             this.simpleButton23.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton23.Name = ("simpleButton23");
             this.simpleButton23.Size = (new global::System.Drawing.Size(118, 36));
@@ -2536,7 +2489,7 @@
             // simpleButton24
             // 
             this.simpleButton24.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton24.Location = (new global::System.Drawing.Point(1311, 327));
+            this.simpleButton24.Location = (new global::System.Drawing.Point(2211, 327));
             this.simpleButton24.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton24.Name = ("simpleButton24");
             this.simpleButton24.Size = (new global::System.Drawing.Size(118, 36));
@@ -2912,23 +2865,19 @@
         private RadioButton radioButton3;
         private Label label12;
         private RadioButton radioButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton buttonDeleteTicket;
+        private DevExpress.XtraEditors.SimpleButton buttonUpdateTicket;
+        private DevExpress.XtraEditors.SimpleButton buttonAddTicket;
         private DevExpress.XtraEditors.TextEdit textEdit16;
         private Label label21;
-        private DateTimePicker dateTimePicker3;
         private Label label23;
         private DevExpress.XtraEditors.TextEdit textEdit12;
         private Label label22;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private Label label19;
-        private Label label18;
-        private ComboBox comboBox2;
+        private ComboBox comboBoxTickDateDepart;
+        private ComboBox comboBoxTickDesti;
         private Label label17;
         private Label label16;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxTickDepart;
         private DevExpress.XtraEditors.TextEdit textEdit14;
         private Label label20;
         private GroupBox groupBox5;
@@ -3030,67 +2979,67 @@
         private Label label113;
         private DateTimePicker dtpAssignedDateJob;
         private GroupBox groupBox8;
-        private Label label100;
-        private Label label101;
-        private Label label102;
-        private Label label103;
-        private Label label104;
-        private Label label105;
-        private Label label106;
-        private Label label107;
-        private Label label108;
-        private Label label109;
-        private Label label90;
-        private Label label91;
-        private Label label92;
-        private Label label93;
-        private Label label94;
-        private Label label95;
-        private Label label96;
-        private Label label97;
-        private Label label98;
-        private Label label99;
-        private Label label80;
-        private Label label81;
-        private Label label82;
-        private Label label83;
-        private Label label84;
-        private Label label85;
-        private Label label86;
-        private Label label87;
-        private Label label88;
-        private Label label89;
-        private Label label70;
-        private Label label71;
-        private Label label72;
-        private Label label73;
-        private Label label74;
-        private Label label75;
-        private Label label76;
-        private Label label77;
-        private Label label78;
-        private Label label79;
-        private Label label65;
-        private Label label66;
-        private Label label67;
-        private Label label68;
-        private Label label69;
-        private Label label64;
-        private Label label62;
-        private Label label63;
-        private Label label60;
-        private Label label61;
-        private Label label55;
-        private Label label56;
-        private Label label57;
-        private Label label58;
-        private Label label59;
-        private Label label54;
-        private Label label53;
-        private Label label52;
-        private Label label51;
-        private Label label50;
-        private Label label49;
+        private Label G10;
+        private Label F10;
+        private Label E10;
+        private Label D10;
+        private Label C10;
+        private Label G09;
+        private Label F09;
+        private Label E09;
+        private Label D09;
+        private Label C09;
+        private Label G08;
+        private Label F08;
+        private Label E08;
+        private Label D08;
+        private Label C08;
+        private Label G07;
+        private Label F07;
+        private Label E07;
+        private Label D07;
+        private Label C07;
+        private Label G06;
+        private Label F06;
+        private Label E06;
+        private Label D06;
+        private Label C06;
+        private Label G05;
+        private Label F05;
+        private Label E05;
+        private Label D05;
+        private Label C05;
+        private Label G04;
+        private Label F04;
+        private Label E04;
+        private Label D04;
+        private Label C04;
+        private Label G03;
+        private Label F03;
+        private Label E03;
+        private Label D03;
+        private Label C03;
+        private Label G02;
+        private Label F02;
+        private Label E02;
+        private Label D02;
+        private Label C02;
+        private Label G01;
+        private Label F01;
+        private Label E01;
+        private Label D01;
+        private Label C01;
+        private Label B05;
+        private Label B04;
+        private Label B03;
+        private Label B02;
+        private Label B01;
+        private Label A05;
+        private Label A04;
+        private Label A03;
+        private Label A02;
+        private Label A01;
         private Label label48;
+        private global::System.Windows.Forms.Label label49;
     }
 }

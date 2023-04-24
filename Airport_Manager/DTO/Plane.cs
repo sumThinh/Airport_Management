@@ -7,12 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel;
+
 namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class Plane
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -24,9 +25,9 @@ namespace DTO
         public int PlaneID { get; set; }
         public string Model { get; set; }
         public string Registration { get; set; }
-        public int TotalSeat { get; set; }
+        public Nullable<int> TotalSeat { get; set; }
         public string Manufacturer { get; set; }
-        public int State { get; set; }
+        public Nullable<int> State { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         [Browsable(false)]
