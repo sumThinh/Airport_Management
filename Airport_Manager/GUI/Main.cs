@@ -17,7 +17,7 @@ namespace GUI
     public partial class Main : DevExpress.XtraEditors.XtraForm
     {
        
-        public Main()
+        public Main(Account account,Employee emp)
         {
             InitializeComponent();
         }
