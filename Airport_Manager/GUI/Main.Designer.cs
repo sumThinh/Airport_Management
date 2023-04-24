@@ -184,6 +184,7 @@
             label16 = new Label();
             label20 = new Label();
             tabControls = new DevExpress.XtraBars.Navigation.TabPane();
+            cartesianTicket = new LiveCharts.WinForms.CartesianChart();
             ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
             tpStatistics.SuspendLayout();
@@ -307,6 +308,7 @@
             // tpStatistics
             // 
             tpStatistics.Caption = "Statistics";
+            tpStatistics.Controls.Add(cartesianTicket);
             tpStatistics.Controls.Add(pieTicket);
             tpStatistics.Margin = new Padding(3, 2, 3, 2);
             tpStatistics.Name = "tpStatistics";
@@ -1862,6 +1864,14 @@
             tabControls.TabIndex = 0;
             tabControls.Text = "Tickets";
             // 
+            // cartesianTicket
+            // 
+            cartesianTicket.Location = new Point(12, 242);
+            cartesianTicket.Name = "cartesianTicket";
+            cartesianTicket.Size = new Size(844, 243);
+            cartesianTicket.TabIndex = 1;
+            cartesianTicket.Text = "cartesianTicke";
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
@@ -2099,5 +2109,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
         private DevExpress.XtraBars.Navigation.TabPane tabControls;
         private LiveCharts.WinForms.PieChart pieTicket;
+        private LiveCharts.WinForms.CartesianChart cartesianTicket;
     }
 }

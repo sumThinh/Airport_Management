@@ -17,6 +17,7 @@ using System.Globalization;
 using DevExpress.Charts.Native;
 using DevExpress.CodeParser;
 using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace GUI
 {
@@ -532,9 +533,14 @@ namespace GUI
             List<Bill_Detail> list = bTicket.getTicketListByDate(date);
 
             SeriesCollection series = new SeriesCollection();
-            MessageBox.Show($"{list.Count(t => t.SeatClass == true )}");
-            
-            
+            series.Add(new PieSeries() { Title = "Normal Tickets", Values = new ChartValues<int> { list.Count(t => t.SeatClass == false) }, DataLabels = true, LabelPoint = lablePoint });
+            series.Add(new PieSeries() { Title = "VIP Tickets", Values = new ChartValues<int> { list.Count(t => t.SeatClass == true) }, DataLabels = true, LabelPoint = lablePoint });
+
+            pieTicket.Series = series;
+
+            pieTicket.LegendLocation = LegendLocation.Bottom;
+
+
         }
     }
 
