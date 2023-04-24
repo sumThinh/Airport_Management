@@ -14,10 +14,9 @@ namespace DTO
     
     public partial class Job
     {
-        public int JobID { get; set; }
         public System.DateTime AssignedDate { get; set; }
-        public int EmployeeID { get; set; }
-        public int FlightID { get; set; }
+        public Nullable<int> EmployeeID { get; set; }
+        public Nullable<int> FlightID { get; set; }
         public string JobDescription { get; set; }
         public string JobState { get; set; }
     

@@ -11,7 +11,8 @@ namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Employee
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -31,11 +32,14 @@ namespace DTO
         public string NationID { get; set; }
         public string TeleNumber { get; set; }
         public string Position { get; set; }
-    
+
+        [Browsable(false)]
         public virtual Account Account { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [Browsable(false)]
         public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [Browsable(false)]
         public virtual ICollection<Job> Jobs { get; set; }
     }
 }

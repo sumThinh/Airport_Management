@@ -70,14 +70,13 @@
         </EntityType>
         <EntityType Name="Jobs">
           <Key>
-            <PropertyRef Name="JobID" />
+            <PropertyRef Name="AssignedDate" />
           </Key>
-          <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AssignedDate" Type="datetime" Nullable="false" />
-          <Property Name="EmployeeID" Type="int" Nullable="false" />
-          <Property Name="FlightID" Type="int" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="FlightID" Type="int" />
           <Property Name="JobDescription" Type="nvarchar" MaxLength="20" />
-          <Property Name="JobState" Type="int" />
+          <Property Name="JobState" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Locations">
           <Key>
@@ -156,7 +155,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__EmployeeID__46E78A0C">
-          <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+          <End Role="Employees" Type="Self.Employees" Multiplicity="0..1" />
           <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -168,7 +167,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__FlightID__47DBAE45">
-          <End Role="Flights" Type="Self.Flights" Multiplicity="1" />
+          <End Role="Flights" Type="Self.Flights" Multiplicity="0..1" />
           <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Flights">
@@ -345,14 +344,13 @@
         </EntityType>
         <EntityType Name="Job">
           <Key>
-            <PropertyRef Name="JobID" />
+            <PropertyRef Name="AssignedDate" />
           </Key>
-          <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AssignedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
-          <Property Name="FlightID" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="FlightID" Type="Int32" />
           <Property Name="JobDescription" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="JobState" Type="Int32" />
+          <Property Name="JobState" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Employee" Relationship="Self.FK__Job__EmployeeID__46E78A0C" FromRole="Jobs" ToRole="Employees" />
           <NavigationProperty Name="Flight" Relationship="Self.FK__Job__FlightID__47DBAE45" FromRole="Jobs" ToRole="Flights" />
         </EntityType>
@@ -436,7 +434,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__EmployeeID__46E78A0C">
-          <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Employees" Type="Self.Employee" Multiplicity="0..1" />
           <End Role="Jobs" Type="Self.Job" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -460,7 +458,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__FlightID__47DBAE45">
-          <End Role="Flights" Type="Self.Flight" Multiplicity="1" />
+          <End Role="Flights" Type="Self.Flight" Multiplicity="0..1" />
           <End Role="Jobs" Type="Self.Job" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Flights">
@@ -619,7 +617,6 @@
           <EntitySetMapping Name="Jobs">
             <EntityTypeMapping TypeName="AirportManagerModel.Job">
               <MappingFragment StoreEntitySet="Jobs">
-                <ScalarProperty Name="JobID" ColumnName="JobID" />
                 <ScalarProperty Name="AssignedDate" ColumnName="AssignedDate" />
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
                 <ScalarProperty Name="FlightID" ColumnName="FlightID" />
