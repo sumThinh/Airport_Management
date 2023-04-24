@@ -705,7 +705,7 @@ namespace GUI
             }
             else
             {
-                employee.EmployeeID = Int32.Parse(txtEmployeeID.Text.Trim());
+                employee.EmployeeID = int.Parse(txtEmployeeID.Text.Trim());
                 employee.Name = txtNameEmployee.Text.Trim();
                 employee.Address = txtAddressEmployee.Text.Trim();
                 employee.Nationality = txtNationalityEmployee.Text.Trim();
@@ -763,8 +763,8 @@ namespace GUI
             else
             {
                 job.AssignedDate = dtpAssignedDateJob.Value.Date;
-                job.EmployeeID = Int32.Parse(txtEmpIDJob.Text.Trim());
-                job.FlightID = Int32.Parse(txtFightIDJob.Text.Trim());
+                job.EmployeeID = int.Parse(txtEmpIDJob.Text.Trim());
+                job.FlightID = int.Parse(txtFightIDJob.Text.Trim());
                 job.JobDescription = txtJobDescription.Text.Trim();
                 job.JobState = cbStateJob.Text;
                 if (busJob.AddJob(job) == 1)
@@ -788,6 +788,21 @@ namespace GUI
                 }
             }
 
+        }
+
+        private void comboBoxTickDateDepart_Click(object sender, EventArgs e)
+        {
+            var loDep = (Location)comboBoxDepart.SelectedItem;
+            var loDes = (Location)comboBoxDesti.SelectedItem;
+            comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
+            comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
+        }
+
+        private void gridTicket_Load(object sender, EventArgs e)
+        {
+            comboBoxTickDepart.DataSource = flightbus.GetLocations();
+            comboBoxTickDesti.DataSource = flightbus.GetLocations();
+            comboBoxTickDepart.DisplayMember = comboBoxTickDesti.DisplayMember = "LocationName";
         }
     }
 }

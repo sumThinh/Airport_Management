@@ -7,11 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel;
+
 namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
     
     public partial class Flight
     {
@@ -24,8 +25,8 @@ namespace DTO
     
         public int FlightID { get; set; }
         public int PlaneID { get; set; }
-        public int Departure { get; set; }  
-        public DateTime DateOfDeparture { get; set; }
+        public int Departure { get; set; }
+        public System.DateTime DateOfDeparture { get; set; }
         public int Destination { get; set; }
         public string Airline { get; set; }
     
