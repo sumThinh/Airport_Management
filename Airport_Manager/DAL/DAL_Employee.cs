@@ -70,18 +70,7 @@ namespace DAL
 
         public bool DeleteEmployee(int employeeID)
         {
-            //using (AirportManager db = new AirportManager())
-            //{
-            //    var entry = db.Entry(employee);
-            //    if (entry.State == EntityState.Detached)
-            //        db.Employees.Attach(employee);
-            //    db.Employees.Remove(employee);
-
-            //    if (db.SaveChanges() > 0)
-            //        return true;
-            //    else
-            //        return false;
-            //}
+            
             using (AirportManager db = new AirportManager())
             {
                 var query = (from emp in db.Employees

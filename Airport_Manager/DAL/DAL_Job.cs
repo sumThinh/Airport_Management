@@ -68,20 +68,39 @@ namespace DAL
             }
         }
 
-        public bool CheckExitJob(Job job)
+        public bool CheckExitJob(int job)
         {
             using (AirportManager db = new AirportManager())
             {
                 var query = from j in db.Jobs
-                            where j.EmployeeID == job.EmployeeID && j.FlightID == job.FlightID && j.AssignedDate == job.AssignedDate
-                            select j;
+                            select j.JobID;
                 foreach (var e in query)
                 {
-                    if (e.EmployeeID == job.EmployeeID && e.FlightID == job.FlightID && e.AssignedDate == job.AssignedDate)
+                    if (e == job)
                         return true;
                 }
             }
             return false;
+        }
+
+        public bool DeleteJob(Job job)
+        {
+
+            using (AirportManager db = new AirportManager())
+            {
+                var query = (from j in db.Jobs
+                             where j.JobID == job.JobID
+                             select j).Single();
+
+                if (query.JobID == job.JobID)
+                {
+                    db.Jobs.Remove(query);
+                    db.SaveChanges();
+                    return true;
+                }
+
+                return false;
+            }
         }
     }
 }

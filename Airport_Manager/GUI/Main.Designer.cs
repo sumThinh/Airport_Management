@@ -240,6 +240,8 @@
             this.dgvJob = new DevExpress.XtraGrid.GridControl();
             this.gvJob = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.lbJobID = new System.Windows.Forms.Label();
+            this.txtJobID = new DevExpress.XtraEditors.TextEdit();
             this.dtpAssignedDateJob = new System.Windows.Forms.DateTimePicker();
             this.label113 = new System.Windows.Forms.Label();
             this.txtJobDescription = new DevExpress.XtraEditors.TextEdit();
@@ -314,6 +316,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvJob)).BeginInit();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJobID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobDescription.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).BeginInit();
@@ -2677,6 +2680,8 @@
             // 
             this.groupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox9.Controls.Add(this.lbJobID);
+            this.groupBox9.Controls.Add(this.txtJobID);
             this.groupBox9.Controls.Add(this.dtpAssignedDateJob);
             this.groupBox9.Controls.Add(this.label113);
             this.groupBox9.Controls.Add(this.txtJobDescription);
@@ -2702,6 +2707,23 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Information Jobs";
             // 
+            // lbJobID
+            // 
+            this.lbJobID.AutoSize = true;
+            this.lbJobID.Location = new System.Drawing.Point(8, 24);
+            this.lbJobID.Name = "lbJobID";
+            this.lbJobID.Size = new System.Drawing.Size(43, 16);
+            this.lbJobID.TabIndex = 41;
+            this.lbJobID.Text = "JobID:";
+            // 
+            // txtJobID
+            // 
+            this.txtJobID.Location = new System.Drawing.Point(115, 24);
+            this.txtJobID.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtJobID.Name = "txtJobID";
+            this.txtJobID.Size = new System.Drawing.Size(243, 22);
+            this.txtJobID.TabIndex = 40;
+            // 
             // dtpAssignedDateJob
             // 
             this.dtpAssignedDateJob.Location = new System.Drawing.Point(115, 107);
@@ -2712,7 +2734,7 @@
             // label113
             // 
             this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(8, 112);
+            this.label113.Location = new System.Drawing.Point(7, 112);
             this.label113.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label113.Name = "label113";
             this.label113.Size = new System.Drawing.Size(93, 16);
@@ -2721,7 +2743,7 @@
             // 
             // txtJobDescription
             // 
-            this.txtJobDescription.Location = new System.Drawing.Point(549, 25);
+            this.txtJobDescription.Location = new System.Drawing.Point(566, 62);
             this.txtJobDescription.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtJobDescription.Name = "txtJobDescription";
             this.txtJobDescription.Size = new System.Drawing.Size(243, 22);
@@ -2743,6 +2765,7 @@
             this.btnDeleteJob.Size = new System.Drawing.Size(118, 36);
             this.btnDeleteJob.TabIndex = 34;
             this.btnDeleteJob.Text = "Delete";
+            this.btnDeleteJob.Click += new System.EventHandler(this.btnDeleteJob_Click);
             // 
             // btnUpdateJob
             // 
@@ -2771,7 +2794,7 @@
             "Pending",
             "Not success",
             "Successfull"});
-            this.cbStateJob.Location = new System.Drawing.Point(549, 60);
+            this.cbStateJob.Location = new System.Drawing.Point(566, 97);
             this.cbStateJob.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.cbStateJob.Name = "cbStateJob";
             this.cbStateJob.Size = new System.Drawing.Size(243, 24);
@@ -2780,7 +2803,7 @@
             // label110
             // 
             this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(443, 65);
+            this.label110.Location = new System.Drawing.Point(460, 102);
             this.label110.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label110.Name = "label110";
             this.label110.Size = new System.Drawing.Size(42, 16);
@@ -2790,7 +2813,7 @@
             // label111
             // 
             this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(443, 27);
+            this.label111.Location = new System.Drawing.Point(460, 64);
             this.label111.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(98, 16);
@@ -2839,7 +2862,7 @@
             // 
             // txtEmpIDJob
             // 
-            this.txtEmpIDJob.Location = new System.Drawing.Point(115, 25);
+            this.txtEmpIDJob.Location = new System.Drawing.Point(566, 21);
             this.txtEmpIDJob.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEmpIDJob.Name = "txtEmpIDJob";
             this.txtEmpIDJob.Size = new System.Drawing.Size(243, 22);
@@ -2848,7 +2871,7 @@
             // label114
             // 
             this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(7, 27);
+            this.label114.Location = new System.Drawing.Point(460, 24);
             this.label114.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label114.Name = "label114";
             this.label114.Size = new System.Drawing.Size(83, 16);
@@ -2932,6 +2955,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvJob)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJobID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobDescription.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).EndInit();
@@ -3169,5 +3193,7 @@
         private Label label50;
         private Label label49;
         private Label label48;
+        private Label lbJobID;
+        private DevExpress.XtraEditors.TextEdit txtJobID;
     }
 }

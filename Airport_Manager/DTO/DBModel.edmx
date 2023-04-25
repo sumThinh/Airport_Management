@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="AirportManagerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="AirportManagerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Accounts">
           <Key>
             <PropertyRef Name="EmployeeID" />
@@ -63,18 +63,20 @@
           </Key>
           <Property Name="FlightID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="PlaneID" Type="int" Nullable="false" />
-          <Property Name="Departure" Type="int" />
-          <Property Name="DateOfDeparture" Type="datetime" />
-          <Property Name="Destination" Type="int" />
+          <Property Name="Departure" Type="int" Nullable="false" />
+          <Property Name="DateOfDeparture" Type="datetime" Nullable="false" />
+          <Property Name="Destination" Type="int" Nullable="false" />
           <Property Name="Airline" Type="nvarchar" MaxLength="20" />
+          <Property Name="Price" Type="decimal" Precision="12" Scale="0" Nullable="false" />
         </EntityType>
         <EntityType Name="Jobs">
           <Key>
-            <PropertyRef Name="AssignedDate" />
+            <PropertyRef Name="JobID" />
           </Key>
+          <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AssignedDate" Type="datetime" Nullable="false" />
-          <Property Name="EmployeeID" Type="int" />
-          <Property Name="FlightID" Type="int" />
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="FlightID" Type="int" Nullable="false" />
           <Property Name="JobDescription" Type="nvarchar" MaxLength="20" />
           <Property Name="JobState" Type="nvarchar" MaxLength="20" />
         </EntityType>
@@ -155,7 +157,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__EmployeeID__46E78A0C">
-          <End Role="Employees" Type="Self.Employees" Multiplicity="0..1" />
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
           <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -167,7 +169,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__FlightID__47DBAE45">
-          <End Role="Flights" Type="Self.Flights" Multiplicity="0..1" />
+          <End Role="Flights" Type="Self.Flights" Multiplicity="1" />
           <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Flights">
@@ -191,7 +193,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Flights_Locations">
-          <End Role="Locations" Type="Self.Locations" Multiplicity="0..1" />
+          <End Role="Locations" Type="Self.Locations" Multiplicity="1" />
           <End Role="Flights" Type="Self.Flights" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Locations">
@@ -203,7 +205,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Flights_Locations1">
-          <End Role="Locations" Type="Self.Locations" Multiplicity="0..1" />
+          <End Role="Locations" Type="Self.Locations" Multiplicity="1" />
           <End Role="Flights" Type="Self.Flights" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Locations">
@@ -261,8 +263,7 @@
             <End Role="Flights" EntitySet="Flights" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AirportManagerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -332,23 +333,25 @@
           </Key>
           <Property Name="FlightID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="PlaneID" Type="Int32" Nullable="false" />
-          <Property Name="Departure" Type="Int32" />
-          <Property Name="DateOfDeparture" Type="DateTime" Precision="3" />
-          <Property Name="Destination" Type="Int32" />
+          <Property Name="Departure" Type="Int32" Nullable="false" />
+          <Property Name="DateOfDeparture" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Destination" Type="Int32" Nullable="false" />
           <Property Name="Airline" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Bill_Detail" Relationship="Self.FK__Bill_Deta__Fligh__440B1D61" FromRole="Flights" ToRole="Bill_Detail" />
           <NavigationProperty Name="Plane" Relationship="Self.FK__Flight__Airline__403A8C7D" FromRole="Flights" ToRole="Planes" />
           <NavigationProperty Name="Jobs" Relationship="Self.FK__Job__FlightID__47DBAE45" FromRole="Flights" ToRole="Jobs" />
           <NavigationProperty Name="Location" Relationship="Self.FK_Flights_Locations" FromRole="Flights" ToRole="Locations" />
           <NavigationProperty Name="Location1" Relationship="Self.FK_Flights_Locations1" FromRole="Flights" ToRole="Locations" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="12" Scale="0" />
         </EntityType>
         <EntityType Name="Job">
           <Key>
-            <PropertyRef Name="AssignedDate" />
+            <PropertyRef Name="JobID" />
           </Key>
+          <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AssignedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="EmployeeID" Type="Int32" />
-          <Property Name="FlightID" Type="Int32" />
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="FlightID" Type="Int32" Nullable="false" />
           <Property Name="JobDescription" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="JobState" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Employee" Relationship="Self.FK__Job__EmployeeID__46E78A0C" FromRole="Jobs" ToRole="Employees" />
@@ -386,7 +389,9 @@
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <Association Name="FK__Account__Employe__398D8EEE">
-          <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Employees" Type="Self.Employee" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Accounts" Type="Self.Account" Multiplicity="0..1" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -398,7 +403,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Bill_Deta__Custo__4316F928">
-          <End Role="Customers" Type="Self.Customer" Multiplicity="1" />
+          <End Role="Customers" Type="Self.Customer" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Bill_Detail" Type="Self.Bill_Detail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Customers">
@@ -410,7 +417,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Bill_Deta__Fligh__440B1D61">
-          <End Role="Flights" Type="Self.Flight" Multiplicity="1" />
+          <End Role="Flights" Type="Self.Flight" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Bill_Detail" Type="Self.Bill_Detail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Flights">
@@ -422,7 +431,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Bill_Detail_Employees">
-          <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Employees" Type="Self.Employee" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Bill_Detail" Type="Self.Bill_Detail" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -434,7 +445,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__EmployeeID__46E78A0C">
-          <End Role="Employees" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Employees" Type="Self.Employee" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Jobs" Type="Self.Job" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -446,7 +459,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Flight__Airline__403A8C7D">
-          <End Role="Planes" Type="Self.Plane" Multiplicity="1" />
+          <End Role="Planes" Type="Self.Plane" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Flights" Type="Self.Flight" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Planes">
@@ -458,7 +473,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Job__FlightID__47DBAE45">
-          <End Role="Flights" Type="Self.Flight" Multiplicity="0..1" />
+          <End Role="Flights" Type="Self.Flight" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Jobs" Type="Self.Job" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Flights">
@@ -470,7 +487,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Flights_Locations">
-          <End Role="Locations" Type="Self.Location" Multiplicity="0..1" />
+          <End Role="Locations" Type="Self.Location" Multiplicity="1" />
           <End Role="Flights" Type="Self.Flight" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Locations">
@@ -482,7 +499,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Flights_Locations1">
-          <End Role="Locations" Type="Self.Location" Multiplicity="0..1" />
+          <End Role="Locations" Type="Self.Location" Multiplicity="1" />
           <End Role="Flights" Type="Self.Flight" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Locations">
@@ -605,6 +622,7 @@
           <EntitySetMapping Name="Flights">
             <EntityTypeMapping TypeName="AirportManagerModel.Flight">
               <MappingFragment StoreEntitySet="Flights">
+                <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="FlightID" ColumnName="FlightID" />
                 <ScalarProperty Name="PlaneID" ColumnName="PlaneID" />
                 <ScalarProperty Name="Departure" ColumnName="Departure" />
@@ -617,6 +635,7 @@
           <EntitySetMapping Name="Jobs">
             <EntityTypeMapping TypeName="AirportManagerModel.Job">
               <MappingFragment StoreEntitySet="Jobs">
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
                 <ScalarProperty Name="AssignedDate" ColumnName="AssignedDate" />
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
                 <ScalarProperty Name="FlightID" ColumnName="FlightID" />
