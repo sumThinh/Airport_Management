@@ -309,7 +309,7 @@ namespace GUI
                     {
                         MessageBox.Show(@"Add plane successful!!!", @"SUCCESS", MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
-                        gcCustomer.DataSource = bCustomer.getCustomerList();
+                        gridControlPlane.DataSource = planebus.GetListPlanes();
                     }
                     else
                     {
@@ -353,7 +353,7 @@ namespace GUI
                         {
                             MessageBox.Show(@"Update plane successful", @"SUCCESS", MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
-                            gcCustomer.DataSource = bCustomer.getCustomerList();
+                            gridControlPlane.DataSource = planebus.GetListPlanes();
                         }
                         else
                         {
@@ -394,7 +394,7 @@ namespace GUI
                         MessageBox.Show(@"Remove plane successful", @"SUCCESS", MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
 
-                        gcCustomer.DataSource = bCustomer.getCustomerList();
+                        gridControlPlane.DataSource = planebus.GetListPlanes();
                     }
                     else
                     {
@@ -414,6 +414,7 @@ namespace GUI
 
         void GridControlFlightLoad(object sender, EventArgs e)
         {
+            gridControlFlight.DataSource = flightbus.GetListFlights();
             comboBoxDepart.DataSource = flightbus.GetLocations();
             comboBoxDesti.DataSource = flightbus.GetLocations();
             comboBoxDepart.DisplayMember = comboBoxDesti.DisplayMember = "LocationName";
@@ -426,14 +427,14 @@ namespace GUI
             if (gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle) == null) return;
             var pickedFlight = (Flight)gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle);
             var planeID = (Plane)comboBoxPlane.SelectedItem;
-            var loDes = (Location)comboBoxDepart.SelectedItem;
-            var loDep = (Location)comboBoxDesti.SelectedItem;
+            var loDep = (Location)comboBoxDepart.SelectedItem;
+            var loDes = (Location)comboBoxDesti.SelectedItem;
             textFlightID.Text = pickedFlight.FlightID.ToString();
             planeID.PlaneID = pickedFlight.PlaneID;
             textAirline.Text = pickedFlight.Airline;
             textFliPrice.Text = pickedFlight.Price.ToString();
-            loDes.LocationID = (int)pickedFlight.Departure;
-            loDep.LocationID = (int)pickedFlight.Destination;
+            loDep.LocationID = (int)pickedFlight.Departure;
+            loDes.LocationID = (int)pickedFlight.Destination;
             dateDepartPicker.Value = pickedFlight.DateOfDeparture.Date;
             timeDepartPicker.Value = DateTime.Parse(pickedFlight.DateOfDeparture.TimeOfDay.ToString());
         }
@@ -446,8 +447,8 @@ namespace GUI
                 var daTime = dateDepartPicker.Value.ToString("yyyy/MM/dd") + " " +
                              timeDepartPicker.Value.ToString("HH:mm:ss");
                 var planeFl = (Plane)comboBoxPlane.SelectedItem;
-                var loDes = (Location)comboBoxDepart.SelectedItem;
-                var loDep = (Location)comboBoxDesti.SelectedItem;
+                var loDep = (Location)comboBoxDepart.SelectedItem;
+                var loDes = (Location)comboBoxDesti.SelectedItem;
 
                 var obj = new Flight()
                 {
@@ -465,7 +466,7 @@ namespace GUI
                     {
                         MessageBox.Show(@"Add flight successful!!!", @"SUCCESS", MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
-                        gcCustomer.DataSource = bCustomer.getCustomerList();
+                        gridControlFlight.DataSource = flightbus.GetListFlights();
                     }
                     else
                     {
@@ -495,8 +496,8 @@ namespace GUI
                     var daTime = dateDepartPicker.Value.ToString("yyyy/MM/dd") + " " +
                                  timeDepartPicker.Value.ToString("HH:mm:ss");
                     var planeFl = (Plane)comboBoxDepart.SelectedItem;
-                    var loDes = (Location)comboBoxDepart.SelectedItem;
-                    var loDep = (Location)comboBoxDesti.SelectedItem;
+                    var loDep = (Location)comboBoxDepart.SelectedItem;
+                    var loDes = (Location)comboBoxDesti.SelectedItem;
                     updatedFlight.FlightID = pickedFlight.FlightID;
                     updatedFlight.PlaneID = planeFl.PlaneID;
                     updatedFlight.Airline = textAirline.Text.Trim();
@@ -511,7 +512,7 @@ namespace GUI
                         {
                             MessageBox.Show(@"Update flight successful", @"SUCCESS", MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
-                            gcCustomer.DataSource = bCustomer.getCustomerList();
+                            gridControlFlight.DataSource = flightbus.GetListFlights();
                         }
                         else
                         {
@@ -547,7 +548,7 @@ namespace GUI
                     MessageBox.Show(@"Remove flight successful", @"SUCCESS", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
-                    gcCustomer.DataSource = bCustomer.getCustomerList();
+                    gridControlFlight.DataSource = flightbus.GetListFlights();
                 }
                 else
                 {
@@ -784,11 +785,6 @@ namespace GUI
                 }
 
             }
-        }
-
-        private void txtPasswordEmployee_EditValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         // Ticket Controller

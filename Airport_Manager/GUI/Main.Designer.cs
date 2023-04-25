@@ -1821,7 +1821,7 @@
             this.tp.Controls.Add(this.dgvEmployee);
             this.tp.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tp.Name = ("tp");
-            this.tp.Size = (new global::System.Drawing.Size(2171, 1170));
+            this.tp.Size = (new global::System.Drawing.Size(2533, 1440));
             // 
             // groupBox2
             // 
@@ -1854,22 +1854,21 @@
             this.groupBox2.Controls.Add(this.txtNameEmployee);
             this.groupBox2.Controls.Add(this.txtEmployeeID);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = (new global::System.Drawing.Point(5, 2));
-            this.groupBox2.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.groupBox2.Location = (new global::System.Drawing.Point(6, 2));
+            this.groupBox2.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.groupBox2.Name = ("groupBox2");
-            this.groupBox2.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox2.Size = (new global::System.Drawing.Size(2147, 380));
+            this.groupBox2.Padding = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
+            this.groupBox2.Size = (new global::System.Drawing.Size(2505, 468));
             this.groupBox2.TabIndex = (1);
             this.groupBox2.TabStop = (false);
             this.groupBox2.Text = ("Information employee");
-            this.groupBox2.Paint += (this.gbEmployee_Paint);
             // 
             // label47
             // 
             this.label47.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label47.AutoSize = (true);
-            this.label47.Location = (new global::System.Drawing.Point(716, 162));
-            this.label47.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label47.Location = (new global::System.Drawing.Point(835, 199));
+            this.label47.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label47.Name = ("label47");
             this.label47.Size = (new global::System.Drawing.Size(67, 16));
             this.label47.TabIndex = (27);
@@ -1878,28 +1877,27 @@
             // txtPasswordEmployee
             // 
             this.txtPasswordEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPasswordEmployee.Location = (new global::System.Drawing.Point(792, 160));
-            this.txtPasswordEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtPasswordEmployee.Location = (new global::System.Drawing.Point(924, 197));
+            this.txtPasswordEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtPasswordEmployee.Name = ("txtPasswordEmployee");
-            this.txtPasswordEmployee.Size = (new global::System.Drawing.Size(206, 22));
+            this.txtPasswordEmployee.Size = (new global::System.Drawing.Size(240, 22));
             this.txtPasswordEmployee.TabIndex = (26);
-            this.txtPasswordEmployee.EditValueChanged += (this.txtPasswordEmployee_EditValueChanged);
             // 
             // txtUsernameEmployee
             // 
             this.txtUsernameEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtUsernameEmployee.Location = (new global::System.Drawing.Point(472, 162));
-            this.txtUsernameEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtUsernameEmployee.Location = (new global::System.Drawing.Point(551, 199));
+            this.txtUsernameEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtUsernameEmployee.Name = ("txtUsernameEmployee");
-            this.txtUsernameEmployee.Size = (new global::System.Drawing.Size(225, 22));
+            this.txtUsernameEmployee.Size = (new global::System.Drawing.Size(262, 22));
             this.txtUsernameEmployee.TabIndex = (25);
             // 
             // label40
             // 
             this.label40.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label40.AutoSize = (true);
-            this.label40.Location = (new global::System.Drawing.Point(380, 166));
-            this.label40.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label40.Location = (new global::System.Drawing.Point(443, 204));
+            this.label40.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label40.Name = ("label40");
             this.label40.Size = (new global::System.Drawing.Size(70, 16));
             this.label40.TabIndex = (24);
@@ -1908,18 +1906,18 @@
             // txtPositionEmployee
             // 
             this.txtPositionEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPositionEmployee.Location = (new global::System.Drawing.Point(105, 166));
-            this.txtPositionEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtPositionEmployee.Location = (new global::System.Drawing.Point(122, 204));
+            this.txtPositionEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtPositionEmployee.Name = ("txtPositionEmployee");
-            this.txtPositionEmployee.Size = (new global::System.Drawing.Size(243, 22));
+            this.txtPositionEmployee.Size = (new global::System.Drawing.Size(284, 22));
             this.txtPositionEmployee.TabIndex = (23);
             // 
             // labelPosision
             // 
             this.labelPosision.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.labelPosision.AutoSize = (true);
-            this.labelPosision.Location = (new global::System.Drawing.Point(6, 169));
-            this.labelPosision.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.labelPosision.Location = (new global::System.Drawing.Point(7, 208));
+            this.labelPosision.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.labelPosision.Name = ("labelPosision");
             this.labelPosision.Size = (new global::System.Drawing.Size(56, 16));
             this.labelPosision.TabIndex = (22);
@@ -1928,10 +1926,10 @@
             // btnDeleteEmployee
             // 
             this.btnDeleteEmployee.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnDeleteEmployee.Location = (new global::System.Drawing.Point(2005, 326));
-            this.btnDeleteEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.btnDeleteEmployee.Location = (new global::System.Drawing.Point(2339, 401));
+            this.btnDeleteEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.btnDeleteEmployee.Name = ("btnDeleteEmployee");
-            this.btnDeleteEmployee.Size = (new global::System.Drawing.Size(118, 36));
+            this.btnDeleteEmployee.Size = (new global::System.Drawing.Size(138, 44));
             this.btnDeleteEmployee.TabIndex = (21);
             this.btnDeleteEmployee.Text = ("Delete");
             this.btnDeleteEmployee.Click += (this.btnDeleteEmployee_Click);
@@ -1939,10 +1937,10 @@
             // btnUpdateEmployee
             // 
             this.btnUpdateEmployee.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnUpdateEmployee.Location = (new global::System.Drawing.Point(1871, 326));
-            this.btnUpdateEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.btnUpdateEmployee.Location = (new global::System.Drawing.Point(2183, 401));
+            this.btnUpdateEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.btnUpdateEmployee.Name = ("btnUpdateEmployee");
-            this.btnUpdateEmployee.Size = (new global::System.Drawing.Size(118, 36));
+            this.btnUpdateEmployee.Size = (new global::System.Drawing.Size(138, 44));
             this.btnUpdateEmployee.TabIndex = (20);
             this.btnUpdateEmployee.Text = ("Update");
             this.btnUpdateEmployee.Click += (this.btnUpdateEmployee_Click);
@@ -1950,10 +1948,10 @@
             // btnAddEmployee
             // 
             this.btnAddEmployee.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnAddEmployee.Location = (new global::System.Drawing.Point(1735, 326));
-            this.btnAddEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.btnAddEmployee.Location = (new global::System.Drawing.Point(2024, 401));
+            this.btnAddEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.btnAddEmployee.Name = ("btnAddEmployee");
-            this.btnAddEmployee.Size = (new global::System.Drawing.Size(118, 36));
+            this.btnAddEmployee.Size = (new global::System.Drawing.Size(138, 44));
             this.btnAddEmployee.TabIndex = (19);
             this.btnAddEmployee.Text = ("Add");
             this.btnAddEmployee.Click += (this.btnAddEmployee_Click);
@@ -1962,8 +1960,8 @@
             // 
             this.label9.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = (true);
-            this.label9.Location = (new global::System.Drawing.Point(715, 25));
-            this.label9.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label9.Location = (new global::System.Drawing.Point(834, 31));
+            this.label9.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label9.Name = ("label9");
             this.label9.Size = (new global::System.Drawing.Size(47, 16));
             this.label9.TabIndex = (18);
@@ -1972,36 +1970,36 @@
             // txtPhoneEmployee
             // 
             this.txtPhoneEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPhoneEmployee.Location = (new global::System.Drawing.Point(792, 22));
-            this.txtPhoneEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtPhoneEmployee.Location = (new global::System.Drawing.Point(924, 27));
+            this.txtPhoneEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtPhoneEmployee.Name = ("txtPhoneEmployee");
-            this.txtPhoneEmployee.Size = (new global::System.Drawing.Size(206, 22));
+            this.txtPhoneEmployee.Size = (new global::System.Drawing.Size(240, 22));
             this.txtPhoneEmployee.TabIndex = (17);
             // 
             // txtNationalityEmployee
             // 
             this.txtNationalityEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNationalityEmployee.Location = (new global::System.Drawing.Point(792, 65));
-            this.txtNationalityEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtNationalityEmployee.Location = (new global::System.Drawing.Point(924, 80));
+            this.txtNationalityEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtNationalityEmployee.Name = ("txtNationalityEmployee");
-            this.txtNationalityEmployee.Size = (new global::System.Drawing.Size(206, 22));
+            this.txtNationalityEmployee.Size = (new global::System.Drawing.Size(240, 22));
             this.txtNationalityEmployee.TabIndex = (16);
             // 
             // txtEmailEmployee
             // 
             this.txtEmailEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmailEmployee.Location = (new global::System.Drawing.Point(472, 65));
-            this.txtEmailEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtEmailEmployee.Location = (new global::System.Drawing.Point(551, 80));
+            this.txtEmailEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtEmailEmployee.Name = ("txtEmailEmployee");
-            this.txtEmailEmployee.Size = (new global::System.Drawing.Size(225, 22));
+            this.txtEmailEmployee.Size = (new global::System.Drawing.Size(262, 22));
             this.txtEmailEmployee.TabIndex = (15);
             // 
             // label8
             // 
             this.label8.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = (true);
-            this.label8.Location = (new global::System.Drawing.Point(7, 107));
-            this.label8.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label8.Location = (new global::System.Drawing.Point(8, 132));
+            this.label8.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label8.Name = ("label8");
             this.label8.Size = (new global::System.Drawing.Size(58, 16));
             this.label8.TabIndex = (14);
@@ -2011,8 +2009,8 @@
             // 
             this.label7.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = (true);
-            this.label7.Location = (new global::System.Drawing.Point(380, 68));
-            this.label7.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label7.Location = (new global::System.Drawing.Point(443, 84));
+            this.label7.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label7.Name = ("label7");
             this.label7.Size = (new global::System.Drawing.Size(43, 16));
             this.label7.TabIndex = (13);
@@ -2022,8 +2020,8 @@
             // 
             this.label6.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label6.AutoSize = (true);
-            this.label6.Location = (new global::System.Drawing.Point(380, 25));
-            this.label6.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label6.Location = (new global::System.Drawing.Point(443, 31));
+            this.label6.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label6.Name = ("label6");
             this.label6.Size = (new global::System.Drawing.Size(70, 16));
             this.label6.TabIndex = (12);
@@ -2032,18 +2030,18 @@
             // txtNationalIDEmployee
             // 
             this.txtNationalIDEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNationalIDEmployee.Location = (new global::System.Drawing.Point(472, 22));
-            this.txtNationalIDEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtNationalIDEmployee.Location = (new global::System.Drawing.Point(551, 27));
+            this.txtNationalIDEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtNationalIDEmployee.Name = ("txtNationalIDEmployee");
-            this.txtNationalIDEmployee.Size = (new global::System.Drawing.Size(225, 22));
+            this.txtNationalIDEmployee.Size = (new global::System.Drawing.Size(262, 22));
             this.txtNationalIDEmployee.TabIndex = (11);
             // 
             // label5
             // 
             this.label5.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = (true);
-            this.label5.Location = (new global::System.Drawing.Point(7, 143));
-            this.label5.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label5.Location = (new global::System.Drawing.Point(8, 176));
+            this.label5.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label5.Name = ("label5");
             this.label5.Size = (new global::System.Drawing.Size(33, 16));
             this.label5.TabIndex = (10);
@@ -2052,18 +2050,18 @@
             // dtpBirthdayEmployee
             // 
             this.dtpBirthdayEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.dtpBirthdayEmployee.Location = (new global::System.Drawing.Point(472, 110));
-            this.dtpBirthdayEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.dtpBirthdayEmployee.Location = (new global::System.Drawing.Point(551, 135));
+            this.dtpBirthdayEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.dtpBirthdayEmployee.Name = ("dtpBirthdayEmployee");
-            this.dtpBirthdayEmployee.Size = (new global::System.Drawing.Size(224, 23));
+            this.dtpBirthdayEmployee.Size = (new global::System.Drawing.Size(261, 23));
             this.dtpBirthdayEmployee.TabIndex = (9);
             // 
             // label4
             // 
             this.label4.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = (true);
-            this.label4.Location = (new global::System.Drawing.Point(380, 110));
-            this.label4.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label4.Location = (new global::System.Drawing.Point(443, 135));
+            this.label4.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label4.Name = ("label4");
             this.label4.Size = (new global::System.Drawing.Size(83, 16));
             this.label4.TabIndex = (8);
@@ -2073,8 +2071,8 @@
             // 
             this.rbFelmale.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
             this.rbFelmale.AutoSize = (true);
-            this.rbFelmale.Location = (new global::System.Drawing.Point(190, 139));
-            this.rbFelmale.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.rbFelmale.Location = (new global::System.Drawing.Point(222, 171));
+            this.rbFelmale.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.rbFelmale.Name = ("rbFelmale");
             this.rbFelmale.Size = (new global::System.Drawing.Size(73, 20));
             this.rbFelmale.TabIndex = (7);
@@ -2086,8 +2084,8 @@
             // 
             this.rbMale.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
             this.rbMale.AutoSize = (true);
-            this.rbMale.Location = (new global::System.Drawing.Point(105, 139));
-            this.rbMale.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.rbMale.Location = (new global::System.Drawing.Point(122, 171));
+            this.rbMale.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.rbMale.Name = ("rbMale");
             this.rbMale.Size = (new global::System.Drawing.Size(55, 20));
             this.rbMale.TabIndex = (6);
@@ -2099,8 +2097,8 @@
             // 
             this.label3.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = (true);
-            this.label3.Location = (new global::System.Drawing.Point(715, 68));
-            this.label3.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label3.Location = (new global::System.Drawing.Point(834, 84));
+            this.label3.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label3.Name = ("label3");
             this.label3.Size = (new global::System.Drawing.Size(71, 16));
             this.label3.TabIndex = (5);
@@ -2110,8 +2108,8 @@
             // 
             this.label2.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = (true);
-            this.label2.Location = (new global::System.Drawing.Point(6, 68));
-            this.label2.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label2.Location = (new global::System.Drawing.Point(7, 84));
+            this.label2.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label2.Name = ("label2");
             this.label2.Size = (new global::System.Drawing.Size(45, 16));
             this.label2.TabIndex = (4);
@@ -2120,36 +2118,36 @@
             // txtAddressEmployee
             // 
             this.txtAddressEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtAddressEmployee.Location = (new global::System.Drawing.Point(105, 103));
-            this.txtAddressEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtAddressEmployee.Location = (new global::System.Drawing.Point(122, 127));
+            this.txtAddressEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtAddressEmployee.Name = ("txtAddressEmployee");
-            this.txtAddressEmployee.Size = (new global::System.Drawing.Size(243, 22));
+            this.txtAddressEmployee.Size = (new global::System.Drawing.Size(284, 22));
             this.txtAddressEmployee.TabIndex = (3);
             // 
             // txtNameEmployee
             // 
             this.txtNameEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNameEmployee.Location = (new global::System.Drawing.Point(105, 65));
-            this.txtNameEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtNameEmployee.Location = (new global::System.Drawing.Point(122, 80));
+            this.txtNameEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtNameEmployee.Name = ("txtNameEmployee");
-            this.txtNameEmployee.Size = (new global::System.Drawing.Size(243, 22));
+            this.txtNameEmployee.Size = (new global::System.Drawing.Size(284, 22));
             this.txtNameEmployee.TabIndex = (2);
             // 
             // txtEmployeeID
             // 
             this.txtEmployeeID.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmployeeID.Location = (new global::System.Drawing.Point(105, 22));
-            this.txtEmployeeID.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.txtEmployeeID.Location = (new global::System.Drawing.Point(122, 27));
+            this.txtEmployeeID.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.txtEmployeeID.Name = ("txtEmployeeID");
-            this.txtEmployeeID.Size = (new global::System.Drawing.Size(243, 22));
+            this.txtEmployeeID.Size = (new global::System.Drawing.Size(284, 22));
             this.txtEmployeeID.TabIndex = (1);
             // 
             // label1
             // 
             this.label1.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = (true);
-            this.label1.Location = (new global::System.Drawing.Point(6, 28));
-            this.label1.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.label1.Location = (new global::System.Drawing.Point(7, 34));
+            this.label1.Margin = (new global::System.Windows.Forms.Padding(5, 0, 5, 0));
             this.label1.Name = ("label1");
             this.label1.Size = (new global::System.Drawing.Size(83, 16));
             this.label1.TabIndex = (0);
@@ -2158,12 +2156,12 @@
             // dgvEmployee
             // 
             this.dgvEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvEmployee.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dgvEmployee.Location = (new global::System.Drawing.Point(5, 401));
+            this.dgvEmployee.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
+            this.dgvEmployee.Location = (new global::System.Drawing.Point(6, 494));
             this.dgvEmployee.MainView = (this.gvEmploy);
-            this.dgvEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.dgvEmployee.Margin = (new global::System.Windows.Forms.Padding(5, 2, 5, 2));
             this.dgvEmployee.Name = ("dgvEmployee");
-            this.dgvEmployee.Size = (new global::System.Drawing.Size(2162, 763));
+            this.dgvEmployee.Size = (new global::System.Drawing.Size(2522, 938));
             this.dgvEmployee.TabIndex = (0);
             this.dgvEmployee.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gvEmploy });
             // 
@@ -2462,7 +2460,7 @@
             this.tabNavigationPage5.Controls.Add(this.groupBox7);
             this.tabNavigationPage5.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationPage5.Name = ("tabNavigationPage5");
-            this.tabNavigationPage5.Size = (new global::System.Drawing.Size(2171, 1170));
+            this.tabNavigationPage5.Size = (new global::System.Drawing.Size(1867, 1449));
             // 
             // gridControlPlane
             // 
@@ -2472,7 +2470,7 @@
             this.gridControlPlane.MainView = (this.gridPlane);
             this.gridControlPlane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.gridControlPlane.Name = ("gridControlPlane");
-            this.gridControlPlane.Size = (new global::System.Drawing.Size(2147, 876));
+            this.gridControlPlane.Size = (new global::System.Drawing.Size(1843, 1155));
             this.gridControlPlane.TabIndex = (4);
             this.gridControlPlane.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridPlane });
             this.gridControlPlane.Load += (this.gridControlPlane_Load);
@@ -2507,7 +2505,7 @@
             this.groupBox7.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.groupBox7.Name = ("groupBox7");
             this.groupBox7.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox7.Size = (new global::System.Drawing.Size(2147, 242));
+            this.groupBox7.Size = (new global::System.Drawing.Size(1843, 242));
             this.groupBox7.TabIndex = (3);
             this.groupBox7.TabStop = (false);
             this.groupBox7.Text = ("Information plane");
@@ -2616,7 +2614,7 @@
             // label44
             // 
             this.label44.AutoSize = (true);
-            this.label44.Location = (new global::System.Drawing.Point(6, 60));
+            this.label44.Location = (new global::System.Drawing.Point(6, 28));
             this.label44.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
             this.label44.Name = ("label44");
             this.label44.Size = (new global::System.Drawing.Size(46, 16));
@@ -2626,7 +2624,7 @@
             // simpleButton22
             // 
             this.simpleButton22.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton22.Location = (new global::System.Drawing.Point(2714, 327));
+            this.simpleButton22.Location = (new global::System.Drawing.Point(2410, 327));
             this.simpleButton22.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton22.Name = ("simpleButton22");
             this.simpleButton22.Size = (new global::System.Drawing.Size(118, 36));
@@ -2636,7 +2634,7 @@
             // simpleButton23
             // 
             this.simpleButton23.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton23.Location = (new global::System.Drawing.Point(2578, 327));
+            this.simpleButton23.Location = (new global::System.Drawing.Point(2274, 327));
             this.simpleButton23.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton23.Name = ("simpleButton23");
             this.simpleButton23.Size = (new global::System.Drawing.Size(118, 36));
@@ -2646,7 +2644,7 @@
             // simpleButton24
             // 
             this.simpleButton24.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton24.Location = (new global::System.Drawing.Point(2442, 327));
+            this.simpleButton24.Location = (new global::System.Drawing.Point(2138, 327));
             this.simpleButton24.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton24.Name = ("simpleButton24");
             this.simpleButton24.Size = (new global::System.Drawing.Size(118, 36));
@@ -2656,7 +2654,7 @@
             // label45
             // 
             this.label45.AutoSize = (true);
-            this.label45.Location = (new global::System.Drawing.Point(6, 137));
+            this.label45.Location = (new global::System.Drawing.Point(616, 104));
             this.label45.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
             this.label45.Name = ("label45");
             this.label45.Size = (new global::System.Drawing.Size(69, 16));
@@ -2749,7 +2747,7 @@
             this.dptStatisticsRevenue.CustomFormat = ("MM/yyyy");
             this.dptStatisticsRevenue.Format = (global::System.Windows.Forms.DateTimePickerFormat.Custom);
             this.dptStatisticsRevenue.Location = (new global::System.Drawing.Point(458, 128));
-            this.dptStatisticsRevenue.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.dptStatisticsRevenue.Margin = (new global::System.Windows.Forms.Padding(4));
             this.dptStatisticsRevenue.Name = ("dptStatisticsRevenue");
             this.dptStatisticsRevenue.Size = (new global::System.Drawing.Size(233, 23));
             this.dptStatisticsRevenue.TabIndex = (3);
@@ -2758,7 +2756,7 @@
             // dtpStatistics
             // 
             this.dtpStatistics.Location = (new global::System.Drawing.Point(14, 128));
-            this.dtpStatistics.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.dtpStatistics.Margin = (new global::System.Windows.Forms.Padding(4));
             this.dtpStatistics.Name = ("dtpStatistics");
             this.dtpStatistics.Size = (new global::System.Drawing.Size(224, 23));
             this.dtpStatistics.TabIndex = (2);
@@ -2767,7 +2765,7 @@
             // cartesianStaticsRenuvue
             // 
             this.cartesianStaticsRenuvue.Location = (new global::System.Drawing.Point(458, 161));
-            this.cartesianStaticsRenuvue.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.cartesianStaticsRenuvue.Margin = (new global::System.Windows.Forms.Padding(4));
             this.cartesianStaticsRenuvue.Name = ("cartesianStaticsRenuvue");
             this.cartesianStaticsRenuvue.Size = (new global::System.Drawing.Size(909, 341));
             this.cartesianStaticsRenuvue.TabIndex = (1);
@@ -2777,7 +2775,7 @@
             // 
             this.pieStatistics.BackColor = (global::System.Drawing.Color.FromArgb((global::System.Int32)((global::System.Byte)(192)), (global::System.Int32)((global::System.Byte)(192)), (global::System.Int32)((global::System.Byte)(255))));
             this.pieStatistics.Location = (new global::System.Drawing.Point(14, 161));
-            this.pieStatistics.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.pieStatistics.Margin = (new global::System.Windows.Forms.Padding(4));
             this.pieStatistics.Name = ("pieStatistics");
             this.pieStatistics.Size = (new global::System.Drawing.Size(408, 343));
             this.pieStatistics.TabIndex = (0);
@@ -2788,7 +2786,7 @@
             this.tabNavigationPage2.Caption = ("Job");
             this.tabNavigationPage2.Controls.Add(this.dgvJob);
             this.tabNavigationPage2.Controls.Add(this.groupBox8);
-            this.tabNavigationPage2.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.tabNavigationPage2.Margin = (new global::System.Windows.Forms.Padding(4));
             this.tabNavigationPage2.Name = ("tabNavigationPage2");
             this.tabNavigationPage2.Size = (new global::System.Drawing.Size(1867, 1440));
             this.tabNavigationPage2.Paint += (this.pageJob_Paint);
@@ -2796,10 +2794,10 @@
             // dgvJob
             // 
             this.dgvJob.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Bottom) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvJob.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.dgvJob.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4));
             this.dgvJob.Location = (new global::System.Drawing.Point(27, 409));
             this.dgvJob.MainView = (this.gvJob);
-            this.dgvJob.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.dgvJob.Margin = (new global::System.Windows.Forms.Padding(4));
             this.dgvJob.Name = ("dgvJob");
             this.dgvJob.Size = (new global::System.Drawing.Size(1815, 783));
             this.dgvJob.TabIndex = (1);
@@ -2831,9 +2829,9 @@
             this.groupBox8.Controls.Add(this.txtEmployeeIDJob);
             this.groupBox8.Controls.Add(this.txtJobID);
             this.groupBox8.Location = (new global::System.Drawing.Point(27, 25));
-            this.groupBox8.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.groupBox8.Margin = (new global::System.Windows.Forms.Padding(4));
             this.groupBox8.Name = ("groupBox8");
-            this.groupBox8.Padding = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.groupBox8.Padding = (new global::System.Windows.Forms.Padding(4));
             this.groupBox8.Size = (new global::System.Drawing.Size(1815, 353));
             this.groupBox8.TabIndex = (0);
             this.groupBox8.TabStop = (false);
@@ -2842,7 +2840,7 @@
             // btnDeleteJob
             // 
             this.btnDeleteJob.Location = (new global::System.Drawing.Point(593, 279));
-            this.btnDeleteJob.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.btnDeleteJob.Margin = (new global::System.Windows.Forms.Padding(4));
             this.btnDeleteJob.Name = ("btnDeleteJob");
             this.btnDeleteJob.Size = (new global::System.Drawing.Size(138, 44));
             this.btnDeleteJob.TabIndex = (15);
@@ -2852,7 +2850,7 @@
             // btnUpdateJob
             // 
             this.btnUpdateJob.Location = (new global::System.Drawing.Point(362, 279));
-            this.btnUpdateJob.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.btnUpdateJob.Margin = (new global::System.Windows.Forms.Padding(4));
             this.btnUpdateJob.Name = ("btnUpdateJob");
             this.btnUpdateJob.Size = (new global::System.Drawing.Size(138, 44));
             this.btnUpdateJob.TabIndex = (14);
@@ -2862,7 +2860,7 @@
             // btnAddJob
             // 
             this.btnAddJob.Location = (new global::System.Drawing.Point(131, 279));
-            this.btnAddJob.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.btnAddJob.Margin = (new global::System.Windows.Forms.Padding(4));
             this.btnAddJob.Name = ("btnAddJob");
             this.btnAddJob.Size = (new global::System.Drawing.Size(138, 44));
             this.btnAddJob.TabIndex = (13);
@@ -2902,7 +2900,7 @@
             // dtpAssignedDateJob
             // 
             this.dtpAssignedDateJob.Location = (new global::System.Drawing.Point(686, 37));
-            this.dtpAssignedDateJob.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.dtpAssignedDateJob.Margin = (new global::System.Windows.Forms.Padding(4));
             this.dtpAssignedDateJob.Name = ("dtpAssignedDateJob");
             this.dtpAssignedDateJob.Size = (new global::System.Drawing.Size(266, 23));
             this.dtpAssignedDateJob.TabIndex = (9);
@@ -2942,7 +2940,7 @@
             this.cbJobState.FormattingEnabled = (true);
             this.cbJobState.Items.AddRange(new global::System.Object[] { "Pending", "Unsuccess", "Successfull" });
             this.cbJobState.Location = (new global::System.Drawing.Point(687, 170));
-            this.cbJobState.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.cbJobState.Margin = (new global::System.Windows.Forms.Padding(4));
             this.cbJobState.Name = ("cbJobState");
             this.cbJobState.Size = (new global::System.Drawing.Size(268, 24));
             this.cbJobState.TabIndex = (5);
@@ -2950,7 +2948,7 @@
             // txtJobDescription
             // 
             this.txtJobDescription.Location = (new global::System.Drawing.Point(686, 100));
-            this.txtJobDescription.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.txtJobDescription.Margin = (new global::System.Windows.Forms.Padding(4));
             this.txtJobDescription.Name = ("txtJobDescription");
             this.txtJobDescription.Size = (new global::System.Drawing.Size(270, 22));
             this.txtJobDescription.TabIndex = (4);
@@ -2958,7 +2956,7 @@
             // txtFlightIDJob
             // 
             this.txtFlightIDJob.Location = (new global::System.Drawing.Point(131, 170));
-            this.txtFlightIDJob.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.txtFlightIDJob.Margin = (new global::System.Windows.Forms.Padding(4));
             this.txtFlightIDJob.Name = ("txtFlightIDJob");
             this.txtFlightIDJob.Size = (new global::System.Drawing.Size(270, 22));
             this.txtFlightIDJob.TabIndex = (2);
@@ -2966,7 +2964,7 @@
             // txtEmployeeIDJob
             // 
             this.txtEmployeeIDJob.Location = (new global::System.Drawing.Point(131, 100));
-            this.txtEmployeeIDJob.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.txtEmployeeIDJob.Margin = (new global::System.Windows.Forms.Padding(4));
             this.txtEmployeeIDJob.Name = ("txtEmployeeIDJob");
             this.txtEmployeeIDJob.Size = (new global::System.Drawing.Size(270, 22));
             this.txtEmployeeIDJob.TabIndex = (1);
@@ -2974,7 +2972,7 @@
             // txtJobID
             // 
             this.txtJobID.Location = (new global::System.Drawing.Point(131, 38));
-            this.txtJobID.Margin = (new global::System.Windows.Forms.Padding(4, 4, 4, 4));
+            this.txtJobID.Margin = (new global::System.Windows.Forms.Padding(4));
             this.txtJobID.Name = ("txtJobID");
             this.txtJobID.Size = (new global::System.Drawing.Size(270, 22));
             this.txtJobID.TabIndex = (0);
