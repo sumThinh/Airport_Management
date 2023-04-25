@@ -53,7 +53,7 @@ namespace DAL
             }
         }
 
-        public bool UpdateEmployee(Job job)
+        public bool UpdateJob(Job job)
         {
             using (AirportManager db = new AirportManager())
             {
@@ -65,6 +65,41 @@ namespace DAL
                     else
                         return false;
                 }
+            }
+        }
+
+        public bool CheckExitJob(int job)
+        {
+            using (AirportManager db = new AirportManager())
+            {
+                var query = from j in db.Jobs
+                    select j.JobID;
+                foreach (var e in query)
+                {
+                    if (e == job)
+                        return true;
+                }
+            }
+            return false;
+        }
+
+        public bool DeleteJob(Job job)
+        {
+
+            using (AirportManager db = new AirportManager())
+            {
+                var query = (from j in db.Jobs
+                    where j.JobID == job.JobID
+                    select j).Single();
+
+                if (query.JobID == job.JobID)
+                {
+                    db.Jobs.Remove(query);
+                    db.SaveChanges();
+                    return true;
+                }
+
+                return false;
             }
         }
     }

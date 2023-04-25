@@ -18,7 +18,7 @@ namespace BUS
             return ticketbill.AddTicket(tick);
         }
 
-        public static bool DeleteBillService(Bill_Detail tick)
+        public bool DeleteBillService(Bill_Detail tick)
         {
             return ticketbill.RemoveTicket(tick.BillID);
         }

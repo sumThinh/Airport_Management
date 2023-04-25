@@ -233,28 +233,6 @@
             this.simpleButton24 = (new global::DevExpress.XtraEditors.SimpleButton());
             this.label45 = (new global::System.Windows.Forms.Label());
             this.tabNavigationPage6 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.tabNavigationPage2 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.dgvJob = (new global::DevExpress.XtraGrid.GridControl());
-            this.gridView2 = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
-            this.groupBox9 = (new global::System.Windows.Forms.GroupBox());
-            this.dtpAssignedDateJob = (new global::System.Windows.Forms.DateTimePicker());
-            this.label113 = (new global::System.Windows.Forms.Label());
-            this.txtJobDescription = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtFightIDJob = (new global::DevExpress.XtraEditors.TextEdit());
-            this.btnDeleteJob = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnUpdateJob = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnAddJob = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.cbStateJob = (new global::System.Windows.Forms.ComboBox());
-            this.label110 = (new global::System.Windows.Forms.Label());
-            this.label111 = (new global::System.Windows.Forms.Label());
-            this.label112 = (new global::System.Windows.Forms.Label());
-            this.simpleButton25 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton26 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton27 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.txtEmpIDJob = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label114 = (new global::System.Windows.Forms.Label());
-            this.textEdit22 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label46 = (new global::System.Windows.Forms.Label());
             ((global::System.ComponentModel.ISupportInitialize)(this.tabControls)).BeginInit();
             this.tabControls.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
@@ -306,14 +284,6 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneSeat.Properties)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.txtManufactor.Properties)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneModel.Properties)).BeginInit();
-            this.tabNavigationPage2.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.dgvJob)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.groupBox9.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtJobDescription.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControls
@@ -347,7 +317,7 @@
             this.tabNavigationPage1.Controls.Add(this.groupBox1);
             this.tabNavigationPage1.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationPage1.Name = ("tabNavigationPage1");
-            this.tabNavigationPage1.Size = (new global::System.Drawing.Size(2171, 1211));
+            this.tabNavigationPage1.Size = (new global::System.Drawing.Size(2171, 1170));
             this.tabNavigationPage1.Paint += (this.tabNavigationPage1_Paint);
             // 
             // groupBoxSeat
@@ -1810,7 +1780,7 @@
             this.tp.Controls.Add(this.dgvEmployee);
             this.tp.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tp.Name = ("tp");
-            this.tp.Size = (new global::System.Drawing.Size(2171, 676));
+            this.tp.Size = (new global::System.Drawing.Size(2171, 1170));
             // 
             // groupBox2
             // 
@@ -2152,7 +2122,7 @@
             this.dgvEmployee.MainView = (this.gvEmploy);
             this.dgvEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.dgvEmployee.Name = ("dgvEmployee");
-            this.dgvEmployee.Size = (new global::System.Drawing.Size(2162, 268));
+            this.dgvEmployee.Size = (new global::System.Drawing.Size(2162, 762));
             this.dgvEmployee.TabIndex = (0);
             this.dgvEmployee.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gvEmploy });
             // 
@@ -2169,7 +2139,7 @@
             this.tabNavigationFlight.Controls.Add(this.groupBox6);
             this.tabNavigationFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationFlight.Name = ("tabNavigationFlight");
-            this.tabNavigationFlight.Size = (new global::System.Drawing.Size(2171, 675));
+            this.tabNavigationFlight.Size = (new global::System.Drawing.Size(2171, 1170));
             this.tabNavigationFlight.Paint += (this.TabNavigationFlightPaint);
             // 
             // gridControlFlight
@@ -2180,7 +2150,7 @@
             this.gridControlFlight.MainView = (this.gridViewFlight);
             this.gridControlFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.gridControlFlight.Name = ("gridControlFlight");
-            this.gridControlFlight.Size = (new global::System.Drawing.Size(2148, 392));
+            this.gridControlFlight.Size = (new global::System.Drawing.Size(2148, 887));
             this.gridControlFlight.TabIndex = (3);
             this.gridControlFlight.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridViewFlight });
             this.gridControlFlight.Load += (this.GridControlFlightLoad);
@@ -2451,7 +2421,7 @@
             this.tabNavigationPage5.Controls.Add(this.groupBox7);
             this.tabNavigationPage5.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationPage5.Name = ("tabNavigationPage5");
-            this.tabNavigationPage5.Size = (new global::System.Drawing.Size(1940, 676));
+            this.tabNavigationPage5.Size = (new global::System.Drawing.Size(2171, 1170));
             // 
             // gridControlPlane
             // 
@@ -2461,7 +2431,7 @@
             this.gridControlPlane.MainView = (this.gridPlane);
             this.gridControlPlane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.gridControlPlane.Name = ("gridControlPlane");
-            this.gridControlPlane.Size = (new global::System.Drawing.Size(1916, 382));
+            this.gridControlPlane.Size = (new global::System.Drawing.Size(2147, 876));
             this.gridControlPlane.TabIndex = (4);
             this.gridControlPlane.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridPlane });
             this.gridControlPlane.Load += (this.gridControlPlane_Load);
@@ -2496,7 +2466,7 @@
             this.groupBox7.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.groupBox7.Name = ("groupBox7");
             this.groupBox7.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox7.Size = (new global::System.Drawing.Size(1916, 242));
+            this.groupBox7.Size = (new global::System.Drawing.Size(2147, 242));
             this.groupBox7.TabIndex = (3);
             this.groupBox7.TabStop = (false);
             this.groupBox7.Text = ("Information plane");
@@ -2615,7 +2585,7 @@
             // simpleButton22
             // 
             this.simpleButton22.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton22.Location = (new global::System.Drawing.Point(2483, 327));
+            this.simpleButton22.Location = (new global::System.Drawing.Point(2714, 327));
             this.simpleButton22.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton22.Name = ("simpleButton22");
             this.simpleButton22.Size = (new global::System.Drawing.Size(118, 36));
@@ -2625,7 +2595,7 @@
             // simpleButton23
             // 
             this.simpleButton23.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton23.Location = (new global::System.Drawing.Point(2347, 327));
+            this.simpleButton23.Location = (new global::System.Drawing.Point(2578, 327));
             this.simpleButton23.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton23.Name = ("simpleButton23");
             this.simpleButton23.Size = (new global::System.Drawing.Size(118, 36));
@@ -2635,7 +2605,7 @@
             // simpleButton24
             // 
             this.simpleButton24.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton24.Location = (new global::System.Drawing.Point(2211, 327));
+            this.simpleButton24.Location = (new global::System.Drawing.Point(2442, 327));
             this.simpleButton24.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton24.Name = ("simpleButton24");
             this.simpleButton24.Size = (new global::System.Drawing.Size(118, 36));
@@ -2657,226 +2627,7 @@
             this.tabNavigationPage6.Caption = ("Statistics");
             this.tabNavigationPage6.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationPage6.Name = ("tabNavigationPage6");
-            this.tabNavigationPage6.Size = (new global::System.Drawing.Size(1940, 676));
-            // 
-            // tabNavigationPage2
-            // 
-            this.tabNavigationPage2.Caption = ("Job");
-            this.tabNavigationPage2.Controls.Add(this.dgvJob);
-            this.tabNavigationPage2.Controls.Add(this.groupBox9);
-            this.tabNavigationPage2.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tabNavigationPage2.Name = ("tabNavigationPage2");
-            this.tabNavigationPage2.Size = (new global::System.Drawing.Size(1940, 485));
-            this.tabNavigationPage2.Paint += (this.gbJob_Paint);
-            // 
-            // dgvJob
-            // 
-            this.dgvJob.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvJob.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dgvJob.Location = (new global::System.Drawing.Point(12, 310));
-            this.dgvJob.MainView = (this.gridView2);
-            this.dgvJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dgvJob.Name = ("dgvJob");
-            this.dgvJob.Size = (new global::System.Drawing.Size(1914, 154));
-            this.dgvJob.TabIndex = (5);
-            this.dgvJob.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridView2 });
-            // 
-            // gridView2
-            // 
-            this.gridView2.GridControl = (this.dgvJob);
-            this.gridView2.Name = ("gridView2");
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox9.Controls.Add(this.dtpAssignedDateJob);
-            this.groupBox9.Controls.Add(this.label113);
-            this.groupBox9.Controls.Add(this.txtJobDescription);
-            this.groupBox9.Controls.Add(this.txtFightIDJob);
-            this.groupBox9.Controls.Add(this.btnDeleteJob);
-            this.groupBox9.Controls.Add(this.btnUpdateJob);
-            this.groupBox9.Controls.Add(this.btnAddJob);
-            this.groupBox9.Controls.Add(this.cbStateJob);
-            this.groupBox9.Controls.Add(this.label110);
-            this.groupBox9.Controls.Add(this.label111);
-            this.groupBox9.Controls.Add(this.label112);
-            this.groupBox9.Controls.Add(this.simpleButton25);
-            this.groupBox9.Controls.Add(this.simpleButton26);
-            this.groupBox9.Controls.Add(this.simpleButton27);
-            this.groupBox9.Controls.Add(this.txtEmpIDJob);
-            this.groupBox9.Controls.Add(this.label114);
-            this.groupBox9.Location = (new global::System.Drawing.Point(13, 14));
-            this.groupBox9.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox9.Name = ("groupBox9");
-            this.groupBox9.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox9.Size = (new global::System.Drawing.Size(1914, 242));
-            this.groupBox9.TabIndex = (4);
-            this.groupBox9.TabStop = (false);
-            this.groupBox9.Text = ("Information Jobs");
-            // 
-            // dtpAssignedDateJob
-            // 
-            this.dtpAssignedDateJob.Location = (new global::System.Drawing.Point(115, 107));
-            this.dtpAssignedDateJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dtpAssignedDateJob.Name = ("dtpAssignedDateJob");
-            this.dtpAssignedDateJob.Size = (new global::System.Drawing.Size(243, 23));
-            this.dtpAssignedDateJob.TabIndex = (39);
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = (true);
-            this.label113.Location = (new global::System.Drawing.Point(8, 112));
-            this.label113.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label113.Name = ("label113");
-            this.label113.Size = (new global::System.Drawing.Size(93, 16));
-            this.label113.TabIndex = (38);
-            this.label113.Text = ("Assigned Date:");
-            // 
-            // txtJobDescription
-            // 
-            this.txtJobDescription.Location = (new global::System.Drawing.Point(550, 25));
-            this.txtJobDescription.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtJobDescription.Name = ("txtJobDescription");
-            this.txtJobDescription.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtJobDescription.TabIndex = (36);
-            // 
-            // txtFightIDJob
-            // 
-            this.txtFightIDJob.Location = (new global::System.Drawing.Point(115, 62));
-            this.txtFightIDJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtFightIDJob.Name = ("txtFightIDJob");
-            this.txtFightIDJob.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtFightIDJob.TabIndex = (35);
-            // 
-            // btnDeleteJob
-            // 
-            this.btnDeleteJob.Location = (new global::System.Drawing.Point(292, 192));
-            this.btnDeleteJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnDeleteJob.Name = ("btnDeleteJob");
-            this.btnDeleteJob.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnDeleteJob.TabIndex = (34);
-            this.btnDeleteJob.Text = ("Delete");
-            // 
-            // btnUpdateJob
-            // 
-            this.btnUpdateJob.Location = (new global::System.Drawing.Point(156, 192));
-            this.btnUpdateJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnUpdateJob.Name = ("btnUpdateJob");
-            this.btnUpdateJob.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnUpdateJob.TabIndex = (33);
-            this.btnUpdateJob.Text = ("Update");
-            // 
-            // btnAddJob
-            // 
-            this.btnAddJob.Location = (new global::System.Drawing.Point(20, 192));
-            this.btnAddJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnAddJob.Name = ("btnAddJob");
-            this.btnAddJob.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnAddJob.TabIndex = (32);
-            this.btnAddJob.Text = ("Add");
-            this.btnAddJob.Click += (this.btnAddJob_Click);
-            // 
-            // cbStateJob
-            // 
-            this.cbStateJob.FormattingEnabled = (true);
-            this.cbStateJob.Items.AddRange(new global::System.Object[] { "Pending", "Not success", "Successfull" });
-            this.cbStateJob.Location = (new global::System.Drawing.Point(550, 60));
-            this.cbStateJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.cbStateJob.Name = ("cbStateJob");
-            this.cbStateJob.Size = (new global::System.Drawing.Size(243, 24));
-            this.cbStateJob.TabIndex = (28);
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = (true);
-            this.label110.Location = (new global::System.Drawing.Point(443, 65));
-            this.label110.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label110.Name = ("label110");
-            this.label110.Size = (new global::System.Drawing.Size(42, 16));
-            this.label110.TabIndex = (26);
-            this.label110.Text = ("State:");
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = (true);
-            this.label111.Location = (new global::System.Drawing.Point(443, 27));
-            this.label111.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label111.Name = ("label111");
-            this.label111.Size = (new global::System.Drawing.Size(98, 16));
-            this.label111.TabIndex = (23);
-            this.label111.Text = ("Job Description:");
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = (true);
-            this.label112.Location = (new global::System.Drawing.Point(7, 59));
-            this.label112.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label112.Name = ("label112");
-            this.label112.Size = (new global::System.Drawing.Size(52, 16));
-            this.label112.TabIndex = (22);
-            this.label112.Text = ("FightID:");
-            // 
-            // simpleButton25
-            // 
-            this.simpleButton25.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton25.Location = (new global::System.Drawing.Point(3296, 398));
-            this.simpleButton25.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton25.Name = ("simpleButton25");
-            this.simpleButton25.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton25.TabIndex = (21);
-            this.simpleButton25.Text = ("Delete");
-            // 
-            // simpleButton26
-            // 
-            this.simpleButton26.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton26.Location = (new global::System.Drawing.Point(3160, 398));
-            this.simpleButton26.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton26.Name = ("simpleButton26");
-            this.simpleButton26.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton26.TabIndex = (20);
-            this.simpleButton26.Text = ("Update");
-            // 
-            // simpleButton27
-            // 
-            this.simpleButton27.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton27.Location = (new global::System.Drawing.Point(3024, 398));
-            this.simpleButton27.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton27.Name = ("simpleButton27");
-            this.simpleButton27.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton27.TabIndex = (19);
-            this.simpleButton27.Text = ("Add");
-            // 
-            // txtEmpIDJob
-            // 
-            this.txtEmpIDJob.Location = (new global::System.Drawing.Point(115, 25));
-            this.txtEmpIDJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtEmpIDJob.Name = ("txtEmpIDJob");
-            this.txtEmpIDJob.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtEmpIDJob.TabIndex = (1);
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = (true);
-            this.label114.Location = (new global::System.Drawing.Point(7, 27));
-            this.label114.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label114.Name = ("label114");
-            this.label114.Size = (new global::System.Drawing.Size(83, 16));
-            this.label114.TabIndex = (0);
-            this.label114.Text = ("Employee ID:");
-            // 
-            // textEdit22
-            // 
-            this.textEdit22.Location = (new global::System.Drawing.Point(0, 0));
-            this.textEdit22.Name = ("textEdit22");
-            this.textEdit22.Size = (new global::System.Drawing.Size(125, 25));
-            this.textEdit22.TabIndex = (0);
-            // 
-            // label46
-            // 
-            this.label46.Location = (new global::System.Drawing.Point(0, 0));
-            this.label46.Name = ("label46");
-            this.label46.Size = (new global::System.Drawing.Size(100, 23));
-            this.label46.TabIndex = (0);
+            this.tabNavigationPage6.Size = (new global::System.Drawing.Size(2171, 1170));
             // 
             // Main
             // 
@@ -2947,15 +2698,6 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneSeat.Properties)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.txtManufactor.Properties)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneModel.Properties)).EndInit();
-            this.tabNavigationPage2.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.dgvJob)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtJobDescription.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).EndInit();
             this.ResumeLayout(false);
         }
 
@@ -3088,34 +2830,12 @@
         private Label label36;
         private DevExpress.XtraEditors.TextEdit textAirline;
         private DateTimePicker timeDepartPicker;
-        private DevExpress.XtraEditors.TextEdit textEdit22;
-        private Label label46;
         private DevExpress.XtraEditors.TextEdit txtPositionEmployee;
         private Label labelPosision;
         private DevExpress.XtraEditors.TextEdit txtUsernameEmployee;
         private Label label40;
         private Label label47;
         private DevExpress.XtraEditors.TextEdit txtPasswordEmployee;
-        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage2;
-        private GroupBox groupBox9;
-        private DevExpress.XtraEditors.TextEdit txtJobDescription;
-        private DevExpress.XtraEditors.TextEdit txtFightIDJob;
-        private DevExpress.XtraEditors.SimpleButton btnDeleteJob;
-        private DevExpress.XtraEditors.SimpleButton btnUpdateJob;
-        private DevExpress.XtraEditors.SimpleButton btnAddJob;
-        private ComboBox cbStateJob;
-        private Label label110;
-        private Label label111;
-        private Label label112;
-        private DevExpress.XtraEditors.SimpleButton simpleButton25;
-        private DevExpress.XtraEditors.SimpleButton simpleButton26;
-        private DevExpress.XtraEditors.SimpleButton simpleButton27;
-        private DevExpress.XtraEditors.TextEdit txtEmpIDJob;
-        private Label label114;
-        private DevExpress.XtraGrid.GridControl dgvJob;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private Label label113;
-        private DateTimePicker dtpAssignedDateJob;
         private GroupBox groupBoxSeat;
         private Label G10;
         private Label F10;
