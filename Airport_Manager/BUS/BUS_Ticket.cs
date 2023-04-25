@@ -27,5 +27,15 @@ namespace BUS
         {
             return ticketbill.UpdateTicket(tick);
         }
+
+        public List<Bill_Detail> getTicketListByDate(DateTime today)
+        {
+            return ticketbill.getTicketListByDate(today);
+        } 
+
+        public List<Bill_Detail> getTicketListByMonthYear(int month, int year)
+        {
+            return ticketbill.getTicketListByMonthYear(month, year);
+        }
     }
 }

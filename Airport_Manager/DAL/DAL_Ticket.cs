@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.Entity;
 using System.Data.Entity.Core.Mapping;
 using System.Linq;
@@ -52,6 +53,26 @@ namespace DAL
                 }
             }
             return false;
+        }
+
+        public List<Bill_Detail> getTicketListByDate(DateTime date)
+        {
+            List<Bill_Detail> tickets = new List<Bill_Detail>();
+            using (var db = new AirportManager())
+            {
+                tickets = db.Bill_Detail.Where(c => DbFunctions.TruncateTime(c.BookingDate) == date).ToList();
+            }
+            return tickets;
+        }
+
+        public List<Bill_Detail> getTicketListByMonthYear(int month, int year)
+        {
+            List<Bill_Detail> tickets = new List<Bill_Detail>();
+            using (var db = new AirportManager())
+            {
+                tickets = db.Bill_Detail.Where(t => t.BookingDate.Value.Month == month && t.BookingDate.Value.Year == year).ToList();
+            }
+            return tickets;
         }
     }
 }

@@ -630,7 +630,6 @@ namespace GUI
             txtEmployeeID.ReadOnly = true;
             LoadDataGridViewEmployee();
         }
-        
 
         private void gvEmployee_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
@@ -653,7 +652,6 @@ namespace GUI
                     rbFelmale.Checked = true;
             }
         }
-       
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
@@ -752,6 +750,41 @@ namespace GUI
 
         }
 
+        private void btnAddJob_Click(object sender, EventArgs e)
+        {
+            BUS_Job busJob = new BUS_Job();
+            Job job = new Job();
+            if (String.IsNullOrEmpty(txtEmpIDJob.Text) || String.IsNullOrEmpty(txtFightIDJob.Text) || String.IsNullOrEmpty(txtJobDescription.Text) || cbStateJob.SelectedItem == null)
+            {
+                MessageBox.Show("Please enter all the information!");
+            }
+            else
+            {
+                job.AssignedDate = dtpAssignedDateJob.Value.Date;
+                job.EmployeeID = int.Parse(txtEmpIDJob.Text.Trim());
+                job.FlightID = int.Parse(txtFightIDJob.Text.Trim());
+                job.JobDescription = txtJobDescription.Text.Trim();
+                job.JobState = cbStateJob.Text;
+                if (busJob.AddJob(job) == 1)
+                {
+                    MessageBox.Show(" Add job successfull");
+                }
+                else
+                {
+                    if (busJob.AddJob(job) == 2)
+                    {
+                        MessageBox.Show("NOT EXIT FLIGHTID");
+                    }
+                    else
+                    {
+                        if (busJob.AddJob(job) == 3)
+                        {
+
+                        }
+                    }
+                }
+            }
+        }
 
         // Ticket Controller
 
@@ -946,6 +979,66 @@ namespace GUI
         }
 
 
+        // Statistics Controller
+        private void AmountOfTicketHandler(DateTime date)
+        {
+            Func<ChartPoint, string> lablePoint = chartpoint => string.Format("{0}, {1:P}", chartpoint.Y, chartpoint.Participation);
+            SeriesCollection series = new SeriesCollection();
+            List<Bill_Detail> tickets = ticketbus.getTicketListByDate(date);
+            lbAoNormal.Text = tickets.Count(t => t.SeatClass == false).ToString();
+            lbAoVIP.Text = tickets.Count(t => t.SeatClass == true).ToString();
+            series.Add(new PieSeries() { Title = "Normal Tickets", Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == false) }, DataLabels = true, LabelPoint = lablePoint });
+            series.Add(new PieSeries() { Title = "VIP Tickets", Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == true) }, DataLabels = true, LabelPoint = lablePoint });
+            pieStatistics.Series = series;
+            pieStatistics.LegendLocation = LegendLocation.Bottom;
+        }
+
+        private void RevenueHandler(DateTime date)
+        {
+            cartesianStaticsRenuvue.Series.Clear();
+            cartesianStaticsRenuvue.AxisX.Clear();
+            cartesianStaticsRenuvue.AxisY.Clear();
+
+            List<Bill_Detail> tickets = ticketbus.getTicketListByMonthYear(date.Month, date.Year);
+
+            var total = tickets.GroupBy(t => t.BookingDate.Value.Day).Select(t => new
+            {
+                BookingDate = t.Key,
+                Total = t.Sum(ta => ta.TotalPrice),
+            }).ToList();
+
+            ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<decimal>(), LabelPoint = point => point.Y.ToString() };
+            Axis ax = new Axis() { Separator = new Separator() { Step = 1, IsEnabled = true } };
+            ax.Labels = new List<string>();
+            foreach (var x in total)
+            {
+                col.Values.Add(x.Total);
+                ax.Labels.Add(x.BookingDate.ToString());
+            }
+
+            cartesianStaticsRenuvue.Series.Add(col);
+            cartesianStaticsRenuvue.AxisX.Add(ax);
+            cartesianStaticsRenuvue.AxisY.Add(new Axis
+            {
+                LabelFormatter = value => value.ToString(),
+                Separator = new Separator() { }
+            });
+
+
+        }
+
+        private void dtpStatistics_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Parse(dtpStatistics.Value.ToString("yyyy-MM-dd"));
+            AmountOfTicketHandler(date);
+        }
+
+        private void dptStatisticsRevenue_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Parse(dptStatisticsRevenue.Value.ToString("yyyy-MM-dd"));
+            RevenueHandler(date);
+        }
+
         private void btnAddJob_Click(object sender, EventArgs e)
         {
             BUS_Job busJob = new BUS_Job();
@@ -1068,6 +1161,5 @@ namespace GUI
                     LoadDataGridViewJob();
                 }
             }
-        }
     }
 }
