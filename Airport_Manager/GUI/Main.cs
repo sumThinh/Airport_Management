@@ -238,7 +238,7 @@ namespace GUI
         void btnCustomerDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question) == DialogResult.OK)
+                    MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
                 {
@@ -263,14 +263,8 @@ namespace GUI
         void gridControlPlane_Load(object sender, EventArgs e)
         {
             gridControlPlane.DataSource = planebus.GetListPlanes();
-
-            if (!comboBoxPlaneState.Items.Contains("Free"))
-            {
-                comboBoxPlaneState.Items.Add("Free");
-                comboBoxPlaneState.Items.Add("Busy");
-            }
-
-            comboBoxPlaneState.Text = "Free";
+            comboBoxPlaneState.Items.Add("Free");
+            comboBoxPlaneState.Items.Add("Busy");
         }
 
         void GridPlaneRowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
@@ -420,6 +414,7 @@ namespace GUI
             comboBoxDepart.DisplayMember = comboBoxDesti.DisplayMember = "LocationName";
             comboBoxPlane.DataSource = planebus.GetListPlanes();
             comboBoxPlane.DisplayMember = "Registration";
+            gridControlFlight.DataSource = flightbus.GetListFlights();
         }
 
         void gridViewFlight_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
@@ -945,10 +940,12 @@ namespace GUI
                         DateTime today = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                         updated_ticket.BookingDate = today;
 
-                        if (ticketbus.UpdateTicketService(updated_ticket))
+                        if (ticketbus.UpdateTicketService(updated_ticket)) { 
                             MessageBox.Show("Success");
-                        else
-                            MessageBox.Show("Fail");
+                        gridTicket.DataSource = ticketbus.GetListBills();
+                    }
+                    else
+                        MessageBox.Show("Fail");
                     }
                 }
                 else
