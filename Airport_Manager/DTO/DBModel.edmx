@@ -114,6 +114,7 @@
     <Property Name="DateOfDeparture" Type="datetime" Nullable="false" />
     <Property Name="Destination" Type="int" Nullable="false" />
     <Property Name="Airline" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="12" Scale="0" />
   </EntityType>
   <EntityType Name="Jobs">
     <Key>
@@ -124,7 +125,7 @@
     <Property Name="EmployeeID" Type="int" Nullable="false" />
     <Property Name="FlightID" Type="int" Nullable="false" />
     <Property Name="JobDescription" Type="nvarchar" Nullable="true" MaxLength="20" />
-    <Property Name="JobState" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="JobState" Type="nvarchar" Nullable="true" MaxLength="20" />
   </EntityType>
   <EntityType Name="Locations">
     <Key>
@@ -341,6 +342,7 @@
           <NavigationProperty Name="Jobs" Relationship="Self.FK__Job__FlightID__47DBAE45" FromRole="Flights" ToRole="Jobs" />
           <NavigationProperty Name="Location" Relationship="Self.FK_Flights_Locations" FromRole="Flights" ToRole="Locations" />
           <NavigationProperty Name="Location1" Relationship="Self.FK_Flights_Locations1" FromRole="Flights" ToRole="Locations" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="12" Scale="0" />
         </EntityType>
         <EntityType Name="Job">
           <Key>
@@ -351,7 +353,7 @@
           <Property Name="EmployeeID" Type="Int32" Nullable="false" />
           <Property Name="FlightID" Type="Int32" Nullable="false" />
           <Property Name="JobDescription" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="JobState" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="JobState" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Employee" Relationship="Self.FK__Job__EmployeeID__46E78A0C" FromRole="Jobs" ToRole="Employees" />
           <NavigationProperty Name="Flight" Relationship="Self.FK__Job__FlightID__47DBAE45" FromRole="Jobs" ToRole="Flights" />
         </EntityType>
@@ -612,6 +614,7 @@
           <ScalarProperty Name="DateOfDeparture" ColumnName="DateOfDeparture" />
           <ScalarProperty Name="Destination" ColumnName="Destination" />
           <ScalarProperty Name="Airline" ColumnName="Airline" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

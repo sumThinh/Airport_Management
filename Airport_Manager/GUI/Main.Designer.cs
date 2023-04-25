@@ -30,7 +30,7 @@
         {
             this.tabControls = (new global::DevExpress.XtraBars.Navigation.TabPane());
             this.tabNavigationPage1 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.groupBox8 = (new global::System.Windows.Forms.GroupBox());
+            this.groupBoxSeat = (new global::System.Windows.Forms.GroupBox());
             this.G10 = (new global::System.Windows.Forms.Label());
             this.F10 = (new global::System.Windows.Forms.Label());
             this.E10 = (new global::System.Windows.Forms.Label());
@@ -96,8 +96,8 @@
             this.buttonDeleteTicket = (new global::DevExpress.XtraEditors.SimpleButton());
             this.buttonUpdateTicket = (new global::DevExpress.XtraEditors.SimpleButton());
             this.buttonAddTicket = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.gridTicket = (new global::DevExpress.XtraGrid.GridControl());
-            this.gridView1 = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
+            this.gridControlTicket = (new global::DevExpress.XtraGrid.GridControl());
+            this.gridTicket = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
             this.groupBox1 = (new global::System.Windows.Forms.GroupBox());
             this.groupBox4 = (new global::System.Windows.Forms.GroupBox());
             this.textEdit16 = (new global::DevExpress.XtraEditors.TextEdit());
@@ -254,12 +254,14 @@
             this.label114 = (new global::System.Windows.Forms.Label());
             this.textEdit22 = (new global::DevExpress.XtraEditors.TextEdit());
             this.label46 = (new global::System.Windows.Forms.Label());
+            this.labelFliPrice = (new global::System.Windows.Forms.Label());
+            this.textFliPrice = (new global::DevExpress.XtraEditors.TextEdit());
             ((global::System.ComponentModel.ISupportInitialize)(this.tabControls)).BeginInit();
             this.tabControls.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
-            this.groupBox8.SuspendLayout();
+            this.groupBoxSeat.SuspendLayout();
+            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlTicket)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.gridTicket)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((global::System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).BeginInit();
@@ -317,6 +319,7 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).BeginInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.textFliPrice.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControls
@@ -333,95 +336,96 @@
             this.tabControls.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabControls.Name = ("tabControls");
             this.tabControls.Pages.AddRange(new global::DevExpress.XtraBars.Navigation.NavigationPageBase[] { this.tabNavigationPage1, this.tpCustomer, this.tp, this.tabNavigationFlight, this.tabNavigationPage5, this.tabNavigationPage6 });
-            this.tabControls.RegularSize = (new global::System.Drawing.Size(1940, 716));
+            this.tabControls.RegularSize = (new global::System.Drawing.Size(1940, 1050));
             this.tabControls.SelectedPage = (this.tabNavigationPage1);
-            this.tabControls.Size = (new global::System.Drawing.Size(1940, 716));
+            this.tabControls.Size = (new global::System.Drawing.Size(1940, 1050));
             this.tabControls.TabIndex = (0);
             this.tabControls.Text = ("Tickets");
             // 
             // tabNavigationPage1
             // 
             this.tabNavigationPage1.Caption = ("Tickets");
-            this.tabNavigationPage1.Controls.Add(this.groupBox8);
+            this.tabNavigationPage1.Controls.Add(this.groupBoxSeat);
             this.tabNavigationPage1.Controls.Add(this.buttonDeleteTicket);
             this.tabNavigationPage1.Controls.Add(this.buttonUpdateTicket);
             this.tabNavigationPage1.Controls.Add(this.buttonAddTicket);
-            this.tabNavigationPage1.Controls.Add(this.gridTicket);
+            this.tabNavigationPage1.Controls.Add(this.gridControlTicket);
             this.tabNavigationPage1.Controls.Add(this.groupBox1);
             this.tabNavigationPage1.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationPage1.Name = ("tabNavigationPage1");
-            this.tabNavigationPage1.Size = (new global::System.Drawing.Size(1940, 675));
+            this.tabNavigationPage1.Size = (new global::System.Drawing.Size(1940, 1009));
+            this.tabNavigationPage1.Paint += (this.tabNavigationPage1_Paint);
             // 
-            // groupBox8
+            // groupBoxSeat
             // 
-            this.groupBox8.Controls.Add(this.G10);
-            this.groupBox8.Controls.Add(this.F10);
-            this.groupBox8.Controls.Add(this.E10);
-            this.groupBox8.Controls.Add(this.D10);
-            this.groupBox8.Controls.Add(this.C10);
-            this.groupBox8.Controls.Add(this.G09);
-            this.groupBox8.Controls.Add(this.F09);
-            this.groupBox8.Controls.Add(this.E09);
-            this.groupBox8.Controls.Add(this.D09);
-            this.groupBox8.Controls.Add(this.C09);
-            this.groupBox8.Controls.Add(this.G08);
-            this.groupBox8.Controls.Add(this.F08);
-            this.groupBox8.Controls.Add(this.E08);
-            this.groupBox8.Controls.Add(this.D08);
-            this.groupBox8.Controls.Add(this.C08);
-            this.groupBox8.Controls.Add(this.G07);
-            this.groupBox8.Controls.Add(this.F07);
-            this.groupBox8.Controls.Add(this.E07);
-            this.groupBox8.Controls.Add(this.D07);
-            this.groupBox8.Controls.Add(this.C07);
-            this.groupBox8.Controls.Add(this.G06);
-            this.groupBox8.Controls.Add(this.F06);
-            this.groupBox8.Controls.Add(this.E06);
-            this.groupBox8.Controls.Add(this.D06);
-            this.groupBox8.Controls.Add(this.C06);
-            this.groupBox8.Controls.Add(this.G05);
-            this.groupBox8.Controls.Add(this.F05);
-            this.groupBox8.Controls.Add(this.E05);
-            this.groupBox8.Controls.Add(this.D05);
-            this.groupBox8.Controls.Add(this.C05);
-            this.groupBox8.Controls.Add(this.G04);
-            this.groupBox8.Controls.Add(this.F04);
-            this.groupBox8.Controls.Add(this.E04);
-            this.groupBox8.Controls.Add(this.D04);
-            this.groupBox8.Controls.Add(this.C04);
-            this.groupBox8.Controls.Add(this.G03);
-            this.groupBox8.Controls.Add(this.F03);
-            this.groupBox8.Controls.Add(this.E03);
-            this.groupBox8.Controls.Add(this.D03);
-            this.groupBox8.Controls.Add(this.C03);
-            this.groupBox8.Controls.Add(this.G02);
-            this.groupBox8.Controls.Add(this.F02);
-            this.groupBox8.Controls.Add(this.E02);
-            this.groupBox8.Controls.Add(this.D02);
-            this.groupBox8.Controls.Add(this.C02);
-            this.groupBox8.Controls.Add(this.G01);
-            this.groupBox8.Controls.Add(this.F01);
-            this.groupBox8.Controls.Add(this.E01);
-            this.groupBox8.Controls.Add(this.D01);
-            this.groupBox8.Controls.Add(this.C01);
-            this.groupBox8.Controls.Add(this.B05);
-            this.groupBox8.Controls.Add(this.B04);
-            this.groupBox8.Controls.Add(this.B03);
-            this.groupBox8.Controls.Add(this.B02);
-            this.groupBox8.Controls.Add(this.B01);
-            this.groupBox8.Controls.Add(this.A05);
-            this.groupBox8.Controls.Add(this.A04);
-            this.groupBox8.Controls.Add(this.A03);
-            this.groupBox8.Controls.Add(this.A02);
-            this.groupBox8.Controls.Add(this.A01);
-            this.groupBox8.Controls.Add(this.label49);
-            this.groupBox8.Controls.Add(this.label48);
-            this.groupBox8.Location = (new global::System.Drawing.Point(1093, 16));
-            this.groupBox8.Name = ("groupBox8");
-            this.groupBox8.Size = (new global::System.Drawing.Size(766, 339));
-            this.groupBox8.TabIndex = (29);
-            this.groupBox8.TabStop = (false);
-            this.groupBox8.Text = ("Seat");
+            this.groupBoxSeat.Controls.Add(this.G10);
+            this.groupBoxSeat.Controls.Add(this.F10);
+            this.groupBoxSeat.Controls.Add(this.E10);
+            this.groupBoxSeat.Controls.Add(this.D10);
+            this.groupBoxSeat.Controls.Add(this.C10);
+            this.groupBoxSeat.Controls.Add(this.G09);
+            this.groupBoxSeat.Controls.Add(this.F09);
+            this.groupBoxSeat.Controls.Add(this.E09);
+            this.groupBoxSeat.Controls.Add(this.D09);
+            this.groupBoxSeat.Controls.Add(this.C09);
+            this.groupBoxSeat.Controls.Add(this.G08);
+            this.groupBoxSeat.Controls.Add(this.F08);
+            this.groupBoxSeat.Controls.Add(this.E08);
+            this.groupBoxSeat.Controls.Add(this.D08);
+            this.groupBoxSeat.Controls.Add(this.C08);
+            this.groupBoxSeat.Controls.Add(this.G07);
+            this.groupBoxSeat.Controls.Add(this.F07);
+            this.groupBoxSeat.Controls.Add(this.E07);
+            this.groupBoxSeat.Controls.Add(this.D07);
+            this.groupBoxSeat.Controls.Add(this.C07);
+            this.groupBoxSeat.Controls.Add(this.G06);
+            this.groupBoxSeat.Controls.Add(this.F06);
+            this.groupBoxSeat.Controls.Add(this.E06);
+            this.groupBoxSeat.Controls.Add(this.D06);
+            this.groupBoxSeat.Controls.Add(this.C06);
+            this.groupBoxSeat.Controls.Add(this.G05);
+            this.groupBoxSeat.Controls.Add(this.F05);
+            this.groupBoxSeat.Controls.Add(this.E05);
+            this.groupBoxSeat.Controls.Add(this.D05);
+            this.groupBoxSeat.Controls.Add(this.C05);
+            this.groupBoxSeat.Controls.Add(this.G04);
+            this.groupBoxSeat.Controls.Add(this.F04);
+            this.groupBoxSeat.Controls.Add(this.E04);
+            this.groupBoxSeat.Controls.Add(this.D04);
+            this.groupBoxSeat.Controls.Add(this.C04);
+            this.groupBoxSeat.Controls.Add(this.G03);
+            this.groupBoxSeat.Controls.Add(this.F03);
+            this.groupBoxSeat.Controls.Add(this.E03);
+            this.groupBoxSeat.Controls.Add(this.D03);
+            this.groupBoxSeat.Controls.Add(this.C03);
+            this.groupBoxSeat.Controls.Add(this.G02);
+            this.groupBoxSeat.Controls.Add(this.F02);
+            this.groupBoxSeat.Controls.Add(this.E02);
+            this.groupBoxSeat.Controls.Add(this.D02);
+            this.groupBoxSeat.Controls.Add(this.C02);
+            this.groupBoxSeat.Controls.Add(this.G01);
+            this.groupBoxSeat.Controls.Add(this.F01);
+            this.groupBoxSeat.Controls.Add(this.E01);
+            this.groupBoxSeat.Controls.Add(this.D01);
+            this.groupBoxSeat.Controls.Add(this.C01);
+            this.groupBoxSeat.Controls.Add(this.B05);
+            this.groupBoxSeat.Controls.Add(this.B04);
+            this.groupBoxSeat.Controls.Add(this.B03);
+            this.groupBoxSeat.Controls.Add(this.B02);
+            this.groupBoxSeat.Controls.Add(this.B01);
+            this.groupBoxSeat.Controls.Add(this.A05);
+            this.groupBoxSeat.Controls.Add(this.A04);
+            this.groupBoxSeat.Controls.Add(this.A03);
+            this.groupBoxSeat.Controls.Add(this.A02);
+            this.groupBoxSeat.Controls.Add(this.A01);
+            this.groupBoxSeat.Controls.Add(this.label49);
+            this.groupBoxSeat.Controls.Add(this.label48);
+            this.groupBoxSeat.Location = (new global::System.Drawing.Point(1093, 16));
+            this.groupBoxSeat.Name = ("groupBoxSeat");
+            this.groupBoxSeat.Size = (new global::System.Drawing.Size(766, 339));
+            this.groupBoxSeat.TabIndex = (29);
+            this.groupBoxSeat.TabStop = (false);
+            this.groupBoxSeat.Text = ("Seat");
             // 
             // G10
             // 
@@ -989,6 +993,7 @@
             this.buttonDeleteTicket.Size = (new global::System.Drawing.Size(118, 36));
             this.buttonDeleteTicket.TabIndex = (24);
             this.buttonDeleteTicket.Text = ("Delete");
+            this.buttonDeleteTicket.Click += (this.buttonDeleteTicket_Click);
             // 
             // buttonUpdateTicket
             // 
@@ -1007,24 +1012,25 @@
             this.buttonAddTicket.Size = (new global::System.Drawing.Size(118, 36));
             this.buttonAddTicket.TabIndex = (22);
             this.buttonAddTicket.Text = ("Add");
+            this.buttonAddTicket.Click += (this.buttonAddTicket_Click);
+            // 
+            // gridControlTicket
+            // 
+            this.gridControlTicket.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlTicket.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.gridControlTicket.Location = (new global::System.Drawing.Point(21, 436));
+            this.gridControlTicket.MainView = (this.gridTicket);
+            this.gridControlTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.gridControlTicket.Name = ("gridControlTicket");
+            this.gridControlTicket.Size = (new global::System.Drawing.Size(1838, 413));
+            this.gridControlTicket.TabIndex = (1);
+            this.gridControlTicket.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridTicket });
+            this.gridControlTicket.Load += (this.gridTicket_Load);
             // 
             // gridTicket
             // 
-            this.gridTicket.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.gridTicket.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gridTicket.Location = (new global::System.Drawing.Point(5, 441));
-            this.gridTicket.MainView = (this.gridView1);
-            this.gridTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.gridTicket.GridControl = (this.gridControlTicket);
             this.gridTicket.Name = ("gridTicket");
-            this.gridTicket.Size = (new global::System.Drawing.Size(1912, 300));
-            this.gridTicket.TabIndex = (1);
-            this.gridTicket.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridView1 });
-            this.gridTicket.Load += (this.gridTicket_Load);
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = (this.gridTicket);
-            this.gridView1.Name = ("gridView1");
             // 
             // groupBox1
             // 
@@ -1286,7 +1292,7 @@
             this.comboBoxTickDateDepart.Name = ("comboBoxTickDateDepart");
             this.comboBoxTickDateDepart.Size = (new global::System.Drawing.Size(250, 24));
             this.comboBoxTickDateDepart.TabIndex = (35);
-            this.comboBoxTickDateDepart.Click += (this.comboBoxTickDateDepart_Click);
+            this.comboBoxTickDateDepart.DropDown += (this.comboBoxTickDateDepart_DropDown);
             // 
             // comboBoxTickDesti
             // 
@@ -1358,6 +1364,7 @@
             this.tpCustomer.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tpCustomer.Name = ("tpCustomer");
             this.tpCustomer.Size = (new global::System.Drawing.Size(1940, 675));
+            this.tpCustomer.Paint += (this.tpCustomer_Paint);
             // 
             // gcCustomer
             // 
@@ -2043,7 +2050,7 @@
             this.tabNavigationFlight.Controls.Add(this.groupBox6);
             this.tabNavigationFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.tabNavigationFlight.Name = ("tabNavigationFlight");
-            this.tabNavigationFlight.Size = (new global::System.Drawing.Size(1040, 806));
+            this.tabNavigationFlight.Size = (new global::System.Drawing.Size(1940, 1009));
             this.tabNavigationFlight.Paint += (this.TabNavigationFlightPaint);
             // 
             // gridControlFlight
@@ -2054,7 +2061,7 @@
             this.gridControlFlight.MainView = (this.gridViewFlight);
             this.gridControlFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.gridControlFlight.Name = ("gridControlFlight");
-            this.gridControlFlight.Size = (new global::System.Drawing.Size(1016, 523));
+            this.gridControlFlight.Size = (new global::System.Drawing.Size(1916, 726));
             this.gridControlFlight.TabIndex = (3);
             this.gridControlFlight.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridViewFlight });
             this.gridControlFlight.Load += (this.GridControlFlightLoad);
@@ -2069,6 +2076,8 @@
             // groupBox6
             // 
             this.groupBox6.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.textFliPrice);
+            this.groupBox6.Controls.Add(this.labelFliPrice);
             this.groupBox6.Controls.Add(this.timeDepartPicker);
             this.groupBox6.Controls.Add(this.label36);
             this.groupBox6.Controls.Add(this.textAirline);
@@ -2093,7 +2102,7 @@
             this.groupBox6.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.groupBox6.Name = ("groupBox6");
             this.groupBox6.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox6.Size = (new global::System.Drawing.Size(1016, 242));
+            this.groupBox6.Size = (new global::System.Drawing.Size(1916, 242));
             this.groupBox6.TabIndex = (2);
             this.groupBox6.TabStop = (false);
             this.groupBox6.Text = ("Information flight");
@@ -2192,25 +2201,25 @@
             // comboBoxDesti
             // 
             this.comboBoxDesti.FormattingEnabled = (true);
-            this.comboBoxDesti.Location = (new global::System.Drawing.Point(735, 76));
+            this.comboBoxDesti.Location = (new global::System.Drawing.Point(498, 79));
             this.comboBoxDesti.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.comboBoxDesti.Name = ("comboBoxDesti");
-            this.comboBoxDesti.Size = (new global::System.Drawing.Size(243, 24));
+            this.comboBoxDesti.Size = (new global::System.Drawing.Size(150, 24));
             this.comboBoxDesti.TabIndex = (25);
             // 
             // comboBoxDepart
             // 
             this.comboBoxDepart.FormattingEnabled = (true);
-            this.comboBoxDepart.Location = (new global::System.Drawing.Point(200, 79));
+            this.comboBoxDepart.Location = (new global::System.Drawing.Point(145, 79));
             this.comboBoxDepart.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.comboBoxDepart.Name = ("comboBoxDepart");
-            this.comboBoxDepart.Size = (new global::System.Drawing.Size(243, 24));
+            this.comboBoxDepart.Size = (new global::System.Drawing.Size(150, 24));
             this.comboBoxDepart.TabIndex = (24);
             // 
             // label34
             // 
             this.label34.AutoSize = (true);
-            this.label34.Location = (new global::System.Drawing.Point(579, 82));
+            this.label34.Location = (new global::System.Drawing.Point(375, 82));
             this.label34.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
             this.label34.Name = ("label34");
             this.label34.Size = (new global::System.Drawing.Size(75, 16));
@@ -2220,7 +2229,7 @@
             // label33
             // 
             this.label33.AutoSize = (true);
-            this.label33.Location = (new global::System.Drawing.Point(34, 82));
+            this.label33.Location = (new global::System.Drawing.Point(6, 79));
             this.label33.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
             this.label33.Name = ("label33");
             this.label33.Size = (new global::System.Drawing.Size(69, 16));
@@ -2230,7 +2239,7 @@
             // simpleButton13
             // 
             this.simpleButton13.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton13.Location = (new global::System.Drawing.Point(1667, 257));
+            this.simpleButton13.Location = (new global::System.Drawing.Point(2567, 257));
             this.simpleButton13.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton13.Name = ("simpleButton13");
             this.simpleButton13.Size = (new global::System.Drawing.Size(118, 36));
@@ -2240,7 +2249,7 @@
             // simpleButton14
             // 
             this.simpleButton14.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton14.Location = (new global::System.Drawing.Point(1531, 257));
+            this.simpleButton14.Location = (new global::System.Drawing.Point(2431, 257));
             this.simpleButton14.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton14.Name = ("simpleButton14");
             this.simpleButton14.Size = (new global::System.Drawing.Size(118, 36));
@@ -2250,7 +2259,7 @@
             // simpleButton15
             // 
             this.simpleButton15.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton15.Location = (new global::System.Drawing.Point(1395, 257));
+            this.simpleButton15.Location = (new global::System.Drawing.Point(2295, 257));
             this.simpleButton15.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.simpleButton15.Name = ("simpleButton15");
             this.simpleButton15.Size = (new global::System.Drawing.Size(118, 36));
@@ -2728,11 +2737,29 @@
             this.label46.Size = (new global::System.Drawing.Size(100, 23));
             this.label46.TabIndex = (0);
             // 
+            // labelFliPrice
+            // 
+            this.labelFliPrice.AutoSize = (true);
+            this.labelFliPrice.Location = (new global::System.Drawing.Point(735, 82));
+            this.labelFliPrice.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
+            this.labelFliPrice.Name = ("labelFliPrice");
+            this.labelFliPrice.Size = (new global::System.Drawing.Size(40, 16));
+            this.labelFliPrice.TabIndex = (38);
+            this.labelFliPrice.Text = ("Price:");
+            // 
+            // textFliPrice
+            // 
+            this.textFliPrice.Location = (new global::System.Drawing.Point(828, 81));
+            this.textFliPrice.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
+            this.textFliPrice.Name = ("textFliPrice");
+            this.textFliPrice.Size = (new global::System.Drawing.Size(150, 22));
+            this.textFliPrice.TabIndex = (39);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = (new global::System.Drawing.SizeF(7F, 16F));
             this.AutoScaleMode = (global::System.Windows.Forms.AutoScaleMode.Font);
-            this.ClientSize = (new global::System.Drawing.Size(1940, 526));
+            this.ClientSize = (new global::System.Drawing.Size(1940, 860));
             this.Controls.Add(this.tabControls);
             this.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
             this.MaximizeBox = (false);
@@ -2742,10 +2769,10 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.tabControls)).EndInit();
             this.tabControls.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
+            this.groupBoxSeat.ResumeLayout(false);
+            this.groupBoxSeat.PerformLayout();
+            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlTicket)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.gridTicket)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -2810,6 +2837,7 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).EndInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.textFliPrice.Properties)).EndInit();
             this.ResumeLayout(false);
         }
 
@@ -2818,8 +2846,8 @@
         private DevExpress.XtraBars.Navigation.TabPane tabControls;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tpCustomer;
-        private DevExpress.XtraGrid.GridControl gridTicket;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gridControlTicket;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridTicket;
         private GroupBox groupBox1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
         private DevExpress.XtraGrid.GridControl dgvEmployee;
@@ -2978,7 +3006,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private Label label113;
         private DateTimePicker dtpAssignedDateJob;
-        private GroupBox groupBox8;
+        private GroupBox groupBoxSeat;
         private Label G10;
         private Label F10;
         private Label E10;
@@ -3041,5 +3069,7 @@
         private Label A01;
         private Label label48;
         private global::System.Windows.Forms.Label label49;
+        private global::DevExpress.XtraEditors.TextEdit textFliPrice;
+        private global::System.Windows.Forms.Label labelFliPrice;
     }
 }

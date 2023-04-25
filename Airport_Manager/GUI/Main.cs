@@ -27,16 +27,18 @@ namespace GUI
         BUS_Customer bCustomer = new BUS_Customer();
         BUS_Plane planebus = new BUS_Plane();
         BUS_Flight flightbus = new BUS_Flight();
-        BUS_Ticket bTicket = new BUS_Ticket();
+        BUS_Ticket ticketbus = new BUS_Ticket();
         Account current_account;
         Employee current_employee;
+        private List<System.Windows.Forms.Label> listSeat = new List<System.Windows.Forms.Label>();
+        private System.Windows.Forms.Label current_seat;
 
         public Main(Account current_account, Employee current_employee)
         {
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
-            tabControls.SelectedPageIndex = 1;
+            listSeat = initSeatUI();
         }
 
         void Main_Load(object sender, EventArgs e)
@@ -377,6 +379,7 @@ namespace GUI
             textFlightID.Text = pickedFlight.FlightID.ToString();
             planeID.PlaneID = pickedFlight.PlaneID;
             textAirline.Text = pickedFlight.Airline;
+            textFliPrice.Text = pickedFlight.Price.ToString();
             loDes.LocationID = (int)pickedFlight.Departure;
             loDep.LocationID = (int)pickedFlight.Destination;
             dateDepartPicker.Value = pickedFlight.DateOfDeparture.Date;
@@ -399,6 +402,7 @@ namespace GUI
                     Airline = textAirline.Text.Trim(),
                     Departure = loDep.LocationID,
                     Destination = loDes.LocationID,
+                    Price = Decimal.Parse(textFliPrice.Text),
                     DateOfDeparture = DateTime.Parse(daTime)
                 };
 
@@ -443,6 +447,7 @@ namespace GUI
                     updatedFlight.Airline = textAirline.Text.Trim();
                     updatedFlight.Departure = loDep.LocationID;
                     updatedFlight.Destination = loDes.LocationID;
+                    updatedFlight.Price = Decimal.Parse(textFliPrice.Text);
                     updatedFlight.DateOfDeparture = DateTime.Parse(daTime);
 
                     try
@@ -765,19 +770,110 @@ namespace GUI
 
         }
 
-        private void comboBoxTickDateDepart_Click(object sender, EventArgs e)
-        {
-            var loDep = (Location)comboBoxDepart.SelectedItem;
-            var loDes = (Location)comboBoxDesti.SelectedItem;
-            comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
-            comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
-        }
-
         private void gridTicket_Load(object sender, EventArgs e)
         {
             comboBoxTickDepart.DataSource = flightbus.GetLocations();
             comboBoxTickDesti.DataSource = flightbus.GetLocations();
             comboBoxTickDepart.DisplayMember = comboBoxTickDesti.DisplayMember = "LocationName";
+        }
+
+        private void comboBoxTickDateDepart_DropDown(object sender, EventArgs e)
+        {
+            try
+            {
+                var loDep = (Location)comboBoxTickDepart.SelectedItem;
+                var loDes = (Location)comboBoxTickDesti.SelectedItem;
+                comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
+                comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
+            }
+            catch (Exception ex) { MessageBox.Show("I don't believe it"); }
+        }
+
+        private void buttonAddTicket_Click(object sender, EventArgs e)
+        {
+            var datez = (Flight)comboBoxTickDateDepart.SelectedItem;
+            Bill_Detail bt = new Bill_Detail();
+            bt.CustomerID = int.Parse(textEdit16.Text);
+            bt.FlightID = datez.FlightID;
+            bt.EmployeeID = current_account.EmployeeID;
+            bt.SeatNumber = current_seat.Text;
+            if (bt.SeatNumber.Substring(0, 1) == "A" || bt.SeatNumber.Substring(0, 1) == "B")
+                bt.SeatClass = true;
+            else
+                bt.SeatClass = false;
+
+            if (!bt.SeatClass)
+                bt.TotalPrice = datez.Price;
+            else
+                bt.TotalPrice = datez.Price * (decimal)1.6;
+            bt.BookingDate = DateTime.Now;
+            ticketbus.AddBillService(bt);
+        }
+
+        private void buttonDeleteTicket_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private List<System.Windows.Forms.Label> initSeatUI()
+        {
+            var labels = groupBoxSeat.Controls.OfType<System.Windows.Forms.Label>();
+            List<System.Windows.Forms.Label> seats = new List<System.Windows.Forms.Label>();
+            foreach (var label in labels)
+                if (label.Name.Substring(1, 2).All(char.IsDigit))
+                    seats.Add(label);
+            foreach (var seat in seats)
+            {
+                seat.ForeColor = Color.White;
+                seat.BackColor = Color.Gray;
+                seat.Click += new EventHandler(changeStageSeat);
+            }
+            current_seat = null;
+            return seats;
+        }
+
+        private void changeStageSeat(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Label chosen_seat = (System.Windows.Forms.Label)sender;
+            if (chosen_seat.BackColor != Color.Red)
+            {
+                if (current_seat != null)
+                    current_seat.BackColor = Color.Gray;
+                chosen_seat.BackColor = Color.LightGreen;
+                current_seat = chosen_seat;
+            }
+        }
+
+
+
+        private void loadSeatFlight(Flight fl, int ticket_id)
+        {
+            current_seat = null;
+            List<Bill_Detail> listTicket = fl.Bill_Detail.ToList();
+            foreach (var seat in listSeat)
+            {
+                foreach (var t in listTicket)
+                {
+                    if (seat.Name.Equals(t.SeatNumber))
+                    {
+                        if (t.BillID == ticket_id)
+                        {
+                            seat.BackColor = Color.LightGreen;
+                            current_seat = seat;
+                            break;
+                        }
+                        seat.BackColor = Color.Red;
+                        break;
+                    }
+                    seat.BackColor = Color.Gray;
+                }
+            }
+
+        }
+
+        private void tabNavigationPage1_Paint(object sender, PaintEventArgs e)
+        {
+            gridControlTicket.DataSource = ticketbus.GetListBills();
         }
     }
 }

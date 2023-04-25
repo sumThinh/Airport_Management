@@ -11,7 +11,6 @@ namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
     
     public partial class Job
     {
@@ -22,9 +21,7 @@ namespace DTO
         public string JobDescription { get; set; }
         public string JobState { get; set; }
     
-        [Browsable(false)]
         public virtual Employee Employee { get; set; }
-        [Browsable(false)]
         public virtual Flight Flight { get; set; }
     }
 }
