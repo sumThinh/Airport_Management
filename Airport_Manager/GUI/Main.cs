@@ -34,18 +34,22 @@ namespace GUI
         private Account current_account;
         private Employee current_employee;
         private List<System.Windows.Forms.Label> listSeat = new List<System.Windows.Forms.Label>();
-        private System.Windows.Forms.Label current_seat;
+        private System.Windows.Forms.Label current_seat = new System.Windows.Forms.Label();
 
         public Main(Account current_account, Employee current_employee)
         {
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
+            MessageBox.Show("2");
             listSeat = initSeatUI();
+            List<Flight> fls = flightbus.GetListFlights();
+            loadSeatFlight(fls[0], 1);
         }
 
         void Main_Load(object sender, EventArgs e)
         {
+
         }
 
         // Customer Controller

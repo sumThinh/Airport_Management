@@ -27,11 +27,12 @@ namespace DTO
         public int FlightID { get; set; }
         public int PlaneID { get; set; }
         public int Departure { get; set; }
-        public DateTime DateOfDeparture { get; set; }
+        public System.DateTime DateOfDeparture { get; set; }
         public int Destination { get; set; }
         public string Airline { get; set; }
+
+
         [Browsable(false)]    
-        
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
         [Browsable(false)]
