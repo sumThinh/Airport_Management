@@ -602,7 +602,7 @@ namespace GUI
                             LoadDataGridViewEmployee();
                         }
                         else
-                            MessageBox.Show("Add  Employee Successfully!");
+                            MessageBox.Show("Add Employee Successfully");
                     }
                 }
                 else
@@ -630,10 +630,7 @@ namespace GUI
             txtEmployeeID.ReadOnly = true;
             LoadDataGridViewEmployee();
         }
-        private void gbJob_Paint(object sender, PaintEventArgs e)
-        {
-            LoadDataGridViewJob();
-        }
+        
 
         private void gvEmployee_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
@@ -656,6 +653,7 @@ namespace GUI
                     rbFelmale.Checked = true;
             }
         }
+       
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
@@ -754,41 +752,6 @@ namespace GUI
 
         }
 
-        private void btnAddJob_Click(object sender, EventArgs e)
-        {
-            BUS_Job busJob = new BUS_Job();
-            Job job = new Job();
-            if (String.IsNullOrEmpty(txtEmpIDJob.Text) || String.IsNullOrEmpty(txtFightIDJob.Text) || String.IsNullOrEmpty(txtJobDescription.Text) || cbStateJob.SelectedItem == null)
-            {
-                MessageBox.Show("Please enter all the information!");
-            }
-            else
-            {
-                job.AssignedDate = dtpAssignedDateJob.Value.Date;
-                job.EmployeeID = int.Parse(txtEmpIDJob.Text.Trim());
-                job.FlightID = int.Parse(txtFightIDJob.Text.Trim());
-                job.JobDescription = txtJobDescription.Text.Trim();
-                job.JobState = cbStateJob.Text;
-                if (busJob.AddJob(job) == 1)
-                {
-                    MessageBox.Show(" Add job successfull");
-                }
-                else
-                {
-                    if (busJob.AddJob(job) == 2)
-                    {
-                        MessageBox.Show("NOT EXIT FLIGHTID");
-                    }
-                    else
-                    {
-                        if (busJob.AddJob(job) == 3)
-                        {
-
-                        }
-                    }
-                }
-            }
-        }
 
         // Ticket Controller
 
@@ -983,64 +946,128 @@ namespace GUI
         }
 
 
-        // Statistics Controller
-        private void AmountOfTicketHandler(DateTime date)
+        private void btnAddJob_Click(object sender, EventArgs e)
         {
-            Func<ChartPoint, string> lablePoint = chartpoint => string.Format("{0}, {1:P}", chartpoint.Y, chartpoint.Participation);
-            SeriesCollection series = new SeriesCollection();
-            List<Bill_Detail> tickets = ticketbus.getTicketListByDate(date);
-            lbAoNormal.Text = tickets.Count(t => t.SeatClass == false).ToString();
-            lbAoVIP.Text = tickets.Count(t => t.SeatClass == true).ToString();
-            series.Add(new PieSeries() { Title = "Normal Tickets", Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == false) }, DataLabels = true, LabelPoint = lablePoint });
-            series.Add(new PieSeries() { Title = "VIP Tickets", Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == true) }, DataLabels = true, LabelPoint = lablePoint });
-            pieStatistics.Series = series;
-            pieStatistics.LegendLocation = LegendLocation.Bottom;
-        }
-
-        private void RevenueHandler(DateTime date)
-        {
-            cartesianStaticsRenuvue.Series.Clear();
-            cartesianStaticsRenuvue.AxisX.Clear();
-            cartesianStaticsRenuvue.AxisY.Clear();
-
-            List<Bill_Detail> tickets = ticketbus.getTicketListByMonthYear(date.Month, date.Year);
-
-            var total = tickets.GroupBy(t => t.BookingDate.Value.Day).Select(t => new
+            BUS_Job busJob = new BUS_Job();
+            Job job = new Job();
+            if (String.IsNullOrEmpty(txtEmployeeIDJob.Text) || String.IsNullOrEmpty(txtFlightIDJob.Text) || String.IsNullOrEmpty(txtJobDescription.Text) || cbJobState.SelectedItem == null)
             {
-                BookingDate = t.Key,
-                Total = t.Sum(ta => ta.TotalPrice),
-            }).ToList();
-
-            ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<decimal>(), LabelPoint = point => point.Y.ToString() };
-            Axis ax = new Axis() { Separator = new Separator() { Step = 1, IsEnabled = true } };
-            ax.Labels = new List<string>();
-            foreach (var x in total)
-            {
-                col.Values.Add(x.Total);
-                ax.Labels.Add(x.BookingDate.ToString());
+                MessageBox.Show("Please enter all the information!");
             }
-
-            cartesianStaticsRenuvue.Series.Add(col);
-            cartesianStaticsRenuvue.AxisX.Add(ax);
-            cartesianStaticsRenuvue.AxisY.Add(new Axis
+            else
             {
-                LabelFormatter = value => value.ToString(),
-                Separator = new Separator() { }
-            });
+                job.AssignedDate = dtpAssignedDateJob.Value.Date;
+                job.EmployeeID = int.Parse(txtEmployeeIDJob.Text.Trim());
+                job.FlightID = int.Parse(txtFlightIDJob.Text.Trim());
+                job.JobDescription = txtJobDescription.Text.Trim();
+                job.JobState = cbJobState.Text.Trim();
 
-
+                if (busJob.AddJob(job) == 1)
+                {
+                    MessageBox.Show(" Add job successfull");
+                    LoadDataGridViewJob();
+                }
+                else
+                {
+                    if (busJob.AddJob(job) == 2)
+                    {
+                        MessageBox.Show("NOT EXIT FLIGHTID");
+                    }
+                    else
+                    {
+                        if (busJob.AddJob(job) == 3)
+                        {
+                            MessageBox.Show("NOT EXIT EMPLOYEEID");
+                        }
+                        else
+                            MessageBox.Show("Something wrong");
+                    }
+                }
+            }
         }
 
-        private void dtpStatistics_ValueChanged(object sender, EventArgs e)
+        private void pageJob_Paint(object sender, PaintEventArgs e)
         {
-            DateTime date = DateTime.Parse(dtpStatistics.Value.ToString("yyyy-MM-dd"));
-            AmountOfTicketHandler(date);
+            LoadDataGridViewJob();
         }
 
-        private void dptStatisticsRevenue_ValueChanged(object sender, EventArgs e)
+        private void gvJob_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-            DateTime date = DateTime.Parse(dptStatisticsRevenue.Value.ToString("yyyy-MM-dd"));
-            RevenueHandler(date);
+            if (gvJob.GetRow(gvJob.FocusedRowHandle) != null)
+            {
+                Job cur_job = (Job)gvJob.GetRow(gvJob.FocusedRowHandle);
+                txtJobID.Text = cur_job.JobID.ToString();
+                dtpAssignedDateJob.Text = cur_job.AssignedDate.ToString();
+                txtEmployeeIDJob.Text = cur_job.EmployeeID.ToString();
+                txtFlightIDJob.Text = cur_job.FlightID.ToString();
+                txtJobDescription.Text = cur_job.JobDescription.ToString();
+                cbJobState.Text = cur_job.JobState.ToString();
+
+            }
+        }
+
+        private void btnUpdateJob_Click(object sender, EventArgs e)
+        {
+            Job job = new Job();
+            BUS_Job busJob = new BUS_Job();
+            job.JobID = Int32.Parse(txtJobID.Text.Trim());
+            job.AssignedDate = dtpAssignedDateJob.Value.Date;
+            job.EmployeeID = Int32.Parse(txtEmployeeIDJob.Text.Trim());
+            job.FlightID = Int32.Parse(txtFlightIDJob.Text.Trim());
+            job.JobDescription = txtJobDescription.Text.Trim();
+            job.JobState = cbJobState.Text;
+
+            if (busJob.UpdateJob(job) == 1)
+            {
+                MessageBox.Show("Update Job Successfully");
+                LoadDataGridViewJob();
+            }
+            else
+            {
+                if (busJob.UpdateJob(job) == 2)
+                {
+                    MessageBox.Show("Job Not Exited");
+                }
+                else
+                {
+                    MessageBox.Show("Update Job Fail");
+                }
+
+            }
+        }
+
+        private void btnDeleteJob_Click(object sender, EventArgs e)
+        {
+            BUS_Job busJob = new BUS_Job();
+            Job job = new Job();
+            job.JobID = Int32.Parse(txtJobID.Text.Trim());
+            job.AssignedDate = dtpAssignedDateJob.Value.Date;
+            job.EmployeeID = Int32.Parse(txtEmployeeIDJob.Text.Trim());
+            job.FlightID = Int32.Parse(txtFlightIDJob.Text.Trim());
+            job.JobDescription = txtJobDescription.Text.Trim();
+            job.JobState = cbJobState.Text;
+            if (busJob.DeleteJob(job) == 2)
+            {
+                MessageBox.Show("This Job not exited");
+            }
+            else
+            {
+                if (busJob.DeleteJob(job) == 1)
+                {
+                    MessageBox.Show("Delete Job successfully");
+                    LoadDataGridViewJob();
+                }
+                else
+                {
+                    if (busJob.DeleteJob(job) == 0)
+                    {
+                        MessageBox.Show("Delete Job Fail, something wrong");
+                    }
+                    else
+                        MessageBox.Show("Delete Job successfully");
+                    LoadDataGridViewJob();
+                }
+            }
         }
     }
 }
