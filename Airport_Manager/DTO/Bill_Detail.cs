@@ -19,9 +19,9 @@ namespace DTO
         public int FlightID { get; set; }
         public int EmployeeID { get; set; }
         public string SeatNumber { get; set; }
-        public Nullable<bool> SeatClass { get; set; }
+        public bool SeatClass { get; set; }
         public Nullable<int> BookingState { get; set; }
-        public Nullable<decimal> TotalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
         public Nullable<System.DateTime> BookingDate { get; set; }
     
         public virtual Customer Customer { get; set; }

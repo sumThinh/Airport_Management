@@ -30,9 +30,9 @@ namespace GUI
         BUS_Customer bCustomer = new BUS_Customer();
         BUS_Plane planebus = new BUS_Plane();
         BUS_Flight flightbus = new BUS_Flight();
-        BUS_Ticket bTicket = new BUS_Ticket();
-        private Account current_account;
-        private Employee current_employee;
+        BUS_Ticket ticketbus = new BUS_Ticket();
+        Account current_account;
+        Employee current_employee;
         private List<System.Windows.Forms.Label> listSeat = new List<System.Windows.Forms.Label>();
         private System.Windows.Forms.Label current_seat = new System.Windows.Forms.Label();
 
@@ -251,7 +251,6 @@ namespace GUI
                 comboBoxPlaneState.Items.Add("Free");
                 comboBoxPlaneState.Items.Add("Busy");
             }
-
             comboBoxPlaneState.Text = "Free";
         }
 
@@ -409,6 +408,7 @@ namespace GUI
             textFlightID.Text = pickedFlight.FlightID.ToString();
             planeID.PlaneID = pickedFlight.PlaneID;
             textAirline.Text = pickedFlight.Airline;
+            textFliPrice.Text = pickedFlight.Price.ToString();
             loDes.LocationID = (int)pickedFlight.Departure;
             loDep.LocationID = (int)pickedFlight.Destination;
             dateDepartPicker.Value = pickedFlight.DateOfDeparture.Date;
@@ -431,6 +431,7 @@ namespace GUI
                     Airline = textAirline.Text.Trim(),
                     Departure = loDep.LocationID,
                     Destination = loDes.LocationID,
+                    Price = Decimal.Parse(textFliPrice.Text),
                     DateOfDeparture = DateTime.Parse(daTime)
                 };
 
@@ -475,6 +476,7 @@ namespace GUI
                     updatedFlight.Airline = textAirline.Text.Trim();
                     updatedFlight.Departure = loDep.LocationID;
                     updatedFlight.Destination = loDes.LocationID;
+                    updatedFlight.Price = Decimal.Parse(textFliPrice.Text);
                     updatedFlight.DateOfDeparture = DateTime.Parse(daTime);
 
                     try
@@ -754,11 +756,6 @@ namespace GUI
 
         }
 
-        private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAddJob_Click(object sender, EventArgs e)
         {
             BUS_Job busJob = new BUS_Job();
@@ -791,21 +788,11 @@ namespace GUI
 
                         }
                     }
-
                 }
             }
-
         }
 
-        private void comboBoxTickDateDepart_Click(object sender, EventArgs e)
-        {
-            Location loDep = (Location)comboBoxTickDepart.SelectedItem;
-            Location loDes = (Location)comboBoxTickDesti.SelectedItem;
-            List<Flight> listFlight = new List<Flight>();
-            listFlight = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
-            comboBoxTickDateDepart.DataSource = listFlight;
-            comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
-        }
+        // Ticket Controller
 
         private void gridTicket_Load(object sender, EventArgs e)
         {
@@ -813,7 +800,46 @@ namespace GUI
             comboBoxTickDesti.DataSource = flightbus.GetLocations();
             comboBoxTickDepart.DisplayMember = comboBoxTickDesti.DisplayMember = "LocationName";
         }
-        // Ticket Controller
+
+        private void comboBoxTickDateDepart_DropDown(object sender, EventArgs e)
+        {
+            try
+            {
+                var loDep = (Location)comboBoxTickDepart.SelectedItem;
+                var loDes = (Location)comboBoxTickDesti.SelectedItem;
+                comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
+                comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
+            }
+            catch (Exception ex) { MessageBox.Show("I don't believe it"); }
+        }
+
+        private void buttonAddTicket_Click(object sender, EventArgs e)
+        {
+            var datez = (Flight)comboBoxTickDateDepart.SelectedItem;
+            Bill_Detail bt = new Bill_Detail();
+            bt.CustomerID = int.Parse(lbTicketCustomerID.Text);
+            bt.FlightID = datez.FlightID;
+            bt.EmployeeID = current_account.EmployeeID;
+            bt.SeatNumber = current_seat.Text;
+            if (bt.SeatNumber.Substring(0, 1) == "A" || bt.SeatNumber.Substring(0, 1) == "B")
+                bt.SeatClass = true;
+            else
+                bt.SeatClass = false;
+
+            if (!bt.SeatClass)
+                bt.TotalPrice = datez.Price;
+            else
+                bt.TotalPrice = datez.Price * (decimal)1.6;
+            bt.BookingDate = DateTime.Now;
+            ticketbus.AddBillService(bt);
+        }
+
+        private void buttonDeleteTicket_Click(object sender, EventArgs e)
+        {
+            var pickedTick = (Bill_Detail)gridViewTick.GetRow(gridViewTick.FocusedRowHandle);
+            ticketbus.DeleteBillService(pickedTick);
+        }
+
         private List<System.Windows.Forms.Label> initSeatUI()
         {
             var labels = groupBoxSeat.Controls.OfType<System.Windows.Forms.Label>();
@@ -859,11 +885,18 @@ namespace GUI
 
         }
 
+        private void tabNavigationPage1_Paint(object sender, PaintEventArgs e)
+        {
+            gridTicket.DataSource = ticketbus.GetListBills();
+        }
+
         private void changeStageSeat(object sender, EventArgs e)
         {
             System.Windows.Forms.Label chosen_seat = (System.Windows.Forms.Label)sender;
             if (chosen_seat.BackColor != Color.Red)
             {
+
+
                 if (current_seat != null)
                     current_seat.BackColor = Color.Gray;
                 chosen_seat.BackColor = Color.LightGreen;
@@ -908,6 +941,25 @@ namespace GUI
                 {
                     MessageBox.Show("Choose flight then choose seat", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+
+        private void gridViewTick_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (gridViewTick.GetRow(gridViewTick.FocusedRowHandle) != null)
+            {
+
+                var pickedTick = (Bill_Detail)gridViewTick.GetRow(gridViewTick.FocusedRowHandle);
+                
+                textEdit14.Text = pickedTick.BillID.ToString();
+                comboBoxTickDepart.SelectedItem = pickedTick.Flight.Departure;
+                comboBoxTickDesti.SelectedItem = pickedTick.Flight.Destination;
+                comboBoxTickDateDepart.SelectedItem = pickedTick.Flight.DateOfDeparture;
+                textEdit12.Text = pickedTick.Flight.Price.ToString();
+                lbTicketCustomerID.Text = pickedTick.Customer.CustomerID.ToString();
+                lbTicketCustomerName.Text = pickedTick.Customer.Name;
+                lbTicketCustomerAddress.Text = pickedTick.Customer.Address;
+                lbTicketCustomerPhone.Text = pickedTick.Customer.TeleNumber;
+                lbTicketCustomerNationalID.Text = pickedTick.Customer.NationalID;
+                loadSeatFlight(pickedTick.Flight, pickedTick.BillID);
 
             }
         }
