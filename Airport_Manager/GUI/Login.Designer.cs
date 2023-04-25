@@ -59,8 +59,6 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Properties.Appearance.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtPassword.Properties.Appearance.Options.UseFont = true;
-            txtPassword.Properties.Name = "txtPassword";
-            txtPassword.Properties.PasswordChar = '*';
             txtPassword.Size = new Size(298, 26);
             txtPassword.TabIndex = 2;
             // 

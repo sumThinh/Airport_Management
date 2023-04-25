@@ -11,7 +11,6 @@ namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
     
     public partial class Plane
     {
@@ -27,8 +26,6 @@ namespace DTO
         public int TotalSeat { get; set; }
         public string Manufacturer { get; set; }
         public int State { get; set; }
-
-        [Browsable(false)]
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Flight> Flights { get; set; }

@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/25/2023 10:27:26
--- Generated from EDMX file: D:\Code\Airport_Management\Airport_Manager\DTO\DBModel.edmx
+-- Date Created: 04/23/2023 14:54:37
+-- Generated from EDMX file: D:\Code\AirportManagers\QLChuyenBay\DTO\DBModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -137,20 +137,18 @@ GO
 CREATE TABLE [dbo].[Flights] (
     [FlightID] int IDENTITY(1,1) NOT NULL,
     [PlaneID] int  NOT NULL,
-    [Departure] int  NOT NULL,
-    [DateOfDeparture] datetime  NOT NULL,
-    [Destination] int  NOT NULL,
-    [Airline] nvarchar(20)  NULL,
-    [Price] decimal(12,0)  NOT NULL
+    [Departure] int  NULL,
+    [DateOfDeparture] datetime  NULL,
+    [Destination] int  NULL,
+    [Airline] nvarchar(20)  NULL
 );
 GO
 
 -- Creating table 'Jobs'
 CREATE TABLE [dbo].[Jobs] (
-    [JobID] int IDENTITY(1,1) NOT NULL,
     [AssignedDate] datetime  NOT NULL,
-    [EmployeeID] int  NOT NULL,
-    [FlightID] int  NOT NULL,
+    [EmployeeID] int  NULL,
+    [FlightID] int  NULL,
     [JobDescription] nvarchar(20)  NULL,
     [JobState] nvarchar(20)  NULL
 );
@@ -218,10 +216,10 @@ ADD CONSTRAINT [PK_Flights]
     PRIMARY KEY CLUSTERED ([FlightID] ASC);
 GO
 
--- Creating primary key on [JobID] in table 'Jobs'
+-- Creating primary key on [AssignedDate] in table 'Jobs'
 ALTER TABLE [dbo].[Jobs]
 ADD CONSTRAINT [PK_Jobs]
-    PRIMARY KEY CLUSTERED ([JobID] ASC);
+    PRIMARY KEY CLUSTERED ([AssignedDate] ASC);
 GO
 
 -- Creating primary key on [LocationID] in table 'Locations'

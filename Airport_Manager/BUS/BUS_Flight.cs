@@ -12,14 +12,9 @@ namespace BUS
 
         public List<Location> GetLocations() => flights.LoadLocationsToBox();
 
-        public List<Flight> GetDatebyLocations(int i1, int i2)
-        {
-            return flights.LoadFlightwLoca(i1, i2);
-        }
-
         public bool AddFlights(Flight flight)
         {
-            return flights.AddFlight(flight.PlaneID, flight.Departure, flight.Destination, flight.DateOfDeparture, flight.Airline, flight.Price);
+            return flights.AddFlight(flight.PlaneID, flight.Departure, flight.Destination, flight.DateOfDeparture, flight.Airline);
         }
 
         public bool UpdateFlights(Flight flight)
@@ -27,7 +22,7 @@ namespace BUS
             if (flights.checkValidFlight(flight))
             {
                 return flights.UpdateFlight(flight.FlightID, flight.PlaneID, flight.Departure, flight.Destination,
-                    flight.DateOfDeparture, flight.Airline, flight.Price);
+                    flight.DateOfDeparture, flight.Airline);
             }
             else
             {

@@ -13,7 +13,8 @@ namespace DAL
             var list = new List<Flight>();
 
             using (var db = new AirportManager())
-                list = db.Flights.Include("Bill_Detail").ToList();
+                list = db.Flights.ToList();
+
 
             return list;
         }
@@ -25,30 +26,21 @@ namespace DAL
             using (var db = new AirportManager())
                 list = db.Locations.ToList();
 
-            return list;
-        }
-
-        public List<Flight> LoadFlightwLoca(int id1, int id2)
-        {
-            var list = new List<Flight>();
-
-            using (var db = new AirportManager())
-                list = (from d in db.Flights where d.Destination == id1 & d.Departure == id2 select d).ToList();
 
             return list;
         }
 
-        public bool AddFlight(int planeID, int departure, int destination, DateTime datetimedepart, string airline, decimal price)
+        public bool AddFlight(int planeID, int departure, int destination, DateTime datetimedepart, string airline)
         {
             using (var db = new AirportManager())
             {
                 db.Flights
-                    .Add(new Flight() { PlaneID = planeID, Departure = departure, Destination = destination, DateOfDeparture = DateTime.Parse(datetimedepart.ToString("yyyy/MM/dd HH:mm:ss")), Airline = airline ,Price = price});
+                    .Add(new Flight() { PlaneID = planeID, Departure = departure, Destination = destination, DateOfDeparture = DateTime.Parse(datetimedepart.ToString("yyyy/MM/dd HH:mm:ss")), Airline = airline });
                 return db.SaveChanges() > 0;
             }
         }
 
-        public bool UpdateFlight(int id, int planeId, int departure, int destination, DateTime datetimedepart, string airline, decimal price)
+        public bool UpdateFlight(int id, int planeId, int departure, int destination, DateTime datetimedepart, string airline)
         {
             using (var db = new AirportManager())
             {
@@ -58,7 +50,6 @@ namespace DAL
                 pickedFlight.Destination = destination;
                 pickedFlight.DateOfDeparture = datetimedepart;
                 pickedFlight.Airline = airline;
-                pickedFlight.Price = price;
                 db.Flights.AddOrUpdate(pickedFlight);
                 return db.SaveChanges() > 0;
             }
