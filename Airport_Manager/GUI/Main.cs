@@ -42,8 +42,6 @@ namespace GUI
             this.current_account = current_account;
             this.current_employee = current_employee;
             listSeat = initSeatUI();
-            List<Flight> fls = flightbus.GetListFlights();
-            loadSeatFlight(fls[0], 1);
         }
 
         void Main_Load(object sender, EventArgs e)
@@ -796,8 +794,11 @@ namespace GUI
 
         private void gridTicket_Load(object sender, EventArgs e)
         {
+            gridTicket.DataSource = ticketbus.GetListBills();
             comboBoxTickDepart.DataSource = flightbus.GetLocations();
+            comboBoxTickDepart.ValueMember = "LocationID";
             comboBoxTickDesti.DataSource = flightbus.GetLocations();
+            comboBoxTickDesti.ValueMember = "LocationID";
             comboBoxTickDepart.DisplayMember = comboBoxTickDesti.DisplayMember = "LocationName";
         }
 
@@ -813,7 +814,7 @@ namespace GUI
             catch (Exception ex) { MessageBox.Show("I don't believe it"); }
         }
 
-        private void buttonAddTicket_Click(object sender, EventArgs e)
+        private async void buttonAddTicket_Click(object sender, EventArgs e)
         {
             var datez = (Flight)comboBoxTickDateDepart.SelectedItem;
             Bill_Detail bt = new Bill_Detail();
@@ -831,13 +832,22 @@ namespace GUI
             else
                 bt.TotalPrice = datez.Price * (decimal)1.6;
             bt.BookingDate = DateTime.Now;
-            ticketbus.AddBillService(bt);
+
+            if (ticketbus.AddBillService(bt))
+            {
+                gridTicket.DataSource = ticketbus.GetListBills();
+            }
+            await Task.Delay(100);
+            Flight f = flightbus.getFlightbyID(datez.FlightID);
+            loadSeatFlight(f, -1);
+
         }
 
         private void buttonDeleteTicket_Click(object sender, EventArgs e)
         {
             var pickedTick = (Bill_Detail)gridViewTick.GetRow(gridViewTick.FocusedRowHandle);
             ticketbus.DeleteBillService(pickedTick);
+            gridTicket.DataSource = ticketbus.GetListBills();
         }
 
         private List<System.Windows.Forms.Label> initSeatUI()
@@ -862,6 +872,7 @@ namespace GUI
         private void loadSeatFlight(Flight fl, int ticket_id)
         {
             current_seat = null;
+
             List<Bill_Detail> listTicket = fl.Bill_Detail.ToList();
             foreach (var seat in listSeat)
             {
@@ -885,11 +896,6 @@ namespace GUI
 
         }
 
-        private void tabNavigationPage1_Paint(object sender, PaintEventArgs e)
-        {
-            gridTicket.DataSource = ticketbus.GetListBills();
-        }
-
         private void changeStageSeat(object sender, EventArgs e)
         {
             System.Windows.Forms.Label chosen_seat = (System.Windows.Forms.Label)sender;
@@ -910,12 +916,14 @@ namespace GUI
 
         private void btnUpdateTicket_Click(object sender, EventArgs e)
         {
-            if (gridViewTicket.GetRow(gridViewTicket.FocusedRowHandle) != null)
+            if (gridViewTick.GetRow(gridViewTick.FocusedRowHandle) != null)
             {
-                var updated_ticket = (Bill_Detail)gridViewTicket.GetRow(gridViewTicket.FocusedRowHandle);
+
+                var updated_ticket = (Bill_Detail)gridViewTick.GetRow(gridViewTick.FocusedRowHandle);
                 if (current_seat != null && comboBoxTickDateDepart.SelectedItem != null)
                 {
                     var new_flight = (Flight)comboBoxTickDateDepart.SelectedItem;
+
                     if (!String.Equals(updated_ticket.SeatNumber, current_seat.Name) || !(updated_ticket.FlightID == new_flight.FlightID))
                     {
                         updated_ticket.SeatNumber = current_seat.Name;
@@ -931,7 +939,7 @@ namespace GUI
                         DateTime today = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                         updated_ticket.BookingDate = today;
 
-                        if (bTicket.UpdateTicketService(updated_ticket))
+                        if (ticketbus.UpdateTicketService(updated_ticket))
                             MessageBox.Show("Success");
                         else
                             MessageBox.Show("Fail");
@@ -941,18 +949,21 @@ namespace GUI
                 {
                     MessageBox.Show("Choose flight then choose seat", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+            }
+        }
 
         private void gridViewTick_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
             if (gridViewTick.GetRow(gridViewTick.FocusedRowHandle) != null)
             {
-
                 var pickedTick = (Bill_Detail)gridViewTick.GetRow(gridViewTick.FocusedRowHandle);
-                
                 textEdit14.Text = pickedTick.BillID.ToString();
-                comboBoxTickDepart.SelectedItem = pickedTick.Flight.Departure;
-                comboBoxTickDesti.SelectedItem = pickedTick.Flight.Destination;
-                comboBoxTickDateDepart.SelectedItem = pickedTick.Flight.DateOfDeparture;
+                comboBoxTickDepart.SelectedValue = pickedTick.Flight.Location.LocationID;
+                comboBoxTickDesti.SelectedValue = pickedTick.Flight.Location1.LocationID;
+                comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(pickedTick.Flight.Location.LocationID, pickedTick.Flight.Location1.LocationID);
+                comboBoxTickDateDepart.ValueMember = "FlightID";
+                comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
+                comboBoxTickDateDepart.SelectedValue = pickedTick.Flight.FlightID;
                 textEdit12.Text = pickedTick.Flight.Price.ToString();
                 lbTicketCustomerID.Text = pickedTick.Customer.CustomerID.ToString();
                 lbTicketCustomerName.Text = pickedTick.Customer.Name;
@@ -962,6 +973,13 @@ namespace GUI
                 loadSeatFlight(pickedTick.Flight, pickedTick.BillID);
 
             }
+        }
+
+        private void comboBoxTickDateDepart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var flight = (Flight)comboBoxTickDateDepart.SelectedItem;
+            textEdit12.Text = flight.Price.ToString();
+            loadSeatFlight(flight, -1);
         }
     }
 }

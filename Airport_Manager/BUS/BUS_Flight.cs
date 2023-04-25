@@ -12,6 +12,8 @@ namespace BUS
 
         public List<Location> GetLocations() => flights.LoadLocationsToBox();
 
+        public Flight getFlightbyID(int id) => flights.getFlightByID(id);
+
         public List<Flight> GetDatebyLocations(int i1, int i2)
         {
             return flights.LoadFlightwLoca(i1, i2);

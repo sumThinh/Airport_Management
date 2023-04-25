@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.Core.Mapping;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace DAL
         {
             var list = new List<Bill_Detail>();
             using (var db = new AirportManager())
-                list = db.Bill_Detail.ToList();
+                list = db.Bill_Detail.Include(t => t.Flight).Include(t => t.Flight.Location).Include(t=>t.Flight.Location1).Include(t=>t.Flight.Bill_Detail).Include(t=>t.Customer).ToList();
             return list;
         }
 

@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Linq;
 
@@ -33,9 +34,18 @@ namespace DAL
             var list = new List<Flight>();
 
             using (var db = new AirportManager())
-                list = (from d in db.Flights where d.Departure == id1 && d.Destination == id2 select d).ToList();
+                list = (from d in db.Flights where d.Departure == id1 && d.Destination == id2 select d).Include("Bill_Detail").ToList();
 
             return list;
+        }
+
+        public Flight getFlightByID(int id)
+        {
+            using (var db = new AirportManager())
+            {
+                Flight fl = db.Flights.Where(f => f.FlightID == id).Include("Bill_Detail").FirstOrDefault();
+                return fl;
+            }
         }
 
         public bool AddFlight(int planeID, int departure, int destination, DateTime datetimedepart, string airline, decimal price)
