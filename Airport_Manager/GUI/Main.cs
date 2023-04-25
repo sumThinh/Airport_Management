@@ -1,4 +1,4 @@
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using DTO;
 using DAL;
 using System;
@@ -19,6 +19,9 @@ using DevExpress.Charts.Native;
 using DevExpress.CodeParser;
 using LiveCharts;
 using LiveCharts.Wpf;
+using Separator = LiveCharts.Wpf.Separator;
+using DevExpress.Pdf;
+using DevExpress.XtraPrinting.Native.LayoutAdjustment;
 
 namespace GUI
 {
@@ -31,18 +34,22 @@ namespace GUI
         Account current_account;
         Employee current_employee;
         private List<System.Windows.Forms.Label> listSeat = new List<System.Windows.Forms.Label>();
-        private System.Windows.Forms.Label current_seat;
+        private System.Windows.Forms.Label current_seat = new System.Windows.Forms.Label();
 
         public Main(Account current_account, Employee current_employee)
         {
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
+            MessageBox.Show("2");
             listSeat = initSeatUI();
+            List<Flight> fls = flightbus.GetListFlights();
+            loadSeatFlight(fls[0], 1);
         }
 
         void Main_Load(object sender, EventArgs e)
         {
+
         }
 
         // Customer Controller
@@ -53,7 +60,7 @@ namespace GUI
 
         void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            if (txtCustomerID.Text != null && !txtCustomerID.Text.IsEmptyOrSingle()
+            if (txtCustomerNationalID.Text != null && !txtCustomerNationalID.Text.IsEmptyOrSingle()
                && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
                && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
                && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
@@ -61,7 +68,7 @@ namespace GUI
                && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
                && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
             {
-                string customerID = txtCustomerID.Text.Trim();
+                string customerID = txtCustomerNationalID.Text.Trim();
                 string customerName = txtCustomerName.Text.Trim();
                 string customerEmail = txtCustomerEmail.Text.Trim();
                 string customerAddress = txtCustomerAddress.Text.Trim();
@@ -114,25 +121,49 @@ namespace GUI
 
         void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-            if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
+            if (e.Clicks == 2) //Send customer to ticket tab
             {
-                var cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                txtCustomerID.Text = cur_customer.NationalID;
-                txtCustomerName.Text = cur_customer.Name;
-                txtCustomerAddress.Text = cur_customer.Address;
-                txtCustomerPhone.Text = cur_customer.TeleNumber;
-                txtCustomerEmail.Text = cur_customer.Email;
-                txtCustomerNationality.Text = cur_customer.Nationality;
-                dtpCustomerDate.Value = cur_customer.DateOfBirth.Value;
-
-                if (cur_customer.Sex == true)
+                tabControls.SelectedPageIndex = 0;
+                Customer order_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                lticketbusCustomerID.Text = order_customer.CustomerID.ToString();
+                lticketbusCustomerName.Text = order_customer.Name;
+                lticketbusCustomerAddress.Text = order_customer.Address;
+                lticketbusCustomerPhone.Text = order_customer.TeleNumber;
+                lticketbusCustomerNationalID.Text = order_customer.NationalID;
+                if (order_customer.Sex == true)
                 {
-                    rbCustomerFemale.Checked = true;
+                    lticketbusCustomerSex.Text = "Nữ";
                 }
                 else
                 {
-                    rbCustomerMale.Checked = true;
+                    lticketbusCustomerSex.Text = "Nam";
                 }
+                lticketbusCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
+            }
+            else if (e.Clicks == 1) //fetch data to textfield
+            {
+
+                if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
+                {
+                    Customer cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    txtCustomerID.Text = cur_customer.CustomerID.ToString();
+                    txtCustomerNationalID.Text = cur_customer.NationalID;
+                    txtCustomerName.Text = cur_customer.Name;
+                    txtCustomerAddress.Text = cur_customer.Address;
+                    txtCustomerPhone.Text = cur_customer.TeleNumber;
+                    txtCustomerEmail.Text = cur_customer.Email;
+                    txtCustomerNationality.Text = cur_customer.Nationality;
+                    dtpCustomerDate.Value = cur_customer.DateOfBirth.Value;
+                    if (cur_customer.Sex == true)
+                    {
+                        rbCustomerFemale.Checked = true;
+                    }
+                    else
+                    {
+                        rbCustomerMale.Checked = true;
+                    }
+                }
+
             }
         }
 
@@ -140,7 +171,7 @@ namespace GUI
         {
             if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
             {
-                if (txtCustomerID.Text != null && !txtCustomerID.Text.IsEmptyOrSingle()
+                if (txtCustomerNationalID.Text != null && !txtCustomerNationalID.Text.IsEmptyOrSingle()
                && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
                && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
                && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
@@ -152,7 +183,7 @@ namespace GUI
                     var updated_customer = new Customer();
                     updated_customer.CustomerID = current_customer.CustomerID;
                     updated_customer.Name = txtCustomerName.Text.Trim();
-                    updated_customer.NationalID = txtCustomerID.Text.Trim();
+                    updated_customer.NationalID = txtCustomerNationalID.Text.Trim();
                     updated_customer.Email = txtCustomerEmail.Text.Trim();
                     updated_customer.Address = txtCustomerAddress.Text.Trim();
                     updated_customer.TeleNumber = txtCustomerPhone.Text.Trim();
@@ -770,6 +801,8 @@ namespace GUI
 
         }
 
+        // Ticket Controller
+
         private void gridTicket_Load(object sender, EventArgs e)
         {
             comboBoxTickDepart.DataSource = flightbus.GetLocations();
@@ -843,8 +876,6 @@ namespace GUI
                 current_seat = chosen_seat;
             }
         }
-
-
 
         private void loadSeatFlight(Flight fl, int ticket_id)
         {

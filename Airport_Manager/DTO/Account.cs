@@ -18,7 +18,8 @@ namespace DTO
         public string Username { get; set; }
         public string Password { get; set; }
         public Nullable<bool> AccessLevel { get; set; }
-    
+
+        [Browsable(false)]
         public virtual Employee Employee { get; set; }
     }
 }

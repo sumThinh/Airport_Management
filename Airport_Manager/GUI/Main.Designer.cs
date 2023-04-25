@@ -28,2817 +28,2792 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControls = (new global::DevExpress.XtraBars.Navigation.TabPane());
-            this.tabNavigationPage1 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.groupBoxSeat = (new global::System.Windows.Forms.GroupBox());
-            this.G10 = (new global::System.Windows.Forms.Label());
-            this.F10 = (new global::System.Windows.Forms.Label());
-            this.E10 = (new global::System.Windows.Forms.Label());
-            this.D10 = (new global::System.Windows.Forms.Label());
-            this.C10 = (new global::System.Windows.Forms.Label());
-            this.G09 = (new global::System.Windows.Forms.Label());
-            this.F09 = (new global::System.Windows.Forms.Label());
-            this.E09 = (new global::System.Windows.Forms.Label());
-            this.D09 = (new global::System.Windows.Forms.Label());
-            this.C09 = (new global::System.Windows.Forms.Label());
-            this.G08 = (new global::System.Windows.Forms.Label());
-            this.F08 = (new global::System.Windows.Forms.Label());
-            this.E08 = (new global::System.Windows.Forms.Label());
-            this.D08 = (new global::System.Windows.Forms.Label());
-            this.C08 = (new global::System.Windows.Forms.Label());
-            this.G07 = (new global::System.Windows.Forms.Label());
-            this.F07 = (new global::System.Windows.Forms.Label());
-            this.E07 = (new global::System.Windows.Forms.Label());
-            this.D07 = (new global::System.Windows.Forms.Label());
-            this.C07 = (new global::System.Windows.Forms.Label());
-            this.G06 = (new global::System.Windows.Forms.Label());
-            this.F06 = (new global::System.Windows.Forms.Label());
-            this.E06 = (new global::System.Windows.Forms.Label());
-            this.D06 = (new global::System.Windows.Forms.Label());
-            this.C06 = (new global::System.Windows.Forms.Label());
-            this.G05 = (new global::System.Windows.Forms.Label());
-            this.F05 = (new global::System.Windows.Forms.Label());
-            this.E05 = (new global::System.Windows.Forms.Label());
-            this.D05 = (new global::System.Windows.Forms.Label());
-            this.C05 = (new global::System.Windows.Forms.Label());
-            this.G04 = (new global::System.Windows.Forms.Label());
-            this.F04 = (new global::System.Windows.Forms.Label());
-            this.E04 = (new global::System.Windows.Forms.Label());
-            this.D04 = (new global::System.Windows.Forms.Label());
-            this.C04 = (new global::System.Windows.Forms.Label());
-            this.G03 = (new global::System.Windows.Forms.Label());
-            this.F03 = (new global::System.Windows.Forms.Label());
-            this.E03 = (new global::System.Windows.Forms.Label());
-            this.D03 = (new global::System.Windows.Forms.Label());
-            this.C03 = (new global::System.Windows.Forms.Label());
-            this.G02 = (new global::System.Windows.Forms.Label());
-            this.F02 = (new global::System.Windows.Forms.Label());
-            this.E02 = (new global::System.Windows.Forms.Label());
-            this.D02 = (new global::System.Windows.Forms.Label());
-            this.C02 = (new global::System.Windows.Forms.Label());
-            this.G01 = (new global::System.Windows.Forms.Label());
-            this.F01 = (new global::System.Windows.Forms.Label());
-            this.E01 = (new global::System.Windows.Forms.Label());
-            this.D01 = (new global::System.Windows.Forms.Label());
-            this.C01 = (new global::System.Windows.Forms.Label());
-            this.B05 = (new global::System.Windows.Forms.Label());
-            this.B04 = (new global::System.Windows.Forms.Label());
-            this.B03 = (new global::System.Windows.Forms.Label());
-            this.B02 = (new global::System.Windows.Forms.Label());
-            this.B01 = (new global::System.Windows.Forms.Label());
-            this.A05 = (new global::System.Windows.Forms.Label());
-            this.A04 = (new global::System.Windows.Forms.Label());
-            this.A03 = (new global::System.Windows.Forms.Label());
-            this.A02 = (new global::System.Windows.Forms.Label());
-            this.A01 = (new global::System.Windows.Forms.Label());
-            this.label49 = (new global::System.Windows.Forms.Label());
-            this.label48 = (new global::System.Windows.Forms.Label());
-            this.buttonDeleteTicket = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.buttonUpdateTicket = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.buttonAddTicket = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.gridControlTicket = (new global::DevExpress.XtraGrid.GridControl());
-            this.gridTicket = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
-            this.groupBox1 = (new global::System.Windows.Forms.GroupBox());
-            this.groupBox4 = (new global::System.Windows.Forms.GroupBox());
-            this.textEdit16 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label21 = (new global::System.Windows.Forms.Label());
-            this.dateTimePicker2 = (new global::System.Windows.Forms.DateTimePicker());
-            this.label15 = (new global::System.Windows.Forms.Label());
-            this.textEdit11 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label14 = (new global::System.Windows.Forms.Label());
-            this.label13 = (new global::System.Windows.Forms.Label());
-            this.textEdit10 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label10 = (new global::System.Windows.Forms.Label());
-            this.textEdit9 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label11 = (new global::System.Windows.Forms.Label());
-            this.textEdit8 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.radioButton3 = (new global::System.Windows.Forms.RadioButton());
-            this.label12 = (new global::System.Windows.Forms.Label());
-            this.radioButton4 = (new global::System.Windows.Forms.RadioButton());
-            this.groupBox3 = (new global::System.Windows.Forms.GroupBox());
-            this.label23 = (new global::System.Windows.Forms.Label());
-            this.textEdit12 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label22 = (new global::System.Windows.Forms.Label());
-            this.comboBoxTickDateDepart = (new global::System.Windows.Forms.ComboBox());
-            this.comboBoxTickDesti = (new global::System.Windows.Forms.ComboBox());
-            this.label17 = (new global::System.Windows.Forms.Label());
-            this.label16 = (new global::System.Windows.Forms.Label());
-            this.comboBoxTickDepart = (new global::System.Windows.Forms.ComboBox());
-            this.textEdit14 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label20 = (new global::System.Windows.Forms.Label());
-            this.tpCustomer = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.gcCustomer = (new global::DevExpress.XtraGrid.GridControl());
-            this.gvCustomer = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
-            this.groupBox5 = (new global::System.Windows.Forms.GroupBox());
-            this.btnCustomerDelete = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnCustomerUpdate = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnAddCustomer = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton7 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton8 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton9 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.label24 = (new global::System.Windows.Forms.Label());
-            this.txtCustomerPhone = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtCustomerNationality = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtCustomerEmail = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label25 = (new global::System.Windows.Forms.Label());
-            this.label26 = (new global::System.Windows.Forms.Label());
-            this.label27 = (new global::System.Windows.Forms.Label());
-            this.txtCustomerID = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label28 = (new global::System.Windows.Forms.Label());
-            this.dtpCustomerDate = (new global::System.Windows.Forms.DateTimePicker());
-            this.label29 = (new global::System.Windows.Forms.Label());
-            this.rbCustomerFemale = (new global::System.Windows.Forms.RadioButton());
-            this.rbCustomerMale = (new global::System.Windows.Forms.RadioButton());
-            this.label30 = (new global::System.Windows.Forms.Label());
-            this.label31 = (new global::System.Windows.Forms.Label());
-            this.txtCustomerAddress = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtCustomerName = (new global::DevExpress.XtraEditors.TextEdit());
-            this.textEdit21 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label32 = (new global::System.Windows.Forms.Label());
-            this.tp = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.groupBox2 = (new global::System.Windows.Forms.GroupBox());
-            this.label47 = (new global::System.Windows.Forms.Label());
-            this.txtPasswordEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtUsernameEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label40 = (new global::System.Windows.Forms.Label());
-            this.txtPositionEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.labelPosision = (new global::System.Windows.Forms.Label());
-            this.btnDeleteEmployee = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnUpdateEmployee = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnAddEmployee = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.label9 = (new global::System.Windows.Forms.Label());
-            this.txtPhoneEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtNationalityEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtEmailEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label8 = (new global::System.Windows.Forms.Label());
-            this.label7 = (new global::System.Windows.Forms.Label());
-            this.label6 = (new global::System.Windows.Forms.Label());
-            this.txtNationalIDEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label5 = (new global::System.Windows.Forms.Label());
-            this.dtpBirthdayEmployee = (new global::System.Windows.Forms.DateTimePicker());
-            this.label4 = (new global::System.Windows.Forms.Label());
-            this.rbFelmale = (new global::System.Windows.Forms.RadioButton());
-            this.rbMale = (new global::System.Windows.Forms.RadioButton());
-            this.label3 = (new global::System.Windows.Forms.Label());
-            this.label2 = (new global::System.Windows.Forms.Label());
-            this.txtAddressEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtNameEmployee = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtEmployeeID = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label1 = (new global::System.Windows.Forms.Label());
-            this.dgvEmployee = (new global::DevExpress.XtraGrid.GridControl());
-            this.gvEmploy = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
-            this.tabNavigationFlight = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.gridControlFlight = (new global::DevExpress.XtraGrid.GridControl());
-            this.gridViewFlight = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
-            this.groupBox6 = (new global::System.Windows.Forms.GroupBox());
-            this.timeDepartPicker = (new global::System.Windows.Forms.DateTimePicker());
-            this.label36 = (new global::System.Windows.Forms.Label());
-            this.textAirline = (new global::DevExpress.XtraEditors.TextEdit());
-            this.buttonDeleteFlight = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.buttonUpdateFlight = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.buttonAddFlight = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.comboBoxPlane = (new global::System.Windows.Forms.ComboBox());
-            this.label37 = (new global::System.Windows.Forms.Label());
-            this.label35 = (new global::System.Windows.Forms.Label());
-            this.comboBoxDesti = (new global::System.Windows.Forms.ComboBox());
-            this.comboBoxDepart = (new global::System.Windows.Forms.ComboBox());
-            this.label34 = (new global::System.Windows.Forms.Label());
-            this.label33 = (new global::System.Windows.Forms.Label());
-            this.simpleButton13 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton14 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton15 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.dateDepartPicker = (new global::System.Windows.Forms.DateTimePicker());
-            this.label38 = (new global::System.Windows.Forms.Label());
-            this.textFlightID = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label41 = (new global::System.Windows.Forms.Label());
-            this.tabNavigationPage5 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.gridControlPlane = (new global::DevExpress.XtraGrid.GridControl());
-            this.gridPlane = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
-            this.groupBox7 = (new global::System.Windows.Forms.GroupBox());
-            this.label39 = (new global::System.Windows.Forms.Label());
-            this.txtRegistration = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtPlaneSeat = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtManufactor = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtPlaneModel = (new global::DevExpress.XtraEditors.TextEdit());
-            this.buttonDelete_Plane = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.buttonUpdate_Plane = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.buttonAdd_Plane = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.comboBoxPlaneState = (new global::System.Windows.Forms.ComboBox());
-            this.label42 = (new global::System.Windows.Forms.Label());
-            this.label43 = (new global::System.Windows.Forms.Label());
-            this.label44 = (new global::System.Windows.Forms.Label());
-            this.simpleButton22 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton23 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton24 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.label45 = (new global::System.Windows.Forms.Label());
-            this.tabNavigationPage6 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.tabNavigationPage2 = (new global::DevExpress.XtraBars.Navigation.TabNavigationPage());
-            this.dgvJob = (new global::DevExpress.XtraGrid.GridControl());
-            this.gridView2 = (new global::DevExpress.XtraGrid.Views.Grid.GridView());
-            this.groupBox9 = (new global::System.Windows.Forms.GroupBox());
-            this.dtpAssignedDateJob = (new global::System.Windows.Forms.DateTimePicker());
-            this.label113 = (new global::System.Windows.Forms.Label());
-            this.txtJobDescription = (new global::DevExpress.XtraEditors.TextEdit());
-            this.txtFightIDJob = (new global::DevExpress.XtraEditors.TextEdit());
-            this.btnDeleteJob = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnUpdateJob = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.btnAddJob = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.cbStateJob = (new global::System.Windows.Forms.ComboBox());
-            this.label110 = (new global::System.Windows.Forms.Label());
-            this.label111 = (new global::System.Windows.Forms.Label());
-            this.label112 = (new global::System.Windows.Forms.Label());
-            this.simpleButton25 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton26 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.simpleButton27 = (new global::DevExpress.XtraEditors.SimpleButton());
-            this.txtEmpIDJob = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label114 = (new global::System.Windows.Forms.Label());
-            this.textEdit22 = (new global::DevExpress.XtraEditors.TextEdit());
-            this.label46 = (new global::System.Windows.Forms.Label());
-            this.labelFliPrice = (new global::System.Windows.Forms.Label());
-            this.textFliPrice = (new global::DevExpress.XtraEditors.TextEdit());
-            ((global::System.ComponentModel.ISupportInitialize)(this.tabControls)).BeginInit();
-            this.tabControls.SuspendLayout();
-            this.tabNavigationPage1.SuspendLayout();
-            this.groupBoxSeat.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlTicket)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridTicket)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).BeginInit();
-            this.tpCustomer.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gcCustomer)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gvCustomer)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerPhone.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerNationality.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerEmail.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerID.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerAddress.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerName.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).BeginInit();
-            this.tp.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPasswordEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtUsernameEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPositionEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPhoneEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtNationalityEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmailEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtNationalIDEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtAddressEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtNameEmployee.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gvEmploy)).BeginInit();
-            this.tabNavigationFlight.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlFlight)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridViewFlight)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textAirline.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textFlightID.Properties)).BeginInit();
-            this.tabNavigationPage5.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlPlane)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridPlane)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtRegistration.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneSeat.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtManufactor.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneModel.Properties)).BeginInit();
-            this.tabNavigationPage2.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.dgvJob)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.groupBox9.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtJobDescription.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textFliPrice.Properties)).BeginInit();
-            this.SuspendLayout();
+            tabControls = new DevExpress.XtraBars.Navigation.TabPane();
+            tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            groupBoxSeat = new GroupBox();
+            G10 = new Label();
+            F10 = new Label();
+            E10 = new Label();
+            D10 = new Label();
+            C10 = new Label();
+            G09 = new Label();
+            F09 = new Label();
+            E09 = new Label();
+            D09 = new Label();
+            C09 = new Label();
+            G08 = new Label();
+            F08 = new Label();
+            E08 = new Label();
+            D08 = new Label();
+            C08 = new Label();
+            G07 = new Label();
+            F07 = new Label();
+            E07 = new Label();
+            D07 = new Label();
+            C07 = new Label();
+            G06 = new Label();
+            F06 = new Label();
+            E06 = new Label();
+            D06 = new Label();
+            C06 = new Label();
+            G05 = new Label();
+            F05 = new Label();
+            E05 = new Label();
+            D05 = new Label();
+            C05 = new Label();
+            G04 = new Label();
+            F04 = new Label();
+            E04 = new Label();
+            D04 = new Label();
+            C04 = new Label();
+            G03 = new Label();
+            F03 = new Label();
+            E03 = new Label();
+            D03 = new Label();
+            C03 = new Label();
+            G02 = new Label();
+            F02 = new Label();
+            E02 = new Label();
+            D02 = new Label();
+            C02 = new Label();
+            G01 = new Label();
+            F01 = new Label();
+            E01 = new Label();
+            D01 = new Label();
+            C01 = new Label();
+            B05 = new Label();
+            B04 = new Label();
+            B03 = new Label();
+            B02 = new Label();
+            B01 = new Label();
+            A05 = new Label();
+            A04 = new Label();
+            A03 = new Label();
+            A02 = new Label();
+            A01 = new Label();
+            label49 = new Label();
+            label48 = new Label();
+            buttonDeleteTicket = new DevExpress.XtraEditors.SimpleButton();
+            buttonUpdateTicket = new DevExpress.XtraEditors.SimpleButton();
+            buttonAddTicket = new DevExpress.XtraEditors.SimpleButton();
+            gridTicket = new DevExpress.XtraGrid.GridControl();
+            gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            groupBox1 = new GroupBox();
+            groupBox4 = new GroupBox();
+            lbTicketCustomerDoB = new Label();
+            lbTicketCustomerPhone = new Label();
+            lbTicketCustomerNationalID = new Label();
+            lbTicketCustomerSex = new Label();
+            lbTicketCustomerAddress = new Label();
+            lbTicketCustomerName = new Label();
+            lbTicketCustomerID = new Label();
+            label21 = new Label();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            groupBox3 = new GroupBox();
+            label23 = new Label();
+            textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            label22 = new Label();
+            comboBoxTickDateDepart = new ComboBox();
+            comboBoxTickDesti = new ComboBox();
+            label17 = new Label();
+            label16 = new Label();
+            comboBoxTickDepart = new ComboBox();
+            textEdit14 = new DevExpress.XtraEditors.TextEdit();
+            label20 = new Label();
+            tpCustomer = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            gcCustomer = new DevExpress.XtraGrid.GridControl();
+            gvCustomer = new DevExpress.XtraGrid.Views.Grid.GridView();
+            groupBox5 = new GroupBox();
+            btnCustomerDelete = new DevExpress.XtraEditors.SimpleButton();
+            btnCustomerUpdate = new DevExpress.XtraEditors.SimpleButton();
+            btnAddCustomer = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            label24 = new Label();
+            txtCustomerPhone = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerNationality = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerEmail = new DevExpress.XtraEditors.TextEdit();
+            label25 = new Label();
+            label26 = new Label();
+            label27 = new Label();
+            txtCustomerNationalID = new DevExpress.XtraEditors.TextEdit();
+            label28 = new Label();
+            dtpCustomerDate = new DateTimePicker();
+            label29 = new Label();
+            rbCustomerFemale = new RadioButton();
+            rbCustomerMale = new RadioButton();
+            label30 = new Label();
+            label31 = new Label();
+            txtCustomerAddress = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerName = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerID = new DevExpress.XtraEditors.TextEdit();
+            label32 = new Label();
+            tp = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            groupBox2 = new GroupBox();
+            label47 = new Label();
+            txtPasswordEmployee = new DevExpress.XtraEditors.TextEdit();
+            txtUsernameEmployee = new DevExpress.XtraEditors.TextEdit();
+            label40 = new Label();
+            txtPositionEmployee = new DevExpress.XtraEditors.TextEdit();
+            labelPosision = new Label();
+            btnDeleteEmployee = new DevExpress.XtraEditors.SimpleButton();
+            btnUpdateEmployee = new DevExpress.XtraEditors.SimpleButton();
+            btnAddEmployee = new DevExpress.XtraEditors.SimpleButton();
+            label9 = new Label();
+            txtPhoneEmployee = new DevExpress.XtraEditors.TextEdit();
+            txtNationalityEmployee = new DevExpress.XtraEditors.TextEdit();
+            txtEmailEmployee = new DevExpress.XtraEditors.TextEdit();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            txtNationalIDEmployee = new DevExpress.XtraEditors.TextEdit();
+            label5 = new Label();
+            dtpBirthdayEmployee = new DateTimePicker();
+            label4 = new Label();
+            rbFelmale = new RadioButton();
+            rbMale = new RadioButton();
+            label3 = new Label();
+            label2 = new Label();
+            txtAddressEmployee = new DevExpress.XtraEditors.TextEdit();
+            txtNameEmployee = new DevExpress.XtraEditors.TextEdit();
+            txtEmployeeID = new DevExpress.XtraEditors.TextEdit();
+            label1 = new Label();
+            dgvEmployee = new DevExpress.XtraGrid.GridControl();
+            gvEmploy = new DevExpress.XtraGrid.Views.Grid.GridView();
+            tabNavigationFlight = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            gridControlFlight = new DevExpress.XtraGrid.GridControl();
+            gridViewFlight = new DevExpress.XtraGrid.Views.Grid.GridView();
+            groupBox6 = new GroupBox();
+            timeDepartPicker = new DateTimePicker();
+            label36 = new Label();
+            textAirline = new DevExpress.XtraEditors.TextEdit();
+            buttonDeleteFlight = new DevExpress.XtraEditors.SimpleButton();
+            buttonUpdateFlight = new DevExpress.XtraEditors.SimpleButton();
+            buttonAddFlight = new DevExpress.XtraEditors.SimpleButton();
+            comboBoxPlane = new ComboBox();
+            label37 = new Label();
+            label35 = new Label();
+            comboBoxDesti = new ComboBox();
+            comboBoxDepart = new ComboBox();
+            label34 = new Label();
+            label33 = new Label();
+            simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
+            dateDepartPicker = new DateTimePicker();
+            label38 = new Label();
+            textFlightID = new DevExpress.XtraEditors.TextEdit();
+            label41 = new Label();
+            tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            gridControlPlane = new DevExpress.XtraGrid.GridControl();
+            gridPlane = new DevExpress.XtraGrid.Views.Grid.GridView();
+            groupBox7 = new GroupBox();
+            label39 = new Label();
+            txtRegistration = new DevExpress.XtraEditors.TextEdit();
+            txtPlaneSeat = new DevExpress.XtraEditors.TextEdit();
+            txtManufactor = new DevExpress.XtraEditors.TextEdit();
+            txtPlaneModel = new DevExpress.XtraEditors.TextEdit();
+            buttonDelete_Plane = new DevExpress.XtraEditors.SimpleButton();
+            buttonUpdate_Plane = new DevExpress.XtraEditors.SimpleButton();
+            buttonAdd_Plane = new DevExpress.XtraEditors.SimpleButton();
+            comboBoxPlaneState = new ComboBox();
+            label42 = new Label();
+            label43 = new Label();
+            label44 = new Label();
+            simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
+            label45 = new Label();
+            tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            dgvJob = new DevExpress.XtraGrid.GridControl();
+            gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            groupBox9 = new GroupBox();
+            dtpAssignedDateJob = new DateTimePicker();
+            label113 = new Label();
+            txtJobDescription = new DevExpress.XtraEditors.TextEdit();
+            txtFightIDJob = new DevExpress.XtraEditors.TextEdit();
+            btnDeleteJob = new DevExpress.XtraEditors.SimpleButton();
+            btnUpdateJob = new DevExpress.XtraEditors.SimpleButton();
+            btnAddJob = new DevExpress.XtraEditors.SimpleButton();
+            cbStateJob = new ComboBox();
+            label110 = new Label();
+            label111 = new Label();
+            label112 = new Label();
+            simpleButton25 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton26 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton27 = new DevExpress.XtraEditors.SimpleButton();
+            txtEmpIDJob = new DevExpress.XtraEditors.TextEdit();
+            label114 = new Label();
+            textEdit22 = new DevExpress.XtraEditors.TextEdit();
+            label46 = new Label();
+            ((System.ComponentModel.ISupportInitialize)tabControls).BeginInit();
+            tabControls.SuspendLayout();
+            tabNavigationPage1.SuspendLayout();
+            groupBoxSeat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridTicket).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
+            tpCustomer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gcCustomer).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gvCustomer).BeginInit();
+            groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerPhone.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerNationality.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerEmail.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerNationalID.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).BeginInit();
+            tp.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)txtPasswordEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtUsernameEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPositionEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPhoneEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtNationalityEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtEmailEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtNationalIDEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtAddressEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtNameEmployee.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtEmployeeID.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmployee).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gvEmploy).BeginInit();
+            tabNavigationFlight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridControlFlight).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewFlight).BeginInit();
+            groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)textAirline.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textFlightID.Properties).BeginInit();
+            tabNavigationPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridControlPlane).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridPlane).BeginInit();
+            groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)txtRegistration.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPlaneSeat.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtManufactor.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPlaneModel.Properties).BeginInit();
+            tabNavigationPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvJob).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridView2).BeginInit();
+            groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)txtJobDescription.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtFightIDJob.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtEmpIDJob.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit22.Properties).BeginInit();
+            SuspendLayout();
             // 
             // tabControls
             // 
-            this.tabControls.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControls.Controls.Add(this.tabNavigationPage1);
-            this.tabControls.Controls.Add(this.tpCustomer);
-            this.tabControls.Controls.Add(this.tp);
-            this.tabControls.Controls.Add(this.tabNavigationFlight);
-            this.tabControls.Controls.Add(this.tabNavigationPage5);
-            this.tabControls.Controls.Add(this.tabNavigationPage6);
-            this.tabControls.Controls.Add(this.tabNavigationPage2);
-            this.tabControls.Location = (new global::System.Drawing.Point(0, 0));
-            this.tabControls.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tabControls.Name = ("tabControls");
-            this.tabControls.Pages.AddRange(new global::DevExpress.XtraBars.Navigation.NavigationPageBase[] { this.tabNavigationPage1, this.tpCustomer, this.tp, this.tabNavigationFlight, this.tabNavigationPage5, this.tabNavigationPage6 });
-            this.tabControls.RegularSize = (new global::System.Drawing.Size(1940, 1050));
-            this.tabControls.SelectedPage = (this.tabNavigationPage1);
-            this.tabControls.Size = (new global::System.Drawing.Size(1940, 1050));
-            this.tabControls.TabIndex = (0);
-            this.tabControls.Text = ("Tickets");
+            tabControls.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tabControls.Controls.Add(tabNavigationPage1);
+            tabControls.Controls.Add(tpCustomer);
+            tabControls.Controls.Add(tp);
+            tabControls.Controls.Add(tabNavigationFlight);
+            tabControls.Controls.Add(tabNavigationPage5);
+            tabControls.Controls.Add(tabNavigationPage6);
+            tabControls.Controls.Add(tabNavigationPage2);
+            tabControls.Location = new Point(0, 0);
+            tabControls.Margin = new Padding(3, 2, 3, 2);
+            tabControls.Name = "tabControls";
+            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tabNavigationPage1, tpCustomer, tp, tabNavigationFlight, tabNavigationPage5, tabNavigationPage6 });
+            tabControls.RegularSize = new Size(1861, 582);
+            tabControls.SelectedPage = tabNavigationPage1;
+            tabControls.Size = new Size(1861, 582);
+            tabControls.TabIndex = 0;
+            tabControls.Text = "Tickets";
             // 
             // tabNavigationPage1
             // 
-            this.tabNavigationPage1.Caption = ("Tickets");
-            this.tabNavigationPage1.Controls.Add(this.groupBoxSeat);
-            this.tabNavigationPage1.Controls.Add(this.buttonDeleteTicket);
-            this.tabNavigationPage1.Controls.Add(this.buttonUpdateTicket);
-            this.tabNavigationPage1.Controls.Add(this.buttonAddTicket);
-            this.tabNavigationPage1.Controls.Add(this.gridControlTicket);
-            this.tabNavigationPage1.Controls.Add(this.groupBox1);
-            this.tabNavigationPage1.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tabNavigationPage1.Name = ("tabNavigationPage1");
-            this.tabNavigationPage1.Size = (new global::System.Drawing.Size(1940, 1009));
-            this.tabNavigationPage1.Paint += (this.tabNavigationPage1_Paint);
+            tabNavigationPage1.Caption = "Tickets";
+            tabNavigationPage1.Controls.Add(groupBoxSeat);
+            tabNavigationPage1.Controls.Add(buttonDeleteTicket);
+            tabNavigationPage1.Controls.Add(buttonUpdateTicket);
+            tabNavigationPage1.Controls.Add(buttonAddTicket);
+            tabNavigationPage1.Controls.Add(gridTicket);
+            tabNavigationPage1.Controls.Add(groupBox1);
+            tabNavigationPage1.Margin = new Padding(3, 2, 3, 2);
+            tabNavigationPage1.Name = "tabNavigationPage1";
+            tabNavigationPage1.Size = new Size(1861, 549);
             // 
             // groupBoxSeat
             // 
-            this.groupBoxSeat.Controls.Add(this.G10);
-            this.groupBoxSeat.Controls.Add(this.F10);
-            this.groupBoxSeat.Controls.Add(this.E10);
-            this.groupBoxSeat.Controls.Add(this.D10);
-            this.groupBoxSeat.Controls.Add(this.C10);
-            this.groupBoxSeat.Controls.Add(this.G09);
-            this.groupBoxSeat.Controls.Add(this.F09);
-            this.groupBoxSeat.Controls.Add(this.E09);
-            this.groupBoxSeat.Controls.Add(this.D09);
-            this.groupBoxSeat.Controls.Add(this.C09);
-            this.groupBoxSeat.Controls.Add(this.G08);
-            this.groupBoxSeat.Controls.Add(this.F08);
-            this.groupBoxSeat.Controls.Add(this.E08);
-            this.groupBoxSeat.Controls.Add(this.D08);
-            this.groupBoxSeat.Controls.Add(this.C08);
-            this.groupBoxSeat.Controls.Add(this.G07);
-            this.groupBoxSeat.Controls.Add(this.F07);
-            this.groupBoxSeat.Controls.Add(this.E07);
-            this.groupBoxSeat.Controls.Add(this.D07);
-            this.groupBoxSeat.Controls.Add(this.C07);
-            this.groupBoxSeat.Controls.Add(this.G06);
-            this.groupBoxSeat.Controls.Add(this.F06);
-            this.groupBoxSeat.Controls.Add(this.E06);
-            this.groupBoxSeat.Controls.Add(this.D06);
-            this.groupBoxSeat.Controls.Add(this.C06);
-            this.groupBoxSeat.Controls.Add(this.G05);
-            this.groupBoxSeat.Controls.Add(this.F05);
-            this.groupBoxSeat.Controls.Add(this.E05);
-            this.groupBoxSeat.Controls.Add(this.D05);
-            this.groupBoxSeat.Controls.Add(this.C05);
-            this.groupBoxSeat.Controls.Add(this.G04);
-            this.groupBoxSeat.Controls.Add(this.F04);
-            this.groupBoxSeat.Controls.Add(this.E04);
-            this.groupBoxSeat.Controls.Add(this.D04);
-            this.groupBoxSeat.Controls.Add(this.C04);
-            this.groupBoxSeat.Controls.Add(this.G03);
-            this.groupBoxSeat.Controls.Add(this.F03);
-            this.groupBoxSeat.Controls.Add(this.E03);
-            this.groupBoxSeat.Controls.Add(this.D03);
-            this.groupBoxSeat.Controls.Add(this.C03);
-            this.groupBoxSeat.Controls.Add(this.G02);
-            this.groupBoxSeat.Controls.Add(this.F02);
-            this.groupBoxSeat.Controls.Add(this.E02);
-            this.groupBoxSeat.Controls.Add(this.D02);
-            this.groupBoxSeat.Controls.Add(this.C02);
-            this.groupBoxSeat.Controls.Add(this.G01);
-            this.groupBoxSeat.Controls.Add(this.F01);
-            this.groupBoxSeat.Controls.Add(this.E01);
-            this.groupBoxSeat.Controls.Add(this.D01);
-            this.groupBoxSeat.Controls.Add(this.C01);
-            this.groupBoxSeat.Controls.Add(this.B05);
-            this.groupBoxSeat.Controls.Add(this.B04);
-            this.groupBoxSeat.Controls.Add(this.B03);
-            this.groupBoxSeat.Controls.Add(this.B02);
-            this.groupBoxSeat.Controls.Add(this.B01);
-            this.groupBoxSeat.Controls.Add(this.A05);
-            this.groupBoxSeat.Controls.Add(this.A04);
-            this.groupBoxSeat.Controls.Add(this.A03);
-            this.groupBoxSeat.Controls.Add(this.A02);
-            this.groupBoxSeat.Controls.Add(this.A01);
-            this.groupBoxSeat.Controls.Add(this.label49);
-            this.groupBoxSeat.Controls.Add(this.label48);
-            this.groupBoxSeat.Location = (new global::System.Drawing.Point(1093, 16));
-            this.groupBoxSeat.Name = ("groupBoxSeat");
-            this.groupBoxSeat.Size = (new global::System.Drawing.Size(766, 339));
-            this.groupBoxSeat.TabIndex = (29);
-            this.groupBoxSeat.TabStop = (false);
-            this.groupBoxSeat.Text = ("Seat");
+            groupBoxSeat.Controls.Add(G10);
+            groupBoxSeat.Controls.Add(F10);
+            groupBoxSeat.Controls.Add(E10);
+            groupBoxSeat.Controls.Add(D10);
+            groupBoxSeat.Controls.Add(C10);
+            groupBoxSeat.Controls.Add(G09);
+            groupBoxSeat.Controls.Add(F09);
+            groupBoxSeat.Controls.Add(E09);
+            groupBoxSeat.Controls.Add(D09);
+            groupBoxSeat.Controls.Add(C09);
+            groupBoxSeat.Controls.Add(G08);
+            groupBoxSeat.Controls.Add(F08);
+            groupBoxSeat.Controls.Add(E08);
+            groupBoxSeat.Controls.Add(D08);
+            groupBoxSeat.Controls.Add(C08);
+            groupBoxSeat.Controls.Add(G07);
+            groupBoxSeat.Controls.Add(F07);
+            groupBoxSeat.Controls.Add(E07);
+            groupBoxSeat.Controls.Add(D07);
+            groupBoxSeat.Controls.Add(C07);
+            groupBoxSeat.Controls.Add(G06);
+            groupBoxSeat.Controls.Add(F06);
+            groupBoxSeat.Controls.Add(E06);
+            groupBoxSeat.Controls.Add(D06);
+            groupBoxSeat.Controls.Add(C06);
+            groupBoxSeat.Controls.Add(G05);
+            groupBoxSeat.Controls.Add(F05);
+            groupBoxSeat.Controls.Add(E05);
+            groupBoxSeat.Controls.Add(D05);
+            groupBoxSeat.Controls.Add(C05);
+            groupBoxSeat.Controls.Add(G04);
+            groupBoxSeat.Controls.Add(F04);
+            groupBoxSeat.Controls.Add(E04);
+            groupBoxSeat.Controls.Add(D04);
+            groupBoxSeat.Controls.Add(C04);
+            groupBoxSeat.Controls.Add(G03);
+            groupBoxSeat.Controls.Add(F03);
+            groupBoxSeat.Controls.Add(E03);
+            groupBoxSeat.Controls.Add(D03);
+            groupBoxSeat.Controls.Add(C03);
+            groupBoxSeat.Controls.Add(G02);
+            groupBoxSeat.Controls.Add(F02);
+            groupBoxSeat.Controls.Add(E02);
+            groupBoxSeat.Controls.Add(D02);
+            groupBoxSeat.Controls.Add(C02);
+            groupBoxSeat.Controls.Add(G01);
+            groupBoxSeat.Controls.Add(F01);
+            groupBoxSeat.Controls.Add(E01);
+            groupBoxSeat.Controls.Add(D01);
+            groupBoxSeat.Controls.Add(C01);
+            groupBoxSeat.Controls.Add(B05);
+            groupBoxSeat.Controls.Add(B04);
+            groupBoxSeat.Controls.Add(B03);
+            groupBoxSeat.Controls.Add(B02);
+            groupBoxSeat.Controls.Add(B01);
+            groupBoxSeat.Controls.Add(A05);
+            groupBoxSeat.Controls.Add(A04);
+            groupBoxSeat.Controls.Add(A03);
+            groupBoxSeat.Controls.Add(A02);
+            groupBoxSeat.Controls.Add(A01);
+            groupBoxSeat.Controls.Add(label49);
+            groupBoxSeat.Controls.Add(label48);
+            groupBoxSeat.Location = new Point(937, 13);
+            groupBoxSeat.Margin = new Padding(3, 2, 3, 2);
+            groupBoxSeat.Name = "groupBoxSeat";
+            groupBoxSeat.Padding = new Padding(3, 2, 3, 2);
+            groupBoxSeat.Size = new Size(657, 275);
+            groupBoxSeat.TabIndex = 29;
+            groupBoxSeat.TabStop = false;
+            groupBoxSeat.Text = "Seat";
             // 
             // G10
             // 
-            this.G10.AutoSize = (true);
-            this.G10.Location = (new global::System.Drawing.Point(691, 251));
-            this.G10.Name = ("G10");
-            this.G10.Size = (new global::System.Drawing.Size(29, 16));
-            this.G10.TabIndex = (61);
-            this.G10.Text = ("G10");
+            G10.AutoSize = true;
+            G10.Cursor = Cursors.Hand;
+            G10.Location = new Point(592, 204);
+            G10.Name = "G10";
+            G10.Size = new Size(26, 13);
+            G10.TabIndex = 61;
+            G10.Text = "G10";
             // 
             // F10
             // 
-            this.F10.AutoSize = (true);
-            this.F10.Location = (new global::System.Drawing.Point(691, 222));
-            this.F10.Name = ("F10");
-            this.F10.Size = (new global::System.Drawing.Size(28, 16));
-            this.F10.TabIndex = (60);
-            this.F10.Text = ("F10");
+            F10.AutoSize = true;
+            F10.Cursor = Cursors.Hand;
+            F10.Location = new Point(592, 180);
+            F10.Name = "F10";
+            F10.Size = new Size(25, 13);
+            F10.TabIndex = 60;
+            F10.Text = "F10";
             // 
             // E10
             // 
-            this.E10.AutoSize = (true);
-            this.E10.Location = (new global::System.Drawing.Point(691, 191));
-            this.E10.Name = ("E10");
-            this.E10.Size = (new global::System.Drawing.Size(28, 16));
-            this.E10.TabIndex = (59);
-            this.E10.Text = ("E10");
+            E10.AutoSize = true;
+            E10.Cursor = Cursors.Hand;
+            E10.Location = new Point(592, 155);
+            E10.Name = "E10";
+            E10.Size = new Size(25, 13);
+            E10.TabIndex = 59;
+            E10.Text = "E10";
             // 
             // D10
             // 
-            this.D10.AutoSize = (true);
-            this.D10.Location = (new global::System.Drawing.Point(691, 158));
-            this.D10.Name = ("D10");
-            this.D10.Size = (new global::System.Drawing.Size(29, 16));
-            this.D10.TabIndex = (58);
-            this.D10.Text = ("D10");
+            D10.AutoSize = true;
+            D10.Cursor = Cursors.Hand;
+            D10.Location = new Point(592, 128);
+            D10.Name = "D10";
+            D10.Size = new Size(26, 13);
+            D10.TabIndex = 58;
+            D10.Text = "D10";
             // 
             // C10
             // 
-            this.C10.AutoSize = (true);
-            this.C10.Location = (new global::System.Drawing.Point(691, 127));
-            this.C10.Name = ("C10");
-            this.C10.Size = (new global::System.Drawing.Size(29, 16));
-            this.C10.TabIndex = (57);
-            this.C10.Text = ("C10");
+            C10.AutoSize = true;
+            C10.Cursor = Cursors.Hand;
+            C10.Location = new Point(592, 103);
+            C10.Name = "C10";
+            C10.Size = new Size(26, 13);
+            C10.TabIndex = 57;
+            C10.Text = "C10";
             // 
             // G09
             // 
-            this.G09.AutoSize = (true);
-            this.G09.Location = (new global::System.Drawing.Point(648, 251));
-            this.G09.Name = ("G09");
-            this.G09.Size = (new global::System.Drawing.Size(29, 16));
-            this.G09.TabIndex = (56);
-            this.G09.Text = ("G09");
+            G09.AutoSize = true;
+            G09.Cursor = Cursors.Hand;
+            G09.Location = new Point(555, 204);
+            G09.Name = "G09";
+            G09.Size = new Size(26, 13);
+            G09.TabIndex = 56;
+            G09.Text = "G09";
             // 
             // F09
             // 
-            this.F09.AutoSize = (true);
-            this.F09.Location = (new global::System.Drawing.Point(648, 222));
-            this.F09.Name = ("F09");
-            this.F09.Size = (new global::System.Drawing.Size(28, 16));
-            this.F09.TabIndex = (55);
-            this.F09.Text = ("F09");
+            F09.AutoSize = true;
+            F09.Cursor = Cursors.Hand;
+            F09.Location = new Point(555, 180);
+            F09.Name = "F09";
+            F09.Size = new Size(25, 13);
+            F09.TabIndex = 55;
+            F09.Text = "F09";
             // 
             // E09
             // 
-            this.E09.AutoSize = (true);
-            this.E09.Location = (new global::System.Drawing.Point(648, 191));
-            this.E09.Name = ("E09");
-            this.E09.Size = (new global::System.Drawing.Size(28, 16));
-            this.E09.TabIndex = (54);
-            this.E09.Text = ("E09");
+            E09.AutoSize = true;
+            E09.Cursor = Cursors.Hand;
+            E09.Location = new Point(555, 155);
+            E09.Name = "E09";
+            E09.Size = new Size(25, 13);
+            E09.TabIndex = 54;
+            E09.Text = "E09";
             // 
             // D09
             // 
-            this.D09.AutoSize = (true);
-            this.D09.Location = (new global::System.Drawing.Point(648, 158));
-            this.D09.Name = ("D09");
-            this.D09.Size = (new global::System.Drawing.Size(29, 16));
-            this.D09.TabIndex = (53);
-            this.D09.Text = ("D09");
+            D09.AutoSize = true;
+            D09.Cursor = Cursors.Hand;
+            D09.Location = new Point(555, 128);
+            D09.Name = "D09";
+            D09.Size = new Size(26, 13);
+            D09.TabIndex = 53;
+            D09.Text = "D09";
             // 
             // C09
             // 
-            this.C09.AutoSize = (true);
-            this.C09.Location = (new global::System.Drawing.Point(648, 127));
-            this.C09.Name = ("C09");
-            this.C09.Size = (new global::System.Drawing.Size(29, 16));
-            this.C09.TabIndex = (52);
-            this.C09.Text = ("C09");
+            C09.AutoSize = true;
+            C09.Cursor = Cursors.Hand;
+            C09.Location = new Point(555, 103);
+            C09.Name = "C09";
+            C09.Size = new Size(26, 13);
+            C09.TabIndex = 52;
+            C09.Text = "C09";
             // 
             // G08
             // 
-            this.G08.AutoSize = (true);
-            this.G08.Location = (new global::System.Drawing.Point(555, 251));
-            this.G08.Name = ("G08");
-            this.G08.Size = (new global::System.Drawing.Size(29, 16));
-            this.G08.TabIndex = (51);
-            this.G08.Text = ("G08");
+            G08.AutoSize = true;
+            G08.Cursor = Cursors.Hand;
+            G08.Location = new Point(476, 204);
+            G08.Name = "G08";
+            G08.Size = new Size(26, 13);
+            G08.TabIndex = 51;
+            G08.Text = "G08";
             // 
             // F08
             // 
-            this.F08.AutoSize = (true);
-            this.F08.Location = (new global::System.Drawing.Point(555, 222));
-            this.F08.Name = ("F08");
-            this.F08.Size = (new global::System.Drawing.Size(28, 16));
-            this.F08.TabIndex = (50);
-            this.F08.Text = ("F08");
+            F08.AutoSize = true;
+            F08.Cursor = Cursors.Hand;
+            F08.Location = new Point(476, 180);
+            F08.Name = "F08";
+            F08.Size = new Size(25, 13);
+            F08.TabIndex = 50;
+            F08.Text = "F08";
             // 
             // E08
             // 
-            this.E08.AutoSize = (true);
-            this.E08.Location = (new global::System.Drawing.Point(555, 191));
-            this.E08.Name = ("E08");
-            this.E08.Size = (new global::System.Drawing.Size(28, 16));
-            this.E08.TabIndex = (49);
-            this.E08.Text = ("E08");
+            E08.AutoSize = true;
+            E08.Cursor = Cursors.Hand;
+            E08.Location = new Point(476, 155);
+            E08.Name = "E08";
+            E08.Size = new Size(25, 13);
+            E08.TabIndex = 49;
+            E08.Text = "E08";
             // 
             // D08
             // 
-            this.D08.AutoSize = (true);
-            this.D08.Location = (new global::System.Drawing.Point(555, 158));
-            this.D08.Name = ("D08");
-            this.D08.Size = (new global::System.Drawing.Size(29, 16));
-            this.D08.TabIndex = (48);
-            this.D08.Text = ("D08");
+            D08.AutoSize = true;
+            D08.Cursor = Cursors.Hand;
+            D08.Location = new Point(476, 128);
+            D08.Name = "D08";
+            D08.Size = new Size(26, 13);
+            D08.TabIndex = 48;
+            D08.Text = "D08";
             // 
             // C08
             // 
-            this.C08.AutoSize = (true);
-            this.C08.Location = (new global::System.Drawing.Point(555, 127));
-            this.C08.Name = ("C08");
-            this.C08.Size = (new global::System.Drawing.Size(29, 16));
-            this.C08.TabIndex = (47);
-            this.C08.Text = ("C08");
+            C08.AutoSize = true;
+            C08.Cursor = Cursors.Hand;
+            C08.Location = new Point(476, 103);
+            C08.Name = "C08";
+            C08.Size = new Size(26, 13);
+            C08.TabIndex = 47;
+            C08.Text = "C08";
             // 
             // G07
             // 
-            this.G07.AutoSize = (true);
-            this.G07.Location = (new global::System.Drawing.Point(512, 251));
-            this.G07.Name = ("G07");
-            this.G07.Size = (new global::System.Drawing.Size(29, 16));
-            this.G07.TabIndex = (46);
-            this.G07.Text = ("G07");
+            G07.AutoSize = true;
+            G07.Cursor = Cursors.Hand;
+            G07.Location = new Point(439, 204);
+            G07.Name = "G07";
+            G07.Size = new Size(26, 13);
+            G07.TabIndex = 46;
+            G07.Text = "G07";
             // 
             // F07
             // 
-            this.F07.AutoSize = (true);
-            this.F07.Location = (new global::System.Drawing.Point(512, 222));
-            this.F07.Name = ("F07");
-            this.F07.Size = (new global::System.Drawing.Size(28, 16));
-            this.F07.TabIndex = (45);
-            this.F07.Text = ("F07");
+            F07.AutoSize = true;
+            F07.Cursor = Cursors.Hand;
+            F07.Location = new Point(439, 180);
+            F07.Name = "F07";
+            F07.Size = new Size(25, 13);
+            F07.TabIndex = 45;
+            F07.Text = "F07";
             // 
             // E07
             // 
-            this.E07.AutoSize = (true);
-            this.E07.Location = (new global::System.Drawing.Point(512, 191));
-            this.E07.Name = ("E07");
-            this.E07.Size = (new global::System.Drawing.Size(28, 16));
-            this.E07.TabIndex = (44);
-            this.E07.Text = ("E07");
+            E07.AutoSize = true;
+            E07.Cursor = Cursors.Hand;
+            E07.Location = new Point(439, 155);
+            E07.Name = "E07";
+            E07.Size = new Size(25, 13);
+            E07.TabIndex = 44;
+            E07.Text = "E07";
             // 
             // D07
             // 
-            this.D07.AutoSize = (true);
-            this.D07.Location = (new global::System.Drawing.Point(512, 158));
-            this.D07.Name = ("D07");
-            this.D07.Size = (new global::System.Drawing.Size(29, 16));
-            this.D07.TabIndex = (43);
-            this.D07.Text = ("D07");
+            D07.AutoSize = true;
+            D07.Cursor = Cursors.Hand;
+            D07.Location = new Point(439, 128);
+            D07.Name = "D07";
+            D07.Size = new Size(26, 13);
+            D07.TabIndex = 43;
+            D07.Text = "D07";
             // 
             // C07
             // 
-            this.C07.AutoSize = (true);
-            this.C07.Location = (new global::System.Drawing.Point(512, 127));
-            this.C07.Name = ("C07");
-            this.C07.Size = (new global::System.Drawing.Size(29, 16));
-            this.C07.TabIndex = (42);
-            this.C07.Text = ("C07");
+            C07.AutoSize = true;
+            C07.Cursor = Cursors.Hand;
+            C07.Location = new Point(439, 103);
+            C07.Name = "C07";
+            C07.Size = new Size(26, 13);
+            C07.TabIndex = 42;
+            C07.Text = "C07";
             // 
             // G06
             // 
-            this.G06.AutoSize = (true);
-            this.G06.Location = (new global::System.Drawing.Point(417, 251));
-            this.G06.Name = ("G06");
-            this.G06.Size = (new global::System.Drawing.Size(29, 16));
-            this.G06.TabIndex = (41);
-            this.G06.Text = ("G06");
+            G06.AutoSize = true;
+            G06.Cursor = Cursors.Hand;
+            G06.Location = new Point(357, 204);
+            G06.Name = "G06";
+            G06.Size = new Size(26, 13);
+            G06.TabIndex = 41;
+            G06.Text = "G06";
             // 
             // F06
             // 
-            this.F06.AutoSize = (true);
-            this.F06.Location = (new global::System.Drawing.Point(417, 222));
-            this.F06.Name = ("F06");
-            this.F06.Size = (new global::System.Drawing.Size(28, 16));
-            this.F06.TabIndex = (40);
-            this.F06.Text = ("F06");
+            F06.AutoSize = true;
+            F06.Cursor = Cursors.Hand;
+            F06.Location = new Point(357, 180);
+            F06.Name = "F06";
+            F06.Size = new Size(25, 13);
+            F06.TabIndex = 40;
+            F06.Text = "F06";
             // 
             // E06
             // 
-            this.E06.AutoSize = (true);
-            this.E06.Location = (new global::System.Drawing.Point(417, 191));
-            this.E06.Name = ("E06");
-            this.E06.Size = (new global::System.Drawing.Size(28, 16));
-            this.E06.TabIndex = (39);
-            this.E06.Text = ("E06");
+            E06.AutoSize = true;
+            E06.Cursor = Cursors.Hand;
+            E06.Location = new Point(357, 155);
+            E06.Name = "E06";
+            E06.Size = new Size(25, 13);
+            E06.TabIndex = 39;
+            E06.Text = "E06";
             // 
             // D06
             // 
-            this.D06.AutoSize = (true);
-            this.D06.Location = (new global::System.Drawing.Point(417, 158));
-            this.D06.Name = ("D06");
-            this.D06.Size = (new global::System.Drawing.Size(29, 16));
-            this.D06.TabIndex = (38);
-            this.D06.Text = ("D06");
+            D06.AutoSize = true;
+            D06.Cursor = Cursors.Hand;
+            D06.Location = new Point(357, 128);
+            D06.Name = "D06";
+            D06.Size = new Size(26, 13);
+            D06.TabIndex = 38;
+            D06.Text = "D06";
             // 
             // C06
             // 
-            this.C06.AutoSize = (true);
-            this.C06.Location = (new global::System.Drawing.Point(417, 127));
-            this.C06.Name = ("C06");
-            this.C06.Size = (new global::System.Drawing.Size(29, 16));
-            this.C06.TabIndex = (37);
-            this.C06.Text = ("C06");
+            C06.AutoSize = true;
+            C06.Cursor = Cursors.Hand;
+            C06.Location = new Point(357, 103);
+            C06.Name = "C06";
+            C06.Size = new Size(26, 13);
+            C06.TabIndex = 37;
+            C06.Text = "C06";
             // 
             // G05
             // 
-            this.G05.AutoSize = (true);
-            this.G05.Location = (new global::System.Drawing.Point(374, 251));
-            this.G05.Name = ("G05");
-            this.G05.Size = (new global::System.Drawing.Size(29, 16));
-            this.G05.TabIndex = (36);
-            this.G05.Text = ("G05");
+            G05.AutoSize = true;
+            G05.Cursor = Cursors.Hand;
+            G05.Location = new Point(321, 204);
+            G05.Name = "G05";
+            G05.Size = new Size(26, 13);
+            G05.TabIndex = 36;
+            G05.Text = "G05";
             // 
             // F05
             // 
-            this.F05.AutoSize = (true);
-            this.F05.Location = (new global::System.Drawing.Point(374, 222));
-            this.F05.Name = ("F05");
-            this.F05.Size = (new global::System.Drawing.Size(28, 16));
-            this.F05.TabIndex = (35);
-            this.F05.Text = ("F05");
+            F05.AutoSize = true;
+            F05.Cursor = Cursors.Hand;
+            F05.Location = new Point(321, 180);
+            F05.Name = "F05";
+            F05.Size = new Size(25, 13);
+            F05.TabIndex = 35;
+            F05.Text = "F05";
             // 
             // E05
             // 
-            this.E05.AutoSize = (true);
-            this.E05.Location = (new global::System.Drawing.Point(374, 191));
-            this.E05.Name = ("E05");
-            this.E05.Size = (new global::System.Drawing.Size(28, 16));
-            this.E05.TabIndex = (34);
-            this.E05.Text = ("E05");
+            E05.AutoSize = true;
+            E05.Cursor = Cursors.Hand;
+            E05.Location = new Point(321, 155);
+            E05.Name = "E05";
+            E05.Size = new Size(25, 13);
+            E05.TabIndex = 34;
+            E05.Text = "E05";
             // 
             // D05
             // 
-            this.D05.AutoSize = (true);
-            this.D05.Location = (new global::System.Drawing.Point(374, 158));
-            this.D05.Name = ("D05");
-            this.D05.Size = (new global::System.Drawing.Size(29, 16));
-            this.D05.TabIndex = (33);
-            this.D05.Text = ("D05");
+            D05.AutoSize = true;
+            D05.Cursor = Cursors.Hand;
+            D05.Location = new Point(321, 128);
+            D05.Name = "D05";
+            D05.Size = new Size(26, 13);
+            D05.TabIndex = 33;
+            D05.Text = "D05";
             // 
             // C05
             // 
-            this.C05.AutoSize = (true);
-            this.C05.Location = (new global::System.Drawing.Point(374, 127));
-            this.C05.Name = ("C05");
-            this.C05.Size = (new global::System.Drawing.Size(29, 16));
-            this.C05.TabIndex = (32);
-            this.C05.Text = ("C05");
+            C05.AutoSize = true;
+            C05.Cursor = Cursors.Hand;
+            C05.Location = new Point(321, 103);
+            C05.Name = "C05";
+            C05.Size = new Size(26, 13);
+            C05.TabIndex = 32;
+            C05.Text = "C05";
             // 
             // G04
             // 
-            this.G04.AutoSize = (true);
-            this.G04.Location = (new global::System.Drawing.Point(276, 251));
-            this.G04.Name = ("G04");
-            this.G04.Size = (new global::System.Drawing.Size(29, 16));
-            this.G04.TabIndex = (31);
-            this.G04.Text = ("G04");
+            G04.AutoSize = true;
+            G04.Cursor = Cursors.Hand;
+            G04.Location = new Point(237, 204);
+            G04.Name = "G04";
+            G04.Size = new Size(26, 13);
+            G04.TabIndex = 31;
+            G04.Text = "G04";
             // 
             // F04
             // 
-            this.F04.AutoSize = (true);
-            this.F04.Location = (new global::System.Drawing.Point(276, 222));
-            this.F04.Name = ("F04");
-            this.F04.Size = (new global::System.Drawing.Size(28, 16));
-            this.F04.TabIndex = (30);
-            this.F04.Text = ("F04");
+            F04.AutoSize = true;
+            F04.Cursor = Cursors.Hand;
+            F04.Location = new Point(237, 180);
+            F04.Name = "F04";
+            F04.Size = new Size(25, 13);
+            F04.TabIndex = 30;
+            F04.Text = "F04";
             // 
             // E04
             // 
-            this.E04.AutoSize = (true);
-            this.E04.Location = (new global::System.Drawing.Point(276, 191));
-            this.E04.Name = ("E04");
-            this.E04.Size = (new global::System.Drawing.Size(28, 16));
-            this.E04.TabIndex = (29);
-            this.E04.Text = ("E04");
+            E04.AutoSize = true;
+            E04.Cursor = Cursors.Hand;
+            E04.Location = new Point(237, 155);
+            E04.Name = "E04";
+            E04.Size = new Size(25, 13);
+            E04.TabIndex = 29;
+            E04.Text = "E04";
             // 
             // D04
             // 
-            this.D04.AutoSize = (true);
-            this.D04.Location = (new global::System.Drawing.Point(276, 158));
-            this.D04.Name = ("D04");
-            this.D04.Size = (new global::System.Drawing.Size(29, 16));
-            this.D04.TabIndex = (28);
-            this.D04.Text = ("D04");
+            D04.AutoSize = true;
+            D04.Cursor = Cursors.Hand;
+            D04.Location = new Point(237, 128);
+            D04.Name = "D04";
+            D04.Size = new Size(26, 13);
+            D04.TabIndex = 28;
+            D04.Text = "D04";
             // 
             // C04
             // 
-            this.C04.AutoSize = (true);
-            this.C04.Location = (new global::System.Drawing.Point(276, 127));
-            this.C04.Name = ("C04");
-            this.C04.Size = (new global::System.Drawing.Size(29, 16));
-            this.C04.TabIndex = (27);
-            this.C04.Text = ("C04");
+            C04.AutoSize = true;
+            C04.Cursor = Cursors.Hand;
+            C04.Location = new Point(237, 103);
+            C04.Name = "C04";
+            C04.Size = new Size(26, 13);
+            C04.TabIndex = 27;
+            C04.Text = "C04";
             // 
             // G03
             // 
-            this.G03.AutoSize = (true);
-            this.G03.Location = (new global::System.Drawing.Point(233, 251));
-            this.G03.Name = ("G03");
-            this.G03.Size = (new global::System.Drawing.Size(29, 16));
-            this.G03.TabIndex = (26);
-            this.G03.Text = ("G03");
+            G03.AutoSize = true;
+            G03.Cursor = Cursors.Hand;
+            G03.Location = new Point(200, 204);
+            G03.Name = "G03";
+            G03.Size = new Size(26, 13);
+            G03.TabIndex = 26;
+            G03.Text = "G03";
             // 
             // F03
             // 
-            this.F03.AutoSize = (true);
-            this.F03.Location = (new global::System.Drawing.Point(233, 222));
-            this.F03.Name = ("F03");
-            this.F03.Size = (new global::System.Drawing.Size(28, 16));
-            this.F03.TabIndex = (25);
-            this.F03.Text = ("F03");
+            F03.AutoSize = true;
+            F03.Cursor = Cursors.Hand;
+            F03.Location = new Point(200, 180);
+            F03.Name = "F03";
+            F03.Size = new Size(25, 13);
+            F03.TabIndex = 25;
+            F03.Text = "F03";
             // 
             // E03
             // 
-            this.E03.AutoSize = (true);
-            this.E03.Location = (new global::System.Drawing.Point(233, 191));
-            this.E03.Name = ("E03");
-            this.E03.Size = (new global::System.Drawing.Size(28, 16));
-            this.E03.TabIndex = (24);
-            this.E03.Text = ("E03");
+            E03.AutoSize = true;
+            E03.Cursor = Cursors.Hand;
+            E03.Location = new Point(200, 155);
+            E03.Name = "E03";
+            E03.Size = new Size(25, 13);
+            E03.TabIndex = 24;
+            E03.Text = "E03";
             // 
             // D03
             // 
-            this.D03.AutoSize = (true);
-            this.D03.Location = (new global::System.Drawing.Point(233, 158));
-            this.D03.Name = ("D03");
-            this.D03.Size = (new global::System.Drawing.Size(29, 16));
-            this.D03.TabIndex = (23);
-            this.D03.Text = ("D03");
+            D03.AutoSize = true;
+            D03.Cursor = Cursors.Hand;
+            D03.Location = new Point(200, 128);
+            D03.Name = "D03";
+            D03.Size = new Size(26, 13);
+            D03.TabIndex = 23;
+            D03.Text = "D03";
             // 
             // C03
             // 
-            this.C03.AutoSize = (true);
-            this.C03.Location = (new global::System.Drawing.Point(233, 127));
-            this.C03.Name = ("C03");
-            this.C03.Size = (new global::System.Drawing.Size(29, 16));
-            this.C03.TabIndex = (22);
-            this.C03.Text = ("C03");
+            C03.AutoSize = true;
+            C03.Cursor = Cursors.Hand;
+            C03.Location = new Point(200, 103);
+            C03.Name = "C03";
+            C03.Size = new Size(26, 13);
+            C03.TabIndex = 22;
+            C03.Text = "C03";
             // 
             // G02
             // 
-            this.G02.AutoSize = (true);
-            this.G02.Location = (new global::System.Drawing.Point(136, 251));
-            this.G02.Name = ("G02");
-            this.G02.Size = (new global::System.Drawing.Size(29, 16));
-            this.G02.TabIndex = (21);
-            this.G02.Text = ("G02");
+            G02.AutoSize = true;
+            G02.Cursor = Cursors.Hand;
+            G02.Location = new Point(117, 204);
+            G02.Name = "G02";
+            G02.Size = new Size(26, 13);
+            G02.TabIndex = 21;
+            G02.Text = "G02";
             // 
             // F02
             // 
-            this.F02.AutoSize = (true);
-            this.F02.Location = (new global::System.Drawing.Point(136, 222));
-            this.F02.Name = ("F02");
-            this.F02.Size = (new global::System.Drawing.Size(28, 16));
-            this.F02.TabIndex = (20);
-            this.F02.Text = ("F02");
+            F02.AutoSize = true;
+            F02.Cursor = Cursors.Hand;
+            F02.Location = new Point(117, 180);
+            F02.Name = "F02";
+            F02.Size = new Size(25, 13);
+            F02.TabIndex = 20;
+            F02.Text = "F02";
             // 
             // E02
             // 
-            this.E02.AutoSize = (true);
-            this.E02.Location = (new global::System.Drawing.Point(136, 191));
-            this.E02.Name = ("E02");
-            this.E02.Size = (new global::System.Drawing.Size(28, 16));
-            this.E02.TabIndex = (19);
-            this.E02.Text = ("E02");
+            E02.AutoSize = true;
+            E02.Cursor = Cursors.Hand;
+            E02.Location = new Point(117, 155);
+            E02.Name = "E02";
+            E02.Size = new Size(25, 13);
+            E02.TabIndex = 19;
+            E02.Text = "E02";
             // 
             // D02
             // 
-            this.D02.AutoSize = (true);
-            this.D02.Location = (new global::System.Drawing.Point(136, 158));
-            this.D02.Name = ("D02");
-            this.D02.Size = (new global::System.Drawing.Size(29, 16));
-            this.D02.TabIndex = (18);
-            this.D02.Text = ("D02");
+            D02.AutoSize = true;
+            D02.Cursor = Cursors.Hand;
+            D02.Location = new Point(117, 128);
+            D02.Name = "D02";
+            D02.Size = new Size(26, 13);
+            D02.TabIndex = 18;
+            D02.Text = "D02";
             // 
             // C02
             // 
-            this.C02.AutoSize = (true);
-            this.C02.Location = (new global::System.Drawing.Point(136, 127));
-            this.C02.Name = ("C02");
-            this.C02.Size = (new global::System.Drawing.Size(29, 16));
-            this.C02.TabIndex = (17);
-            this.C02.Text = ("C02");
+            C02.AutoSize = true;
+            C02.Cursor = Cursors.Hand;
+            C02.Location = new Point(117, 103);
+            C02.Name = "C02";
+            C02.Size = new Size(26, 13);
+            C02.TabIndex = 17;
+            C02.Text = "C02";
             // 
             // G01
             // 
-            this.G01.AutoSize = (true);
-            this.G01.Location = (new global::System.Drawing.Point(93, 251));
-            this.G01.Name = ("G01");
-            this.G01.Size = (new global::System.Drawing.Size(29, 16));
-            this.G01.TabIndex = (16);
-            this.G01.Text = ("G01");
+            G01.AutoSize = true;
+            G01.Cursor = Cursors.Hand;
+            G01.Location = new Point(80, 204);
+            G01.Name = "G01";
+            G01.Size = new Size(26, 13);
+            G01.TabIndex = 16;
+            G01.Text = "G01";
             // 
             // F01
             // 
-            this.F01.AutoSize = (true);
-            this.F01.Location = (new global::System.Drawing.Point(93, 222));
-            this.F01.Name = ("F01");
-            this.F01.Size = (new global::System.Drawing.Size(28, 16));
-            this.F01.TabIndex = (15);
-            this.F01.Text = ("F01");
+            F01.AutoSize = true;
+            F01.Cursor = Cursors.Hand;
+            F01.Location = new Point(80, 180);
+            F01.Name = "F01";
+            F01.Size = new Size(25, 13);
+            F01.TabIndex = 15;
+            F01.Text = "F01";
             // 
             // E01
             // 
-            this.E01.AutoSize = (true);
-            this.E01.Location = (new global::System.Drawing.Point(93, 191));
-            this.E01.Name = ("E01");
-            this.E01.Size = (new global::System.Drawing.Size(28, 16));
-            this.E01.TabIndex = (14);
-            this.E01.Text = ("E01");
+            E01.AutoSize = true;
+            E01.Cursor = Cursors.Hand;
+            E01.Location = new Point(80, 155);
+            E01.Name = "E01";
+            E01.Size = new Size(25, 13);
+            E01.TabIndex = 14;
+            E01.Text = "E01";
             // 
             // D01
             // 
-            this.D01.AutoSize = (true);
-            this.D01.Location = (new global::System.Drawing.Point(93, 158));
-            this.D01.Name = ("D01");
-            this.D01.Size = (new global::System.Drawing.Size(29, 16));
-            this.D01.TabIndex = (13);
-            this.D01.Text = ("D01");
+            D01.AutoSize = true;
+            D01.Cursor = Cursors.Hand;
+            D01.Location = new Point(80, 128);
+            D01.Name = "D01";
+            D01.Size = new Size(26, 13);
+            D01.TabIndex = 13;
+            D01.Text = "D01";
             // 
             // C01
             // 
-            this.C01.AutoSize = (true);
-            this.C01.Location = (new global::System.Drawing.Point(93, 127));
-            this.C01.Name = ("C01");
-            this.C01.Size = (new global::System.Drawing.Size(29, 16));
-            this.C01.TabIndex = (12);
-            this.C01.Text = ("C01");
+            C01.AutoSize = true;
+            C01.Cursor = Cursors.Hand;
+            C01.Location = new Point(80, 103);
+            C01.Name = "C01";
+            C01.Size = new Size(26, 13);
+            C01.TabIndex = 12;
+            C01.Text = "C01";
             // 
             // B05
             // 
-            this.B05.AutoSize = (true);
-            this.B05.Location = (new global::System.Drawing.Point(669, 72));
-            this.B05.Name = ("B05");
-            this.B05.Size = (new global::System.Drawing.Size(28, 16));
-            this.B05.TabIndex = (11);
-            this.B05.Text = ("B05");
+            B05.AutoSize = true;
+            B05.Cursor = Cursors.Hand;
+            B05.Location = new Point(573, 58);
+            B05.Name = "B05";
+            B05.Size = new Size(25, 13);
+            B05.TabIndex = 11;
+            B05.Text = "B05";
             // 
             // B04
             // 
-            this.B04.AutoSize = (true);
-            this.B04.Location = (new global::System.Drawing.Point(533, 72));
-            this.B04.Name = ("B04");
-            this.B04.Size = (new global::System.Drawing.Size(28, 16));
-            this.B04.TabIndex = (10);
-            this.B04.Text = ("B04");
+            B04.AutoSize = true;
+            B04.Cursor = Cursors.Hand;
+            B04.Location = new Point(457, 58);
+            B04.Name = "B04";
+            B04.Size = new Size(25, 13);
+            B04.TabIndex = 10;
+            B04.Text = "B04";
             // 
             // B03
             // 
-            this.B03.AutoSize = (true);
-            this.B03.Location = (new global::System.Drawing.Point(397, 72));
-            this.B03.Name = ("B03");
-            this.B03.Size = (new global::System.Drawing.Size(28, 16));
-            this.B03.TabIndex = (9);
-            this.B03.Text = ("B03");
+            B03.AutoSize = true;
+            B03.Cursor = Cursors.Hand;
+            B03.Location = new Point(340, 58);
+            B03.Name = "B03";
+            B03.Size = new Size(25, 13);
+            B03.TabIndex = 9;
+            B03.Text = "B03";
             // 
             // B02
             // 
-            this.B02.AutoSize = (true);
-            this.B02.Location = (new global::System.Drawing.Point(253, 72));
-            this.B02.Name = ("B02");
-            this.B02.Size = (new global::System.Drawing.Size(28, 16));
-            this.B02.TabIndex = (8);
-            this.B02.Text = ("B02");
+            B02.AutoSize = true;
+            B02.Cursor = Cursors.Hand;
+            B02.Location = new Point(217, 58);
+            B02.Name = "B02";
+            B02.Size = new Size(25, 13);
+            B02.TabIndex = 8;
+            B02.Text = "B02";
             // 
             // B01
             // 
-            this.B01.AutoSize = (true);
-            this.B01.Location = (new global::System.Drawing.Point(114, 72));
-            this.B01.Name = ("B01");
-            this.B01.Size = (new global::System.Drawing.Size(28, 16));
-            this.B01.TabIndex = (7);
-            this.B01.Text = ("B01");
+            B01.AutoSize = true;
+            B01.Cursor = Cursors.Hand;
+            B01.Location = new Point(98, 58);
+            B01.Name = "B01";
+            B01.Size = new Size(25, 13);
+            B01.TabIndex = 7;
+            B01.Text = "B01";
             // 
             // A05
             // 
-            this.A05.AutoSize = (true);
-            this.A05.Location = (new global::System.Drawing.Point(669, 41));
-            this.A05.Name = ("A05");
-            this.A05.Size = (new global::System.Drawing.Size(29, 16));
-            this.A05.TabIndex = (6);
-            this.A05.Text = ("A05");
+            A05.AutoSize = true;
+            A05.Cursor = Cursors.Hand;
+            A05.Location = new Point(573, 33);
+            A05.Name = "A05";
+            A05.Size = new Size(26, 13);
+            A05.TabIndex = 6;
+            A05.Text = "A05";
             // 
             // A04
             // 
-            this.A04.AutoSize = (true);
-            this.A04.Location = (new global::System.Drawing.Point(533, 41));
-            this.A04.Name = ("A04");
-            this.A04.Size = (new global::System.Drawing.Size(29, 16));
-            this.A04.TabIndex = (5);
-            this.A04.Text = ("A04");
+            A04.AutoSize = true;
+            A04.Cursor = Cursors.Hand;
+            A04.Location = new Point(457, 33);
+            A04.Name = "A04";
+            A04.Size = new Size(26, 13);
+            A04.TabIndex = 5;
+            A04.Text = "A04";
             // 
             // A03
             // 
-            this.A03.AutoSize = (true);
-            this.A03.Location = (new global::System.Drawing.Point(397, 41));
-            this.A03.Name = ("A03");
-            this.A03.Size = (new global::System.Drawing.Size(29, 16));
-            this.A03.TabIndex = (4);
-            this.A03.Text = ("A03");
+            A03.AutoSize = true;
+            A03.Cursor = Cursors.Hand;
+            A03.Location = new Point(340, 33);
+            A03.Name = "A03";
+            A03.Size = new Size(26, 13);
+            A03.TabIndex = 4;
+            A03.Text = "A03";
             // 
             // A02
             // 
-            this.A02.AutoSize = (true);
-            this.A02.Location = (new global::System.Drawing.Point(253, 41));
-            this.A02.Name = ("A02");
-            this.A02.Size = (new global::System.Drawing.Size(29, 16));
-            this.A02.TabIndex = (3);
-            this.A02.Text = ("A02");
+            A02.AutoSize = true;
+            A02.Cursor = Cursors.Hand;
+            A02.Location = new Point(217, 33);
+            A02.Name = "A02";
+            A02.Size = new Size(26, 13);
+            A02.TabIndex = 3;
+            A02.Text = "A02";
             // 
             // A01
             // 
-            this.A01.AutoSize = (true);
-            this.A01.Location = (new global::System.Drawing.Point(114, 41));
-            this.A01.Name = ("A01");
-            this.A01.Size = (new global::System.Drawing.Size(29, 16));
-            this.A01.TabIndex = (2);
-            this.A01.Text = ("A01");
+            A01.AutoSize = true;
+            A01.Cursor = Cursors.Hand;
+            A01.Location = new Point(98, 33);
+            A01.Name = "A01";
+            A01.Size = new Size(26, 13);
+            A01.TabIndex = 2;
+            A01.Text = "A01";
             // 
             // label49
             // 
-            this.label49.AutoSize = (true);
-            this.label49.Location = (new global::System.Drawing.Point(6, 129));
-            this.label49.Name = ("label49");
-            this.label49.Size = (new global::System.Drawing.Size(58, 16));
-            this.label49.TabIndex = (1);
-            this.label49.Text = ("Economy");
+            label49.AutoSize = true;
+            label49.Location = new Point(5, 105);
+            label49.Name = "label49";
+            label49.Size = new Size(50, 13);
+            label49.TabIndex = 1;
+            label49.Text = "Economy";
             // 
             // label48
             // 
-            this.label48.AutoSize = (true);
-            this.label48.Location = (new global::System.Drawing.Point(6, 31));
-            this.label48.Name = ("label48");
-            this.label48.Size = (new global::System.Drawing.Size(56, 16));
-            this.label48.TabIndex = (0);
-            this.label48.Text = ("Business");
+            label48.AutoSize = true;
+            label48.Location = new Point(5, 25);
+            label48.Name = "label48";
+            label48.Size = new Size(48, 13);
+            label48.TabIndex = 0;
+            label48.Text = "Business";
             // 
             // buttonDeleteTicket
             // 
-            this.buttonDeleteTicket.Location = (new global::System.Drawing.Point(294, 382));
-            this.buttonDeleteTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonDeleteTicket.Name = ("buttonDeleteTicket");
-            this.buttonDeleteTicket.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonDeleteTicket.TabIndex = (24);
-            this.buttonDeleteTicket.Text = ("Delete");
-            this.buttonDeleteTicket.Click += (this.buttonDeleteTicket_Click);
+            buttonDeleteTicket.Location = new Point(252, 310);
+            buttonDeleteTicket.Margin = new Padding(3, 2, 3, 2);
+            buttonDeleteTicket.Name = "buttonDeleteTicket";
+            buttonDeleteTicket.Size = new Size(101, 29);
+            buttonDeleteTicket.TabIndex = 24;
+            buttonDeleteTicket.Text = "Delete";
             // 
             // buttonUpdateTicket
             // 
-            this.buttonUpdateTicket.Location = (new global::System.Drawing.Point(158, 382));
-            this.buttonUpdateTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonUpdateTicket.Name = ("buttonUpdateTicket");
-            this.buttonUpdateTicket.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonUpdateTicket.TabIndex = (23);
-            this.buttonUpdateTicket.Text = ("Update");
+            buttonUpdateTicket.Location = new Point(135, 310);
+            buttonUpdateTicket.Margin = new Padding(3, 2, 3, 2);
+            buttonUpdateTicket.Name = "buttonUpdateTicket";
+            buttonUpdateTicket.Size = new Size(101, 29);
+            buttonUpdateTicket.TabIndex = 23;
+            buttonUpdateTicket.Text = "Update";
             // 
             // buttonAddTicket
             // 
-            this.buttonAddTicket.Location = (new global::System.Drawing.Point(22, 382));
-            this.buttonAddTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonAddTicket.Name = ("buttonAddTicket");
-            this.buttonAddTicket.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonAddTicket.TabIndex = (22);
-            this.buttonAddTicket.Text = ("Add");
-            this.buttonAddTicket.Click += (this.buttonAddTicket_Click);
-            // 
-            // gridControlTicket
-            // 
-            this.gridControlTicket.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControlTicket.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gridControlTicket.Location = (new global::System.Drawing.Point(21, 436));
-            this.gridControlTicket.MainView = (this.gridTicket);
-            this.gridControlTicket.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gridControlTicket.Name = ("gridControlTicket");
-            this.gridControlTicket.Size = (new global::System.Drawing.Size(1838, 413));
-            this.gridControlTicket.TabIndex = (1);
-            this.gridControlTicket.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridTicket });
-            this.gridControlTicket.Load += (this.gridTicket_Load);
+            buttonAddTicket.Location = new Point(19, 310);
+            buttonAddTicket.Margin = new Padding(3, 2, 3, 2);
+            buttonAddTicket.Name = "buttonAddTicket";
+            buttonAddTicket.Size = new Size(101, 29);
+            buttonAddTicket.TabIndex = 22;
+            buttonAddTicket.Text = "Add";
             // 
             // gridTicket
             // 
-            this.gridTicket.GridControl = (this.gridControlTicket);
-            this.gridTicket.Name = ("gridTicket");
+            gridTicket.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gridTicket.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
+            gridTicket.Location = new Point(4, 358);
+            gridTicket.MainView = gridView1;
+            gridTicket.Margin = new Padding(3, 2, 3, 2);
+            gridTicket.Name = "gridTicket";
+            gridTicket.Size = new Size(1837, 238);
+            gridTicket.TabIndex = 1;
+            gridTicket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
+            gridTicket.Load += gridTicket_Load;
+            // 
+            // gridView1
+            // 
+            gridView1.DetailHeight = 284;
+            gridView1.GridControl = gridTicket;
+            gridView1.Name = "gridView1";
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Location = (new global::System.Drawing.Point(5, 16));
-            this.groupBox1.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox1.Name = ("groupBox1");
-            this.groupBox1.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox1.Size = (new global::System.Drawing.Size(1081, 359));
-            this.groupBox1.TabIndex = (0);
-            this.groupBox1.TabStop = (false);
-            this.groupBox1.Text = ("Book Ticket");
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(groupBox4);
+            groupBox1.Controls.Add(groupBox3);
+            groupBox1.Location = new Point(4, 13);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(1125, 292);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Book Ticket";
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox4.Controls.Add(this.textEdit16);
-            this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Controls.Add(this.dateTimePicker2);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.textEdit11);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.textEdit10);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.textEdit9);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.textEdit8);
-            this.groupBox4.Controls.Add(this.radioButton3);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.radioButton4);
-            this.groupBox4.Location = (new global::System.Drawing.Point(525, 33));
-            this.groupBox4.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox4.Name = ("groupBox4");
-            this.groupBox4.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox4.Size = (new global::System.Drawing.Size(482, 320));
-            this.groupBox4.TabIndex = (1);
-            this.groupBox4.TabStop = (false);
-            this.groupBox4.Text = ("Customer information");
+            groupBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBox4.Controls.Add(lbTicketCustomerDoB);
+            groupBox4.Controls.Add(lbTicketCustomerPhone);
+            groupBox4.Controls.Add(lbTicketCustomerNationalID);
+            groupBox4.Controls.Add(lbTicketCustomerSex);
+            groupBox4.Controls.Add(lbTicketCustomerAddress);
+            groupBox4.Controls.Add(lbTicketCustomerName);
+            groupBox4.Controls.Add(lbTicketCustomerID);
+            groupBox4.Controls.Add(label21);
+            groupBox4.Controls.Add(label15);
+            groupBox4.Controls.Add(label14);
+            groupBox4.Controls.Add(label13);
+            groupBox4.Controls.Add(label10);
+            groupBox4.Controls.Add(label11);
+            groupBox4.Controls.Add(label12);
+            groupBox4.Location = new Point(450, 27);
+            groupBox4.Margin = new Padding(3, 2, 3, 2);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Padding = new Padding(3, 2, 3, 2);
+            groupBox4.Size = new Size(413, 260);
+            groupBox4.TabIndex = 1;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Customer information";
             // 
-            // textEdit16
+            // lbTicketCustomerDoB
             // 
-            this.textEdit16.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit16.Location = (new global::System.Drawing.Point(113, 34));
-            this.textEdit16.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit16.Name = ("textEdit16");
-            this.textEdit16.Size = (new global::System.Drawing.Size(243, 22));
-            this.textEdit16.TabIndex = (28);
+            lbTicketCustomerDoB.AutoSize = true;
+            lbTicketCustomerDoB.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerDoB.Location = new Point(97, 199);
+            lbTicketCustomerDoB.Name = "lbTicketCustomerDoB";
+            lbTicketCustomerDoB.Size = new Size(19, 16);
+            lbTicketCustomerDoB.TabIndex = 36;
+            lbTicketCustomerDoB.Text = "...";
+            // 
+            // lbTicketCustomerPhone
+            // 
+            lbTicketCustomerPhone.AutoSize = true;
+            lbTicketCustomerPhone.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerPhone.Location = new Point(97, 168);
+            lbTicketCustomerPhone.Name = "lbTicketCustomerPhone";
+            lbTicketCustomerPhone.Size = new Size(19, 16);
+            lbTicketCustomerPhone.TabIndex = 35;
+            lbTicketCustomerPhone.Text = "...";
+            // 
+            // lbTicketCustomerNationalID
+            // 
+            lbTicketCustomerNationalID.AutoSize = true;
+            lbTicketCustomerNationalID.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerNationalID.Location = new Point(97, 138);
+            lbTicketCustomerNationalID.Name = "lbTicketCustomerNationalID";
+            lbTicketCustomerNationalID.Size = new Size(19, 16);
+            lbTicketCustomerNationalID.TabIndex = 34;
+            lbTicketCustomerNationalID.Text = "...";
+            // 
+            // lbTicketCustomerSex
+            // 
+            lbTicketCustomerSex.AutoSize = true;
+            lbTicketCustomerSex.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerSex.Location = new Point(97, 116);
+            lbTicketCustomerSex.Name = "lbTicketCustomerSex";
+            lbTicketCustomerSex.Size = new Size(19, 16);
+            lbTicketCustomerSex.TabIndex = 33;
+            lbTicketCustomerSex.Text = "...";
+            // 
+            // lbTicketCustomerAddress
+            // 
+            lbTicketCustomerAddress.AutoSize = true;
+            lbTicketCustomerAddress.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerAddress.Location = new Point(97, 90);
+            lbTicketCustomerAddress.Name = "lbTicketCustomerAddress";
+            lbTicketCustomerAddress.Size = new Size(19, 16);
+            lbTicketCustomerAddress.TabIndex = 32;
+            lbTicketCustomerAddress.Text = "...";
+            // 
+            // lbTicketCustomerName
+            // 
+            lbTicketCustomerName.AutoSize = true;
+            lbTicketCustomerName.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerName.Location = new Point(97, 57);
+            lbTicketCustomerName.Name = "lbTicketCustomerName";
+            lbTicketCustomerName.Size = new Size(19, 16);
+            lbTicketCustomerName.TabIndex = 31;
+            lbTicketCustomerName.Text = "...";
+            // 
+            // lbTicketCustomerID
+            // 
+            lbTicketCustomerID.AutoSize = true;
+            lbTicketCustomerID.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerID.Location = new Point(97, 28);
+            lbTicketCustomerID.Name = "lbTicketCustomerID";
+            lbTicketCustomerID.Size = new Size(19, 16);
+            lbTicketCustomerID.TabIndex = 30;
+            lbTicketCustomerID.Text = "...";
             // 
             // label21
             // 
-            this.label21.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label21.AutoSize = (true);
-            this.label21.Location = (new global::System.Drawing.Point(23, 38));
-            this.label21.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label21.Name = ("label21");
-            this.label21.Size = (new global::System.Drawing.Size(83, 16));
-            this.label21.TabIndex = (29);
-            this.label21.Text = ("Customer ID:");
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.dateTimePicker2.Location = (new global::System.Drawing.Point(113, 242));
-            this.dateTimePicker2.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dateTimePicker2.Name = ("dateTimePicker2");
-            this.dateTimePicker2.Size = (new global::System.Drawing.Size(244, 23));
-            this.dateTimePicker2.TabIndex = (27);
+            label21.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label21.AutoSize = true;
+            label21.Location = new Point(20, 31);
+            label21.Name = "label21";
+            label21.Size = new Size(71, 13);
+            label21.TabIndex = 29;
+            label21.Text = "Customer ID:";
             // 
             // label15
             // 
-            this.label15.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label15.AutoSize = (true);
-            this.label15.Location = (new global::System.Drawing.Point(24, 249));
-            this.label15.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label15.Name = ("label15");
-            this.label15.Size = (new global::System.Drawing.Size(83, 16));
-            this.label15.TabIndex = (26);
-            this.label15.Text = ("Date of birth:");
-            // 
-            // textEdit11
-            // 
-            this.textEdit11.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit11.Location = (new global::System.Drawing.Point(114, 206));
-            this.textEdit11.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit11.Name = ("textEdit11");
-            this.textEdit11.Size = (new global::System.Drawing.Size(243, 22));
-            this.textEdit11.TabIndex = (24);
+            label15.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label15.AutoSize = true;
+            label15.Location = new Point(21, 202);
+            label15.Name = "label15";
+            label15.Size = new Size(72, 13);
+            label15.TabIndex = 26;
+            label15.Text = "Date of birth:";
             // 
             // label14
             // 
-            this.label14.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label14.AutoSize = (true);
-            this.label14.Location = (new global::System.Drawing.Point(24, 209));
-            this.label14.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label14.Name = ("label14");
-            this.label14.Size = (new global::System.Drawing.Size(47, 16));
-            this.label14.TabIndex = (25);
-            this.label14.Text = ("Phone:");
+            label14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label14.AutoSize = true;
+            label14.Location = new Point(21, 170);
+            label14.Name = "label14";
+            label14.Size = new Size(41, 13);
+            label14.TabIndex = 25;
+            label14.Text = "Phone:";
             // 
             // label13
             // 
-            this.label13.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label13.AutoSize = (true);
-            this.label13.Location = (new global::System.Drawing.Point(24, 174));
-            this.label13.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label13.Name = ("label13");
-            this.label13.Size = (new global::System.Drawing.Size(83, 16));
-            this.label13.TabIndex = (23);
-            this.label13.Text = ("CMND/CCCD:");
-            // 
-            // textEdit10
-            // 
-            this.textEdit10.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit10.Location = (new global::System.Drawing.Point(113, 171));
-            this.textEdit10.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit10.Name = ("textEdit10");
-            this.textEdit10.Size = (new global::System.Drawing.Size(243, 22));
-            this.textEdit10.TabIndex = (22);
+            label13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label13.AutoSize = true;
+            label13.Location = new Point(21, 141);
+            label13.Name = "label13";
+            label13.Size = new Size(64, 13);
+            label13.TabIndex = 23;
+            label13.Text = "National ID:";
             // 
             // label10
             // 
-            this.label10.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label10.AutoSize = (true);
-            this.label10.Location = (new global::System.Drawing.Point(24, 113));
-            this.label10.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label10.Name = ("label10");
-            this.label10.Size = (new global::System.Drawing.Size(58, 16));
-            this.label10.TabIndex = (21);
-            this.label10.Text = ("Address:");
-            // 
-            // textEdit9
-            // 
-            this.textEdit9.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit9.Location = (new global::System.Drawing.Point(113, 71));
-            this.textEdit9.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit9.Name = ("textEdit9");
-            this.textEdit9.Size = (new global::System.Drawing.Size(243, 22));
-            this.textEdit9.TabIndex = (15);
+            label10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label10.AutoSize = true;
+            label10.Location = new Point(21, 92);
+            label10.Name = "label10";
+            label10.Size = new Size(50, 13);
+            label10.TabIndex = 21;
+            label10.Text = "Address:";
             // 
             // label11
             // 
-            this.label11.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label11.AutoSize = (true);
-            this.label11.Location = (new global::System.Drawing.Point(24, 145));
-            this.label11.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label11.Name = ("label11");
-            this.label11.Size = (new global::System.Drawing.Size(33, 16));
-            this.label11.TabIndex = (20);
-            this.label11.Text = ("Sex:");
-            // 
-            // textEdit8
-            // 
-            this.textEdit8.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit8.Location = (new global::System.Drawing.Point(113, 110));
-            this.textEdit8.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit8.Name = ("textEdit8");
-            this.textEdit8.Size = (new global::System.Drawing.Size(243, 22));
-            this.textEdit8.TabIndex = (16);
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.radioButton3.AutoSize = (true);
-            this.radioButton3.Location = (new global::System.Drawing.Point(192, 142));
-            this.radioButton3.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.radioButton3.Name = ("radioButton3");
-            this.radioButton3.Size = (new global::System.Drawing.Size(73, 20));
-            this.radioButton3.TabIndex = (19);
-            this.radioButton3.TabStop = (true);
-            this.radioButton3.Text = ("Felmale");
-            this.radioButton3.UseVisualStyleBackColor = (true);
+            label11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label11.AutoSize = true;
+            label11.Location = new Point(21, 118);
+            label11.Name = "label11";
+            label11.Size = new Size(29, 13);
+            label11.TabIndex = 20;
+            label11.Text = "Sex:";
             // 
             // label12
             // 
-            this.label12.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label12.AutoSize = (true);
-            this.label12.Location = (new global::System.Drawing.Point(23, 74));
-            this.label12.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label12.Name = ("label12");
-            this.label12.Size = (new global::System.Drawing.Size(45, 16));
-            this.label12.TabIndex = (17);
-            this.label12.Text = ("Name:");
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.radioButton4.AutoSize = (true);
-            this.radioButton4.Location = (new global::System.Drawing.Point(122, 142));
-            this.radioButton4.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.radioButton4.Name = ("radioButton4");
-            this.radioButton4.Size = (new global::System.Drawing.Size(55, 20));
-            this.radioButton4.TabIndex = (18);
-            this.radioButton4.TabStop = (true);
-            this.radioButton4.Text = ("Male");
-            this.radioButton4.UseVisualStyleBackColor = (true);
+            label12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label12.AutoSize = true;
+            label12.Location = new Point(20, 60);
+            label12.Name = "label12";
+            label12.Size = new Size(38, 13);
+            label12.TabIndex = 17;
+            label12.Text = "Name:";
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.textEdit12);
-            this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.comboBoxTickDateDepart);
-            this.groupBox3.Controls.Add(this.comboBoxTickDesti);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.comboBoxTickDepart);
-            this.groupBox3.Controls.Add(this.textEdit14);
-            this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Location = (new global::System.Drawing.Point(16, 33));
-            this.groupBox3.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox3.Name = ("groupBox3");
-            this.groupBox3.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox3.Size = (new global::System.Drawing.Size(464, 320));
-            this.groupBox3.TabIndex = (0);
-            this.groupBox3.TabStop = (false);
-            this.groupBox3.Text = ("Tickets information");
+            groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBox3.Controls.Add(label23);
+            groupBox3.Controls.Add(textEdit12);
+            groupBox3.Controls.Add(label22);
+            groupBox3.Controls.Add(comboBoxTickDateDepart);
+            groupBox3.Controls.Add(comboBoxTickDesti);
+            groupBox3.Controls.Add(label17);
+            groupBox3.Controls.Add(label16);
+            groupBox3.Controls.Add(comboBoxTickDepart);
+            groupBox3.Controls.Add(textEdit14);
+            groupBox3.Controls.Add(label20);
+            groupBox3.Location = new Point(14, 27);
+            groupBox3.Margin = new Padding(3, 2, 3, 2);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(3, 2, 3, 2);
+            groupBox3.Size = new Size(398, 260);
+            groupBox3.TabIndex = 0;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Tickets information";
             // 
             // label23
             // 
-            this.label23.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label23.AutoSize = (true);
-            this.label23.Location = (new global::System.Drawing.Point(28, 153));
-            this.label23.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label23.Name = ("label23");
-            this.label23.Size = (new global::System.Drawing.Size(114, 16));
-            this.label23.TabIndex = (39);
-            this.label23.Text = ("Date of Departure:");
+            label23.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label23.AutoSize = true;
+            label23.Location = new Point(24, 124);
+            label23.Name = "label23";
+            label23.Size = new Size(99, 13);
+            label23.TabIndex = 39;
+            label23.Text = "Date of Departure:";
             // 
             // textEdit12
             // 
-            this.textEdit12.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit12.Location = (new global::System.Drawing.Point(158, 189));
-            this.textEdit12.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit12.Name = ("textEdit12");
-            this.textEdit12.Size = (new global::System.Drawing.Size(250, 22));
-            this.textEdit12.TabIndex = (38);
+            textEdit12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            textEdit12.Location = new Point(135, 154);
+            textEdit12.Margin = new Padding(3, 2, 3, 2);
+            textEdit12.Name = "textEdit12";
+            textEdit12.Size = new Size(214, 20);
+            textEdit12.TabIndex = 38;
             // 
             // label22
             // 
-            this.label22.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label22.AutoSize = (true);
-            this.label22.Location = (new global::System.Drawing.Point(28, 192));
-            this.label22.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label22.Name = ("label22");
-            this.label22.Size = (new global::System.Drawing.Size(40, 16));
-            this.label22.TabIndex = (37);
-            this.label22.Text = ("Price:");
+            label22.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label22.AutoSize = true;
+            label22.Location = new Point(24, 156);
+            label22.Name = "label22";
+            label22.Size = new Size(34, 13);
+            label22.TabIndex = 37;
+            label22.Text = "Price:";
             // 
             // comboBoxTickDateDepart
             // 
-            this.comboBoxTickDateDepart.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBoxTickDateDepart.FormattingEnabled = (true);
-            this.comboBoxTickDateDepart.Location = (new global::System.Drawing.Point(158, 150));
-            this.comboBoxTickDateDepart.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBoxTickDateDepart.Name = ("comboBoxTickDateDepart");
-            this.comboBoxTickDateDepart.Size = (new global::System.Drawing.Size(250, 24));
-            this.comboBoxTickDateDepart.TabIndex = (35);
-            this.comboBoxTickDateDepart.DropDown += (this.comboBoxTickDateDepart_DropDown);
+            comboBoxTickDateDepart.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            comboBoxTickDateDepart.FormattingEnabled = true;
+            comboBoxTickDateDepart.Location = new Point(135, 122);
+            comboBoxTickDateDepart.Margin = new Padding(3, 2, 3, 2);
+            comboBoxTickDateDepart.Name = "comboBoxTickDateDepart";
+            comboBoxTickDateDepart.Size = new Size(215, 21);
+            comboBoxTickDateDepart.TabIndex = 35;
+            comboBoxTickDateDepart.Click += comboBoxTickDateDepart_Click;
             // 
             // comboBoxTickDesti
             // 
-            this.comboBoxTickDesti.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBoxTickDesti.FormattingEnabled = (true);
-            this.comboBoxTickDesti.Location = (new global::System.Drawing.Point(158, 108));
-            this.comboBoxTickDesti.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBoxTickDesti.Name = ("comboBoxTickDesti");
-            this.comboBoxTickDesti.Size = (new global::System.Drawing.Size(250, 24));
-            this.comboBoxTickDesti.TabIndex = (32);
+            comboBoxTickDesti.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            comboBoxTickDesti.FormattingEnabled = true;
+            comboBoxTickDesti.Location = new Point(135, 88);
+            comboBoxTickDesti.Margin = new Padding(3, 2, 3, 2);
+            comboBoxTickDesti.Name = "comboBoxTickDesti";
+            comboBoxTickDesti.Size = new Size(215, 21);
+            comboBoxTickDesti.TabIndex = 32;
             // 
             // label17
             // 
-            this.label17.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label17.AutoSize = (true);
-            this.label17.Location = (new global::System.Drawing.Point(28, 113));
-            this.label17.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label17.Name = ("label17");
-            this.label17.Size = (new global::System.Drawing.Size(75, 16));
-            this.label17.TabIndex = (31);
-            this.label17.Text = ("Destination:");
+            label17.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label17.AutoSize = true;
+            label17.Location = new Point(24, 92);
+            label17.Name = "label17";
+            label17.Size = new Size(65, 13);
+            label17.TabIndex = 31;
+            label17.Text = "Destination:";
             // 
             // label16
             // 
-            this.label16.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label16.AutoSize = (true);
-            this.label16.Location = (new global::System.Drawing.Point(28, 74));
-            this.label16.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label16.Name = ("label16");
-            this.label16.Size = (new global::System.Drawing.Size(69, 16));
-            this.label16.TabIndex = (30);
-            this.label16.Text = ("Departure:");
+            label16.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label16.AutoSize = true;
+            label16.Location = new Point(24, 60);
+            label16.Name = "label16";
+            label16.Size = new Size(60, 13);
+            label16.TabIndex = 30;
+            label16.Text = "Departure:";
             // 
             // comboBoxTickDepart
             // 
-            this.comboBoxTickDepart.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBoxTickDepart.FormattingEnabled = (true);
-            this.comboBoxTickDepart.Location = (new global::System.Drawing.Point(158, 71));
-            this.comboBoxTickDepart.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBoxTickDepart.Name = ("comboBoxTickDepart");
-            this.comboBoxTickDepart.Size = (new global::System.Drawing.Size(250, 24));
-            this.comboBoxTickDepart.TabIndex = (29);
+            comboBoxTickDepart.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            comboBoxTickDepart.FormattingEnabled = true;
+            comboBoxTickDepart.Location = new Point(135, 58);
+            comboBoxTickDepart.Margin = new Padding(3, 2, 3, 2);
+            comboBoxTickDepart.Name = "comboBoxTickDepart";
+            comboBoxTickDepart.Size = new Size(215, 21);
+            comboBoxTickDepart.TabIndex = 29;
             // 
             // textEdit14
             // 
-            this.textEdit14.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit14.Location = (new global::System.Drawing.Point(158, 34));
-            this.textEdit14.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit14.Name = ("textEdit14");
-            this.textEdit14.Size = (new global::System.Drawing.Size(250, 22));
-            this.textEdit14.TabIndex = (26);
+            textEdit14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            textEdit14.Location = new Point(135, 28);
+            textEdit14.Margin = new Padding(3, 2, 3, 2);
+            textEdit14.Name = "textEdit14";
+            textEdit14.Size = new Size(214, 20);
+            textEdit14.TabIndex = 26;
             // 
             // label20
             // 
-            this.label20.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label20.AutoSize = (true);
-            this.label20.Location = (new global::System.Drawing.Point(28, 38));
-            this.label20.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label20.Name = ("label20");
-            this.label20.Size = (new global::System.Drawing.Size(62, 16));
-            this.label20.TabIndex = (28);
-            this.label20.Text = ("Ticket ID:");
+            label20.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label20.AutoSize = true;
+            label20.Location = new Point(24, 31);
+            label20.Name = "label20";
+            label20.Size = new Size(53, 13);
+            label20.TabIndex = 28;
+            label20.Text = "Ticket ID:";
             // 
             // tpCustomer
             // 
-            this.tpCustomer.Caption = ("Customer");
-            this.tpCustomer.Controls.Add(this.gcCustomer);
-            this.tpCustomer.Controls.Add(this.groupBox5);
-            this.tpCustomer.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tpCustomer.Name = ("tpCustomer");
-            this.tpCustomer.Size = (new global::System.Drawing.Size(1940, 675));
-            this.tpCustomer.Paint += (this.tpCustomer_Paint);
+            tpCustomer.Caption = "Customer";
+            tpCustomer.Controls.Add(gcCustomer);
+            tpCustomer.Controls.Add(groupBox5);
+            tpCustomer.Margin = new Padding(3, 2, 3, 2);
+            tpCustomer.Name = "tpCustomer";
+            tpCustomer.Size = new Size(1861, 549);
+            tpCustomer.Paint += tpCustomer_Paint;
             // 
             // gcCustomer
             // 
-            this.gcCustomer.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.gcCustomer.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gcCustomer.Location = (new global::System.Drawing.Point(12, 260));
-            this.gcCustomer.MainView = (this.gvCustomer);
-            this.gcCustomer.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gcCustomer.Name = ("gcCustomer");
-            this.gcCustomer.Size = (new global::System.Drawing.Size(1916, 415));
-            this.gcCustomer.TabIndex = (3);
-            this.gcCustomer.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gvCustomer });
+            gcCustomer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gcCustomer.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
+            gcCustomer.Location = new Point(10, 211);
+            gcCustomer.MainView = gvCustomer;
+            gcCustomer.Margin = new Padding(3, 2, 3, 2);
+            gcCustomer.Name = "gcCustomer";
+            gcCustomer.Size = new Size(1471, 338);
+            gcCustomer.TabIndex = 3;
+            gcCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvCustomer });
             // 
             // gvCustomer
             // 
-            this.gvCustomer.GridControl = (this.gcCustomer);
-            this.gvCustomer.Name = ("gvCustomer");
-            this.gvCustomer.OptionsBehavior.CacheValuesOnRowUpdating = (global::DevExpress.Data.CacheRowValuesMode.Disabled);
-            this.gvCustomer.OptionsBehavior.Editable = (false);
+            gvCustomer.DetailHeight = 284;
+            gvCustomer.GridControl = gcCustomer;
+            gvCustomer.Name = "gvCustomer";
+            gvCustomer.OptionsBehavior.CacheValuesOnRowUpdating = DevExpress.Data.CacheRowValuesMode.Disabled;
+            gvCustomer.OptionsBehavior.Editable = false;
+            gvCustomer.RowClick += gvCustomer_RowClick;
             // 
             // groupBox5
             // 
-            this.groupBox5.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Controls.Add(this.btnCustomerDelete);
-            this.groupBox5.Controls.Add(this.btnCustomerUpdate);
-            this.groupBox5.Controls.Add(this.btnAddCustomer);
-            this.groupBox5.Controls.Add(this.simpleButton7);
-            this.groupBox5.Controls.Add(this.simpleButton8);
-            this.groupBox5.Controls.Add(this.simpleButton9);
-            this.groupBox5.Controls.Add(this.label24);
-            this.groupBox5.Controls.Add(this.txtCustomerPhone);
-            this.groupBox5.Controls.Add(this.txtCustomerNationality);
-            this.groupBox5.Controls.Add(this.txtCustomerEmail);
-            this.groupBox5.Controls.Add(this.label25);
-            this.groupBox5.Controls.Add(this.label26);
-            this.groupBox5.Controls.Add(this.label27);
-            this.groupBox5.Controls.Add(this.txtCustomerID);
-            this.groupBox5.Controls.Add(this.label28);
-            this.groupBox5.Controls.Add(this.dtpCustomerDate);
-            this.groupBox5.Controls.Add(this.label29);
-            this.groupBox5.Controls.Add(this.rbCustomerFemale);
-            this.groupBox5.Controls.Add(this.rbCustomerMale);
-            this.groupBox5.Controls.Add(this.label30);
-            this.groupBox5.Controls.Add(this.label31);
-            this.groupBox5.Controls.Add(this.txtCustomerAddress);
-            this.groupBox5.Controls.Add(this.txtCustomerName);
-            this.groupBox5.Controls.Add(this.textEdit21);
-            this.groupBox5.Controls.Add(this.label32);
-            this.groupBox5.Location = (new global::System.Drawing.Point(12, 16));
-            this.groupBox5.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox5.Name = ("groupBox5");
-            this.groupBox5.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox5.Size = (new global::System.Drawing.Size(1916, 228));
-            this.groupBox5.TabIndex = (2);
-            this.groupBox5.TabStop = (false);
-            this.groupBox5.Text = ("Information employee");
+            groupBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox5.Controls.Add(btnCustomerDelete);
+            groupBox5.Controls.Add(btnCustomerUpdate);
+            groupBox5.Controls.Add(btnAddCustomer);
+            groupBox5.Controls.Add(simpleButton7);
+            groupBox5.Controls.Add(simpleButton8);
+            groupBox5.Controls.Add(simpleButton9);
+            groupBox5.Controls.Add(label24);
+            groupBox5.Controls.Add(txtCustomerPhone);
+            groupBox5.Controls.Add(txtCustomerNationality);
+            groupBox5.Controls.Add(txtCustomerEmail);
+            groupBox5.Controls.Add(label25);
+            groupBox5.Controls.Add(label26);
+            groupBox5.Controls.Add(label27);
+            groupBox5.Controls.Add(txtCustomerNationalID);
+            groupBox5.Controls.Add(label28);
+            groupBox5.Controls.Add(dtpCustomerDate);
+            groupBox5.Controls.Add(label29);
+            groupBox5.Controls.Add(rbCustomerFemale);
+            groupBox5.Controls.Add(rbCustomerMale);
+            groupBox5.Controls.Add(label30);
+            groupBox5.Controls.Add(label31);
+            groupBox5.Controls.Add(txtCustomerAddress);
+            groupBox5.Controls.Add(txtCustomerName);
+            groupBox5.Controls.Add(txtCustomerID);
+            groupBox5.Controls.Add(label32);
+            groupBox5.Location = new Point(10, 13);
+            groupBox5.Margin = new Padding(3, 2, 3, 2);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Padding = new Padding(3, 2, 3, 2);
+            groupBox5.Size = new Size(1840, 185);
+            groupBox5.TabIndex = 2;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Information employee";
             // 
             // btnCustomerDelete
             // 
-            this.btnCustomerDelete.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnCustomerDelete.Location = (new global::System.Drawing.Point(661, 179));
-            this.btnCustomerDelete.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.btnCustomerDelete.Name = ("btnCustomerDelete");
-            this.btnCustomerDelete.Size = (new global::System.Drawing.Size(101, 29));
-            this.btnCustomerDelete.TabIndex = (24);
-            this.btnCustomerDelete.Text = ("Delete");
-            this.btnCustomerDelete.Click += (this.btnCustomerDelete_Click);
+            btnCustomerDelete.Anchor = AnchorStyles.Right;
+            btnCustomerDelete.Location = new Point(765, 145);
+            btnCustomerDelete.Margin = new Padding(3, 2, 3, 2);
+            btnCustomerDelete.Name = "btnCustomerDelete";
+            btnCustomerDelete.Size = new Size(87, 24);
+            btnCustomerDelete.TabIndex = 24;
+            btnCustomerDelete.Text = "Delete";
+            btnCustomerDelete.Click += btnCustomerDelete_Click;
             // 
             // btnCustomerUpdate
             // 
-            this.btnCustomerUpdate.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnCustomerUpdate.Location = (new global::System.Drawing.Point(511, 179));
-            this.btnCustomerUpdate.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.btnCustomerUpdate.Name = ("btnCustomerUpdate");
-            this.btnCustomerUpdate.Size = (new global::System.Drawing.Size(101, 29));
-            this.btnCustomerUpdate.TabIndex = (23);
-            this.btnCustomerUpdate.Text = ("Update");
-            this.btnCustomerUpdate.Click += (this.btnCustomerUpdate_Click);
+            btnCustomerUpdate.Anchor = AnchorStyles.Right;
+            btnCustomerUpdate.Location = new Point(636, 145);
+            btnCustomerUpdate.Margin = new Padding(3, 2, 3, 2);
+            btnCustomerUpdate.Name = "btnCustomerUpdate";
+            btnCustomerUpdate.Size = new Size(87, 24);
+            btnCustomerUpdate.TabIndex = 23;
+            btnCustomerUpdate.Text = "Update";
+            btnCustomerUpdate.Click += btnCustomerUpdate_Click;
             // 
             // btnAddCustomer
             // 
-            this.btnAddCustomer.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnAddCustomer.Location = (new global::System.Drawing.Point(362, 179));
-            this.btnAddCustomer.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.btnAddCustomer.Name = ("btnAddCustomer");
-            this.btnAddCustomer.Size = (new global::System.Drawing.Size(101, 29));
-            this.btnAddCustomer.TabIndex = (22);
-            this.btnAddCustomer.Text = ("Add");
-            this.btnAddCustomer.Click += (this.btnAddCustomer_Click);
+            btnAddCustomer.Anchor = AnchorStyles.Right;
+            btnAddCustomer.Location = new Point(508, 145);
+            btnAddCustomer.Margin = new Padding(3, 2, 3, 2);
+            btnAddCustomer.Name = "btnAddCustomer";
+            btnAddCustomer.Size = new Size(87, 24);
+            btnAddCustomer.TabIndex = 22;
+            btnAddCustomer.Text = "Add";
+            btnAddCustomer.Click += btnAddCustomer_Click;
             // 
             // simpleButton7
             // 
-            this.simpleButton7.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton7.Location = (new global::System.Drawing.Point(2567, 250));
-            this.simpleButton7.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton7.Name = ("simpleButton7");
-            this.simpleButton7.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton7.TabIndex = (21);
-            this.simpleButton7.Text = ("Delete");
+            simpleButton7.Anchor = AnchorStyles.Right;
+            simpleButton7.Location = new Point(2398, 203);
+            simpleButton7.Margin = new Padding(3, 2, 3, 2);
+            simpleButton7.Name = "simpleButton7";
+            simpleButton7.Size = new Size(101, 29);
+            simpleButton7.TabIndex = 21;
+            simpleButton7.Text = "Delete";
             // 
             // simpleButton8
             // 
-            this.simpleButton8.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton8.Location = (new global::System.Drawing.Point(2431, 250));
-            this.simpleButton8.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton8.Name = ("simpleButton8");
-            this.simpleButton8.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton8.TabIndex = (20);
-            this.simpleButton8.Text = ("Update");
+            simpleButton8.Anchor = AnchorStyles.Right;
+            simpleButton8.Location = new Point(2282, 203);
+            simpleButton8.Margin = new Padding(3, 2, 3, 2);
+            simpleButton8.Name = "simpleButton8";
+            simpleButton8.Size = new Size(101, 29);
+            simpleButton8.TabIndex = 20;
+            simpleButton8.Text = "Update";
             // 
             // simpleButton9
             // 
-            this.simpleButton9.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton9.Location = (new global::System.Drawing.Point(2295, 250));
-            this.simpleButton9.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton9.Name = ("simpleButton9");
-            this.simpleButton9.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton9.TabIndex = (19);
-            this.simpleButton9.Text = ("Add");
+            simpleButton9.Anchor = AnchorStyles.Right;
+            simpleButton9.Location = new Point(2165, 203);
+            simpleButton9.Margin = new Padding(3, 2, 3, 2);
+            simpleButton9.Name = "simpleButton9";
+            simpleButton9.Size = new Size(101, 29);
+            simpleButton9.TabIndex = 19;
+            simpleButton9.Text = "Add";
             // 
             // label24
             // 
-            this.label24.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label24.AutoSize = (true);
-            this.label24.Location = (new global::System.Drawing.Point(715, 25));
-            this.label24.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label24.Name = ("label24");
-            this.label24.Size = (new global::System.Drawing.Size(47, 16));
-            this.label24.TabIndex = (18);
-            this.label24.Text = ("Phone:");
+            label24.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label24.AutoSize = true;
+            label24.Location = new Point(613, 20);
+            label24.Name = "label24";
+            label24.Size = new Size(41, 13);
+            label24.TabIndex = 18;
+            label24.Text = "Phone:";
             // 
             // txtCustomerPhone
             // 
-            this.txtCustomerPhone.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCustomerPhone.Location = (new global::System.Drawing.Point(791, 20));
-            this.txtCustomerPhone.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.txtCustomerPhone.Name = ("txtCustomerPhone");
-            this.txtCustomerPhone.Size = (new global::System.Drawing.Size(177, 22));
-            this.txtCustomerPhone.TabIndex = (17);
+            txtCustomerPhone.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerPhone.Location = new Point(678, 16);
+            txtCustomerPhone.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerPhone.Name = "txtCustomerPhone";
+            txtCustomerPhone.Size = new Size(152, 20);
+            txtCustomerPhone.TabIndex = 17;
             // 
             // txtCustomerNationality
             // 
-            this.txtCustomerNationality.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCustomerNationality.Location = (new global::System.Drawing.Point(791, 65));
-            this.txtCustomerNationality.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.txtCustomerNationality.Name = ("txtCustomerNationality");
-            this.txtCustomerNationality.Size = (new global::System.Drawing.Size(177, 22));
-            this.txtCustomerNationality.TabIndex = (16);
+            txtCustomerNationality.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerNationality.Location = new Point(678, 53);
+            txtCustomerNationality.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerNationality.Name = "txtCustomerNationality";
+            txtCustomerNationality.Size = new Size(152, 20);
+            txtCustomerNationality.TabIndex = 16;
             // 
             // txtCustomerEmail
             // 
-            this.txtCustomerEmail.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCustomerEmail.Location = (new global::System.Drawing.Point(473, 62));
-            this.txtCustomerEmail.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.txtCustomerEmail.Name = ("txtCustomerEmail");
-            this.txtCustomerEmail.Size = (new global::System.Drawing.Size(177, 22));
-            this.txtCustomerEmail.TabIndex = (15);
+            txtCustomerEmail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerEmail.Location = new Point(405, 50);
+            txtCustomerEmail.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerEmail.Name = "txtCustomerEmail";
+            txtCustomerEmail.Size = new Size(152, 20);
+            txtCustomerEmail.TabIndex = 15;
             // 
             // label25
             // 
-            this.label25.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = (true);
-            this.label25.Location = (new global::System.Drawing.Point(7, 107));
-            this.label25.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label25.Name = ("label25");
-            this.label25.Size = (new global::System.Drawing.Size(58, 16));
-            this.label25.TabIndex = (14);
-            this.label25.Text = ("Address:");
+            label25.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label25.AutoSize = true;
+            label25.Location = new Point(6, 87);
+            label25.Name = "label25";
+            label25.Size = new Size(50, 13);
+            label25.TabIndex = 14;
+            label25.Text = "Address:";
             // 
             // label26
             // 
-            this.label26.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label26.AutoSize = (true);
-            this.label26.Location = (new global::System.Drawing.Point(380, 68));
-            this.label26.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label26.Name = ("label26");
-            this.label26.Size = (new global::System.Drawing.Size(43, 16));
-            this.label26.TabIndex = (13);
-            this.label26.Text = ("Email:");
+            label26.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label26.AutoSize = true;
+            label26.Location = new Point(326, 55);
+            label26.Name = "label26";
+            label26.Size = new Size(35, 13);
+            label26.TabIndex = 13;
+            label26.Text = "Email:";
             // 
             // label27
             // 
-            this.label27.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label27.AutoSize = (true);
-            this.label27.Location = (new global::System.Drawing.Point(380, 25));
-            this.label27.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label27.Name = ("label27");
-            this.label27.Size = (new global::System.Drawing.Size(83, 16));
-            this.label27.TabIndex = (12);
-            this.label27.Text = ("CMND/CCCD:");
+            label27.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label27.AutoSize = true;
+            label27.Location = new Point(326, 20);
+            label27.Name = "label27";
+            label27.Size = new Size(72, 13);
+            label27.TabIndex = 12;
+            label27.Text = "CMND/CCCD:";
             // 
-            // txtCustomerID
+            // txtCustomerNationalID
             // 
-            this.txtCustomerID.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCustomerID.Location = (new global::System.Drawing.Point(473, 22));
-            this.txtCustomerID.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.txtCustomerID.Name = ("txtCustomerID");
-            this.txtCustomerID.Size = (new global::System.Drawing.Size(177, 22));
-            this.txtCustomerID.TabIndex = (11);
+            txtCustomerNationalID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerNationalID.Location = new Point(405, 18);
+            txtCustomerNationalID.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerNationalID.Name = "txtCustomerNationalID";
+            txtCustomerNationalID.Size = new Size(152, 20);
+            txtCustomerNationalID.TabIndex = 11;
             // 
             // label28
             // 
-            this.label28.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label28.AutoSize = (true);
-            this.label28.Location = (new global::System.Drawing.Point(7, 143));
-            this.label28.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label28.Name = ("label28");
-            this.label28.Size = (new global::System.Drawing.Size(33, 16));
-            this.label28.TabIndex = (10);
-            this.label28.Text = ("Sex:");
+            label28.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label28.AutoSize = true;
+            label28.Location = new Point(6, 116);
+            label28.Name = "label28";
+            label28.Size = new Size(29, 13);
+            label28.TabIndex = 10;
+            label28.Text = "Sex:";
             // 
             // dtpCustomerDate
             // 
-            this.dtpCustomerDate.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.dtpCustomerDate.CustomFormat = ("dd/MM/yyyy");
-            this.dtpCustomerDate.Format = (global::System.Windows.Forms.DateTimePickerFormat.Custom);
-            this.dtpCustomerDate.Location = (new global::System.Drawing.Point(473, 105));
-            this.dtpCustomerDate.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.dtpCustomerDate.Name = ("dtpCustomerDate");
-            this.dtpCustomerDate.Size = (new global::System.Drawing.Size(177, 23));
-            this.dtpCustomerDate.TabIndex = (9);
+            dtpCustomerDate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            dtpCustomerDate.CustomFormat = "dd/MM/yyyy";
+            dtpCustomerDate.Format = DateTimePickerFormat.Custom;
+            dtpCustomerDate.Location = new Point(405, 85);
+            dtpCustomerDate.Margin = new Padding(3, 2, 3, 2);
+            dtpCustomerDate.Name = "dtpCustomerDate";
+            dtpCustomerDate.Size = new Size(152, 21);
+            dtpCustomerDate.TabIndex = 9;
             // 
             // label29
             // 
-            this.label29.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label29.AutoSize = (true);
-            this.label29.Location = (new global::System.Drawing.Point(380, 110));
-            this.label29.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label29.Name = ("label29");
-            this.label29.Size = (new global::System.Drawing.Size(83, 16));
-            this.label29.TabIndex = (8);
-            this.label29.Text = ("Date of birth:");
+            label29.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label29.AutoSize = true;
+            label29.Location = new Point(326, 89);
+            label29.Name = "label29";
+            label29.Size = new Size(72, 13);
+            label29.TabIndex = 8;
+            label29.Text = "Date of birth:";
             // 
             // rbCustomerFemale
             // 
-            this.rbCustomerFemale.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.rbCustomerFemale.AutoSize = (true);
-            this.rbCustomerFemale.Location = (new global::System.Drawing.Point(227, 141));
-            this.rbCustomerFemale.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.rbCustomerFemale.Name = ("rbCustomerFemale");
-            this.rbCustomerFemale.Size = (new global::System.Drawing.Size(73, 20));
-            this.rbCustomerFemale.TabIndex = (7);
-            this.rbCustomerFemale.TabStop = (true);
-            this.rbCustomerFemale.Text = ("Felmale");
-            this.rbCustomerFemale.UseVisualStyleBackColor = (true);
+            rbCustomerFemale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            rbCustomerFemale.AutoSize = true;
+            rbCustomerFemale.Location = new Point(195, 115);
+            rbCustomerFemale.Margin = new Padding(3, 2, 3, 2);
+            rbCustomerFemale.Name = "rbCustomerFemale";
+            rbCustomerFemale.Size = new Size(61, 17);
+            rbCustomerFemale.TabIndex = 7;
+            rbCustomerFemale.TabStop = true;
+            rbCustomerFemale.Text = "Felmale";
+            rbCustomerFemale.UseVisualStyleBackColor = true;
             // 
             // rbCustomerMale
             // 
-            this.rbCustomerMale.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.rbCustomerMale.AutoSize = (true);
-            this.rbCustomerMale.Location = (new global::System.Drawing.Point(128, 141));
-            this.rbCustomerMale.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.rbCustomerMale.Name = ("rbCustomerMale");
-            this.rbCustomerMale.Size = (new global::System.Drawing.Size(55, 20));
-            this.rbCustomerMale.TabIndex = (6);
-            this.rbCustomerMale.TabStop = (true);
-            this.rbCustomerMale.Text = ("Male");
-            this.rbCustomerMale.UseVisualStyleBackColor = (true);
+            rbCustomerMale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            rbCustomerMale.AutoSize = true;
+            rbCustomerMale.Location = new Point(110, 115);
+            rbCustomerMale.Margin = new Padding(3, 2, 3, 2);
+            rbCustomerMale.Name = "rbCustomerMale";
+            rbCustomerMale.Size = new Size(47, 17);
+            rbCustomerMale.TabIndex = 6;
+            rbCustomerMale.TabStop = true;
+            rbCustomerMale.Text = "Male";
+            rbCustomerMale.UseVisualStyleBackColor = true;
             // 
             // label30
             // 
-            this.label30.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label30.AutoSize = (true);
-            this.label30.Location = (new global::System.Drawing.Point(715, 68));
-            this.label30.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label30.Name = ("label30");
-            this.label30.Size = (new global::System.Drawing.Size(71, 16));
-            this.label30.TabIndex = (5);
-            this.label30.Text = ("Nationality:");
+            label30.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label30.AutoSize = true;
+            label30.Location = new Point(613, 55);
+            label30.Name = "label30";
+            label30.Size = new Size(62, 13);
+            label30.TabIndex = 5;
+            label30.Text = "Nationality:";
             // 
             // label31
             // 
-            this.label31.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label31.AutoSize = (true);
-            this.label31.Location = (new global::System.Drawing.Point(6, 68));
-            this.label31.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label31.Name = ("label31");
-            this.label31.Size = (new global::System.Drawing.Size(45, 16));
-            this.label31.TabIndex = (4);
-            this.label31.Text = ("Name:");
+            label31.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label31.AutoSize = true;
+            label31.Location = new Point(5, 55);
+            label31.Name = "label31";
+            label31.Size = new Size(38, 13);
+            label31.TabIndex = 4;
+            label31.Text = "Name:";
             // 
             // txtCustomerAddress
             // 
-            this.txtCustomerAddress.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCustomerAddress.Location = (new global::System.Drawing.Point(105, 104));
-            this.txtCustomerAddress.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.txtCustomerAddress.Name = ("txtCustomerAddress");
-            this.txtCustomerAddress.Size = (new global::System.Drawing.Size(208, 22));
-            this.txtCustomerAddress.TabIndex = (3);
+            txtCustomerAddress.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerAddress.Location = new Point(90, 84);
+            txtCustomerAddress.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerAddress.Name = "txtCustomerAddress";
+            txtCustomerAddress.Size = new Size(178, 20);
+            txtCustomerAddress.TabIndex = 3;
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCustomerName.Location = (new global::System.Drawing.Point(105, 65));
-            this.txtCustomerName.Margin = (new global::System.Windows.Forms.Padding(3, 2, 3, 2));
-            this.txtCustomerName.Name = ("txtCustomerName");
-            this.txtCustomerName.Size = (new global::System.Drawing.Size(208, 22));
-            this.txtCustomerName.TabIndex = (2);
+            txtCustomerName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerName.Location = new Point(90, 53);
+            txtCustomerName.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerName.Name = "txtCustomerName";
+            txtCustomerName.Size = new Size(178, 20);
+            txtCustomerName.TabIndex = 2;
             // 
-            // textEdit21
+            // txtCustomerID
             // 
-            this.textEdit21.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.textEdit21.Location = (new global::System.Drawing.Point(105, 22));
-            this.textEdit21.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textEdit21.Name = ("textEdit21");
-            this.textEdit21.Size = (new global::System.Drawing.Size(243, 22));
-            this.textEdit21.TabIndex = (1);
+            txtCustomerID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerID.Enabled = false;
+            txtCustomerID.Location = new Point(90, 18);
+            txtCustomerID.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerID.Name = "txtCustomerID";
+            txtCustomerID.Size = new Size(178, 20);
+            txtCustomerID.TabIndex = 1;
             // 
             // label32
             // 
-            this.label32.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.AutoSize = (true);
-            this.label32.Location = (new global::System.Drawing.Point(6, 28));
-            this.label32.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label32.Name = ("label32");
-            this.label32.Size = (new global::System.Drawing.Size(83, 16));
-            this.label32.TabIndex = (0);
-            this.label32.Text = ("Customer ID:");
+            label32.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label32.AutoSize = true;
+            label32.Location = new Point(5, 23);
+            label32.Name = "label32";
+            label32.Size = new Size(71, 13);
+            label32.TabIndex = 0;
+            label32.Text = "Customer ID:";
             // 
             // tp
             // 
-            this.tp.Caption = ("Employee");
-            this.tp.Controls.Add(this.groupBox2);
-            this.tp.Controls.Add(this.dgvEmployee);
-            this.tp.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tp.Name = ("tp");
-            this.tp.Size = (new global::System.Drawing.Size(1940, 485));
+            tp.Caption = "Employee";
+            tp.Controls.Add(groupBox2);
+            tp.Controls.Add(dgvEmployee);
+            tp.Margin = new Padding(3, 2, 3, 2);
+            tp.Name = "tp";
+            tp.Size = new Size(1861, 549);
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.label47);
-            this.groupBox2.Controls.Add(this.txtPasswordEmployee);
-            this.groupBox2.Controls.Add(this.txtUsernameEmployee);
-            this.groupBox2.Controls.Add(this.label40);
-            this.groupBox2.Controls.Add(this.txtPositionEmployee);
-            this.groupBox2.Controls.Add(this.labelPosision);
-            this.groupBox2.Controls.Add(this.btnDeleteEmployee);
-            this.groupBox2.Controls.Add(this.btnUpdateEmployee);
-            this.groupBox2.Controls.Add(this.btnAddEmployee);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.txtPhoneEmployee);
-            this.groupBox2.Controls.Add(this.txtNationalityEmployee);
-            this.groupBox2.Controls.Add(this.txtEmailEmployee);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtNationalIDEmployee);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.dtpBirthdayEmployee);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.rbFelmale);
-            this.groupBox2.Controls.Add(this.rbMale);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.txtAddressEmployee);
-            this.groupBox2.Controls.Add(this.txtNameEmployee);
-            this.groupBox2.Controls.Add(this.txtEmployeeID);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = (new global::System.Drawing.Point(5, 2));
-            this.groupBox2.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox2.Name = ("groupBox2");
-            this.groupBox2.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox2.Size = (new global::System.Drawing.Size(1916, 380));
-            this.groupBox2.TabIndex = (1);
-            this.groupBox2.TabStop = (false);
-            this.groupBox2.Text = ("Information employee");
-            this.groupBox2.Paint += (this.gbEmployee_Paint);
+            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox2.Controls.Add(label47);
+            groupBox2.Controls.Add(txtPasswordEmployee);
+            groupBox2.Controls.Add(txtUsernameEmployee);
+            groupBox2.Controls.Add(label40);
+            groupBox2.Controls.Add(txtPositionEmployee);
+            groupBox2.Controls.Add(labelPosision);
+            groupBox2.Controls.Add(btnDeleteEmployee);
+            groupBox2.Controls.Add(btnUpdateEmployee);
+            groupBox2.Controls.Add(btnAddEmployee);
+            groupBox2.Controls.Add(label9);
+            groupBox2.Controls.Add(txtPhoneEmployee);
+            groupBox2.Controls.Add(txtNationalityEmployee);
+            groupBox2.Controls.Add(txtEmailEmployee);
+            groupBox2.Controls.Add(label8);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(txtNationalIDEmployee);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(dtpBirthdayEmployee);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(rbFelmale);
+            groupBox2.Controls.Add(rbMale);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(txtAddressEmployee);
+            groupBox2.Controls.Add(txtNameEmployee);
+            groupBox2.Controls.Add(txtEmployeeID);
+            groupBox2.Controls.Add(label1);
+            groupBox2.Location = new Point(4, 2);
+            groupBox2.Margin = new Padding(3, 2, 3, 2);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new Padding(3, 2, 3, 2);
+            groupBox2.Size = new Size(1840, 309);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Information employee";
+            groupBox2.Paint += gbEmployee_Paint;
             // 
             // label47
             // 
-            this.label47.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label47.AutoSize = (true);
-            this.label47.Location = (new global::System.Drawing.Point(716, 163));
-            this.label47.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label47.Name = ("label47");
-            this.label47.Size = (new global::System.Drawing.Size(67, 16));
-            this.label47.TabIndex = (27);
-            this.label47.Text = ("Password:");
+            label47.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label47.AutoSize = true;
+            label47.Location = new Point(614, 132);
+            label47.Name = "label47";
+            label47.Size = new Size(57, 13);
+            label47.TabIndex = 27;
+            label47.Text = "Password:";
             // 
             // txtPasswordEmployee
             // 
-            this.txtPasswordEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPasswordEmployee.Location = (new global::System.Drawing.Point(792, 160));
-            this.txtPasswordEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtPasswordEmployee.Name = ("txtPasswordEmployee");
-            this.txtPasswordEmployee.Size = (new global::System.Drawing.Size(206, 22));
-            this.txtPasswordEmployee.TabIndex = (26);
-            this.txtPasswordEmployee.EditValueChanged += (this.txtPasswordEmployee_EditValueChanged);
+            txtPasswordEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtPasswordEmployee.Location = new Point(679, 130);
+            txtPasswordEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtPasswordEmployee.Name = "txtPasswordEmployee";
+            txtPasswordEmployee.Size = new Size(177, 20);
+            txtPasswordEmployee.TabIndex = 26;
+            txtPasswordEmployee.EditValueChanged += txtPasswordEmployee_EditValueChanged;
             // 
             // txtUsernameEmployee
             // 
-            this.txtUsernameEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtUsernameEmployee.Location = (new global::System.Drawing.Point(472, 163));
-            this.txtUsernameEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtUsernameEmployee.Name = ("txtUsernameEmployee");
-            this.txtUsernameEmployee.Size = (new global::System.Drawing.Size(225, 22));
-            this.txtUsernameEmployee.TabIndex = (25);
+            txtUsernameEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtUsernameEmployee.Location = new Point(405, 132);
+            txtUsernameEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtUsernameEmployee.Name = "txtUsernameEmployee";
+            txtUsernameEmployee.Size = new Size(193, 20);
+            txtUsernameEmployee.TabIndex = 25;
             // 
             // label40
             // 
-            this.label40.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label40.AutoSize = (true);
-            this.label40.Location = (new global::System.Drawing.Point(380, 166));
-            this.label40.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label40.Name = ("label40");
-            this.label40.Size = (new global::System.Drawing.Size(70, 16));
-            this.label40.TabIndex = (24);
-            this.label40.Text = ("Username:");
+            label40.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label40.AutoSize = true;
+            label40.Location = new Point(326, 135);
+            label40.Name = "label40";
+            label40.Size = new Size(59, 13);
+            label40.TabIndex = 24;
+            label40.Text = "Username:";
             // 
             // txtPositionEmployee
             // 
-            this.txtPositionEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPositionEmployee.Location = (new global::System.Drawing.Point(105, 166));
-            this.txtPositionEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtPositionEmployee.Name = ("txtPositionEmployee");
-            this.txtPositionEmployee.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtPositionEmployee.TabIndex = (23);
+            txtPositionEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtPositionEmployee.Location = new Point(90, 135);
+            txtPositionEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtPositionEmployee.Name = "txtPositionEmployee";
+            txtPositionEmployee.Size = new Size(208, 20);
+            txtPositionEmployee.TabIndex = 23;
             // 
             // labelPosision
             // 
-            this.labelPosision.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.labelPosision.AutoSize = (true);
-            this.labelPosision.Location = (new global::System.Drawing.Point(6, 169));
-            this.labelPosision.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.labelPosision.Name = ("labelPosision");
-            this.labelPosision.Size = (new global::System.Drawing.Size(56, 16));
-            this.labelPosision.TabIndex = (22);
-            this.labelPosision.Text = ("Position:");
+            labelPosision.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            labelPosision.AutoSize = true;
+            labelPosision.Location = new Point(5, 137);
+            labelPosision.Name = "labelPosision";
+            labelPosision.Size = new Size(48, 13);
+            labelPosision.TabIndex = 22;
+            labelPosision.Text = "Position:";
             // 
             // btnDeleteEmployee
             // 
-            this.btnDeleteEmployee.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnDeleteEmployee.Location = (new global::System.Drawing.Point(1775, 326));
-            this.btnDeleteEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnDeleteEmployee.Name = ("btnDeleteEmployee");
-            this.btnDeleteEmployee.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnDeleteEmployee.TabIndex = (21);
-            this.btnDeleteEmployee.Text = ("Delete");
-            this.btnDeleteEmployee.Click += (this.btnDeleteEmployee_Click);
+            btnDeleteEmployee.Anchor = AnchorStyles.Right;
+            btnDeleteEmployee.Location = new Point(1719, 265);
+            btnDeleteEmployee.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteEmployee.Name = "btnDeleteEmployee";
+            btnDeleteEmployee.Size = new Size(101, 29);
+            btnDeleteEmployee.TabIndex = 21;
+            btnDeleteEmployee.Text = "Delete";
+            btnDeleteEmployee.Click += btnDeleteEmployee_Click;
             // 
             // btnUpdateEmployee
             // 
-            this.btnUpdateEmployee.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnUpdateEmployee.Location = (new global::System.Drawing.Point(1640, 326));
-            this.btnUpdateEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnUpdateEmployee.Name = ("btnUpdateEmployee");
-            this.btnUpdateEmployee.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnUpdateEmployee.TabIndex = (20);
-            this.btnUpdateEmployee.Text = ("Update");
-            this.btnUpdateEmployee.Click += (this.btnUpdateEmployee_Click);
+            btnUpdateEmployee.Anchor = AnchorStyles.Right;
+            btnUpdateEmployee.Location = new Point(1604, 265);
+            btnUpdateEmployee.Margin = new Padding(3, 2, 3, 2);
+            btnUpdateEmployee.Name = "btnUpdateEmployee";
+            btnUpdateEmployee.Size = new Size(101, 29);
+            btnUpdateEmployee.TabIndex = 20;
+            btnUpdateEmployee.Text = "Update";
+            btnUpdateEmployee.Click += btnUpdateEmployee_Click;
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.btnAddEmployee.Location = (new global::System.Drawing.Point(1504, 326));
-            this.btnAddEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnAddEmployee.Name = ("btnAddEmployee");
-            this.btnAddEmployee.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnAddEmployee.TabIndex = (19);
-            this.btnAddEmployee.Text = ("Add");
-            this.btnAddEmployee.Click += (this.btnAddEmployee_Click);
+            btnAddEmployee.Anchor = AnchorStyles.Right;
+            btnAddEmployee.Location = new Point(1487, 265);
+            btnAddEmployee.Margin = new Padding(3, 2, 3, 2);
+            btnAddEmployee.Name = "btnAddEmployee";
+            btnAddEmployee.Size = new Size(101, 29);
+            btnAddEmployee.TabIndex = 19;
+            btnAddEmployee.Text = "Add";
+            btnAddEmployee.Click += btnAddEmployee_Click;
             // 
             // label9
             // 
-            this.label9.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.AutoSize = (true);
-            this.label9.Location = (new global::System.Drawing.Point(715, 25));
-            this.label9.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label9.Name = ("label9");
-            this.label9.Size = (new global::System.Drawing.Size(47, 16));
-            this.label9.TabIndex = (18);
-            this.label9.Text = ("Phone:");
+            label9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label9.AutoSize = true;
+            label9.Location = new Point(613, 20);
+            label9.Name = "label9";
+            label9.Size = new Size(41, 13);
+            label9.TabIndex = 18;
+            label9.Text = "Phone:";
             // 
             // txtPhoneEmployee
             // 
-            this.txtPhoneEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPhoneEmployee.Location = (new global::System.Drawing.Point(792, 22));
-            this.txtPhoneEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtPhoneEmployee.Name = ("txtPhoneEmployee");
-            this.txtPhoneEmployee.Size = (new global::System.Drawing.Size(206, 22));
-            this.txtPhoneEmployee.TabIndex = (17);
+            txtPhoneEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtPhoneEmployee.Location = new Point(679, 18);
+            txtPhoneEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtPhoneEmployee.Name = "txtPhoneEmployee";
+            txtPhoneEmployee.Size = new Size(177, 20);
+            txtPhoneEmployee.TabIndex = 17;
             // 
             // txtNationalityEmployee
             // 
-            this.txtNationalityEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNationalityEmployee.Location = (new global::System.Drawing.Point(792, 65));
-            this.txtNationalityEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtNationalityEmployee.Name = ("txtNationalityEmployee");
-            this.txtNationalityEmployee.Size = (new global::System.Drawing.Size(206, 22));
-            this.txtNationalityEmployee.TabIndex = (16);
+            txtNationalityEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtNationalityEmployee.Location = new Point(679, 53);
+            txtNationalityEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtNationalityEmployee.Name = "txtNationalityEmployee";
+            txtNationalityEmployee.Size = new Size(177, 20);
+            txtNationalityEmployee.TabIndex = 16;
             // 
             // txtEmailEmployee
             // 
-            this.txtEmailEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmailEmployee.Location = (new global::System.Drawing.Point(472, 65));
-            this.txtEmailEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtEmailEmployee.Name = ("txtEmailEmployee");
-            this.txtEmailEmployee.Size = (new global::System.Drawing.Size(225, 22));
-            this.txtEmailEmployee.TabIndex = (15);
+            txtEmailEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtEmailEmployee.Location = new Point(405, 53);
+            txtEmailEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtEmailEmployee.Name = "txtEmailEmployee";
+            txtEmailEmployee.Size = new Size(193, 20);
+            txtEmailEmployee.TabIndex = 15;
             // 
             // label8
             // 
-            this.label8.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = (true);
-            this.label8.Location = (new global::System.Drawing.Point(7, 107));
-            this.label8.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label8.Name = ("label8");
-            this.label8.Size = (new global::System.Drawing.Size(58, 16));
-            this.label8.TabIndex = (14);
-            this.label8.Text = ("Address:");
+            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.Location = new Point(6, 87);
+            label8.Name = "label8";
+            label8.Size = new Size(50, 13);
+            label8.TabIndex = 14;
+            label8.Text = "Address:";
             // 
             // label7
             // 
-            this.label7.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label7.AutoSize = (true);
-            this.label7.Location = (new global::System.Drawing.Point(380, 68));
-            this.label7.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label7.Name = ("label7");
-            this.label7.Size = (new global::System.Drawing.Size(43, 16));
-            this.label7.TabIndex = (13);
-            this.label7.Text = ("Email:");
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label7.AutoSize = true;
+            label7.Location = new Point(326, 55);
+            label7.Name = "label7";
+            label7.Size = new Size(35, 13);
+            label7.TabIndex = 13;
+            label7.Text = "Email:";
             // 
             // label6
             // 
-            this.label6.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.AutoSize = (true);
-            this.label6.Location = (new global::System.Drawing.Point(380, 25));
-            this.label6.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label6.Name = ("label6");
-            this.label6.Size = (new global::System.Drawing.Size(70, 16));
-            this.label6.TabIndex = (12);
-            this.label6.Text = ("NationalID:");
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label6.AutoSize = true;
+            label6.Location = new Point(326, 20);
+            label6.Name = "label6";
+            label6.Size = new Size(61, 13);
+            label6.TabIndex = 12;
+            label6.Text = "NationalID:";
             // 
             // txtNationalIDEmployee
             // 
-            this.txtNationalIDEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNationalIDEmployee.Location = (new global::System.Drawing.Point(472, 22));
-            this.txtNationalIDEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtNationalIDEmployee.Name = ("txtNationalIDEmployee");
-            this.txtNationalIDEmployee.Size = (new global::System.Drawing.Size(225, 22));
-            this.txtNationalIDEmployee.TabIndex = (11);
+            txtNationalIDEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtNationalIDEmployee.Location = new Point(405, 18);
+            txtNationalIDEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtNationalIDEmployee.Name = "txtNationalIDEmployee";
+            txtNationalIDEmployee.Size = new Size(193, 20);
+            txtNationalIDEmployee.TabIndex = 11;
             // 
             // label5
             // 
-            this.label5.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = (true);
-            this.label5.Location = (new global::System.Drawing.Point(7, 143));
-            this.label5.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label5.Name = ("label5");
-            this.label5.Size = (new global::System.Drawing.Size(33, 16));
-            this.label5.TabIndex = (10);
-            this.label5.Text = ("Sex:");
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Location = new Point(6, 116);
+            label5.Name = "label5";
+            label5.Size = new Size(29, 13);
+            label5.TabIndex = 10;
+            label5.Text = "Sex:";
             // 
             // dtpBirthdayEmployee
             // 
-            this.dtpBirthdayEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.dtpBirthdayEmployee.Location = (new global::System.Drawing.Point(472, 110));
-            this.dtpBirthdayEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dtpBirthdayEmployee.Name = ("dtpBirthdayEmployee");
-            this.dtpBirthdayEmployee.Size = (new global::System.Drawing.Size(225, 23));
-            this.dtpBirthdayEmployee.TabIndex = (9);
+            dtpBirthdayEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            dtpBirthdayEmployee.Location = new Point(405, 89);
+            dtpBirthdayEmployee.Margin = new Padding(3, 2, 3, 2);
+            dtpBirthdayEmployee.Name = "dtpBirthdayEmployee";
+            dtpBirthdayEmployee.Size = new Size(193, 21);
+            dtpBirthdayEmployee.TabIndex = 9;
             // 
             // label4
             // 
-            this.label4.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.AutoSize = (true);
-            this.label4.Location = (new global::System.Drawing.Point(380, 110));
-            this.label4.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label4.Name = ("label4");
-            this.label4.Size = (new global::System.Drawing.Size(83, 16));
-            this.label4.TabIndex = (8);
-            this.label4.Text = ("Date of birth:");
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label4.AutoSize = true;
+            label4.Location = new Point(326, 89);
+            label4.Name = "label4";
+            label4.Size = new Size(72, 13);
+            label4.TabIndex = 8;
+            label4.Text = "Date of birth:";
             // 
             // rbFelmale
             // 
-            this.rbFelmale.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.rbFelmale.AutoSize = (true);
-            this.rbFelmale.Location = (new global::System.Drawing.Point(190, 139));
-            this.rbFelmale.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.rbFelmale.Name = ("rbFelmale");
-            this.rbFelmale.Size = (new global::System.Drawing.Size(73, 20));
-            this.rbFelmale.TabIndex = (7);
-            this.rbFelmale.TabStop = (true);
-            this.rbFelmale.Text = ("Felmale");
-            this.rbFelmale.UseVisualStyleBackColor = (true);
+            rbFelmale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            rbFelmale.AutoSize = true;
+            rbFelmale.Location = new Point(163, 113);
+            rbFelmale.Margin = new Padding(3, 2, 3, 2);
+            rbFelmale.Name = "rbFelmale";
+            rbFelmale.Size = new Size(61, 17);
+            rbFelmale.TabIndex = 7;
+            rbFelmale.TabStop = true;
+            rbFelmale.Text = "Felmale";
+            rbFelmale.UseVisualStyleBackColor = true;
             // 
             // rbMale
             // 
-            this.rbMale.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.rbMale.AutoSize = (true);
-            this.rbMale.Location = (new global::System.Drawing.Point(105, 139));
-            this.rbMale.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.rbMale.Name = ("rbMale");
-            this.rbMale.Size = (new global::System.Drawing.Size(55, 20));
-            this.rbMale.TabIndex = (6);
-            this.rbMale.TabStop = (true);
-            this.rbMale.Text = ("Male");
-            this.rbMale.UseVisualStyleBackColor = (true);
+            rbMale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            rbMale.AutoSize = true;
+            rbMale.Location = new Point(90, 113);
+            rbMale.Margin = new Padding(3, 2, 3, 2);
+            rbMale.Name = "rbMale";
+            rbMale.Size = new Size(47, 17);
+            rbMale.TabIndex = 6;
+            rbMale.TabStop = true;
+            rbMale.Text = "Male";
+            rbMale.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            this.label3.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = (true);
-            this.label3.Location = (new global::System.Drawing.Point(715, 68));
-            this.label3.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label3.Name = ("label3");
-            this.label3.Size = (new global::System.Drawing.Size(71, 16));
-            this.label3.TabIndex = (5);
-            this.label3.Text = ("Nationality:");
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            label3.AutoSize = true;
+            label3.Location = new Point(613, 55);
+            label3.Name = "label3";
+            label3.Size = new Size(62, 13);
+            label3.TabIndex = 5;
+            label3.Text = "Nationality:";
             // 
             // label2
             // 
-            this.label2.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = (true);
-            this.label2.Location = (new global::System.Drawing.Point(6, 68));
-            this.label2.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label2.Name = ("label2");
-            this.label2.Size = (new global::System.Drawing.Size(45, 16));
-            this.label2.TabIndex = (4);
-            this.label2.Text = ("Name:");
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Location = new Point(5, 55);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 13);
+            label2.TabIndex = 4;
+            label2.Text = "Name:";
             // 
             // txtAddressEmployee
             // 
-            this.txtAddressEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtAddressEmployee.Location = (new global::System.Drawing.Point(105, 103));
-            this.txtAddressEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtAddressEmployee.Name = ("txtAddressEmployee");
-            this.txtAddressEmployee.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtAddressEmployee.TabIndex = (3);
+            txtAddressEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtAddressEmployee.Location = new Point(90, 84);
+            txtAddressEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtAddressEmployee.Name = "txtAddressEmployee";
+            txtAddressEmployee.Size = new Size(208, 20);
+            txtAddressEmployee.TabIndex = 3;
             // 
             // txtNameEmployee
             // 
-            this.txtNameEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNameEmployee.Location = (new global::System.Drawing.Point(105, 65));
-            this.txtNameEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtNameEmployee.Name = ("txtNameEmployee");
-            this.txtNameEmployee.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtNameEmployee.TabIndex = (2);
+            txtNameEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtNameEmployee.Location = new Point(90, 53);
+            txtNameEmployee.Margin = new Padding(3, 2, 3, 2);
+            txtNameEmployee.Name = "txtNameEmployee";
+            txtNameEmployee.Size = new Size(208, 20);
+            txtNameEmployee.TabIndex = 2;
             // 
             // txtEmployeeID
             // 
-            this.txtEmployeeID.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmployeeID.Location = (new global::System.Drawing.Point(105, 22));
-            this.txtEmployeeID.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtEmployeeID.Name = ("txtEmployeeID");
-            this.txtEmployeeID.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtEmployeeID.TabIndex = (1);
+            txtEmployeeID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtEmployeeID.Location = new Point(90, 18);
+            txtEmployeeID.Margin = new Padding(3, 2, 3, 2);
+            txtEmployeeID.Name = "txtEmployeeID";
+            txtEmployeeID.Size = new Size(208, 20);
+            txtEmployeeID.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = (true);
-            this.label1.Location = (new global::System.Drawing.Point(6, 28));
-            this.label1.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label1.Name = ("label1");
-            this.label1.Size = (new global::System.Drawing.Size(83, 16));
-            this.label1.TabIndex = (0);
-            this.label1.Text = ("Employee ID:");
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Location = new Point(5, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(71, 13);
+            label1.TabIndex = 0;
+            label1.Text = "Employee ID:";
             // 
             // dgvEmployee
             // 
-            this.dgvEmployee.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvEmployee.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dgvEmployee.Location = (new global::System.Drawing.Point(5, 401));
-            this.dgvEmployee.MainView = (this.gvEmploy);
-            this.dgvEmployee.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dgvEmployee.Name = ("dgvEmployee");
-            this.dgvEmployee.Size = (new global::System.Drawing.Size(1931, 78));
-            this.dgvEmployee.TabIndex = (0);
-            this.dgvEmployee.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gvEmploy });
+            dgvEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvEmployee.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
+            dgvEmployee.Location = new Point(4, 326);
+            dgvEmployee.MainView = gvEmploy;
+            dgvEmployee.Margin = new Padding(3, 2, 3, 2);
+            dgvEmployee.Name = "dgvEmployee";
+            dgvEmployee.Size = new Size(1853, 218);
+            dgvEmployee.TabIndex = 0;
+            dgvEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvEmploy });
             // 
             // gvEmploy
             // 
-            this.gvEmploy.GridControl = (this.dgvEmployee);
-            this.gvEmploy.Name = ("gvEmploy");
-            this.gvEmploy.RowClick += (this.gvEmployee_RowClick);
+            gvEmploy.DetailHeight = 284;
+            gvEmploy.GridControl = dgvEmployee;
+            gvEmploy.Name = "gvEmploy";
+            gvEmploy.RowClick += gvEmployee_RowClick;
             // 
             // tabNavigationFlight
             // 
-            this.tabNavigationFlight.Caption = ("Flight");
-            this.tabNavigationFlight.Controls.Add(this.gridControlFlight);
-            this.tabNavigationFlight.Controls.Add(this.groupBox6);
-            this.tabNavigationFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tabNavigationFlight.Name = ("tabNavigationFlight");
-            this.tabNavigationFlight.Size = (new global::System.Drawing.Size(1940, 1009));
-            this.tabNavigationFlight.Paint += (this.TabNavigationFlightPaint);
+            tabNavigationFlight.Caption = "Flight";
+            tabNavigationFlight.Controls.Add(gridControlFlight);
+            tabNavigationFlight.Controls.Add(groupBox6);
+            tabNavigationFlight.Margin = new Padding(3, 2, 3, 2);
+            tabNavigationFlight.Name = "tabNavigationFlight";
+            tabNavigationFlight.Size = new Size(1861, 549);
+            tabNavigationFlight.Paint += TabNavigationFlightPaint;
             // 
             // gridControlFlight
             // 
-            this.gridControlFlight.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControlFlight.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gridControlFlight.Location = (new global::System.Drawing.Point(12, 272));
-            this.gridControlFlight.MainView = (this.gridViewFlight);
-            this.gridControlFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gridControlFlight.Name = ("gridControlFlight");
-            this.gridControlFlight.Size = (new global::System.Drawing.Size(1916, 726));
-            this.gridControlFlight.TabIndex = (3);
-            this.gridControlFlight.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridViewFlight });
-            this.gridControlFlight.Load += (this.GridControlFlightLoad);
+            gridControlFlight.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gridControlFlight.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
+            gridControlFlight.Location = new Point(10, 221);
+            gridControlFlight.MainView = gridViewFlight;
+            gridControlFlight.Margin = new Padding(3, 2, 3, 2);
+            gridControlFlight.Name = "gridControlFlight";
+            gridControlFlight.Size = new Size(1841, 319);
+            gridControlFlight.TabIndex = 3;
+            gridControlFlight.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridViewFlight });
+            gridControlFlight.Load += GridControlFlightLoad;
             // 
             // gridViewFlight
             // 
-            this.gridViewFlight.GridControl = (this.gridControlFlight);
-            this.gridViewFlight.Name = ("gridViewFlight");
-            this.gridViewFlight.OptionsBehavior.Editable = (false);
-            this.gridViewFlight.RowClick += (this.gridViewFlight_RowClick);
+            gridViewFlight.DetailHeight = 284;
+            gridViewFlight.GridControl = gridControlFlight;
+            gridViewFlight.Name = "gridViewFlight";
+            gridViewFlight.OptionsBehavior.Editable = false;
+            gridViewFlight.RowClick += gridViewFlight_RowClick;
             // 
             // groupBox6
             // 
-            this.groupBox6.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.Controls.Add(this.textFliPrice);
-            this.groupBox6.Controls.Add(this.labelFliPrice);
-            this.groupBox6.Controls.Add(this.timeDepartPicker);
-            this.groupBox6.Controls.Add(this.label36);
-            this.groupBox6.Controls.Add(this.textAirline);
-            this.groupBox6.Controls.Add(this.buttonDeleteFlight);
-            this.groupBox6.Controls.Add(this.buttonUpdateFlight);
-            this.groupBox6.Controls.Add(this.buttonAddFlight);
-            this.groupBox6.Controls.Add(this.comboBoxPlane);
-            this.groupBox6.Controls.Add(this.label37);
-            this.groupBox6.Controls.Add(this.label35);
-            this.groupBox6.Controls.Add(this.comboBoxDesti);
-            this.groupBox6.Controls.Add(this.comboBoxDepart);
-            this.groupBox6.Controls.Add(this.label34);
-            this.groupBox6.Controls.Add(this.label33);
-            this.groupBox6.Controls.Add(this.simpleButton13);
-            this.groupBox6.Controls.Add(this.simpleButton14);
-            this.groupBox6.Controls.Add(this.simpleButton15);
-            this.groupBox6.Controls.Add(this.dateDepartPicker);
-            this.groupBox6.Controls.Add(this.label38);
-            this.groupBox6.Controls.Add(this.textFlightID);
-            this.groupBox6.Controls.Add(this.label41);
-            this.groupBox6.Location = (new global::System.Drawing.Point(12, 12));
-            this.groupBox6.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox6.Name = ("groupBox6");
-            this.groupBox6.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox6.Size = (new global::System.Drawing.Size(1916, 242));
-            this.groupBox6.TabIndex = (2);
-            this.groupBox6.TabStop = (false);
-            this.groupBox6.Text = ("Information flight");
+            groupBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox6.Controls.Add(timeDepartPicker);
+            groupBox6.Controls.Add(label36);
+            groupBox6.Controls.Add(textAirline);
+            groupBox6.Controls.Add(buttonDeleteFlight);
+            groupBox6.Controls.Add(buttonUpdateFlight);
+            groupBox6.Controls.Add(buttonAddFlight);
+            groupBox6.Controls.Add(comboBoxPlane);
+            groupBox6.Controls.Add(label37);
+            groupBox6.Controls.Add(label35);
+            groupBox6.Controls.Add(comboBoxDesti);
+            groupBox6.Controls.Add(comboBoxDepart);
+            groupBox6.Controls.Add(label34);
+            groupBox6.Controls.Add(label33);
+            groupBox6.Controls.Add(simpleButton13);
+            groupBox6.Controls.Add(simpleButton14);
+            groupBox6.Controls.Add(simpleButton15);
+            groupBox6.Controls.Add(dateDepartPicker);
+            groupBox6.Controls.Add(label38);
+            groupBox6.Controls.Add(textFlightID);
+            groupBox6.Controls.Add(label41);
+            groupBox6.Location = new Point(10, 10);
+            groupBox6.Margin = new Padding(3, 2, 3, 2);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Padding = new Padding(3, 2, 3, 2);
+            groupBox6.Size = new Size(1841, 197);
+            groupBox6.TabIndex = 2;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Information flight";
             // 
             // timeDepartPicker
             // 
-            this.timeDepartPicker.AllowDrop = (true);
-            this.timeDepartPicker.Format = (global::System.Windows.Forms.DateTimePickerFormat.Time);
-            this.timeDepartPicker.Location = (new global::System.Drawing.Point(735, 132));
-            this.timeDepartPicker.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.timeDepartPicker.MaxDate = (new global::System.DateTime(2100, 12, 31, 0, 0, 0, 0));
-            this.timeDepartPicker.MinDate = (new global::System.DateTime(2000, 1, 1, 0, 0, 0, 0));
-            this.timeDepartPicker.Name = ("timeDepartPicker");
-            this.timeDepartPicker.ShowUpDown = (true);
-            this.timeDepartPicker.Size = (new global::System.Drawing.Size(243, 23));
-            this.timeDepartPicker.TabIndex = (37);
-            this.timeDepartPicker.Value = (new global::System.DateTime(2023, 4, 22, 0, 0, 0, 0));
+            timeDepartPicker.AllowDrop = true;
+            timeDepartPicker.Format = DateTimePickerFormat.Time;
+            timeDepartPicker.Location = new Point(630, 107);
+            timeDepartPicker.Margin = new Padding(3, 2, 3, 2);
+            timeDepartPicker.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
+            timeDepartPicker.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
+            timeDepartPicker.Name = "timeDepartPicker";
+            timeDepartPicker.ShowUpDown = true;
+            timeDepartPicker.Size = new Size(209, 21);
+            timeDepartPicker.TabIndex = 37;
+            timeDepartPicker.Value = new DateTime(2023, 4, 22, 0, 0, 0, 0);
             // 
             // label36
             // 
-            this.label36.AutoSize = (true);
-            this.label36.Location = (new global::System.Drawing.Point(735, 28));
-            this.label36.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label36.Name = ("label36");
-            this.label36.Size = (new global::System.Drawing.Size(48, 16));
-            this.label36.TabIndex = (36);
-            this.label36.Text = ("Airline:");
+            label36.AutoSize = true;
+            label36.Location = new Point(630, 23);
+            label36.Name = "label36";
+            label36.Size = new Size(40, 13);
+            label36.TabIndex = 36;
+            label36.Text = "Airline:";
             // 
             // textAirline
             // 
-            this.textAirline.Location = (new global::System.Drawing.Point(828, 25));
-            this.textAirline.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textAirline.Name = ("textAirline");
-            this.textAirline.Size = (new global::System.Drawing.Size(150, 22));
-            this.textAirline.TabIndex = (35);
+            textAirline.Location = new Point(710, 20);
+            textAirline.Margin = new Padding(3, 2, 3, 2);
+            textAirline.Name = "textAirline";
+            textAirline.Size = new Size(129, 20);
+            textAirline.TabIndex = 35;
             // 
             // buttonDeleteFlight
             // 
-            this.buttonDeleteFlight.Location = (new global::System.Drawing.Point(789, 193));
-            this.buttonDeleteFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonDeleteFlight.Name = ("buttonDeleteFlight");
-            this.buttonDeleteFlight.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonDeleteFlight.TabIndex = (34);
-            this.buttonDeleteFlight.Text = ("Delete");
-            this.buttonDeleteFlight.Click += (this.buttonDeleteFlight_Click);
+            buttonDeleteFlight.Location = new Point(676, 157);
+            buttonDeleteFlight.Margin = new Padding(3, 2, 3, 2);
+            buttonDeleteFlight.Name = "buttonDeleteFlight";
+            buttonDeleteFlight.Size = new Size(101, 29);
+            buttonDeleteFlight.TabIndex = 34;
+            buttonDeleteFlight.Text = "Delete";
+            buttonDeleteFlight.Click += buttonDeleteFlight_Click;
             // 
             // buttonUpdateFlight
             // 
-            this.buttonUpdateFlight.Location = (new global::System.Drawing.Point(433, 193));
-            this.buttonUpdateFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonUpdateFlight.Name = ("buttonUpdateFlight");
-            this.buttonUpdateFlight.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonUpdateFlight.TabIndex = (33);
-            this.buttonUpdateFlight.Text = ("Update");
-            this.buttonUpdateFlight.Click += (this.buttonUpdateFlight_Click);
+            buttonUpdateFlight.Location = new Point(371, 157);
+            buttonUpdateFlight.Margin = new Padding(3, 2, 3, 2);
+            buttonUpdateFlight.Name = "buttonUpdateFlight";
+            buttonUpdateFlight.Size = new Size(101, 29);
+            buttonUpdateFlight.TabIndex = 33;
+            buttonUpdateFlight.Text = "Update";
+            buttonUpdateFlight.Click += buttonUpdateFlight_Click;
             // 
             // buttonAddFlight
             // 
-            this.buttonAddFlight.Location = (new global::System.Drawing.Point(65, 193));
-            this.buttonAddFlight.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonAddFlight.Name = ("buttonAddFlight");
-            this.buttonAddFlight.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonAddFlight.TabIndex = (32);
-            this.buttonAddFlight.Text = ("Add");
-            this.buttonAddFlight.Click += (this.buttonAddFlight_Click);
+            buttonAddFlight.Location = new Point(56, 157);
+            buttonAddFlight.Margin = new Padding(3, 2, 3, 2);
+            buttonAddFlight.Name = "buttonAddFlight";
+            buttonAddFlight.Size = new Size(101, 29);
+            buttonAddFlight.TabIndex = 32;
+            buttonAddFlight.Text = "Add";
+            buttonAddFlight.Click += buttonAddFlight_Click;
             // 
             // comboBoxPlane
             // 
-            this.comboBoxPlane.FormattingEnabled = (true);
-            this.comboBoxPlane.Location = (new global::System.Drawing.Point(498, 23));
-            this.comboBoxPlane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBoxPlane.Name = ("comboBoxPlane");
-            this.comboBoxPlane.Size = (new global::System.Drawing.Size(150, 24));
-            this.comboBoxPlane.TabIndex = (31);
+            comboBoxPlane.FormattingEnabled = true;
+            comboBoxPlane.Location = new Point(427, 19);
+            comboBoxPlane.Margin = new Padding(3, 2, 3, 2);
+            comboBoxPlane.Name = "comboBoxPlane";
+            comboBoxPlane.Size = new Size(129, 21);
+            comboBoxPlane.TabIndex = 31;
             // 
             // label37
             // 
-            this.label37.AutoSize = (true);
-            this.label37.Location = (new global::System.Drawing.Point(375, 28));
-            this.label37.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label37.Name = ("label37");
-            this.label37.Size = (new global::System.Drawing.Size(115, 16));
-            this.label37.TabIndex = (30);
-            this.label37.Text = ("Plane Registration:");
+            label37.AutoSize = true;
+            label37.Location = new Point(321, 23);
+            label37.Name = "label37";
+            label37.Size = new Size(98, 13);
+            label37.TabIndex = 30;
+            label37.Text = "Plane Registration:";
             // 
             // label35
             // 
-            this.label35.AutoSize = (true);
-            this.label35.Location = (new global::System.Drawing.Point(579, 134));
-            this.label35.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label35.Name = ("label35");
-            this.label35.Size = (new global::System.Drawing.Size(102, 16));
-            this.label35.TabIndex = (26);
-            this.label35.Text = ("Time Departure:");
+            label35.AutoSize = true;
+            label35.Location = new Point(496, 109);
+            label35.Name = "label35";
+            label35.Size = new Size(85, 13);
+            label35.TabIndex = 26;
+            label35.Text = "Time Departure:";
             // 
             // comboBoxDesti
             // 
-            this.comboBoxDesti.FormattingEnabled = (true);
-            this.comboBoxDesti.Location = (new global::System.Drawing.Point(498, 79));
-            this.comboBoxDesti.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBoxDesti.Name = ("comboBoxDesti");
-            this.comboBoxDesti.Size = (new global::System.Drawing.Size(150, 24));
-            this.comboBoxDesti.TabIndex = (25);
+            comboBoxDesti.FormattingEnabled = true;
+            comboBoxDesti.Location = new Point(630, 62);
+            comboBoxDesti.Margin = new Padding(3, 2, 3, 2);
+            comboBoxDesti.Name = "comboBoxDesti";
+            comboBoxDesti.Size = new Size(209, 21);
+            comboBoxDesti.TabIndex = 25;
             // 
             // comboBoxDepart
             // 
-            this.comboBoxDepart.FormattingEnabled = (true);
-            this.comboBoxDepart.Location = (new global::System.Drawing.Point(145, 79));
-            this.comboBoxDepart.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBoxDepart.Name = ("comboBoxDepart");
-            this.comboBoxDepart.Size = (new global::System.Drawing.Size(150, 24));
-            this.comboBoxDepart.TabIndex = (24);
+            comboBoxDepart.FormattingEnabled = true;
+            comboBoxDepart.Location = new Point(171, 64);
+            comboBoxDepart.Margin = new Padding(3, 2, 3, 2);
+            comboBoxDepart.Name = "comboBoxDepart";
+            comboBoxDepart.Size = new Size(209, 21);
+            comboBoxDepart.TabIndex = 24;
             // 
             // label34
             // 
-            this.label34.AutoSize = (true);
-            this.label34.Location = (new global::System.Drawing.Point(375, 82));
-            this.label34.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label34.Name = ("label34");
-            this.label34.Size = (new global::System.Drawing.Size(75, 16));
-            this.label34.TabIndex = (23);
-            this.label34.Text = ("Destination:");
+            label34.AutoSize = true;
+            label34.Location = new Point(496, 67);
+            label34.Name = "label34";
+            label34.Size = new Size(65, 13);
+            label34.TabIndex = 23;
+            label34.Text = "Destination:";
             // 
             // label33
             // 
-            this.label33.AutoSize = (true);
-            this.label33.Location = (new global::System.Drawing.Point(6, 79));
-            this.label33.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label33.Name = ("label33");
-            this.label33.Size = (new global::System.Drawing.Size(69, 16));
-            this.label33.TabIndex = (22);
-            this.label33.Text = ("Departure:");
+            label33.AutoSize = true;
+            label33.Location = new Point(29, 67);
+            label33.Name = "label33";
+            label33.Size = new Size(60, 13);
+            label33.TabIndex = 22;
+            label33.Text = "Departure:";
             // 
             // simpleButton13
             // 
-            this.simpleButton13.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton13.Location = (new global::System.Drawing.Point(2567, 257));
-            this.simpleButton13.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton13.Name = ("simpleButton13");
-            this.simpleButton13.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton13.TabIndex = (21);
-            this.simpleButton13.Text = ("Delete");
+            simpleButton13.Anchor = AnchorStyles.Right;
+            simpleButton13.Location = new Point(2399, 209);
+            simpleButton13.Margin = new Padding(3, 2, 3, 2);
+            simpleButton13.Name = "simpleButton13";
+            simpleButton13.Size = new Size(101, 29);
+            simpleButton13.TabIndex = 21;
+            simpleButton13.Text = "Delete";
             // 
             // simpleButton14
             // 
-            this.simpleButton14.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton14.Location = (new global::System.Drawing.Point(2431, 257));
-            this.simpleButton14.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton14.Name = ("simpleButton14");
-            this.simpleButton14.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton14.TabIndex = (20);
-            this.simpleButton14.Text = ("Update");
+            simpleButton14.Anchor = AnchorStyles.Right;
+            simpleButton14.Location = new Point(2282, 209);
+            simpleButton14.Margin = new Padding(3, 2, 3, 2);
+            simpleButton14.Name = "simpleButton14";
+            simpleButton14.Size = new Size(101, 29);
+            simpleButton14.TabIndex = 20;
+            simpleButton14.Text = "Update";
             // 
             // simpleButton15
             // 
-            this.simpleButton15.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton15.Location = (new global::System.Drawing.Point(2295, 257));
-            this.simpleButton15.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton15.Name = ("simpleButton15");
-            this.simpleButton15.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton15.TabIndex = (19);
-            this.simpleButton15.Text = ("Add");
+            simpleButton15.Anchor = AnchorStyles.Right;
+            simpleButton15.Location = new Point(2166, 209);
+            simpleButton15.Margin = new Padding(3, 2, 3, 2);
+            simpleButton15.Name = "simpleButton15";
+            simpleButton15.Size = new Size(101, 29);
+            simpleButton15.TabIndex = 19;
+            simpleButton15.Text = "Add";
             // 
             // dateDepartPicker
             // 
-            this.dateDepartPicker.Format = (global::System.Windows.Forms.DateTimePickerFormat.Short);
-            this.dateDepartPicker.Location = (new global::System.Drawing.Point(200, 132));
-            this.dateDepartPicker.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.dateDepartPicker.MaxDate = (new global::System.DateTime(2100, 12, 31, 0, 0, 0, 0));
-            this.dateDepartPicker.MinDate = (new global::System.DateTime(2000, 1, 1, 0, 0, 0, 0));
-            this.dateDepartPicker.Name = ("dateDepartPicker");
-            this.dateDepartPicker.Size = (new global::System.Drawing.Size(243, 23));
-            this.dateDepartPicker.TabIndex = (9);
-            this.dateDepartPicker.Value = (new global::System.DateTime(2023, 4, 22, 0, 0, 0, 0));
+            dateDepartPicker.Format = DateTimePickerFormat.Short;
+            dateDepartPicker.Location = new Point(171, 107);
+            dateDepartPicker.Margin = new Padding(3, 2, 3, 2);
+            dateDepartPicker.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
+            dateDepartPicker.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
+            dateDepartPicker.Name = "dateDepartPicker";
+            dateDepartPicker.Size = new Size(209, 21);
+            dateDepartPicker.TabIndex = 9;
+            dateDepartPicker.Value = new DateTime(2023, 4, 22, 0, 0, 0, 0);
             // 
             // label38
             // 
-            this.label38.AutoSize = (true);
-            this.label38.Location = (new global::System.Drawing.Point(34, 132));
-            this.label38.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label38.Name = ("label38");
-            this.label38.Size = (new global::System.Drawing.Size(113, 16));
-            this.label38.TabIndex = (8);
-            this.label38.Text = ("Date of departure:");
+            label38.AutoSize = true;
+            label38.Location = new Point(29, 107);
+            label38.Name = "label38";
+            label38.Size = new Size(98, 13);
+            label38.TabIndex = 8;
+            label38.Text = "Date of departure:";
             // 
             // textFlightID
             // 
-            this.textFlightID.Enabled = (false);
-            this.textFlightID.Location = (new global::System.Drawing.Point(145, 25));
-            this.textFlightID.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textFlightID.Name = ("textFlightID");
-            this.textFlightID.Size = (new global::System.Drawing.Size(150, 22));
-            this.textFlightID.TabIndex = (1);
+            textFlightID.Enabled = false;
+            textFlightID.Location = new Point(124, 20);
+            textFlightID.Margin = new Padding(3, 2, 3, 2);
+            textFlightID.Name = "textFlightID";
+            textFlightID.Size = new Size(129, 20);
+            textFlightID.TabIndex = 1;
             // 
             // label41
             // 
-            this.label41.AutoSize = (true);
-            this.label41.Location = (new global::System.Drawing.Point(6, 28));
-            this.label41.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label41.Name = ("label41");
-            this.label41.Size = (new global::System.Drawing.Size(59, 16));
-            this.label41.TabIndex = (0);
-            this.label41.Text = ("Flight ID:");
+            label41.AutoSize = true;
+            label41.Location = new Point(5, 23);
+            label41.Name = "label41";
+            label41.Size = new Size(51, 13);
+            label41.TabIndex = 0;
+            label41.Text = "Flight ID:";
             // 
             // tabNavigationPage5
             // 
-            this.tabNavigationPage5.Caption = ("Plane");
-            this.tabNavigationPage5.Controls.Add(this.gridControlPlane);
-            this.tabNavigationPage5.Controls.Add(this.groupBox7);
-            this.tabNavigationPage5.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tabNavigationPage5.Name = ("tabNavigationPage5");
-            this.tabNavigationPage5.Size = (new global::System.Drawing.Size(1940, 485));
+            tabNavigationPage5.Caption = "Plane";
+            tabNavigationPage5.Controls.Add(gridControlPlane);
+            tabNavigationPage5.Controls.Add(groupBox7);
+            tabNavigationPage5.Margin = new Padding(3, 2, 3, 2);
+            tabNavigationPage5.Name = "tabNavigationPage5";
+            tabNavigationPage5.Size = new Size(1663, 549);
             // 
             // gridControlPlane
             // 
-            this.gridControlPlane.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControlPlane.EmbeddedNavigator.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gridControlPlane.Location = (new global::System.Drawing.Point(12, 283));
-            this.gridControlPlane.MainView = (this.gridPlane);
-            this.gridControlPlane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.gridControlPlane.Name = ("gridControlPlane");
-            this.gridControlPlane.Size = (new global::System.Drawing.Size(1916, 191));
-            this.gridControlPlane.TabIndex = (4);
-            this.gridControlPlane.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridPlane });
-            this.gridControlPlane.Load += (this.gridControlPlane_Load);
+            gridControlPlane.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gridControlPlane.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
+            gridControlPlane.Location = new Point(10, 230);
+            gridControlPlane.MainView = gridPlane;
+            gridControlPlane.Margin = new Padding(3, 2, 3, 2);
+            gridControlPlane.Name = "gridControlPlane";
+            gridControlPlane.Size = new Size(1642, 310);
+            gridControlPlane.TabIndex = 4;
+            gridControlPlane.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridPlane });
+            gridControlPlane.Load += gridControlPlane_Load;
             // 
             // gridPlane
             // 
-            this.gridPlane.GridControl = (this.gridControlPlane);
-            this.gridPlane.Name = ("gridPlane");
-            this.gridPlane.OptionsBehavior.Editable = (false);
-            this.gridPlane.RowClick += (this.GridPlaneRowClick);
+            gridPlane.DetailHeight = 284;
+            gridPlane.GridControl = gridControlPlane;
+            gridPlane.Name = "gridPlane";
+            gridPlane.OptionsBehavior.Editable = false;
+            gridPlane.RowClick += GridPlaneRowClick;
             // 
             // groupBox7
             // 
-            this.groupBox7.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox7.Controls.Add(this.label39);
-            this.groupBox7.Controls.Add(this.txtRegistration);
-            this.groupBox7.Controls.Add(this.txtPlaneSeat);
-            this.groupBox7.Controls.Add(this.txtManufactor);
-            this.groupBox7.Controls.Add(this.txtPlaneModel);
-            this.groupBox7.Controls.Add(this.buttonDelete_Plane);
-            this.groupBox7.Controls.Add(this.buttonUpdate_Plane);
-            this.groupBox7.Controls.Add(this.buttonAdd_Plane);
-            this.groupBox7.Controls.Add(this.comboBoxPlaneState);
-            this.groupBox7.Controls.Add(this.label42);
-            this.groupBox7.Controls.Add(this.label43);
-            this.groupBox7.Controls.Add(this.label44);
-            this.groupBox7.Controls.Add(this.simpleButton22);
-            this.groupBox7.Controls.Add(this.simpleButton23);
-            this.groupBox7.Controls.Add(this.simpleButton24);
-            this.groupBox7.Controls.Add(this.label45);
-            this.groupBox7.Location = (new global::System.Drawing.Point(12, 15));
-            this.groupBox7.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox7.Name = ("groupBox7");
-            this.groupBox7.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox7.Size = (new global::System.Drawing.Size(1916, 242));
-            this.groupBox7.TabIndex = (3);
-            this.groupBox7.TabStop = (false);
-            this.groupBox7.Text = ("Information plane");
+            groupBox7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox7.Controls.Add(label39);
+            groupBox7.Controls.Add(txtRegistration);
+            groupBox7.Controls.Add(txtPlaneSeat);
+            groupBox7.Controls.Add(txtManufactor);
+            groupBox7.Controls.Add(txtPlaneModel);
+            groupBox7.Controls.Add(buttonDelete_Plane);
+            groupBox7.Controls.Add(buttonUpdate_Plane);
+            groupBox7.Controls.Add(buttonAdd_Plane);
+            groupBox7.Controls.Add(comboBoxPlaneState);
+            groupBox7.Controls.Add(label42);
+            groupBox7.Controls.Add(label43);
+            groupBox7.Controls.Add(label44);
+            groupBox7.Controls.Add(simpleButton22);
+            groupBox7.Controls.Add(simpleButton23);
+            groupBox7.Controls.Add(simpleButton24);
+            groupBox7.Controls.Add(label45);
+            groupBox7.Location = new Point(10, 12);
+            groupBox7.Margin = new Padding(3, 2, 3, 2);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Padding = new Padding(3, 2, 3, 2);
+            groupBox7.Size = new Size(1642, 197);
+            groupBox7.TabIndex = 3;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Information plane";
             // 
             // label39
             // 
-            this.label39.AutoSize = (true);
-            this.label39.Location = (new global::System.Drawing.Point(616, 28));
-            this.label39.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label39.Name = ("label39");
-            this.label39.Size = (new global::System.Drawing.Size(80, 16));
-            this.label39.TabIndex = (40);
-            this.label39.Text = ("Registration:");
+            label39.AutoSize = true;
+            label39.Location = new Point(528, 23);
+            label39.Name = "label39";
+            label39.Size = new Size(69, 13);
+            label39.TabIndex = 40;
+            label39.Text = "Registration:";
             // 
             // txtRegistration
             // 
-            this.txtRegistration.Location = (new global::System.Drawing.Point(730, 25));
-            this.txtRegistration.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtRegistration.Name = ("txtRegistration");
-            this.txtRegistration.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtRegistration.TabIndex = (39);
+            txtRegistration.Location = new Point(626, 20);
+            txtRegistration.Margin = new Padding(3, 2, 3, 2);
+            txtRegistration.Name = "txtRegistration";
+            txtRegistration.Size = new Size(208, 20);
+            txtRegistration.TabIndex = 39;
             // 
             // txtPlaneSeat
             // 
-            this.txtPlaneSeat.Location = (new global::System.Drawing.Point(730, 98));
-            this.txtPlaneSeat.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtPlaneSeat.Name = ("txtPlaneSeat");
-            this.txtPlaneSeat.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtPlaneSeat.TabIndex = (37);
+            txtPlaneSeat.Location = new Point(626, 80);
+            txtPlaneSeat.Margin = new Padding(3, 2, 3, 2);
+            txtPlaneSeat.Name = "txtPlaneSeat";
+            txtPlaneSeat.Size = new Size(208, 20);
+            txtPlaneSeat.TabIndex = 37;
             // 
             // txtManufactor
             // 
-            this.txtManufactor.Location = (new global::System.Drawing.Point(115, 98));
-            this.txtManufactor.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtManufactor.Name = ("txtManufactor");
-            this.txtManufactor.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtManufactor.TabIndex = (36);
+            txtManufactor.Location = new Point(99, 80);
+            txtManufactor.Margin = new Padding(3, 2, 3, 2);
+            txtManufactor.Name = "txtManufactor";
+            txtManufactor.Size = new Size(208, 20);
+            txtManufactor.TabIndex = 36;
             // 
             // txtPlaneModel
             // 
-            this.txtPlaneModel.Location = (new global::System.Drawing.Point(115, 25));
-            this.txtPlaneModel.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtPlaneModel.Name = ("txtPlaneModel");
-            this.txtPlaneModel.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtPlaneModel.TabIndex = (35);
+            txtPlaneModel.Location = new Point(99, 20);
+            txtPlaneModel.Margin = new Padding(3, 2, 3, 2);
+            txtPlaneModel.Name = "txtPlaneModel";
+            txtPlaneModel.Size = new Size(208, 20);
+            txtPlaneModel.TabIndex = 35;
             // 
             // buttonDelete_Plane
             // 
-            this.buttonDelete_Plane.Location = (new global::System.Drawing.Point(855, 193));
-            this.buttonDelete_Plane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonDelete_Plane.Name = ("buttonDelete_Plane");
-            this.buttonDelete_Plane.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonDelete_Plane.TabIndex = (34);
-            this.buttonDelete_Plane.Text = ("Delete");
-            this.buttonDelete_Plane.Click += (this.ButtonDeletePlaneClick);
+            buttonDelete_Plane.Location = new Point(733, 157);
+            buttonDelete_Plane.Margin = new Padding(3, 2, 3, 2);
+            buttonDelete_Plane.Name = "buttonDelete_Plane";
+            buttonDelete_Plane.Size = new Size(101, 29);
+            buttonDelete_Plane.TabIndex = 34;
+            buttonDelete_Plane.Text = "Delete";
+            buttonDelete_Plane.Click += ButtonDeletePlaneClick;
             // 
             // buttonUpdate_Plane
             // 
-            this.buttonUpdate_Plane.Location = (new global::System.Drawing.Point(449, 193));
-            this.buttonUpdate_Plane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonUpdate_Plane.Name = ("buttonUpdate_Plane");
-            this.buttonUpdate_Plane.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonUpdate_Plane.TabIndex = (33);
-            this.buttonUpdate_Plane.Text = ("Update");
-            this.buttonUpdate_Plane.Click += (this.ButtonUpdatePlaneClick);
+            buttonUpdate_Plane.Location = new Point(385, 157);
+            buttonUpdate_Plane.Margin = new Padding(3, 2, 3, 2);
+            buttonUpdate_Plane.Name = "buttonUpdate_Plane";
+            buttonUpdate_Plane.Size = new Size(101, 29);
+            buttonUpdate_Plane.TabIndex = 33;
+            buttonUpdate_Plane.Text = "Update";
+            buttonUpdate_Plane.Click += ButtonUpdatePlaneClick;
             // 
             // buttonAdd_Plane
             // 
-            this.buttonAdd_Plane.Location = (new global::System.Drawing.Point(69, 193));
-            this.buttonAdd_Plane.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.buttonAdd_Plane.Name = ("buttonAdd_Plane");
-            this.buttonAdd_Plane.Size = (new global::System.Drawing.Size(118, 36));
-            this.buttonAdd_Plane.TabIndex = (32);
-            this.buttonAdd_Plane.Text = ("Add");
-            this.buttonAdd_Plane.Click += (this.ButtonAddPlaneClick);
+            buttonAdd_Plane.Location = new Point(59, 157);
+            buttonAdd_Plane.Margin = new Padding(3, 2, 3, 2);
+            buttonAdd_Plane.Name = "buttonAdd_Plane";
+            buttonAdd_Plane.Size = new Size(101, 29);
+            buttonAdd_Plane.TabIndex = 32;
+            buttonAdd_Plane.Text = "Add";
+            buttonAdd_Plane.Click += ButtonAddPlaneClick;
             // 
             // comboBoxPlaneState
             // 
-            this.comboBoxPlaneState.FormattingEnabled = (true);
-            this.comboBoxPlaneState.Location = (new global::System.Drawing.Point(489, 170));
-            this.comboBoxPlaneState.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.comboBoxPlaneState.Name = ("comboBoxPlaneState");
-            this.comboBoxPlaneState.Size = (new global::System.Drawing.Size(78, 24));
-            this.comboBoxPlaneState.TabIndex = (28);
+            comboBoxPlaneState.FormattingEnabled = true;
+            comboBoxPlaneState.Location = new Point(419, 138);
+            comboBoxPlaneState.Margin = new Padding(3, 2, 3, 2);
+            comboBoxPlaneState.Name = "comboBoxPlaneState";
+            comboBoxPlaneState.Size = new Size(67, 21);
+            comboBoxPlaneState.TabIndex = 28;
             // 
             // label42
             // 
-            this.label42.AutoSize = (true);
-            this.label42.Location = (new global::System.Drawing.Point(449, 173));
-            this.label42.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label42.Name = ("label42");
-            this.label42.Size = (new global::System.Drawing.Size(42, 16));
-            this.label42.TabIndex = (26);
-            this.label42.Text = ("State:");
+            label42.AutoSize = true;
+            label42.Location = new Point(385, 141);
+            label42.Name = "label42";
+            label42.Size = new Size(37, 13);
+            label42.TabIndex = 26;
+            label42.Text = "State:";
             // 
             // label43
             // 
-            this.label43.AutoSize = (true);
-            this.label43.Location = (new global::System.Drawing.Point(6, 97));
-            this.label43.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label43.Name = ("label43");
-            this.label43.Size = (new global::System.Drawing.Size(76, 16));
-            this.label43.TabIndex = (23);
-            this.label43.Text = ("Manufactor:");
+            label43.AutoSize = true;
+            label43.Location = new Point(5, 79);
+            label43.Name = "label43";
+            label43.Size = new Size(66, 13);
+            label43.TabIndex = 23;
+            label43.Text = "Manufactor:";
             // 
             // label44
             // 
-            this.label44.AutoSize = (true);
-            this.label44.Location = (new global::System.Drawing.Point(6, 60));
-            this.label44.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label44.Name = ("label44");
-            this.label44.Size = (new global::System.Drawing.Size(46, 16));
-            this.label44.TabIndex = (22);
-            this.label44.Text = ("Model:");
+            label44.AutoSize = true;
+            label44.Location = new Point(5, 49);
+            label44.Name = "label44";
+            label44.Size = new Size(39, 13);
+            label44.TabIndex = 22;
+            label44.Text = "Model:";
             // 
             // simpleButton22
             // 
-            this.simpleButton22.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton22.Location = (new global::System.Drawing.Point(2483, 327));
-            this.simpleButton22.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton22.Name = ("simpleButton22");
-            this.simpleButton22.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton22.TabIndex = (21);
-            this.simpleButton22.Text = ("Delete");
+            simpleButton22.Anchor = AnchorStyles.Right;
+            simpleButton22.Location = new Point(2128, 266);
+            simpleButton22.Margin = new Padding(3, 2, 3, 2);
+            simpleButton22.Name = "simpleButton22";
+            simpleButton22.Size = new Size(101, 29);
+            simpleButton22.TabIndex = 21;
+            simpleButton22.Text = "Delete";
             // 
             // simpleButton23
             // 
-            this.simpleButton23.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton23.Location = (new global::System.Drawing.Point(2347, 327));
-            this.simpleButton23.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton23.Name = ("simpleButton23");
-            this.simpleButton23.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton23.TabIndex = (20);
-            this.simpleButton23.Text = ("Update");
+            simpleButton23.Anchor = AnchorStyles.Right;
+            simpleButton23.Location = new Point(2012, 266);
+            simpleButton23.Margin = new Padding(3, 2, 3, 2);
+            simpleButton23.Name = "simpleButton23";
+            simpleButton23.Size = new Size(101, 29);
+            simpleButton23.TabIndex = 20;
+            simpleButton23.Text = "Update";
             // 
             // simpleButton24
             // 
-            this.simpleButton24.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton24.Location = (new global::System.Drawing.Point(2211, 327));
-            this.simpleButton24.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton24.Name = ("simpleButton24");
-            this.simpleButton24.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton24.TabIndex = (19);
-            this.simpleButton24.Text = ("Add");
+            simpleButton24.Anchor = AnchorStyles.Right;
+            simpleButton24.Location = new Point(1895, 266);
+            simpleButton24.Margin = new Padding(3, 2, 3, 2);
+            simpleButton24.Name = "simpleButton24";
+            simpleButton24.Size = new Size(101, 29);
+            simpleButton24.TabIndex = 19;
+            simpleButton24.Text = "Add";
             // 
             // label45
             // 
-            this.label45.AutoSize = (true);
-            this.label45.Location = (new global::System.Drawing.Point(6, 137));
-            this.label45.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label45.Name = ("label45");
-            this.label45.Size = (new global::System.Drawing.Size(69, 16));
-            this.label45.TabIndex = (8);
-            this.label45.Text = ("Total seat:");
+            label45.AutoSize = true;
+            label45.Location = new Point(5, 111);
+            label45.Name = "label45";
+            label45.Size = new Size(59, 13);
+            label45.TabIndex = 8;
+            label45.Text = "Total seat:";
             // 
             // tabNavigationPage6
             // 
-            this.tabNavigationPage6.Caption = ("Statistics");
-            this.tabNavigationPage6.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.tabNavigationPage6.Name = ("tabNavigationPage6");
-            this.tabNavigationPage6.Size = (new global::System.Drawing.Size(1940, 485));
+            tabNavigationPage6.Caption = "Statistics";
+            tabNavigationPage6.Margin = new Padding(3, 2, 3, 2);
+            tabNavigationPage6.Name = "tabNavigationPage6";
+            tabNavigationPage6.Size = new Size(1663, 549);
             // 
             // tabNavigationPage2
             // 
-            this.tabNavigationPage2.Caption = ("Job");
-            this.tabNavigationPage2.Controls.Add(this.dgvJob);
-            this.tabNavigationPage2.Controls.Add(this.groupBox9);
-            this.tabNavigationPage2.Name = ("tabNavigationPage2");
-            this.tabNavigationPage2.Size = (new global::System.Drawing.Size(1940, 485));
-            this.tabNavigationPage2.Paint += (this.gbJob_Paint);
+            tabNavigationPage2.Caption = "Job";
+            tabNavigationPage2.Controls.Add(dgvJob);
+            tabNavigationPage2.Controls.Add(groupBox9);
+            tabNavigationPage2.Margin = new Padding(3, 2, 3, 2);
+            tabNavigationPage2.Name = "tabNavigationPage2";
+            tabNavigationPage2.Size = new Size(1663, 394);
+            tabNavigationPage2.Paint += gbJob_Paint;
             // 
             // dgvJob
             // 
-            this.dgvJob.Anchor = ((global::System.Windows.Forms.AnchorStyles)((((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Bottom)) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvJob.Location = (new global::System.Drawing.Point(12, 310));
-            this.dgvJob.MainView = (this.gridView2);
-            this.dgvJob.Name = ("dgvJob");
-            this.dgvJob.Size = (new global::System.Drawing.Size(1915, 154));
-            this.dgvJob.TabIndex = (5);
-            this.dgvJob.ViewCollection.AddRange(new global::DevExpress.XtraGrid.Views.Base.BaseView[] { this.gridView2 });
+            dgvJob.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvJob.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
+            dgvJob.Location = new Point(10, 252);
+            dgvJob.MainView = gridView2;
+            dgvJob.Margin = new Padding(3, 2, 3, 2);
+            dgvJob.Name = "dgvJob";
+            dgvJob.Size = new Size(1641, 125);
+            dgvJob.TabIndex = 5;
+            dgvJob.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView2 });
             // 
             // gridView2
             // 
-            this.gridView2.GridControl = (this.dgvJob);
-            this.gridView2.Name = ("gridView2");
+            gridView2.DetailHeight = 284;
+            gridView2.GridControl = dgvJob;
+            gridView2.Name = "gridView2";
             // 
             // groupBox9
             // 
-            this.groupBox9.Anchor = ((global::System.Windows.Forms.AnchorStyles)(((global::System.Windows.Forms.AnchorStyles.Top) | (global::System.Windows.Forms.AnchorStyles.Left)) | (global::System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox9.Controls.Add(this.dtpAssignedDateJob);
-            this.groupBox9.Controls.Add(this.label113);
-            this.groupBox9.Controls.Add(this.txtJobDescription);
-            this.groupBox9.Controls.Add(this.txtFightIDJob);
-            this.groupBox9.Controls.Add(this.btnDeleteJob);
-            this.groupBox9.Controls.Add(this.btnUpdateJob);
-            this.groupBox9.Controls.Add(this.btnAddJob);
-            this.groupBox9.Controls.Add(this.cbStateJob);
-            this.groupBox9.Controls.Add(this.label110);
-            this.groupBox9.Controls.Add(this.label111);
-            this.groupBox9.Controls.Add(this.label112);
-            this.groupBox9.Controls.Add(this.simpleButton25);
-            this.groupBox9.Controls.Add(this.simpleButton26);
-            this.groupBox9.Controls.Add(this.simpleButton27);
-            this.groupBox9.Controls.Add(this.txtEmpIDJob);
-            this.groupBox9.Controls.Add(this.label114);
-            this.groupBox9.Location = (new global::System.Drawing.Point(13, 13));
-            this.groupBox9.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox9.Name = ("groupBox9");
-            this.groupBox9.Padding = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.groupBox9.Size = (new global::System.Drawing.Size(1914, 242));
-            this.groupBox9.TabIndex = (4);
-            this.groupBox9.TabStop = (false);
-            this.groupBox9.Text = ("Information Jobs");
+            groupBox9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox9.Controls.Add(dtpAssignedDateJob);
+            groupBox9.Controls.Add(label113);
+            groupBox9.Controls.Add(txtJobDescription);
+            groupBox9.Controls.Add(txtFightIDJob);
+            groupBox9.Controls.Add(btnDeleteJob);
+            groupBox9.Controls.Add(btnUpdateJob);
+            groupBox9.Controls.Add(btnAddJob);
+            groupBox9.Controls.Add(cbStateJob);
+            groupBox9.Controls.Add(label110);
+            groupBox9.Controls.Add(label111);
+            groupBox9.Controls.Add(label112);
+            groupBox9.Controls.Add(simpleButton25);
+            groupBox9.Controls.Add(simpleButton26);
+            groupBox9.Controls.Add(simpleButton27);
+            groupBox9.Controls.Add(txtEmpIDJob);
+            groupBox9.Controls.Add(label114);
+            groupBox9.Location = new Point(11, 11);
+            groupBox9.Margin = new Padding(3, 2, 3, 2);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Padding = new Padding(3, 2, 3, 2);
+            groupBox9.Size = new Size(1641, 197);
+            groupBox9.TabIndex = 4;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Information Jobs";
             // 
             // dtpAssignedDateJob
             // 
-            this.dtpAssignedDateJob.Location = (new global::System.Drawing.Point(115, 107));
-            this.dtpAssignedDateJob.Name = ("dtpAssignedDateJob");
-            this.dtpAssignedDateJob.Size = (new global::System.Drawing.Size(243, 23));
-            this.dtpAssignedDateJob.TabIndex = (39);
+            dtpAssignedDateJob.Location = new Point(99, 87);
+            dtpAssignedDateJob.Margin = new Padding(3, 2, 3, 2);
+            dtpAssignedDateJob.Name = "dtpAssignedDateJob";
+            dtpAssignedDateJob.Size = new Size(209, 21);
+            dtpAssignedDateJob.TabIndex = 39;
             // 
             // label113
             // 
-            this.label113.AutoSize = (true);
-            this.label113.Location = (new global::System.Drawing.Point(8, 112));
-            this.label113.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label113.Name = ("label113");
-            this.label113.Size = (new global::System.Drawing.Size(93, 16));
-            this.label113.TabIndex = (38);
-            this.label113.Text = ("Assigned Date:");
+            label113.AutoSize = true;
+            label113.Location = new Point(7, 91);
+            label113.Name = "label113";
+            label113.Size = new Size(80, 13);
+            label113.TabIndex = 38;
+            label113.Text = "Assigned Date:";
             // 
             // txtJobDescription
             // 
-            this.txtJobDescription.Location = (new global::System.Drawing.Point(549, 25));
-            this.txtJobDescription.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtJobDescription.Name = ("txtJobDescription");
-            this.txtJobDescription.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtJobDescription.TabIndex = (36);
+            txtJobDescription.Location = new Point(471, 20);
+            txtJobDescription.Margin = new Padding(3, 2, 3, 2);
+            txtJobDescription.Name = "txtJobDescription";
+            txtJobDescription.Size = new Size(208, 20);
+            txtJobDescription.TabIndex = 36;
             // 
             // txtFightIDJob
             // 
-            this.txtFightIDJob.Location = (new global::System.Drawing.Point(115, 62));
-            this.txtFightIDJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtFightIDJob.Name = ("txtFightIDJob");
-            this.txtFightIDJob.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtFightIDJob.TabIndex = (35);
+            txtFightIDJob.Location = new Point(99, 50);
+            txtFightIDJob.Margin = new Padding(3, 2, 3, 2);
+            txtFightIDJob.Name = "txtFightIDJob";
+            txtFightIDJob.Size = new Size(208, 20);
+            txtFightIDJob.TabIndex = 35;
             // 
             // btnDeleteJob
             // 
-            this.btnDeleteJob.Location = (new global::System.Drawing.Point(292, 192));
-            this.btnDeleteJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnDeleteJob.Name = ("btnDeleteJob");
-            this.btnDeleteJob.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnDeleteJob.TabIndex = (34);
-            this.btnDeleteJob.Text = ("Delete");
+            btnDeleteJob.Location = new Point(250, 156);
+            btnDeleteJob.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteJob.Name = "btnDeleteJob";
+            btnDeleteJob.Size = new Size(101, 29);
+            btnDeleteJob.TabIndex = 34;
+            btnDeleteJob.Text = "Delete";
             // 
             // btnUpdateJob
             // 
-            this.btnUpdateJob.Location = (new global::System.Drawing.Point(156, 192));
-            this.btnUpdateJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnUpdateJob.Name = ("btnUpdateJob");
-            this.btnUpdateJob.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnUpdateJob.TabIndex = (33);
-            this.btnUpdateJob.Text = ("Update");
+            btnUpdateJob.Location = new Point(134, 156);
+            btnUpdateJob.Margin = new Padding(3, 2, 3, 2);
+            btnUpdateJob.Name = "btnUpdateJob";
+            btnUpdateJob.Size = new Size(101, 29);
+            btnUpdateJob.TabIndex = 33;
+            btnUpdateJob.Text = "Update";
             // 
             // btnAddJob
             // 
-            this.btnAddJob.Location = (new global::System.Drawing.Point(20, 192));
-            this.btnAddJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.btnAddJob.Name = ("btnAddJob");
-            this.btnAddJob.Size = (new global::System.Drawing.Size(118, 36));
-            this.btnAddJob.TabIndex = (32);
-            this.btnAddJob.Text = ("Add");
-            this.btnAddJob.Click += (this.btnAddJob_Click);
+            btnAddJob.Location = new Point(17, 156);
+            btnAddJob.Margin = new Padding(3, 2, 3, 2);
+            btnAddJob.Name = "btnAddJob";
+            btnAddJob.Size = new Size(101, 29);
+            btnAddJob.TabIndex = 32;
+            btnAddJob.Text = "Add";
+            btnAddJob.Click += btnAddJob_Click;
             // 
             // cbStateJob
             // 
-            this.cbStateJob.FormattingEnabled = (true);
-            this.cbStateJob.Items.AddRange(new global::System.Object[] { "Pending", "Not success", "Successfull" });
-            this.cbStateJob.Location = (new global::System.Drawing.Point(549, 60));
-            this.cbStateJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.cbStateJob.Name = ("cbStateJob");
-            this.cbStateJob.Size = (new global::System.Drawing.Size(243, 24));
-            this.cbStateJob.TabIndex = (28);
+            cbStateJob.FormattingEnabled = true;
+            cbStateJob.Items.AddRange(new object[] { "Pending", "Not success", "Successfull" });
+            cbStateJob.Location = new Point(471, 49);
+            cbStateJob.Margin = new Padding(3, 2, 3, 2);
+            cbStateJob.Name = "cbStateJob";
+            cbStateJob.Size = new Size(209, 21);
+            cbStateJob.TabIndex = 28;
             // 
             // label110
             // 
-            this.label110.AutoSize = (true);
-            this.label110.Location = (new global::System.Drawing.Point(443, 65));
-            this.label110.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label110.Name = ("label110");
-            this.label110.Size = (new global::System.Drawing.Size(42, 16));
-            this.label110.TabIndex = (26);
-            this.label110.Text = ("State:");
+            label110.AutoSize = true;
+            label110.Location = new Point(380, 53);
+            label110.Name = "label110";
+            label110.Size = new Size(37, 13);
+            label110.TabIndex = 26;
+            label110.Text = "State:";
             // 
             // label111
             // 
-            this.label111.AutoSize = (true);
-            this.label111.Location = (new global::System.Drawing.Point(443, 27));
-            this.label111.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label111.Name = ("label111");
-            this.label111.Size = (new global::System.Drawing.Size(98, 16));
-            this.label111.TabIndex = (23);
-            this.label111.Text = ("Job Description:");
+            label111.AutoSize = true;
+            label111.Location = new Point(380, 22);
+            label111.Name = "label111";
+            label111.Size = new Size(84, 13);
+            label111.TabIndex = 23;
+            label111.Text = "Job Description:";
             // 
             // label112
             // 
-            this.label112.AutoSize = (true);
-            this.label112.Location = (new global::System.Drawing.Point(7, 59));
-            this.label112.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label112.Name = ("label112");
-            this.label112.Size = (new global::System.Drawing.Size(52, 16));
-            this.label112.TabIndex = (22);
-            this.label112.Text = ("FightID:");
+            label112.AutoSize = true;
+            label112.Location = new Point(6, 48);
+            label112.Name = "label112";
+            label112.Size = new Size(46, 13);
+            label112.TabIndex = 22;
+            label112.Text = "FightID:";
             // 
             // simpleButton25
             // 
-            this.simpleButton25.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton25.Location = (new global::System.Drawing.Point(3296, 398));
-            this.simpleButton25.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton25.Name = ("simpleButton25");
-            this.simpleButton25.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton25.TabIndex = (21);
-            this.simpleButton25.Text = ("Delete");
+            simpleButton25.Anchor = AnchorStyles.Right;
+            simpleButton25.Location = new Point(2825, 323);
+            simpleButton25.Margin = new Padding(3, 2, 3, 2);
+            simpleButton25.Name = "simpleButton25";
+            simpleButton25.Size = new Size(101, 29);
+            simpleButton25.TabIndex = 21;
+            simpleButton25.Text = "Delete";
             // 
             // simpleButton26
             // 
-            this.simpleButton26.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton26.Location = (new global::System.Drawing.Point(3160, 398));
-            this.simpleButton26.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton26.Name = ("simpleButton26");
-            this.simpleButton26.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton26.TabIndex = (20);
-            this.simpleButton26.Text = ("Update");
+            simpleButton26.Anchor = AnchorStyles.Right;
+            simpleButton26.Location = new Point(2709, 323);
+            simpleButton26.Margin = new Padding(3, 2, 3, 2);
+            simpleButton26.Name = "simpleButton26";
+            simpleButton26.Size = new Size(101, 29);
+            simpleButton26.TabIndex = 20;
+            simpleButton26.Text = "Update";
             // 
             // simpleButton27
             // 
-            this.simpleButton27.Anchor = (global::System.Windows.Forms.AnchorStyles.Right);
-            this.simpleButton27.Location = (new global::System.Drawing.Point(3024, 398));
-            this.simpleButton27.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.simpleButton27.Name = ("simpleButton27");
-            this.simpleButton27.Size = (new global::System.Drawing.Size(118, 36));
-            this.simpleButton27.TabIndex = (19);
-            this.simpleButton27.Text = ("Add");
+            simpleButton27.Anchor = AnchorStyles.Right;
+            simpleButton27.Location = new Point(2592, 323);
+            simpleButton27.Margin = new Padding(3, 2, 3, 2);
+            simpleButton27.Name = "simpleButton27";
+            simpleButton27.Size = new Size(101, 29);
+            simpleButton27.TabIndex = 19;
+            simpleButton27.Text = "Add";
             // 
             // txtEmpIDJob
             // 
-            this.txtEmpIDJob.Location = (new global::System.Drawing.Point(115, 25));
-            this.txtEmpIDJob.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.txtEmpIDJob.Name = ("txtEmpIDJob");
-            this.txtEmpIDJob.Size = (new global::System.Drawing.Size(243, 22));
-            this.txtEmpIDJob.TabIndex = (1);
+            txtEmpIDJob.Location = new Point(99, 20);
+            txtEmpIDJob.Margin = new Padding(3, 2, 3, 2);
+            txtEmpIDJob.Name = "txtEmpIDJob";
+            txtEmpIDJob.Size = new Size(208, 20);
+            txtEmpIDJob.TabIndex = 1;
             // 
             // label114
             // 
-            this.label114.AutoSize = (true);
-            this.label114.Location = (new global::System.Drawing.Point(7, 27));
-            this.label114.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.label114.Name = ("label114");
-            this.label114.Size = (new global::System.Drawing.Size(83, 16));
-            this.label114.TabIndex = (0);
-            this.label114.Text = ("Employee ID:");
+            label114.AutoSize = true;
+            label114.Location = new Point(6, 22);
+            label114.Name = "label114";
+            label114.Size = new Size(71, 13);
+            label114.TabIndex = 0;
+            label114.Text = "Employee ID:";
             // 
             // textEdit22
             // 
-            this.textEdit22.Location = (new global::System.Drawing.Point(0, 0));
-            this.textEdit22.Name = ("textEdit22");
-            this.textEdit22.Size = (new global::System.Drawing.Size(125, 25));
-            this.textEdit22.TabIndex = (0);
+            textEdit22.Location = new Point(0, 0);
+            textEdit22.Name = "textEdit22";
+            textEdit22.Size = new Size(125, 25);
+            textEdit22.TabIndex = 0;
             // 
             // label46
             // 
-            this.label46.Location = (new global::System.Drawing.Point(0, 0));
-            this.label46.Name = ("label46");
-            this.label46.Size = (new global::System.Drawing.Size(100, 23));
-            this.label46.TabIndex = (0);
-            // 
-            // labelFliPrice
-            // 
-            this.labelFliPrice.AutoSize = (true);
-            this.labelFliPrice.Location = (new global::System.Drawing.Point(735, 82));
-            this.labelFliPrice.Margin = (new global::System.Windows.Forms.Padding(4, 0, 4, 0));
-            this.labelFliPrice.Name = ("labelFliPrice");
-            this.labelFliPrice.Size = (new global::System.Drawing.Size(40, 16));
-            this.labelFliPrice.TabIndex = (38);
-            this.labelFliPrice.Text = ("Price:");
-            // 
-            // textFliPrice
-            // 
-            this.textFliPrice.Location = (new global::System.Drawing.Point(828, 81));
-            this.textFliPrice.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.textFliPrice.Name = ("textFliPrice");
-            this.textFliPrice.Size = (new global::System.Drawing.Size(150, 22));
-            this.textFliPrice.TabIndex = (39);
+            label46.Location = new Point(0, 0);
+            label46.Name = "label46";
+            label46.Size = new Size(100, 23);
+            label46.TabIndex = 0;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = (new global::System.Drawing.SizeF(7F, 16F));
-            this.AutoScaleMode = (global::System.Windows.Forms.AutoScaleMode.Font);
-            this.ClientSize = (new global::System.Drawing.Size(1940, 860));
-            this.Controls.Add(this.tabControls);
-            this.Margin = (new global::System.Windows.Forms.Padding(4, 2, 4, 2));
-            this.MaximizeBox = (false);
-            this.Name = ("Main");
-            this.Text = ("Main");
-            this.WindowState = (global::System.Windows.Forms.FormWindowState.Maximized);
-            ((global::System.ComponentModel.ISupportInitialize)(this.tabControls)).EndInit();
-            this.tabControls.ResumeLayout(false);
-            this.tabNavigationPage1.ResumeLayout(false);
-            this.groupBoxSeat.ResumeLayout(false);
-            this.groupBoxSeat.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlTicket)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridTicket)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).EndInit();
-            this.tpCustomer.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.gcCustomer)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gvCustomer)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerPhone.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerNationality.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerEmail.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerID.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerAddress.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtCustomerName.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).EndInit();
-            this.tp.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPasswordEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtUsernameEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPositionEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPhoneEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtNationalityEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmailEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtNationalIDEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtAddressEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtNameEmployee.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gvEmploy)).EndInit();
-            this.tabNavigationFlight.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlFlight)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridViewFlight)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textAirline.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textFlightID.Properties)).EndInit();
-            this.tabNavigationPage5.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridControlPlane)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridPlane)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtRegistration.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneSeat.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtManufactor.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtPlaneModel.Properties)).EndInit();
-            this.tabNavigationPage2.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.dgvJob)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtJobDescription.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtFightIDJob.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.txtEmpIDJob.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.textFliPrice.Properties)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(6F, 13F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1384, 427);
+            Controls.Add(tabControls);
+            Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
+            Name = "Main";
+            Text = "Main";
+            WindowState = FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)tabControls).EndInit();
+            tabControls.ResumeLayout(false);
+            tabNavigationPage1.ResumeLayout(false);
+            groupBoxSeat.ResumeLayout(false);
+            groupBoxSeat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)gridTicket).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
+            tpCustomer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gcCustomer).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gvCustomer).EndInit();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerPhone.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerNationality.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerEmail.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerNationalID.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).EndInit();
+            tp.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)txtPasswordEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtUsernameEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPositionEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPhoneEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtNationalityEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtEmailEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtNationalIDEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtAddressEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtNameEmployee.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtEmployeeID.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmployee).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gvEmploy).EndInit();
+            tabNavigationFlight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridControlFlight).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewFlight).EndInit();
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)textAirline.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textFlightID.Properties).EndInit();
+            tabNavigationPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridControlPlane).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridPlane).EndInit();
+            groupBox7.ResumeLayout(false);
+            groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)txtRegistration.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPlaneSeat.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtManufactor.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPlaneModel.Properties).EndInit();
+            tabNavigationPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvJob).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridView2).EndInit();
+            groupBox9.ResumeLayout(false);
+            groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)txtJobDescription.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtFightIDJob.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtEmpIDJob.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit22.Properties).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -2846,8 +2821,8 @@
         private DevExpress.XtraBars.Navigation.TabPane tabControls;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tpCustomer;
-        private DevExpress.XtraGrid.GridControl gridControlTicket;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridTicket;
+        private DevExpress.XtraGrid.GridControl gridTicket;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private GroupBox groupBox1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
         private DevExpress.XtraGrid.GridControl dgvEmployee;
@@ -2880,23 +2855,15 @@
         private DevExpress.XtraEditors.TextEdit txtPhoneEmployee;
         private GroupBox groupBox4;
         private GroupBox groupBox3;
-        private DateTimePicker dateTimePicker2;
         private Label label15;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
         private Label label14;
         private Label label13;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
         private Label label10;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
         private Label label11;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private RadioButton radioButton3;
         private Label label12;
-        private RadioButton radioButton4;
         private DevExpress.XtraEditors.SimpleButton buttonDeleteTicket;
         private DevExpress.XtraEditors.SimpleButton buttonUpdateTicket;
         private DevExpress.XtraEditors.SimpleButton buttonAddTicket;
-        private DevExpress.XtraEditors.TextEdit textEdit16;
         private Label label21;
         private Label label23;
         private DevExpress.XtraEditors.TextEdit textEdit12;
@@ -2922,7 +2889,7 @@
         private Label label25;
         private Label label26;
         private Label label27;
-        private DevExpress.XtraEditors.TextEdit txtCustomerID;
+        private DevExpress.XtraEditors.TextEdit txtCustomerNationalID;
         private Label label28;
         private DateTimePicker dtpCustomerDate;
         private Label label29;
@@ -2932,7 +2899,7 @@
         private Label label31;
         private DevExpress.XtraEditors.TextEdit txtCustomerAddress;
         private DevExpress.XtraEditors.TextEdit txtCustomerName;
-        private DevExpress.XtraEditors.TextEdit textEdit21;
+        private DevExpress.XtraEditors.TextEdit txtCustomerID;
         private Label label32;
         private DevExpress.XtraGrid.GridControl gcCustomer;
         private DevExpress.XtraGrid.Views.Grid.GridView gvCustomer;
@@ -3069,7 +3036,12 @@
         private Label A01;
         private Label label48;
         private global::System.Windows.Forms.Label label49;
-        private global::DevExpress.XtraEditors.TextEdit textFliPrice;
-        private global::System.Windows.Forms.Label labelFliPrice;
+        private Label lbTicketCustomerSex;
+        private Label lbTicketCustomerAddress;
+        private Label lbTicketCustomerName;
+        private Label lbTicketCustomerID;
+        private Label lbTicketCustomerNationalID;
+        private Label lbTicketCustomerDoB;
+        private Label lbTicketCustomerPhone;
     }
 }
