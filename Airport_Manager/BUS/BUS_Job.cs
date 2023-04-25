@@ -30,35 +30,5 @@ namespace BUS
             }
             return 0;
         }
-
-        public int UpdateJob(Job job)
-        {
-            DAL_Job dalJob = new DAL_Job();
-            if (dalJob.CheckExitJob(job.JobID) == true)
-            {
-                if (dalJob.UpdateJob(job) == true)
-                    return 1;
-                else
-                    return 0;// update fail
-            }
-            else
-                return 2; //Job not exited
-
-        }
-
-        public int DeleteJob(Job job)
-        {
-            DAL_Job dalJob = new DAL_Job();
-            if (dalJob.CheckExitJob(job.JobID) == false)
-                return 2; //NOT EXIT Job
-            else
-            {
-                if (dalJob.DeleteJob(job) == true)
-                    return 1; // Delete Success
-                else
-                    return 0;
-            }
-        }
     }
-
 }
