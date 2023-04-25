@@ -58,12 +58,18 @@ namespace GUI
         void btnAddCustomer_Click(object sender, EventArgs e)
         {
             if (txtCustomerNationalID.Text != null && !txtCustomerNationalID.Text.IsEmptyOrSingle()
-               && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
-               && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
-               && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
-               && txtCustomerNationality.Text != null && !txtCustomerNationality.Text.IsEmptyOrSingle()
-               && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
-               && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
+                                                   && txtCustomerPhone.Text != null &&
+                                                   !txtCustomerPhone.Text.IsEmptyOrSingle()
+                                                   && txtCustomerName.Text != null &&
+                                                   !txtCustomerName.Text.IsEmptyOrSingle()
+                                                   && txtCustomerEmail.Text != null &&
+                                                   !txtCustomerEmail.Text.IsEmptyOrSingle()
+                                                   && txtCustomerNationality.Text != null &&
+                                                   !txtCustomerNationality.Text.IsEmptyOrSingle()
+                                                   && txtCustomerAddress.Text != null &&
+                                                   !txtCustomerAddress.Text.IsEmptyOrSingle()
+                                                   && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true ||
+                                                       rbCustomerFemale.Checked == true))
             {
                 string customerID = txtCustomerNationalID.Text.Trim();
                 string customerName = txtCustomerName.Text.Trim();
@@ -97,7 +103,8 @@ namespace GUI
                 {
                     if (bCustomer.addCustomer(customer))
                     {
-                        MessageBox.Show("Add customer successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Add customer successfully", "Success", MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
                         gcCustomer.DataSource = bCustomer.getCustomerList();
                     }
                     else
@@ -112,7 +119,8 @@ namespace GUI
             }
             else
             {
-                MessageBox.Show("Not enough infomation about customer", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Not enough infomation about customer", "Warning", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
             }
         }
 
@@ -135,6 +143,7 @@ namespace GUI
                 {
                     lbTicketCustomerSex.Text = "Nam";
                 }
+
                 lbTicketCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
             }
             else if (e.Clicks == 1) //fetch data to textfield
@@ -169,12 +178,19 @@ namespace GUI
             if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
             {
                 if (txtCustomerNationalID.Text != null && !txtCustomerNationalID.Text.IsEmptyOrSingle()
-               && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
-               && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
-               && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
-               && txtCustomerNationality.Text != null && !txtCustomerNationality.Text.IsEmptyOrSingle()
-               && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
-               && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
+                                                       && txtCustomerPhone.Text != null &&
+                                                       !txtCustomerPhone.Text.IsEmptyOrSingle()
+                                                       && txtCustomerName.Text != null &&
+                                                       !txtCustomerName.Text.IsEmptyOrSingle()
+                                                       && txtCustomerEmail.Text != null &&
+                                                       !txtCustomerEmail.Text.IsEmptyOrSingle()
+                                                       && txtCustomerNationality.Text != null &&
+                                                       !txtCustomerNationality.Text.IsEmptyOrSingle()
+                                                       && txtCustomerAddress.Text != null &&
+                                                       !txtCustomerAddress.Text.IsEmptyOrSingle()
+                                                       && dtpCustomerDate.Text != null &&
+                                                       (rbCustomerMale.Checked == true ||
+                                                        rbCustomerFemale.Checked == true))
                 {
                     var current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
                     var updated_customer = new Customer();
@@ -184,7 +200,8 @@ namespace GUI
                     updated_customer.Email = txtCustomerEmail.Text.Trim();
                     updated_customer.Address = txtCustomerAddress.Text.Trim();
                     updated_customer.TeleNumber = txtCustomerPhone.Text.Trim();
-                    updated_customer.DateOfBirth = DateTime.ParseExact(dtpCustomerDate.Value.ToString("dd/MM/yyyy"), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    updated_customer.DateOfBirth = DateTime.ParseExact(dtpCustomerDate.Value.ToString("dd/MM/yyyy"),
+                        "dd/MM/yyyy", CultureInfo.InvariantCulture);
                     updated_customer.Nationality = txtCustomerNationality.Text.Trim();
 
                     if (rbCustomerFemale.Checked)
@@ -200,12 +217,14 @@ namespace GUI
                     {
                         if (bCustomer.updateCustomer(updated_customer))
                         {
-                            MessageBox.Show("Update customer successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Update customer successfully", "Success", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
                             gcCustomer.DataSource = bCustomer.getCustomerList();
                         }
                         else
                         {
-                            MessageBox.Show("Update customer failure", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Update customer failure", "Error", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
                         }
                     }
                     catch (Exception ex)
@@ -218,7 +237,8 @@ namespace GUI
 
         void btnCustomerDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question) == DialogResult.OK)
             {
                 if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
                 {
@@ -249,6 +269,7 @@ namespace GUI
                 comboBoxPlaneState.Items.Add("Free");
                 comboBoxPlaneState.Items.Add("Busy");
             }
+
             comboBoxPlaneState.Text = "Free";
         }
 
@@ -286,7 +307,8 @@ namespace GUI
                 {
                     if (planebus.AddPlane(obj))
                     {
-                        MessageBox.Show(@"Add plane successful!!!", @"SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(@"Add plane successful!!!", @"SUCCESS", MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
                         gcCustomer.DataSource = bCustomer.getCustomerList();
                     }
                     else
@@ -312,7 +334,8 @@ namespace GUI
                 if (txtPlaneModel.Text != null && !txtPlaneModel.Text.IsEmptyOrSingle()
                                                && txtManufactor.Text != null && !txtManufactor.Text.IsEmptyOrSingle()
                                                && txtPlaneSeat.Text != null && !txtPlaneSeat.Text.IsEmptyOrSingle()
-                                               && txtRegistration.Text != null && !txtRegistration.Text.IsEmptyOrSingle()
+                                               && txtRegistration.Text != null &&
+                                               !txtRegistration.Text.IsEmptyOrSingle()
                                                && comboBoxPlaneState != null)
                 {
                     var pickedPlane = (Plane)gridPlane.GetRow(gridPlane.FocusedRowHandle);
@@ -328,12 +351,14 @@ namespace GUI
                     {
                         if (planebus.UpdatePlane(updatePlane))
                         {
-                            MessageBox.Show(@"Update plane successful", @"SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(@"Update plane successful", @"SUCCESS", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
                             gcCustomer.DataSource = bCustomer.getCustomerList();
                         }
                         else
                         {
-                            MessageBox.Show(@"Update plane failed", @"ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(@"Update plane failed", @"ERROR", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
                         }
                     }
                     catch (Exception ex)
@@ -416,9 +441,10 @@ namespace GUI
         void buttonAddFlight_Click(object sender, EventArgs e)
         {
             if (textAirline.Text != null && !textAirline.Text.IsEmptyOrSingle()
-                                           && comboBoxDepart.SelectedItem != comboBoxDesti.SelectedItem)
+                                         && comboBoxDepart.SelectedItem != comboBoxDesti.SelectedItem)
             {
-                var daTime = dateDepartPicker.Value.ToString("yyyy/MM/dd") + " " + timeDepartPicker.Value.ToString("HH:mm:ss");
+                var daTime = dateDepartPicker.Value.ToString("yyyy/MM/dd") + " " +
+                             timeDepartPicker.Value.ToString("HH:mm:ss");
                 var planeFl = (Plane)comboBoxPlane.SelectedItem;
                 var loDes = (Location)comboBoxDepart.SelectedItem;
                 var loDep = (Location)comboBoxDesti.SelectedItem;
@@ -437,7 +463,8 @@ namespace GUI
                 {
                     if (flightbus.AddFlights(obj))
                     {
-                        MessageBox.Show(@"Add flight successful!!!", @"SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(@"Add flight successful!!!", @"SUCCESS", MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
                         gcCustomer.DataSource = bCustomer.getCustomerList();
                     }
                     else
@@ -461,11 +488,12 @@ namespace GUI
             if (gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle) != null)
             {
                 if (textAirline.Text != null && !textAirline.Text.IsEmptyOrSingle()
-                                                && comboBoxDepart.SelectedItem != comboBoxDesti.SelectedItem)
+                                             && comboBoxDepart.SelectedItem != comboBoxDesti.SelectedItem)
                 {
                     var pickedFlight = (Flight)gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle);
                     var updatedFlight = new Flight();
-                    var daTime = dateDepartPicker.Value.ToString("yyyy/MM/dd") + " " + timeDepartPicker.Value.ToString("HH:mm:ss");
+                    var daTime = dateDepartPicker.Value.ToString("yyyy/MM/dd") + " " +
+                                 timeDepartPicker.Value.ToString("HH:mm:ss");
                     var planeFl = (Plane)comboBoxDepart.SelectedItem;
                     var loDes = (Location)comboBoxDepart.SelectedItem;
                     var loDep = (Location)comboBoxDesti.SelectedItem;
@@ -481,12 +509,14 @@ namespace GUI
                     {
                         if (flightbus.UpdateFlights(updatedFlight))
                         {
-                            MessageBox.Show(@"Update flight successful", @"SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(@"Update flight successful", @"SUCCESS", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
                             gcCustomer.DataSource = bCustomer.getCustomerList();
                         }
                         else
                         {
-                            MessageBox.Show(@"Update flight failed", @"ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(@"Update flight failed", @"ERROR", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
                         }
                     }
                     catch (Exception ex)
@@ -496,7 +526,8 @@ namespace GUI
                 }
                 else
                 {
-                    MessageBox.Show(@"Missing flight data!!!", @"WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(@"Missing flight data!!!", @"WARNING", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
                 }
             }
             else
@@ -544,6 +575,7 @@ namespace GUI
                 dgvEmployee.DataSource = db.Employees.ToList<Employee>();
             }
         }
+
         void LoadDataGridViewJob()
         {
             using (AirportManager db = new AirportManager())
@@ -551,6 +583,7 @@ namespace GUI
                 dgvJob.DataSource = db.Jobs.ToList<Job>();
             }
         }
+
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
             Employee employee = new Employee();
@@ -560,7 +593,10 @@ namespace GUI
             DAL_Account dalAccount = new DAL_Account();
             DAL_Employee dalEmployee = new DAL_Employee();
 
-            if (String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text))
+            if (String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) ||
+                String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) ||
+                String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) ||
+                String.IsNullOrEmpty(txtPhoneEmployee.Text))
             {
                 MessageBox.Show("Please enter all the information!");
             }
@@ -584,7 +620,8 @@ namespace GUI
 
                 if (busEmp.AddEmployee(employee) == 1)
                 {
-                    account.EmployeeID = dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
+                    account.EmployeeID =
+                        dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
                     account.Username = txtUsernameEmployee.Text.Trim();
                     account.Password = txtPasswordEmployee.Text.Trim();
                     account.AccessLevel = false;
@@ -609,14 +646,11 @@ namespace GUI
                 {
                     if (busEmp.AddEmployee(employee) == 0)
                         MessageBox.Show("Add Employee Fail");
-                    else
-                        if (busEmp.AddEmployee(employee) == 2)
+                    else if (busEmp.AddEmployee(employee) == 2)
                         MessageBox.Show("Exited Phone");
-                    else
-                            if (busEmp.AddEmployee(employee) == 3)
+                    else if (busEmp.AddEmployee(employee) == 3)
                         MessageBox.Show("Exited NationalID");
-                    else
-                                if (busEmp.AddEmployee(employee) == 4)
+                    else if (busEmp.AddEmployee(employee) == 4)
                         MessageBox.Show("Exited NationalID and Phone");
                     else
                         MessageBox.Show("Something wrong");
@@ -668,7 +702,8 @@ namespace GUI
             }
             else
             {
-                if (MessageBox.Show("Do you want to delete this employee?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Do you want to delete this employee?", "", MessageBoxButtons.YesNo) ==
+                    DialogResult.Yes)
                 {
                     if (dalEmployee.CheckExitEmployee(Int32.Parse(txtEmployeeID.Text)) == false)
                     {
@@ -702,7 +737,11 @@ namespace GUI
             DAL_Account dalAccount = new DAL_Account();
             DAL_Employee dalEmployee = new DAL_Employee();
 
-            if (String.IsNullOrEmpty(txtEmployeeID.Text) || String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtUsernameEmployee.Text) || String.IsNullOrEmpty(txtPasswordEmployee.Text))
+            if (String.IsNullOrEmpty(txtEmployeeID.Text) || String.IsNullOrEmpty(txtNameEmployee.Text) ||
+                String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) ||
+                String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) ||
+                String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtUsernameEmployee.Text) ||
+                String.IsNullOrEmpty(txtPasswordEmployee.Text))
             {
                 MessageBox.Show("Please enter all the information!");
             }
@@ -731,7 +770,8 @@ namespace GUI
                 {
                     if (busEmp.UpdateEmployee(employee) == 1)
                     {
-                        account.EmployeeID = dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
+                        account.EmployeeID =
+                            dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
                         account.Username = txtUsernameEmployee.Text.Trim();
                         account.Password = txtPasswordEmployee.Text.Trim();
                         account.AccessLevel = false;
@@ -745,45 +785,10 @@ namespace GUI
 
             }
         }
+
         private void txtPasswordEmployee_EditValueChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnAddJob_Click(object sender, EventArgs e)
-        {
-            BUS_Job busJob = new BUS_Job();
-            Job job = new Job();
-            if (String.IsNullOrEmpty(txtEmpIDJob.Text) || String.IsNullOrEmpty(txtFightIDJob.Text) || String.IsNullOrEmpty(txtJobDescription.Text) || cbStateJob.SelectedItem == null)
-            {
-                MessageBox.Show("Please enter all the information!");
-            }
-            else
-            {
-                job.AssignedDate = dtpAssignedDateJob.Value.Date;
-                job.EmployeeID = int.Parse(txtEmpIDJob.Text.Trim());
-                job.FlightID = int.Parse(txtFightIDJob.Text.Trim());
-                job.JobDescription = txtJobDescription.Text.Trim();
-                job.JobState = cbStateJob.Text;
-                if (busJob.AddJob(job) == 1)
-                {
-                    MessageBox.Show(" Add job successfull");
-                }
-                else
-                {
-                    if (busJob.AddJob(job) == 2)
-                    {
-                        MessageBox.Show("NOT EXIT FLIGHTID");
-                    }
-                    else
-                    {
-                        if (busJob.AddJob(job) == 3)
-                        {
-
-                        }
-                    }
-                }
-            }
         }
 
         // Ticket Controller
@@ -807,7 +812,10 @@ namespace GUI
                 comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
                 comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
             }
-            catch (Exception ex) { MessageBox.Show("I don't believe it"); }
+            catch (Exception ex)
+            {
+                MessageBox.Show("I don't believe it");
+            }
         }
 
         private async void buttonAddTicket_Click(object sender, EventArgs e)
@@ -833,6 +841,7 @@ namespace GUI
             {
                 gridTicket.DataSource = ticketbus.GetListBills();
             }
+
             await Task.Delay(100);
             Flight f = flightbus.getFlightbyID(datez.FlightID);
             loadSeatFlight(f, -1);
@@ -860,6 +869,7 @@ namespace GUI
                 seat.BackColor = Color.Gray;
                 seat.Click += new EventHandler(changeStageSeat);
             }
+
             current_seat = null;
             seats.Sort((s1, s2) => String.Compare(s1.Name, s2.Name));
             return seats;
@@ -883,9 +893,11 @@ namespace GUI
                             current_seat = seat;
                             break;
                         }
+
                         seat.BackColor = Color.Red;
                         break;
                     }
+
                     seat.BackColor = Color.Gray;
                 }
             }
@@ -920,10 +932,12 @@ namespace GUI
                 {
                     var new_flight = (Flight)comboBoxTickDateDepart.SelectedItem;
 
-                    if (!String.Equals(updated_ticket.SeatNumber, current_seat.Name) || !(updated_ticket.FlightID == new_flight.FlightID))
+                    if (!String.Equals(updated_ticket.SeatNumber, current_seat.Name) ||
+                        !(updated_ticket.FlightID == new_flight.FlightID))
                     {
                         updated_ticket.SeatNumber = current_seat.Name;
-                        if (current_seat.Name.Substring(0, 1).Equals("A") || current_seat.Name.Substring(0, 1).Equals("B"))
+                        if (current_seat.Name.Substring(0, 1).Equals("A") ||
+                            current_seat.Name.Substring(0, 1).Equals("B"))
                             updated_ticket.SeatClass = true;
                         else
                             updated_ticket.SeatClass = false;
@@ -943,7 +957,8 @@ namespace GUI
                 }
                 else
                 {
-                    MessageBox.Show("Choose flight then choose seat", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Choose flight then choose seat", "Warning", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
                 }
             }
         }
@@ -956,7 +971,8 @@ namespace GUI
                 textEdit14.Text = pickedTick.BillID.ToString();
                 comboBoxTickDepart.SelectedValue = pickedTick.Flight.Location.LocationID;
                 comboBoxTickDesti.SelectedValue = pickedTick.Flight.Location1.LocationID;
-                comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(pickedTick.Flight.Location.LocationID, pickedTick.Flight.Location1.LocationID);
+                comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(pickedTick.Flight.Location.LocationID,
+                    pickedTick.Flight.Location1.LocationID);
                 comboBoxTickDateDepart.ValueMember = "FlightID";
                 comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
                 comboBoxTickDateDepart.SelectedValue = pickedTick.Flight.FlightID;
@@ -982,13 +998,26 @@ namespace GUI
         // Statistics Controller
         private void AmountOfTicketHandler(DateTime date)
         {
-            Func<ChartPoint, string> lablePoint = chartpoint => string.Format("{0}, {1:P}", chartpoint.Y, chartpoint.Participation);
+            Func<ChartPoint, string> lablePoint = chartpoint =>
+                string.Format("{0}, {1:P}", chartpoint.Y, chartpoint.Participation);
             SeriesCollection series = new SeriesCollection();
             List<Bill_Detail> tickets = ticketbus.getTicketListByDate(date);
             lbAoNormal.Text = tickets.Count(t => t.SeatClass == false).ToString();
             lbAoVIP.Text = tickets.Count(t => t.SeatClass == true).ToString();
-            series.Add(new PieSeries() { Title = "Normal Tickets", Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == false) }, DataLabels = true, LabelPoint = lablePoint });
-            series.Add(new PieSeries() { Title = "VIP Tickets", Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == true) }, DataLabels = true, LabelPoint = lablePoint });
+            series.Add(new PieSeries()
+            {
+                Title = "Normal Tickets",
+                Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == false) },
+                DataLabels = true,
+                LabelPoint = lablePoint
+            });
+            series.Add(new PieSeries()
+            {
+                Title = "VIP Tickets",
+                Values = new ChartValues<int> { tickets.Count(t => t.SeatClass == true) },
+                DataLabels = true,
+                LabelPoint = lablePoint
+            });
             pieStatistics.Series = series;
             pieStatistics.LegendLocation = LegendLocation.Bottom;
         }
@@ -1007,7 +1036,8 @@ namespace GUI
                 Total = t.Sum(ta => ta.TotalPrice),
             }).ToList();
 
-            ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<decimal>(), LabelPoint = point => point.Y.ToString() };
+            ColumnSeries col = new ColumnSeries()
+            { DataLabels = true, Values = new ChartValues<decimal>(), LabelPoint = point => point.Y.ToString() };
             Axis ax = new Axis() { Separator = new Separator() { Step = 1, IsEnabled = true } };
             ax.Labels = new List<string>();
             foreach (var x in total)
@@ -1043,7 +1073,8 @@ namespace GUI
         {
             BUS_Job busJob = new BUS_Job();
             Job job = new Job();
-            if (String.IsNullOrEmpty(txtEmployeeIDJob.Text) || String.IsNullOrEmpty(txtFlightIDJob.Text) || String.IsNullOrEmpty(txtJobDescription.Text) || cbJobState.SelectedItem == null)
+            if (String.IsNullOrEmpty(txtEmployeeIDJob.Text) || String.IsNullOrEmpty(txtFlightIDJob.Text) ||
+                String.IsNullOrEmpty(txtJobDescription.Text) || cbJobState.SelectedItem == null)
             {
                 MessageBox.Show("Please enter all the information!");
             }
@@ -1158,8 +1189,10 @@ namespace GUI
                     }
                     else
                         MessageBox.Show("Delete Job successfully");
+
                     LoadDataGridViewJob();
                 }
             }
+        }
     }
 }
