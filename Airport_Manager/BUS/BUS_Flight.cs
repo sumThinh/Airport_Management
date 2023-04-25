@@ -19,7 +19,7 @@ namespace BUS
 
         public bool AddFlights(Flight flight)
         {
-            return flights.AddFlight(flight.PlaneID, flight.Departure, flight.Destination, flight.DateOfDeparture, flight.Airline);
+            return flights.AddFlight(flight.PlaneID, flight.Departure, flight.Destination, flight.DateOfDeparture, flight.Airline, flight.Price);
         }
 
         public bool UpdateFlights(Flight flight)
@@ -27,7 +27,7 @@ namespace BUS
             if (flights.checkValidFlight(flight))
             {
                 return flights.UpdateFlight(flight.FlightID, flight.PlaneID, flight.Departure, flight.Destination,
-                    flight.DateOfDeparture, flight.Airline);
+                    flight.DateOfDeparture, flight.Airline, flight.Price);
             }
             else
             {

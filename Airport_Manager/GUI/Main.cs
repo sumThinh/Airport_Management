@@ -125,20 +125,20 @@ namespace GUI
             {
                 tabControls.SelectedPageIndex = 0;
                 Customer order_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                lticketbusCustomerID.Text = order_customer.CustomerID.ToString();
-                lticketbusCustomerName.Text = order_customer.Name;
-                lticketbusCustomerAddress.Text = order_customer.Address;
-                lticketbusCustomerPhone.Text = order_customer.TeleNumber;
-                lticketbusCustomerNationalID.Text = order_customer.NationalID;
+                lbTicketCustomerID.Text = order_customer.CustomerID.ToString();
+                lbTicketCustomerName.Text = order_customer.Name;
+                lbTicketCustomerAddress.Text = order_customer.Address;
+                lbTicketCustomerPhone.Text = order_customer.TeleNumber;
+                lbTicketCustomerNationalID.Text = order_customer.NationalID;
                 if (order_customer.Sex == true)
                 {
-                    lticketbusCustomerSex.Text = "Nữ";
+                    lbTicketCustomerSex.Text = "Nữ";
                 }
                 else
                 {
-                    lticketbusCustomerSex.Text = "Nam";
+                    lbTicketCustomerSex.Text = "Nam";
                 }
-                lticketbusCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
+                lbTicketCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
             }
             else if (e.Clicks == 1) //fetch data to textfield
             {
@@ -252,7 +252,6 @@ namespace GUI
                 comboBoxPlaneState.Items.Add("Free");
                 comboBoxPlaneState.Items.Add("Busy");
             }
-
             comboBoxPlaneState.Text = "Free";
         }
 
@@ -758,11 +757,6 @@ namespace GUI
 
         }
 
-        private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAddJob_Click(object sender, EventArgs e)
         {
             BUS_Job busJob = new BUS_Job();
@@ -795,10 +789,8 @@ namespace GUI
 
                         }
                     }
-
                 }
             }
-
         }
 
         // Ticket Controller
@@ -826,7 +818,7 @@ namespace GUI
         {
             var datez = (Flight)comboBoxTickDateDepart.SelectedItem;
             Bill_Detail bt = new Bill_Detail();
-            bt.CustomerID = int.Parse(textEdit16.Text);
+            bt.CustomerID = int.Parse(lbTicketCustomerID.Text);
             bt.FlightID = datez.FlightID;
             bt.EmployeeID = current_account.EmployeeID;
             bt.SeatNumber = current_seat.Text;
@@ -845,7 +837,8 @@ namespace GUI
 
         private void buttonDeleteTicket_Click(object sender, EventArgs e)
         {
-
+            var pickedTick = (Bill_Detail)gridViewTick.GetRow(gridViewTick.FocusedRowHandle);
+            ticketbus.DeleteBillService(pickedTick);
         }
 
         private List<System.Windows.Forms.Label> initSeatUI()
@@ -904,7 +897,28 @@ namespace GUI
 
         private void tabNavigationPage1_Paint(object sender, PaintEventArgs e)
         {
-            gridControlTicket.DataSource = ticketbus.GetListBills();
+            gridTicket.DataSource = ticketbus.GetListBills();
+        }
+
+        private void gridViewTick_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (gridViewTick.GetRow(gridViewTick.FocusedRowHandle) != null)
+            {
+                var pickedTick = (Bill_Detail)gridViewTick.GetRow(gridViewTick.FocusedRowHandle);
+                
+                textEdit14.Text = pickedTick.BillID.ToString();
+                comboBoxTickDepart.SelectedItem = pickedTick.Flight.Departure;
+                comboBoxTickDesti.SelectedItem = pickedTick.Flight.Destination;
+                comboBoxTickDateDepart.SelectedItem = pickedTick.Flight.DateOfDeparture;
+                textEdit12.Text = pickedTick.Flight.Price.ToString();
+                lbTicketCustomerID.Text = pickedTick.Customer.CustomerID.ToString();
+                lbTicketCustomerName.Text = pickedTick.Customer.Name;
+                lbTicketCustomerAddress.Text = pickedTick.Customer.Address;
+                lbTicketCustomerPhone.Text = pickedTick.Customer.TeleNumber;
+                lbTicketCustomerNationalID.Text = pickedTick.Customer.NationalID;
+                loadSeatFlight(pickedTick.Flight, pickedTick.BillID);
+
+            }
         }
     }
 }
