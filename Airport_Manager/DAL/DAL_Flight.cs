@@ -33,7 +33,7 @@ namespace DAL
             var list = new List<Flight>();
 
             using (var db = new AirportManager())
-                list = (from d in db.Flights where d.Destination == id1 & d.Departure == id2 select d).ToList();
+                list = (from d in db.Flights where d.Departure == id1 && d.Destination == id2 select d).ToList();
 
             return list;
         }

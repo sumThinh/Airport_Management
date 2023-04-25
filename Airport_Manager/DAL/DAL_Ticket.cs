@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Mapping;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,6 +35,22 @@ namespace DAL
                 db.Bill_Detail.Remove(targetedBill);
                 return db.SaveChanges() > 0;
             }
+        }
+
+        public bool UpdateTicket(Bill_Detail updated_tick)
+        {
+            using(var db = new AirportManager())
+            {
+                var cur_ticket = db.Bill_Detail.Find(updated_tick.BillID);
+                if(cur_ticket != null)
+                {
+                    db.Entry(cur_ticket).CurrentValues.SetValues(updated_tick);
+
+                    if (db.SaveChanges() > 0)
+                        return true;
+                }
+            }
+            return false;
         }
     }
 }

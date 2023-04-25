@@ -7,13 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.ComponentModel;
-
 namespace DTO
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Customer
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -31,9 +30,8 @@ namespace DTO
         public string NationalID { get; set; }
         public string Email { get; set; }
         public string TeleNumber { get; set; }
-
-        [Browsable(false)]
-
+        [Browsable(false)]    
+        
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
     }

@@ -13,6 +13,7 @@ namespace BUS
         private static DAL_Ticket ticketbill = new DAL_Ticket();
 
         public List<Bill_Detail> GetListBills() => ticketbill.LoadBills();
+
         public static bool AddBillService(Bill_Detail tick)
         {
             return ticketbill.AddTicket(tick);
@@ -21,6 +22,11 @@ namespace BUS
         public static bool DeleteBillService(Bill_Detail tick)
         {
             return ticketbill.RemoveTicket(tick.BillID);
+        }
+
+        public bool UpdateTicketService(Bill_Detail tick)
+        {
+            return ticketbill.UpdateTicket(tick);
         }
     }
 }

@@ -7,8 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.ComponentModel;
-
 namespace DTO
 {
     using System;
@@ -25,13 +23,10 @@ namespace DTO
     
         public int LocationID { get; set; }
         public string LocationName { get; set; }
-                
-        
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [Browsable(false)]
         public virtual ICollection<Flight> Flights { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [Browsable(false)]
         public virtual ICollection<Flight> Flights1 { get; set; }
     }
 }

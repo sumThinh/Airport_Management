@@ -7,8 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.ComponentModel;
-
 namespace DTO
 {
     using System;
@@ -34,13 +32,10 @@ namespace DTO
         public string TeleNumber { get; set; }
         public string Position { get; set; }
     
-        [Browsable(false)]
         public virtual Account Account { get; set; }
-        [Browsable(false)]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [Browsable(false)]
         public virtual ICollection<Job> Jobs { get; set; }
     }
 }

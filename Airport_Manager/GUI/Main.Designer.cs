@@ -97,7 +97,7 @@
             buttonUpdateTicket = new DevExpress.XtraEditors.SimpleButton();
             buttonAddTicket = new DevExpress.XtraEditors.SimpleButton();
             gridTicket = new DevExpress.XtraGrid.GridControl();
-            gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            gridViewTicket = new DevExpress.XtraGrid.Views.Grid.GridView();
             groupBox1 = new GroupBox();
             groupBox4 = new GroupBox();
             lbTicketCustomerDoB = new Label();
@@ -258,7 +258,7 @@
             tabNavigationPage1.SuspendLayout();
             groupBoxSeat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridTicket).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewTicket).BeginInit();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -327,9 +327,9 @@
             tabControls.Margin = new Padding(3, 2, 3, 2);
             tabControls.Name = "tabControls";
             tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tabNavigationPage1, tpCustomer, tp, tabNavigationFlight, tabNavigationPage5, tabNavigationPage6 });
-            tabControls.RegularSize = new Size(1861, 582);
+            tabControls.RegularSize = new Size(1861, 780);
             tabControls.SelectedPage = tabNavigationPage1;
-            tabControls.Size = new Size(1861, 582);
+            tabControls.Size = new Size(1861, 780);
             tabControls.TabIndex = 0;
             tabControls.Text = "Tickets";
             // 
@@ -344,7 +344,7 @@
             tabNavigationPage1.Controls.Add(groupBox1);
             tabNavigationPage1.Margin = new Padding(3, 2, 3, 2);
             tabNavigationPage1.Name = "tabNavigationPage1";
-            tabNavigationPage1.Size = new Size(1861, 549);
+            tabNavigationPage1.Size = new Size(1861, 747);
             // 
             // groupBoxSeat
             // 
@@ -1054,6 +1054,7 @@
             buttonUpdateTicket.Size = new Size(101, 29);
             buttonUpdateTicket.TabIndex = 23;
             buttonUpdateTicket.Text = "Update";
+            buttonUpdateTicket.Click += btnUpdateTicket_Click;
             // 
             // buttonAddTicket
             // 
@@ -1068,20 +1069,20 @@
             // 
             gridTicket.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gridTicket.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
-            gridTicket.Location = new Point(4, 358);
-            gridTicket.MainView = gridView1;
+            gridTicket.Location = new Point(18, 343);
+            gridTicket.MainView = gridViewTicket;
             gridTicket.Margin = new Padding(3, 2, 3, 2);
             gridTicket.Name = "gridTicket";
-            gridTicket.Size = new Size(1837, 238);
+            gridTicket.Size = new Size(1354, 436);
             gridTicket.TabIndex = 1;
-            gridTicket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
+            gridTicket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridViewTicket });
             gridTicket.Load += gridTicket_Load;
             // 
-            // gridView1
+            // gridViewTicket
             // 
-            gridView1.DetailHeight = 284;
-            gridView1.GridControl = gridTicket;
-            gridView1.Name = "gridView1";
+            gridViewTicket.DetailHeight = 284;
+            gridViewTicket.GridControl = gridTicket;
+            gridViewTicket.Name = "gridViewTicket";
             // 
             // groupBox1
             // 
@@ -1323,7 +1324,7 @@
             comboBoxTickDateDepart.Name = "comboBoxTickDateDepart";
             comboBoxTickDateDepart.Size = new Size(215, 21);
             comboBoxTickDateDepart.TabIndex = 35;
-            comboBoxTickDateDepart.Click += comboBoxTickDateDepart_Click;
+            comboBoxTickDateDepart.DropDown += comboBoxTickDateDepart_Click;
             // 
             // comboBoxTickDesti
             // 
@@ -1391,7 +1392,7 @@
             tpCustomer.Controls.Add(groupBox5);
             tpCustomer.Margin = new Padding(3, 2, 3, 2);
             tpCustomer.Name = "tpCustomer";
-            tpCustomer.Size = new Size(1861, 549);
+            tpCustomer.Size = new Size(1861, 747);
             tpCustomer.Paint += tpCustomer_Paint;
             // 
             // gcCustomer
@@ -1402,7 +1403,7 @@
             gcCustomer.MainView = gvCustomer;
             gcCustomer.Margin = new Padding(3, 2, 3, 2);
             gcCustomer.Name = "gcCustomer";
-            gcCustomer.Size = new Size(1471, 338);
+            gcCustomer.Size = new Size(1471, 536);
             gcCustomer.TabIndex = 3;
             gcCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvCustomer });
             // 
@@ -2740,7 +2741,7 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1384, 427);
+            ClientSize = new Size(1384, 625);
             Controls.Add(tabControls);
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
@@ -2753,7 +2754,7 @@
             groupBoxSeat.ResumeLayout(false);
             groupBoxSeat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)gridTicket).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewTicket).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
@@ -2822,7 +2823,7 @@
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tpCustomer;
         private DevExpress.XtraGrid.GridControl gridTicket;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewTicket;
         private GroupBox groupBox1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
         private DevExpress.XtraGrid.GridControl dgvEmployee;

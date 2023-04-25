@@ -7,8 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.ComponentModel;
-
 namespace DTO
 {
     using System;
@@ -30,19 +28,23 @@ namespace DTO
         public System.DateTime DateOfDeparture { get; set; }
         public int Destination { get; set; }
         public string Airline { get; set; }
-
-
+        public decimal Price { get; set; }
         [Browsable(false)]    
+        
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
         [Browsable(false)]
+
         public virtual Plane Plane { get; set; }
         [Browsable(false)]
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Job> Jobs { get; set; }
         [Browsable(false)]
+
         public virtual Location Location { get; set; }
         [Browsable(false)]
+
         public virtual Location Location1 { get; set; }
     }
 }

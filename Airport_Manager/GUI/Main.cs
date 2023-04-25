@@ -41,7 +41,6 @@ namespace GUI
             InitializeComponent();
             this.current_account = current_account;
             this.current_employee = current_employee;
-            MessageBox.Show("2");
             listSeat = initSeatUI();
             List<Flight> fls = flightbus.GetListFlights();
             loadSeatFlight(fls[0], 1);
@@ -800,9 +799,11 @@ namespace GUI
 
         private void comboBoxTickDateDepart_Click(object sender, EventArgs e)
         {
-            var loDep = (Location)comboBoxDepart.SelectedItem;
-            var loDes = (Location)comboBoxDesti.SelectedItem;
-            comboBoxTickDateDepart.DataSource = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
+            Location loDep = (Location)comboBoxTickDepart.SelectedItem;
+            Location loDes = (Location)comboBoxTickDesti.SelectedItem;
+            List<Flight> listFlight = new List<Flight>();
+            listFlight = flightbus.GetDatebyLocations(loDep.LocationID, loDes.LocationID);
+            comboBoxTickDateDepart.DataSource = listFlight;
             comboBoxTickDateDepart.DisplayMember = "DateOfDeparture";
         }
 
@@ -822,11 +823,13 @@ namespace GUI
                     seats.Add(label);
             foreach (var seat in seats)
             {
+                seat.Enabled = false;
                 seat.ForeColor = Color.White;
                 seat.BackColor = Color.Gray;
                 seat.Click += new EventHandler(changeStageSeat);
             }
             current_seat = null;
+            seats.Sort((s1, s2) => String.Compare(s1.Name, s2.Name));
             return seats;
         }
 
@@ -836,6 +839,7 @@ namespace GUI
             List<Bill_Detail> listTicket = fl.Bill_Detail.ToList();
             foreach (var seat in listSeat)
             {
+                seat.Enabled = true;
                 foreach (var t in listTicket)
                 {
                     if (seat.Name.Equals(t.SeatNumber))
@@ -864,6 +868,47 @@ namespace GUI
                     current_seat.BackColor = Color.Gray;
                 chosen_seat.BackColor = Color.LightGreen;
                 current_seat = chosen_seat;
+                if (current_seat.Name.Substring(0, 1).Equals("A") || current_seat.Name.Substring(0, 1).Equals("B"))
+                    textEdit12.Text = (((Flight)comboBoxTickDateDepart.SelectedItem).Price * 1.6m).ToString();
+                else
+                    textEdit12.Text = (((Flight)comboBoxTickDateDepart.SelectedItem).Price).ToString();
+            }
+        }
+
+        private void btnUpdateTicket_Click(object sender, EventArgs e)
+        {
+            if (gridViewTicket.GetRow(gridViewTicket.FocusedRowHandle) != null)
+            {
+                var updated_ticket = (Bill_Detail)gridViewTicket.GetRow(gridViewTicket.FocusedRowHandle);
+                if (current_seat != null && comboBoxTickDateDepart.SelectedItem != null)
+                {
+                    var new_flight = (Flight)comboBoxTickDateDepart.SelectedItem;
+                    if (!String.Equals(updated_ticket.SeatNumber, current_seat.Name) || !(updated_ticket.FlightID == new_flight.FlightID))
+                    {
+                        updated_ticket.SeatNumber = current_seat.Name;
+                        if (current_seat.Name.Substring(0, 1).Equals("A") || current_seat.Name.Substring(0, 1).Equals("B"))
+                            updated_ticket.SeatClass = true;
+                        else
+                            updated_ticket.SeatClass = false;
+
+                        updated_ticket.FlightID = ((Flight)comboBoxTickDateDepart.SelectedItem).FlightID;
+
+                        updated_ticket.TotalPrice = decimal.Parse(textEdit12.Text);
+                        //Booking date
+                        DateTime today = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                        updated_ticket.BookingDate = today;
+
+                        if (bTicket.UpdateTicketService(updated_ticket))
+                            MessageBox.Show("Success");
+                        else
+                            MessageBox.Show("Fail");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Choose flight then choose seat", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
             }
         }
     }
