@@ -46,7 +46,14 @@ namespace GUI
 
         void Main_Load(object sender, EventArgs e)
         {
-
+            if (current_account.AccessLevel == false)
+            {
+                tabNavigationFlight.Enabled = false;
+                tabNavigationPage2.Enabled = false;
+                tabNavigationPage5.Enabled = false;
+                tabNavigationPage6.Enabled = false;
+                tp.Enabled = false;
+            }
         }
 
         // Customer Controller
@@ -637,6 +644,7 @@ namespace GUI
                         else
                             MessageBox.Show("Add Employee Successfully");
                     }
+                    LoadDataGridViewEmployee();
                 }
                 else
                 {
@@ -667,15 +675,15 @@ namespace GUI
             {
                 Employee cur_emp = (Employee)gvEmploy.GetRow(gvEmploy.FocusedRowHandle);
                 txtEmployeeID.Text = cur_emp.EmployeeID.ToString();
-                txtNameEmployee.Text = cur_emp.Name.ToString();
-                txtAddressEmployee.Text = cur_emp.Address.ToString();
-                txtNationalityEmployee.Text = cur_emp.Nationality.ToString();
-                //    dtpBirthday.Value.Date = cur_emp.DateOfBirth.;
-                txtNationalIDEmployee.Text = cur_emp.NationID.ToString();
-                txtEmailEmployee.Text = cur_emp.Email.ToString();
-                txtNationalIDEmployee.Text = cur_emp.NationID.ToString();
-                txtPhoneEmployee.Text = cur_emp.TeleNumber.ToString();
-                txtPositionEmployee.Text = cur_emp.Position.ToString();
+                txtNameEmployee.Text = cur_emp.Name;
+                txtAddressEmployee.Text = cur_emp.Address;
+                txtNationalityEmployee.Text = cur_emp.Nationality;
+                dtpBirthdayEmployee.Value = (DateTime)cur_emp.DateOfBirth;
+                txtNationalIDEmployee.Text = cur_emp.NationID;
+                txtEmailEmployee.Text = cur_emp.Email;
+                txtNationalIDEmployee.Text = cur_emp.NationID;
+                txtPhoneEmployee.Text = cur_emp.TeleNumber;
+                txtPositionEmployee.Text = cur_emp.Position;
                 if (cur_emp.Sex == true)
                     rbMale.Checked = true;
                 else
@@ -940,12 +948,13 @@ namespace GUI
                         DateTime today = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                         updated_ticket.BookingDate = today;
 
-                        if (ticketbus.UpdateTicketService(updated_ticket)) { 
+                        if (ticketbus.UpdateTicketService(updated_ticket))
+                        {
                             MessageBox.Show("Success");
-                        gridTicket.DataSource = ticketbus.GetListBills();
-                    }
-                    else
-                        MessageBox.Show("Fail");
+                            gridTicket.DataSource = ticketbus.GetListBills();
+                        }
+                        else
+                            MessageBox.Show("Fail");
                     }
                 }
                 else
